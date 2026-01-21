@@ -1,0 +1,195 @@
+  0 1 2 3
+0 . . . .
+         
+1 . . . .
+         
+2 . . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 0
+
+RED's move...
+> 0 0 0 1
+  0 1 2 3
+0 .-. . .
+         
+1 . . . .
+         
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 1
+
+BLUE's move...
+> 1 3 2 3
+  0 1 2 3
+0 .-. . .
+         
+1 . . . .
+        |
+2 . . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 2
+
+RED's move...
+> 1 1 1 2
+  0 1 2 3
+0 .-. . .
+         
+1 . .-. .
+        |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 3
+
+BLUE's move...
+> 1 2 1 3
+  0 1 2 3
+0 .-. . .
+         
+1 . .-.-.
+        |
+2 . . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 4
+
+RED's move...
+> 1 0 1 1
+  0 1 2 3
+0 .-. . .
+         
+1 .-.-.-.
+        |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 5
+
+BLUE's move...
+> 1 1 2 1
+  0 1 2 3
+0 .-. . .
+         
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 6
+
+RED's move...
+> 0 1 1 1
+  0 1 2 3
+0 .-. . .
+    |    
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 7
+
+BLUE's move...
+> 0 0 1 0
+  0 1 2 3
+0 .-. . .
+  |B|    
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 1 , Moves: 8
+
+BLUE's move...
+> 0 2 1 2
+  0 1 2 3
+0 .-. . .
+  |B| |  
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: RED, Red: 0, Blue: 1 , Moves: 9
+
+RED's move...
+> 0 2 0 3
+  0 1 2 3
+0 .-. .-.
+  |B| |  
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 1 , Moves: 10
+
+BLUE's move...
+> 0 1 0 2
+  0 1 2 3
+0 .-.-.-.
+  |B|B|  
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 2 , Moves: 11
+
+BLUE's move...
+> 0 3 1 3
+  0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+    |   |
+2 . . . .
+
+Turn: BLUE, Red: 0, Blue: 3 , Moves: 12
+
+BLUE's move...
+> 2 1 2 2
+   0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+    |   |
+2 . .-. .
+
+Turn: RED, Red: 0, Blue: 3 , Moves: 13
+
+RED's move...
+> 1 2 2 2
+  0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+    |R| |
+2 . .-. .
+
+Turn: RED, Red: 1, Blue: 3 , Moves: 14
+
+RED's move...
+> 2 2 2 3
+  0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+    |R|R|
+2 . .-.-.
+
+Turn: RED, Red: 2, Blue: 3 , Moves: 15
+
+RED's move...
+> 2 0 2 1
+  0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+    |R|R|
+2 .-.-.-.
+
+Turn: BLUE, Red: 2, Blue: 3 , Moves: 16
+
+BLUE's move...
+> 1 0 2 0
+  0 1 2 3
+0 .-.-.-.
+  |B|B|B|
+1 .-.-.-.
+  |B|R|R|
+2 .-.-.-.
+
+BLUE wins 4 to 2!

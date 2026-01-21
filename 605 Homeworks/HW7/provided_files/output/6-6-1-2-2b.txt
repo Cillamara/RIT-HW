@@ -1,0 +1,88 @@
+Checking if game.bin is a saved game file... yes
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 _ _ ☐ _ _ _
+ 5 _ _ _ _ _ _
+
+> !
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 S S ☐ _ _ _
+ 5 _ _ S _ S S
+
+> h 4 0
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 ☐ _ ☐ _ _ _
+ 5 _ _ _ _ _ _
+
+> h 4 1
+A battleship has been sunk!
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 * * ☐ _ _ _
+ 5 _ _ _ _ _ _
+
+> h 5 3
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 * * ☐ _ _ _
+ 5 _ _ _ . _ _
+
+> h 5 4
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 * * ☐ _ _ _
+ 5 _ _ _ . ☐ _
+
+> h 5 5
+A battleship has been sunk!
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ ☐ _ _ _
+ 4 * * ☐ _ _ _
+ 5 _ _ _ . * *
+
+> h 3 2
+battleship.CellPlayedException: This cell has already been hit, row=3, column=2
+> h 5 20
+battleship.OutOfBoundsException: Coordinates are past board edge, row=5, column=20
+> h 5 2
+A battleship has been sunk!
+
+   0 1 2 3 4 5
+ 0 . * * * _ _
+ 1 * * * * _ .
+ 2 _ _ . _ _ _
+ 3 _ _ * _ _ _
+ 4 * * * _ _ _
+ 5 _ _ * . * *
+
+All ships sunk!

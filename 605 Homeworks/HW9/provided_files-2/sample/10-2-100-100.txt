@@ -1,0 +1,973 @@
+Simulation time: 10 seconds
+Starting drones: 2
+Starting nectar workers: 100
+Starting pollen workers: 100
+*BH* QUEEN #1 is born!
+*BH* DRONE #2 is born!
+*BH* DRONE #3 is born!
+*BH* NECTAR WORKER #4 is born!
+*BH* NECTAR WORKER #5 is born!
+*BH* NECTAR WORKER #6 is born!
+*BH* NECTAR WORKER #7 is born!
+*BH* NECTAR WORKER #8 is born!
+*BH* NECTAR WORKER #9 is born!
+*BH* NECTAR WORKER #10 is born!
+*BH* NECTAR WORKER #11 is born!
+*BH* NECTAR WORKER #12 is born!
+*BH* NECTAR WORKER #13 is born!
+*BH* NECTAR WORKER #14 is born!
+*BH* NECTAR WORKER #15 is born!
+*BH* NECTAR WORKER #16 is born!
+*BH* NECTAR WORKER #17 is born!
+*BH* NECTAR WORKER #18 is born!
+*BH* NECTAR WORKER #19 is born!
+*BH* NECTAR WORKER #20 is born!
+*BH* NECTAR WORKER #21 is born!
+*BH* NECTAR WORKER #22 is born!
+*BH* NECTAR WORKER #23 is born!
+*BH* NECTAR WORKER #24 is born!
+*BH* NECTAR WORKER #25 is born!
+*BH* NECTAR WORKER #26 is born!
+*BH* NECTAR WORKER #27 is born!
+*BH* NECTAR WORKER #28 is born!
+*BH* NECTAR WORKER #29 is born!
+*BH* NECTAR WORKER #30 is born!
+*BH* NECTAR WORKER #31 is born!
+*BH* NECTAR WORKER #32 is born!
+*BH* NECTAR WORKER #33 is born!
+*BH* NECTAR WORKER #34 is born!
+*BH* NECTAR WORKER #35 is born!
+*BH* NECTAR WORKER #36 is born!
+*BH* NECTAR WORKER #37 is born!
+*BH* NECTAR WORKER #38 is born!
+*BH* NECTAR WORKER #39 is born!
+*BH* NECTAR WORKER #40 is born!
+*BH* NECTAR WORKER #41 is born!
+*BH* NECTAR WORKER #42 is born!
+*BH* NECTAR WORKER #43 is born!
+*BH* NECTAR WORKER #44 is born!
+*BH* NECTAR WORKER #45 is born!
+*BH* NECTAR WORKER #46 is born!
+*BH* NECTAR WORKER #47 is born!
+*BH* NECTAR WORKER #48 is born!
+*BH* NECTAR WORKER #49 is born!
+*BH* NECTAR WORKER #50 is born!
+*BH* NECTAR WORKER #51 is born!
+*BH* NECTAR WORKER #52 is born!
+*BH* NECTAR WORKER #53 is born!
+*BH* NECTAR WORKER #54 is born!
+*BH* NECTAR WORKER #55 is born!
+*BH* NECTAR WORKER #56 is born!
+*BH* NECTAR WORKER #57 is born!
+*BH* NECTAR WORKER #58 is born!
+*BH* NECTAR WORKER #59 is born!
+*BH* NECTAR WORKER #60 is born!
+*BH* NECTAR WORKER #61 is born!
+*BH* NECTAR WORKER #62 is born!
+*BH* NECTAR WORKER #63 is born!
+*BH* NECTAR WORKER #64 is born!
+*BH* NECTAR WORKER #65 is born!
+*BH* NECTAR WORKER #66 is born!
+*BH* NECTAR WORKER #67 is born!
+*BH* NECTAR WORKER #68 is born!
+*BH* NECTAR WORKER #69 is born!
+*BH* NECTAR WORKER #70 is born!
+*BH* NECTAR WORKER #71 is born!
+*BH* NECTAR WORKER #72 is born!
+*BH* NECTAR WORKER #73 is born!
+*BH* NECTAR WORKER #74 is born!
+*BH* NECTAR WORKER #75 is born!
+*BH* NECTAR WORKER #76 is born!
+*BH* NECTAR WORKER #77 is born!
+*BH* NECTAR WORKER #78 is born!
+*BH* NECTAR WORKER #79 is born!
+*BH* NECTAR WORKER #80 is born!
+*BH* NECTAR WORKER #81 is born!
+*BH* NECTAR WORKER #82 is born!
+*BH* NECTAR WORKER #83 is born!
+*BH* NECTAR WORKER #84 is born!
+*BH* NECTAR WORKER #85 is born!
+*BH* NECTAR WORKER #86 is born!
+*BH* NECTAR WORKER #87 is born!
+*BH* NECTAR WORKER #88 is born!
+*BH* NECTAR WORKER #89 is born!
+*BH* NECTAR WORKER #90 is born!
+*BH* NECTAR WORKER #91 is born!
+*BH* NECTAR WORKER #92 is born!
+*BH* NECTAR WORKER #93 is born!
+*BH* NECTAR WORKER #94 is born!
+*BH* NECTAR WORKER #95 is born!
+*BH* NECTAR WORKER #96 is born!
+*BH* NECTAR WORKER #97 is born!
+*BH* NECTAR WORKER #98 is born!
+*BH* NECTAR WORKER #99 is born!
+*BH* NECTAR WORKER #100 is born!
+*BH* NECTAR WORKER #101 is born!
+*BH* NECTAR WORKER #102 is born!
+*BH* NECTAR WORKER #103 is born!
+*BH* POLLEN WORKER #104 is born!
+*BH* POLLEN WORKER #105 is born!
+*BH* POLLEN WORKER #106 is born!
+*BH* POLLEN WORKER #107 is born!
+*BH* POLLEN WORKER #108 is born!
+*BH* POLLEN WORKER #109 is born!
+*BH* POLLEN WORKER #110 is born!
+*BH* POLLEN WORKER #111 is born!
+*BH* POLLEN WORKER #112 is born!
+*BH* POLLEN WORKER #113 is born!
+*BH* POLLEN WORKER #114 is born!
+*BH* POLLEN WORKER #115 is born!
+*BH* POLLEN WORKER #116 is born!
+*BH* POLLEN WORKER #117 is born!
+*BH* POLLEN WORKER #118 is born!
+*BH* POLLEN WORKER #119 is born!
+*BH* POLLEN WORKER #120 is born!
+*BH* POLLEN WORKER #121 is born!
+*BH* POLLEN WORKER #122 is born!
+*BH* POLLEN WORKER #123 is born!
+*BH* POLLEN WORKER #124 is born!
+*BH* POLLEN WORKER #125 is born!
+*BH* POLLEN WORKER #126 is born!
+*BH* POLLEN WORKER #127 is born!
+*BH* POLLEN WORKER #128 is born!
+*BH* POLLEN WORKER #129 is born!
+*BH* POLLEN WORKER #130 is born!
+*BH* POLLEN WORKER #131 is born!
+*BH* POLLEN WORKER #132 is born!
+*BH* POLLEN WORKER #133 is born!
+*BH* POLLEN WORKER #134 is born!
+*BH* POLLEN WORKER #135 is born!
+*BH* POLLEN WORKER #136 is born!
+*BH* POLLEN WORKER #137 is born!
+*BH* POLLEN WORKER #138 is born!
+*BH* POLLEN WORKER #139 is born!
+*BH* POLLEN WORKER #140 is born!
+*BH* POLLEN WORKER #141 is born!
+*BH* POLLEN WORKER #142 is born!
+*BH* POLLEN WORKER #143 is born!
+*BH* POLLEN WORKER #144 is born!
+*BH* POLLEN WORKER #145 is born!
+*BH* POLLEN WORKER #146 is born!
+*BH* POLLEN WORKER #147 is born!
+*BH* POLLEN WORKER #148 is born!
+*BH* POLLEN WORKER #149 is born!
+*BH* POLLEN WORKER #150 is born!
+*BH* POLLEN WORKER #151 is born!
+*BH* POLLEN WORKER #152 is born!
+*BH* POLLEN WORKER #153 is born!
+*BH* POLLEN WORKER #154 is born!
+*BH* POLLEN WORKER #155 is born!
+*BH* POLLEN WORKER #156 is born!
+*BH* POLLEN WORKER #157 is born!
+*BH* POLLEN WORKER #158 is born!
+*BH* POLLEN WORKER #159 is born!
+*BH* POLLEN WORKER #160 is born!
+*BH* POLLEN WORKER #161 is born!
+*BH* POLLEN WORKER #162 is born!
+*BH* POLLEN WORKER #163 is born!
+*BH* POLLEN WORKER #164 is born!
+*BH* POLLEN WORKER #165 is born!
+*BH* POLLEN WORKER #166 is born!
+*BH* POLLEN WORKER #167 is born!
+*BH* POLLEN WORKER #168 is born!
+*BH* POLLEN WORKER #169 is born!
+*BH* POLLEN WORKER #170 is born!
+*BH* POLLEN WORKER #171 is born!
+*BH* POLLEN WORKER #172 is born!
+*BH* POLLEN WORKER #173 is born!
+*BH* POLLEN WORKER #174 is born!
+*BH* POLLEN WORKER #175 is born!
+*BH* POLLEN WORKER #176 is born!
+*BH* POLLEN WORKER #177 is born!
+*BH* POLLEN WORKER #178 is born!
+*BH* POLLEN WORKER #179 is born!
+*BH* POLLEN WORKER #180 is born!
+*BH* POLLEN WORKER #181 is born!
+*BH* POLLEN WORKER #182 is born!
+*BH* POLLEN WORKER #183 is born!
+*BH* POLLEN WORKER #184 is born!
+*BH* POLLEN WORKER #185 is born!
+*BH* POLLEN WORKER #186 is born!
+*BH* POLLEN WORKER #187 is born!
+*BH* POLLEN WORKER #188 is born!
+*BH* POLLEN WORKER #189 is born!
+*BH* POLLEN WORKER #190 is born!
+*BH* POLLEN WORKER #191 is born!
+*BH* POLLEN WORKER #192 is born!
+*BH* POLLEN WORKER #193 is born!
+*BH* POLLEN WORKER #194 is born!
+*BH* POLLEN WORKER #195 is born!
+*BH* POLLEN WORKER #196 is born!
+*BH* POLLEN WORKER #197 is born!
+*BH* POLLEN WORKER #198 is born!
+*BH* POLLEN WORKER #199 is born!
+*BH* POLLEN WORKER #200 is born!
+*BH* POLLEN WORKER #201 is born!
+*BH* POLLEN WORKER #202 is born!
+*BH* POLLEN WORKER #203 is born!
+*BH* Bee hive begins buzzing!
+*QC* DRONE #2 enters chamber
+*QC* DRONE #3 enters chamber
+*FF* NECTAR WORKER #4 enters field
+*FF* NECTAR WORKER #9 enters field
+*FF* NECTAR WORKER #8 enters field
+*FF* NECTAR WORKER #7 enters field
+*FF* NECTAR WORKER #6 enters field
+*FF* NECTAR WORKER #5 enters field
+*FF* NECTAR WORKER #10 enters field
+*FF* NECTAR WORKER #11 enters field
+*FF* NECTAR WORKER #12 enters field
+*FF* NECTAR WORKER #13 enters field
+*FF* NECTAR WORKER #14 enters field
+*FF* NECTAR WORKER #15 enters field
+*FF* NECTAR WORKER #16 enters field
+*FF* NECTAR WORKER #17 enters field
+*FF* NECTAR WORKER #18 enters field
+*FF* NECTAR WORKER #19 enters field
+*FF* NECTAR WORKER #20 enters field
+*FF* NECTAR WORKER #21 enters field
+*FF* NECTAR WORKER #22 enters field
+*FF* NECTAR WORKER #23 enters field
+*FF* NECTAR WORKER #24 enters field
+*FF* NECTAR WORKER #25 enters field
+*FF* NECTAR WORKER #26 enters field
+*FF* NECTAR WORKER #27 enters field
+*FF* NECTAR WORKER #28 enters field
+*FF* NECTAR WORKER #29 enters field
+*FF* NECTAR WORKER #30 enters field
+*FF* NECTAR WORKER #31 enters field
+*FF* NECTAR WORKER #32 enters field
+*FF* NECTAR WORKER #33 enters field
+*FF* NECTAR WORKER #34 enters field
+*FF* NECTAR WORKER #35 enters field
+*FF* NECTAR WORKER #36 enters field
+*FF* NECTAR WORKER #37 enters field
+*FF* NECTAR WORKER #38 enters field
+*FF* NECTAR WORKER #39 enters field
+*FF* NECTAR WORKER #40 enters field
+*FF* NECTAR WORKER #41 enters field
+*FF* NECTAR WORKER #42 enters field
+*FF* NECTAR WORKER #43 enters field
+*FF* NECTAR WORKER #44 enters field
+*FF* NECTAR WORKER #45 enters field
+*FF* NECTAR WORKER #46 enters field
+*FF* NECTAR WORKER #47 enters field
+*FF* NECTAR WORKER #48 enters field
+*FF* NECTAR WORKER #49 enters field
+*FF* NECTAR WORKER #50 enters field
+*FF* NECTAR WORKER #51 enters field
+*FF* NECTAR WORKER #52 enters field
+*FF* NECTAR WORKER #53 enters field
+*FF* NECTAR WORKER #54 enters field
+*FF* NECTAR WORKER #55 enters field
+*FF* NECTAR WORKER #56 enters field
+*FF* NECTAR WORKER #57 enters field
+*FF* NECTAR WORKER #58 enters field
+*FF* NECTAR WORKER #59 enters field
+*FF* NECTAR WORKER #60 enters field
+*FF* NECTAR WORKER #61 enters field
+*FF* NECTAR WORKER #62 enters field
+*FF* NECTAR WORKER #63 enters field
+*FF* NECTAR WORKER #64 enters field
+*FF* NECTAR WORKER #65 enters field
+*FF* NECTAR WORKER #66 enters field
+*FF* NECTAR WORKER #67 enters field
+*FF* NECTAR WORKER #68 enters field
+*FF* NECTAR WORKER #69 enters field
+*FF* NECTAR WORKER #70 enters field
+*FF* NECTAR WORKER #71 enters field
+*FF* NECTAR WORKER #72 enters field
+*FF* NECTAR WORKER #73 enters field
+*FF* NECTAR WORKER #74 enters field
+*FF* NECTAR WORKER #75 enters field
+*FF* NECTAR WORKER #76 enters field
+*FF* NECTAR WORKER #77 enters field
+*FF* NECTAR WORKER #78 enters field
+*FF* NECTAR WORKER #79 enters field
+*FF* NECTAR WORKER #80 enters field
+*FF* NECTAR WORKER #81 enters field
+*FF* NECTAR WORKER #82 enters field
+*FF* NECTAR WORKER #83 enters field
+*FF* NECTAR WORKER #84 enters field
+*FF* NECTAR WORKER #85 enters field
+*FF* NECTAR WORKER #86 enters field
+*FF* NECTAR WORKER #87 enters field
+*FF* NECTAR WORKER #88 enters field
+*FF* NECTAR WORKER #89 enters field
+*FF* NECTAR WORKER #90 enters field
+*FF* NECTAR WORKER #91 enters field
+*FF* NECTAR WORKER #92 enters field
+*FF* NECTAR WORKER #93 enters field
+*FF* NECTAR WORKER #94 enters field
+*FF* NECTAR WORKER #95 enters field
+*FF* NECTAR WORKER #96 enters field
+*FF* NECTAR WORKER #97 enters field
+*FF* NECTAR WORKER #98 enters field
+*FF* NECTAR WORKER #99 enters field
+*FF* NECTAR WORKER #100 enters field
+*FF* NECTAR WORKER #101 enters field
+*FF* NECTAR WORKER #102 enters field
+*FF* NECTAR WORKER #103 enters field
+*FF* POLLEN WORKER #104 enters field
+*FF* POLLEN WORKER #105 enters field
+*FF* POLLEN WORKER #106 enters field
+*FF* POLLEN WORKER #107 enters field
+*FF* POLLEN WORKER #108 enters field
+*FF* POLLEN WORKER #109 enters field
+*FF* POLLEN WORKER #110 enters field
+*FF* POLLEN WORKER #111 enters field
+*FF* POLLEN WORKER #112 enters field
+*FF* POLLEN WORKER #113 enters field
+*FF* POLLEN WORKER #114 enters field
+*FF* POLLEN WORKER #115 enters field
+*FF* POLLEN WORKER #116 enters field
+*FF* POLLEN WORKER #117 enters field
+*FF* POLLEN WORKER #118 enters field
+*FF* POLLEN WORKER #119 enters field
+*FF* POLLEN WORKER #120 enters field
+*FF* POLLEN WORKER #121 enters field
+*FF* POLLEN WORKER #122 enters field
+*FF* POLLEN WORKER #123 enters field
+*FF* POLLEN WORKER #124 enters field
+*FF* POLLEN WORKER #125 enters field
+*FF* POLLEN WORKER #126 enters field
+*FF* POLLEN WORKER #127 enters field
+*FF* POLLEN WORKER #128 enters field
+*FF* POLLEN WORKER #129 enters field
+*FF* POLLEN WORKER #130 enters field
+*FF* POLLEN WORKER #131 enters field
+*FF* POLLEN WORKER #132 enters field
+*FF* POLLEN WORKER #133 enters field
+*FF* POLLEN WORKER #134 enters field
+*FF* POLLEN WORKER #135 enters field
+*FF* POLLEN WORKER #136 enters field
+*FF* POLLEN WORKER #137 enters field
+*FF* POLLEN WORKER #138 enters field
+*FF* POLLEN WORKER #139 enters field
+*FF* POLLEN WORKER #140 enters field
+*FF* POLLEN WORKER #141 enters field
+*FF* POLLEN WORKER #142 enters field
+*FF* POLLEN WORKER #143 enters field
+*FF* POLLEN WORKER #144 enters field
+*FF* POLLEN WORKER #145 enters field
+*FF* POLLEN WORKER #146 enters field
+*FF* POLLEN WORKER #147 enters field
+*FF* POLLEN WORKER #148 enters field
+*FF* POLLEN WORKER #149 enters field
+*FF* POLLEN WORKER #150 enters field
+*FF* POLLEN WORKER #151 enters field
+*FF* POLLEN WORKER #152 enters field
+*FF* POLLEN WORKER #153 enters field
+*FF* POLLEN WORKER #154 enters field
+*FF* POLLEN WORKER #155 enters field
+*FF* POLLEN WORKER #156 enters field
+*FF* POLLEN WORKER #157 enters field
+*FF* POLLEN WORKER #158 enters field
+*FF* POLLEN WORKER #159 enters field
+*FF* POLLEN WORKER #160 enters field
+*FF* POLLEN WORKER #161 enters field
+*FF* POLLEN WORKER #162 enters field
+*FF* POLLEN WORKER #163 enters field
+*FF* POLLEN WORKER #164 enters field
+*FF* POLLEN WORKER #165 enters field
+*FF* POLLEN WORKER #166 enters field
+*FF* POLLEN WORKER #167 enters field
+*FF* POLLEN WORKER #168 enters field
+*FF* POLLEN WORKER #169 enters field
+*FF* POLLEN WORKER #170 enters field
+*FF* POLLEN WORKER #171 enters field
+*FF* POLLEN WORKER #172 enters field
+*FF* POLLEN WORKER #173 enters field
+*FF* POLLEN WORKER #174 enters field
+*FF* POLLEN WORKER #175 enters field
+*FF* POLLEN WORKER #176 enters field
+*FF* POLLEN WORKER #177 enters field
+*FF* POLLEN WORKER #178 enters field
+*FF* POLLEN WORKER #179 enters field
+*FF* POLLEN WORKER #180 enters field
+*FF* POLLEN WORKER #181 enters field
+*FF* POLLEN WORKER #182 enters field
+*FF* POLLEN WORKER #183 enters field
+*FF* POLLEN WORKER #184 enters field
+*FF* POLLEN WORKER #185 enters field
+*FF* POLLEN WORKER #186 enters field
+*FF* POLLEN WORKER #187 enters field
+*FF* POLLEN WORKER #188 enters field
+*FF* POLLEN WORKER #189 enters field
+*FF* POLLEN WORKER #190 enters field
+*FF* POLLEN WORKER #191 enters field
+*FF* POLLEN WORKER #192 enters field
+*FF* POLLEN WORKER #193 enters field
+*FF* POLLEN WORKER #194 enters field
+*FF* POLLEN WORKER #195 enters field
+*FF* POLLEN WORKER #196 enters field
+*FF* POLLEN WORKER #197 enters field
+*FF* POLLEN WORKER #198 enters field
+*FF* POLLEN WORKER #199 enters field
+*FF* POLLEN WORKER #200 enters field
+*FF* POLLEN WORKER #201 enters field
+*FF* POLLEN WORKER #202 enters field
+*FF* POLLEN WORKER #203 enters field
+*FF* NECTAR WORKER #4 leaves field
+*FF* NECTAR WORKER #5 leaves field
+*FF* NECTAR WORKER #10 leaves field
+*FF* NECTAR WORKER #13 leaves field
+*FF* NECTAR WORKER #12 leaves field
+*FF* NECTAR WORKER #11 leaves field
+*FF* NECTAR WORKER #6 leaves field
+*FF* NECTAR WORKER #7 leaves field
+*FF* NECTAR WORKER #8 leaves field
+*FF* NECTAR WORKER #9 leaves field
+*BH* NECTAR WORKER #4 deposits
+*FF* NECTAR WORKER #4 enters field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #9 enters field
+*BH* NECTAR WORKER #8 deposits
+*FF* NECTAR WORKER #8 enters field
+*BH* NECTAR WORKER #7 deposits
+*FF* NECTAR WORKER #7 enters field
+*BH* NECTAR WORKER #6 deposits
+*FF* NECTAR WORKER #6 enters field
+*BH* NECTAR WORKER #11 deposits
+*FF* NECTAR WORKER #11 enters field
+*BH* NECTAR WORKER #12 deposits
+*FF* NECTAR WORKER #12 enters field
+*BH* NECTAR WORKER #13 deposits
+*FF* NECTAR WORKER #13 enters field
+*BH* NECTAR WORKER #10 deposits
+*FF* NECTAR WORKER #10 enters field
+*BH* NECTAR WORKER #5 deposits
+*FF* NECTAR WORKER #5 enters field
+*FF* NECTAR WORKER #14 leaves field
+*BH* NECTAR WORKER #14 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #15 enters field
+*FF* NECTAR WORKER #14 enters field
+*FF* NECTAR WORKER #18 leaves field
+*BH* NECTAR WORKER #18 deposits
+*FF* NECTAR WORKER #18 enters field
+*FF* NECTAR WORKER #17 leaves field
+*BH* NECTAR WORKER #17 deposits
+*FF* NECTAR WORKER #16 leaves field
+*BH* NECTAR WORKER #16 deposits
+*FF* NECTAR WORKER #16 enters field
+*FF* NECTAR WORKER #19 leaves field
+*BH* NECTAR WORKER #19 deposits
+*FF* NECTAR WORKER #20 leaves field
+*BH* NECTAR WORKER #20 deposits
+*FF* NECTAR WORKER #22 leaves field
+*BH* NECTAR WORKER #22 deposits
+*FF* NECTAR WORKER #23 leaves field
+*BH* NECTAR WORKER #23 deposits
+*FF* NECTAR WORKER #21 leaves field
+*BH* NECTAR WORKER #21 deposits
+*FF* NECTAR WORKER #21 enters field
+*FF* NECTAR WORKER #23 enters field
+*FF* NECTAR WORKER #22 enters field
+*FF* NECTAR WORKER #20 enters field
+*FF* NECTAR WORKER #19 enters field
+*FF* NECTAR WORKER #17 enters field
+*FF* NECTAR WORKER #24 leaves field
+*BH* NECTAR WORKER #24 deposits
+*FF* NECTAR WORKER #33 leaves field
+*BH* NECTAR WORKER #33 deposits
+*FF* NECTAR WORKER #33 enters field
+*FF* NECTAR WORKER #24 enters field
+*FF* NECTAR WORKER #22 leaves field
+*BH* NECTAR WORKER #22 deposits
+*FF* NECTAR WORKER #32 leaves field
+*BH* NECTAR WORKER #32 deposits
+*FF* NECTAR WORKER #21 leaves field
+*BH* NECTAR WORKER #21 deposits
+*FF* NECTAR WORKER #23 leaves field
+*BH* NECTAR WORKER #23 deposits
+*FF* NECTAR WORKER #18 leaves field
+*BH* NECTAR WORKER #18 deposits
+*FF* NECTAR WORKER #16 leaves field
+*BH* NECTAR WORKER #16 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #15 enters field
+*FF* NECTAR WORKER #16 enters field
+*FF* NECTAR WORKER #18 enters field
+*FF* NECTAR WORKER #23 enters field
+*FF* NECTAR WORKER #21 enters field
+*FF* NECTAR WORKER #32 enters field
+*FF* NECTAR WORKER #22 enters field
+*FF* NECTAR WORKER #20 leaves field
+*BH* NECTAR WORKER #20 deposits
+*FF* NECTAR WORKER #20 enters field
+*FF* NECTAR WORKER #34 leaves field
+*BH* NECTAR WORKER #34 deposits
+*FF* NECTAR WORKER #34 enters field
+*FF* NECTAR WORKER #33 leaves field
+*BH* NECTAR WORKER #33 deposits
+*FF* NECTAR WORKER #33 enters field
+*FF* NECTAR WORKER #42 leaves field
+*BH* NECTAR WORKER #42 deposits
+*FF* NECTAR WORKER #35 leaves field
+*BH* NECTAR WORKER #35 deposits
+*FF* NECTAR WORKER #35 enters field
+*FF* NECTAR WORKER #42 enters field
+*FF* NECTAR WORKER #16 leaves field
+*BH* NECTAR WORKER #16 deposits
+*FF* NECTAR WORKER #43 leaves field
+*BH* NECTAR WORKER #43 deposits
+*FF* NECTAR WORKER #23 leaves field
+*BH* NECTAR WORKER #23 deposits
+*FF* NECTAR WORKER #41 leaves field
+*BH* NECTAR WORKER #41 deposits
+*FF* NECTAR WORKER #18 leaves field
+*BH* NECTAR WORKER #18 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #15 enters field
+*FF* NECTAR WORKER #18 enters field
+*FF* NECTAR WORKER #41 enters field
+*FF* NECTAR WORKER #23 enters field
+*FF* NECTAR WORKER #43 enters field
+*FF* NECTAR WORKER #16 enters field
+*FF* NECTAR WORKER #47 leaves field
+*BH* NECTAR WORKER #47 deposits
+*FF* NECTAR WORKER #48 leaves field
+*BH* NECTAR WORKER #48 deposits
+*FF* NECTAR WORKER #35 leaves field
+*BH* NECTAR WORKER #35 deposits
+*FF* NECTAR WORKER #33 leaves field
+*BH* NECTAR WORKER #33 deposits
+*FF* NECTAR WORKER #44 leaves field
+*BH* NECTAR WORKER #44 deposits
+*FF* NECTAR WORKER #33 enters field
+*FF* NECTAR WORKER #35 enters field
+*FF* NECTAR WORKER #48 enters field
+*FF* NECTAR WORKER #47 enters field
+*FF* NECTAR WORKER #44 enters field
+*FF* NECTAR WORKER #18 leaves field
+*BH* NECTAR WORKER #18 deposits
+*FF* NECTAR WORKER #52 leaves field
+*FF* NECTAR WORKER #41 leaves field
+*BH* NECTAR WORKER #52 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #41 deposits
+*FF* NECTAR WORKER #53 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #41 enters field
+*BH* NECTAR WORKER #53 deposits
+*FF* NECTAR WORKER #52 enters field
+*FF* NECTAR WORKER #18 enters field
+*FF* NECTAR WORKER #53 enters field
+*FF* NECTAR WORKER #15 enters field
+*BH* Bee hive is becoming inactive!
+*QC* DRONE #2 leaves chamber
+*QC* DRONE #3 leaves chamber
+*FF* NECTAR WORKER #58 leaves field
+*BH* NECTAR WORKER #58 deposits
+*FF* NECTAR WORKER #35 leaves field
+*BH* NECTAR WORKER #35 deposits
+*FF* NECTAR WORKER #57 leaves field
+*BH* NECTAR WORKER #57 deposits
+*FF* NECTAR WORKER #33 leaves field
+*FF* NECTAR WORKER #54 leaves field
+*BH* NECTAR WORKER #33 deposits
+*BH* NECTAR WORKER #54 deposits
+*FF* NECTAR WORKER #59 leaves field
+*FF* NECTAR WORKER #41 leaves field
+*BH* NECTAR WORKER #59 deposits
+*FF* NECTAR WORKER #62 leaves field
+*BH* NECTAR WORKER #41 deposits
+*BH* NECTAR WORKER #62 deposits
+*FF* NECTAR WORKER #52 leaves field
+*BH* NECTAR WORKER #52 deposits
+*FF* NECTAR WORKER #63 leaves field
+*BH* NECTAR WORKER #63 deposits
+*FF* NECTAR WORKER #64 leaves field
+*BH* NECTAR WORKER #64 deposits
+*FF* NECTAR WORKER #67 leaves field
+*BH* NECTAR WORKER #67 deposits
+*FF* NECTAR WORKER #70 leaves field
+*BH* NECTAR WORKER #70 deposits
+*FF* NECTAR WORKER #69 leaves field
+*BH* NECTAR WORKER #69 deposits
+*FF* NECTAR WORKER #68 leaves field
+*BH* NECTAR WORKER #68 deposits
+*FF* NECTAR WORKER #66 leaves field
+*BH* NECTAR WORKER #66 deposits
+*FF* NECTAR WORKER #65 leaves field
+*BH* NECTAR WORKER #65 deposits
+*FF* NECTAR WORKER #71 leaves field
+*FF* NECTAR WORKER #72 leaves field
+*BH* NECTAR WORKER #71 deposits
+*FF* NECTAR WORKER #73 leaves field
+*BH* NECTAR WORKER #72 deposits
+*BH* NECTAR WORKER #73 deposits
+*FF* NECTAR WORKER #74 leaves field
+*BH* NECTAR WORKER #74 deposits
+*FF* NECTAR WORKER #75 leaves field
+*BH* NECTAR WORKER #75 deposits
+*FF* NECTAR WORKER #79 leaves field
+*BH* NECTAR WORKER #79 deposits
+*FF* NECTAR WORKER #78 leaves field
+*BH* NECTAR WORKER #78 deposits
+*FF* NECTAR WORKER #80 leaves field
+*BH* NECTAR WORKER #80 deposits
+*FF* NECTAR WORKER #76 leaves field
+*BH* NECTAR WORKER #76 deposits
+*FF* NECTAR WORKER #82 leaves field
+*BH* NECTAR WORKER #82 deposits
+*FF* NECTAR WORKER #81 leaves field
+*BH* NECTAR WORKER #81 deposits
+*FF* NECTAR WORKER #83 leaves field
+*BH* NECTAR WORKER #83 deposits
+*FF* NECTAR WORKER #77 leaves field
+*BH* NECTAR WORKER #77 deposits
+*FF* NECTAR WORKER #84 leaves field
+*BH* NECTAR WORKER #84 deposits
+*FF* NECTAR WORKER #86 leaves field
+*BH* NECTAR WORKER #86 deposits
+*FF* NECTAR WORKER #87 leaves field
+*FF* NECTAR WORKER #88 leaves field
+*BH* NECTAR WORKER #87 deposits
+*FF* NECTAR WORKER #85 leaves field
+*BH* NECTAR WORKER #88 deposits
+*BH* NECTAR WORKER #85 deposits
+*FF* NECTAR WORKER #93 leaves field
+*BH* NECTAR WORKER #93 deposits
+*FF* NECTAR WORKER #90 leaves field
+*BH* NECTAR WORKER #90 deposits
+*FF* NECTAR WORKER #92 leaves field
+*BH* NECTAR WORKER #92 deposits
+*FF* NECTAR WORKER #89 leaves field
+*BH* NECTAR WORKER #89 deposits
+*FF* NECTAR WORKER #91 leaves field
+*BH* NECTAR WORKER #91 deposits
+*FF* NECTAR WORKER #94 leaves field
+*BH* NECTAR WORKER #94 deposits
+*FF* NECTAR WORKER #97 leaves field
+*BH* NECTAR WORKER #97 deposits
+*FF* NECTAR WORKER #95 leaves field
+*BH* NECTAR WORKER #95 deposits
+*FF* NECTAR WORKER #96 leaves field
+*BH* NECTAR WORKER #96 deposits
+*FF* NECTAR WORKER #98 leaves field
+*BH* NECTAR WORKER #98 deposits
+*FF* NECTAR WORKER #102 leaves field
+*BH* NECTAR WORKER #102 deposits
+*FF* NECTAR WORKER #100 leaves field
+*BH* NECTAR WORKER #100 deposits
+*FF* NECTAR WORKER #101 leaves field
+*BH* NECTAR WORKER #101 deposits
+*FF* NECTAR WORKER #99 leaves field
+*BH* NECTAR WORKER #99 deposits
+*FF* NECTAR WORKER #103 leaves field
+*BH* NECTAR WORKER #103 deposits
+*FF* POLLEN WORKER #104 leaves field
+*BH* POLLEN WORKER #104 deposits
+*FF* POLLEN WORKER #108 leaves field
+*BH* POLLEN WORKER #108 deposits
+*FF* POLLEN WORKER #106 leaves field
+*FF* POLLEN WORKER #107 leaves field
+*BH* POLLEN WORKER #106 deposits
+*FF* POLLEN WORKER #105 leaves field
+*BH* POLLEN WORKER #107 deposits
+*BH* POLLEN WORKER #105 deposits
+*FF* POLLEN WORKER #109 leaves field
+*BH* POLLEN WORKER #109 deposits
+*FF* POLLEN WORKER #113 leaves field
+*FF* POLLEN WORKER #111 leaves field
+*BH* POLLEN WORKER #113 deposits
+*FF* POLLEN WORKER #110 leaves field
+*BH* POLLEN WORKER #111 deposits
+*FF* POLLEN WORKER #112 leaves field
+*BH* POLLEN WORKER #110 deposits
+*BH* POLLEN WORKER #112 deposits
+*FF* POLLEN WORKER #114 leaves field
+*BH* POLLEN WORKER #114 deposits
+*FF* POLLEN WORKER #118 leaves field
+*BH* POLLEN WORKER #118 deposits
+*FF* POLLEN WORKER #115 leaves field
+*BH* POLLEN WORKER #115 deposits
+*FF* POLLEN WORKER #117 leaves field
+*FF* POLLEN WORKER #116 leaves field
+*BH* POLLEN WORKER #117 deposits
+*BH* POLLEN WORKER #116 deposits
+*FF* POLLEN WORKER #120 leaves field
+*FF* POLLEN WORKER #121 leaves field
+*BH* POLLEN WORKER #120 deposits
+*FF* POLLEN WORKER #119 leaves field
+*BH* POLLEN WORKER #121 deposits
+*BH* POLLEN WORKER #119 deposits
+*FF* POLLEN WORKER #123 leaves field
+*BH* POLLEN WORKER #123 deposits
+*FF* POLLEN WORKER #122 leaves field
+*BH* POLLEN WORKER #122 deposits
+*FF* POLLEN WORKER #128 leaves field
+*BH* POLLEN WORKER #128 deposits
+*FF* POLLEN WORKER #127 leaves field
+*BH* POLLEN WORKER #127 deposits
+*FF* POLLEN WORKER #126 leaves field
+*BH* POLLEN WORKER #126 deposits
+*FF* POLLEN WORKER #124 leaves field
+*BH* POLLEN WORKER #124 deposits
+*FF* POLLEN WORKER #125 leaves field
+*BH* POLLEN WORKER #125 deposits
+*FF* POLLEN WORKER #129 leaves field
+*BH* POLLEN WORKER #129 deposits
+*FF* POLLEN WORKER #130 leaves field
+*BH* POLLEN WORKER #130 deposits
+*FF* POLLEN WORKER #131 leaves field
+*BH* POLLEN WORKER #131 deposits
+*FF* POLLEN WORKER #132 leaves field
+*BH* POLLEN WORKER #132 deposits
+*FF* POLLEN WORKER #133 leaves field
+*BH* POLLEN WORKER #133 deposits
+*FF* POLLEN WORKER #134 leaves field
+*BH* POLLEN WORKER #134 deposits
+*FF* POLLEN WORKER #137 leaves field
+*BH* POLLEN WORKER #137 deposits
+*FF* POLLEN WORKER #135 leaves field
+*BH* POLLEN WORKER #135 deposits
+*FF* POLLEN WORKER #138 leaves field
+*BH* POLLEN WORKER #138 deposits
+*FF* POLLEN WORKER #136 leaves field
+*BH* POLLEN WORKER #136 deposits
+*FF* POLLEN WORKER #139 leaves field
+*BH* POLLEN WORKER #139 deposits
+*FF* POLLEN WORKER #140 leaves field
+*BH* POLLEN WORKER #140 deposits
+*FF* POLLEN WORKER #141 leaves field
+*BH* POLLEN WORKER #141 deposits
+*FF* POLLEN WORKER #142 leaves field
+*BH* POLLEN WORKER #142 deposits
+*FF* POLLEN WORKER #143 leaves field
+*BH* POLLEN WORKER #143 deposits
+*FF* POLLEN WORKER #144 leaves field
+*BH* POLLEN WORKER #144 deposits
+*FF* POLLEN WORKER #148 leaves field
+*BH* POLLEN WORKER #148 deposits
+*FF* POLLEN WORKER #147 leaves field
+*FF* POLLEN WORKER #146 leaves field
+*BH* POLLEN WORKER #147 deposits
+*FF* POLLEN WORKER #145 leaves field
+*BH* POLLEN WORKER #146 deposits
+*BH* POLLEN WORKER #145 deposits
+*FF* POLLEN WORKER #149 leaves field
+*BH* POLLEN WORKER #149 deposits
+*FF* POLLEN WORKER #150 leaves field
+*BH* POLLEN WORKER #150 deposits
+*FF* POLLEN WORKER #153 leaves field
+*FF* POLLEN WORKER #151 leaves field
+*BH* POLLEN WORKER #153 deposits
+*FF* POLLEN WORKER #152 leaves field
+*BH* POLLEN WORKER #151 deposits
+*BH* POLLEN WORKER #152 deposits
+*FF* POLLEN WORKER #154 leaves field
+*BH* POLLEN WORKER #154 deposits
+*FF* POLLEN WORKER #155 leaves field
+*BH* POLLEN WORKER #155 deposits
+*FF* POLLEN WORKER #156 leaves field
+*BH* POLLEN WORKER #156 deposits
+*FF* POLLEN WORKER #157 leaves field
+*BH* POLLEN WORKER #157 deposits
+*FF* POLLEN WORKER #158 leaves field
+*BH* POLLEN WORKER #158 deposits
+*FF* POLLEN WORKER #159 leaves field
+*BH* POLLEN WORKER #159 deposits
+*FF* POLLEN WORKER #161 leaves field
+*BH* POLLEN WORKER #161 deposits
+*FF* POLLEN WORKER #162 leaves field
+*FF* POLLEN WORKER #163 leaves field
+*BH* POLLEN WORKER #162 deposits
+*BH* POLLEN WORKER #163 deposits
+*FF* POLLEN WORKER #160 leaves field
+*BH* POLLEN WORKER #160 deposits
+*FF* POLLEN WORKER #164 leaves field
+*BH* POLLEN WORKER #164 deposits
+*FF* POLLEN WORKER #168 leaves field
+*BH* POLLEN WORKER #168 deposits
+*FF* POLLEN WORKER #166 leaves field
+*BH* POLLEN WORKER #166 deposits
+*FF* POLLEN WORKER #167 leaves field
+*BH* POLLEN WORKER #167 deposits
+*FF* POLLEN WORKER #165 leaves field
+*BH* POLLEN WORKER #165 deposits
+*FF* POLLEN WORKER #173 leaves field
+*BH* POLLEN WORKER #173 deposits
+*FF* POLLEN WORKER #170 leaves field
+*BH* POLLEN WORKER #170 deposits
+*FF* POLLEN WORKER #171 leaves field
+*BH* POLLEN WORKER #171 deposits
+*FF* POLLEN WORKER #172 leaves field
+*FF* POLLEN WORKER #169 leaves field
+*BH* POLLEN WORKER #172 deposits
+*BH* POLLEN WORKER #169 deposits
+*FF* POLLEN WORKER #174 leaves field
+*BH* POLLEN WORKER #174 deposits
+*FF* POLLEN WORKER #176 leaves field
+*BH* POLLEN WORKER #176 deposits
+*FF* POLLEN WORKER #178 leaves field
+*BH* POLLEN WORKER #178 deposits
+*FF* POLLEN WORKER #177 leaves field
+*FF* POLLEN WORKER #175 leaves field
+*BH* POLLEN WORKER #177 deposits
+*BH* POLLEN WORKER #175 deposits
+*FF* POLLEN WORKER #183 leaves field
+*BH* POLLEN WORKER #183 deposits
+*FF* POLLEN WORKER #180 leaves field
+*BH* POLLEN WORKER #180 deposits
+*FF* POLLEN WORKER #179 leaves field
+*BH* POLLEN WORKER #179 deposits
+*FF* POLLEN WORKER #182 leaves field
+*BH* POLLEN WORKER #182 deposits
+*FF* POLLEN WORKER #181 leaves field
+*BH* POLLEN WORKER #181 deposits
+*FF* POLLEN WORKER #184 leaves field
+*BH* POLLEN WORKER #184 deposits
+*FF* POLLEN WORKER #188 leaves field
+*BH* POLLEN WORKER #188 deposits
+*FF* POLLEN WORKER #185 leaves field
+*BH* POLLEN WORKER #185 deposits
+*FF* POLLEN WORKER #187 leaves field
+*FF* POLLEN WORKER #186 leaves field
+*BH* POLLEN WORKER #187 deposits
+*BH* POLLEN WORKER #186 deposits
+*FF* POLLEN WORKER #189 leaves field
+*BH* POLLEN WORKER #189 deposits
+*FF* POLLEN WORKER #190 leaves field
+*BH* POLLEN WORKER #190 deposits
+*FF* POLLEN WORKER #191 leaves field
+*FF* POLLEN WORKER #193 leaves field
+*BH* POLLEN WORKER #191 deposits
+*FF* POLLEN WORKER #192 leaves field
+*BH* POLLEN WORKER #193 deposits
+*BH* POLLEN WORKER #192 deposits
+*FF* POLLEN WORKER #194 leaves field
+*BH* POLLEN WORKER #194 deposits
+*FF* POLLEN WORKER #196 leaves field
+*BH* POLLEN WORKER #196 deposits
+*FF* POLLEN WORKER #197 leaves field
+*BH* POLLEN WORKER #197 deposits
+*FF* POLLEN WORKER #198 leaves field
+*BH* POLLEN WORKER #198 deposits
+*FF* POLLEN WORKER #195 leaves field
+*BH* POLLEN WORKER #195 deposits
+*FF* POLLEN WORKER #201 leaves field
+*BH* POLLEN WORKER #201 deposits
+*FF* POLLEN WORKER #200 leaves field
+*BH* POLLEN WORKER #200 deposits
+*FF* POLLEN WORKER #199 leaves field
+*BH* POLLEN WORKER #199 deposits
+*FF* POLLEN WORKER #202 leaves field
+*FF* POLLEN WORKER #203 leaves field
+*BH* POLLEN WORKER #202 deposits
+*BH* POLLEN WORKER #203 deposits
+*FF* NECTAR WORKER #8 leaves field
+*BH* NECTAR WORKER #8 deposits
+*FF* NECTAR WORKER #4 leaves field
+*BH* NECTAR WORKER #4 deposits
+*FF* NECTAR WORKER #9 leaves field
+*FF* NECTAR WORKER #7 leaves field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #6 leaves field
+*BH* NECTAR WORKER #7 deposits
+*BH* NECTAR WORKER #6 deposits
+*FF* NECTAR WORKER #11 leaves field
+*BH* NECTAR WORKER #11 deposits
+*FF* NECTAR WORKER #10 leaves field
+*BH* NECTAR WORKER #10 deposits
+*FF* NECTAR WORKER #12 leaves field
+*BH* NECTAR WORKER #12 deposits
+*FF* NECTAR WORKER #13 leaves field
+*BH* NECTAR WORKER #13 deposits
+*FF* NECTAR WORKER #5 leaves field
+*BH* NECTAR WORKER #5 deposits
+*FF* NECTAR WORKER #30 leaves field
+*BH* NECTAR WORKER #30 deposits
+*FF* NECTAR WORKER #25 leaves field
+*BH* NECTAR WORKER #25 deposits
+*FF* NECTAR WORKER #14 leaves field
+*BH* NECTAR WORKER #14 deposits
+*FF* NECTAR WORKER #31 leaves field
+*BH* NECTAR WORKER #31 deposits
+*FF* NECTAR WORKER #19 leaves field
+*BH* NECTAR WORKER #19 deposits
+*FF* NECTAR WORKER #29 leaves field
+*BH* NECTAR WORKER #29 deposits
+*FF* NECTAR WORKER #27 leaves field
+*BH* NECTAR WORKER #27 deposits
+*FF* NECTAR WORKER #28 leaves field
+*BH* NECTAR WORKER #28 deposits
+*FF* NECTAR WORKER #26 leaves field
+*BH* NECTAR WORKER #26 deposits
+*FF* NECTAR WORKER #17 leaves field
+*BH* NECTAR WORKER #17 deposits
+*FF* NECTAR WORKER #24 leaves field
+*BH* NECTAR WORKER #24 deposits
+*FF* NECTAR WORKER #32 leaves field
+*BH* NECTAR WORKER #32 deposits
+*FF* NECTAR WORKER #21 leaves field
+*BH* NECTAR WORKER #21 deposits
+*FF* NECTAR WORKER #40 leaves field
+*BH* NECTAR WORKER #40 deposits
+*FF* NECTAR WORKER #39 leaves field
+*BH* NECTAR WORKER #39 deposits
+*FF* NECTAR WORKER #38 leaves field
+*BH* NECTAR WORKER #38 deposits
+*FF* NECTAR WORKER #37 leaves field
+*BH* NECTAR WORKER #37 deposits
+*FF* NECTAR WORKER #22 leaves field
+*BH* NECTAR WORKER #22 deposits
+*FF* NECTAR WORKER #20 leaves field
+*BH* NECTAR WORKER #20 deposits
+*FF* NECTAR WORKER #36 leaves field
+*BH* NECTAR WORKER #36 deposits
+*FF* NECTAR WORKER #34 leaves field
+*BH* NECTAR WORKER #34 deposits
+*FF* NECTAR WORKER #46 leaves field
+*BH* NECTAR WORKER #46 deposits
+*FF* NECTAR WORKER #45 leaves field
+*FF* NECTAR WORKER #23 leaves field
+*BH* NECTAR WORKER #45 deposits
+*FF* NECTAR WORKER #42 leaves field
+*BH* NECTAR WORKER #23 deposits
+*BH* NECTAR WORKER #42 deposits
+*FF* NECTAR WORKER #51 leaves field
+*BH* NECTAR WORKER #51 deposits
+*FF* NECTAR WORKER #50 leaves field
+*BH* NECTAR WORKER #50 deposits
+*FF* NECTAR WORKER #16 leaves field
+*BH* NECTAR WORKER #16 deposits
+*FF* NECTAR WORKER #43 leaves field
+*BH* NECTAR WORKER #43 deposits
+*FF* NECTAR WORKER #49 leaves field
+*BH* NECTAR WORKER #49 deposits
+*FF* NECTAR WORKER #48 leaves field
+*BH* NECTAR WORKER #48 deposits
+*FF* NECTAR WORKER #44 leaves field
+*BH* NECTAR WORKER #44 deposits
+*FF* NECTAR WORKER #47 leaves field
+*BH* NECTAR WORKER #47 deposits
+*FF* NECTAR WORKER #55 leaves field
+*BH* NECTAR WORKER #55 deposits
+*FF* NECTAR WORKER #56 leaves field
+*BH* NECTAR WORKER #56 deposits
+*FF* NECTAR WORKER #61 leaves field
+*BH* NECTAR WORKER #61 deposits
+*FF* NECTAR WORKER #18 leaves field
+*BH* NECTAR WORKER #18 deposits
+*FF* NECTAR WORKER #60 leaves field
+*BH* NECTAR WORKER #60 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #53 leaves field
+*BH* NECTAR WORKER #53 deposits
+*BH* Bee hive stops buzzing!
+
+STATISTICS
+==========
+Bees born: 203
+Bees perished: 0
+Nectar gathered: 150
+Pollen gathered: 100
+Nectar remaining: 150
+Pollen remaining: 100

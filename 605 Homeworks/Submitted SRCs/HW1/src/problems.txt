@@ -1,0 +1,44 @@
+Problem1
+    Compiler error: Class Problem is undefined.
+                    Should replace class declaration with "Problem1"
+
+Problem 2
+    Compiler error: Scanner method next() returns a string,
+                    but variable "i" is defined as an integer.
+
+Problem 3
+    Runtime error: Program will compile, but will give
+                   an error when dividing by zero
+
+Problem 4
+    Compiler error: Arguments of min aren't properly defined.
+                    Need to add "int" before argument "y"
+
+Problem 5
+    Compiler error: There is no return statement outside the conditional.
+                    If x > y, the program has no return statement
+
+Problem 6
+    Runtime error: Variable "list" is uninitialized, thus has values of null.
+                   The get(0) method is out of bounds since
+                   there is nothing at index 0
+
+Problem 7
+    Compiler error: Primitive type "char" requires declarations to be
+                    surrounded by single quotes, not double quotes
+
+Problem 8
+    Compiler error: Variable "j" is uninitialized.
+
+Problem 9
+    Compiler error: Variable "sum" requires a float type.
+                    This requires "f" to be added to the end of the number,
+                    otherwise it will be a double
+
+Problem 10
+    Runtime error: The substring method is out of bounds.
+                   That is, there is no value in the string at index 11.
+                   Range should read (6,11)
+
+
+

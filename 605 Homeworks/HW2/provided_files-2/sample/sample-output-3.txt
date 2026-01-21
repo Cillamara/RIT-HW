@@ -1,0 +1,140 @@
+  0 1 2
+0 . . .
+
+1 . . .
+
+2 . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 0
+
+RED's move...
+> 0 0 0 1
+  0 1 2
+0 .-. .
+
+1 . . .
+
+2 . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 1
+
+BLUE's move...
+> 0 1 0 2
+  0 1 2
+0 .-.-.
+
+1 . . .
+
+2 . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 2
+
+RED's move...
+> 0 0 1 0
+  0 1 2
+0 .-.-.
+  |
+1 . . .
+
+2 . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 3
+
+BLUE's move...
+> 1 0 1 1
+  0 1 2
+0 .-.-.
+  |
+1 .-. .
+
+2 . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 4
+
+RED's move...
+> 1 1 1 2
+  0 1 2
+0 .-.-.
+  |
+1 .-.-.
+
+2 . . .
+
+Turn: BLUE, Red: 0, Blue: 0 , Moves: 5
+
+BLUE's move...
+> 0 2 1 2
+  0 1 2
+0 .-.-.
+  |   |
+1 .-.-.
+
+2 . . .
+
+Turn: RED, Red: 0, Blue: 0 , Moves: 6
+
+RED's move...
+> 0 1 1 1
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+
+2 . . .
+
+Turn: RED, Red: 2, Blue: 0 , Moves: 7
+
+RED's move...
+> 1 0 2 0
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+  |
+2 . . .
+
+Turn: BLUE, Red: 2, Blue: 0 , Moves: 8
+
+BLUE's move...
+> 2 1 2 2
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+  |
+2 . .-.
+
+Turn: RED, Red: 2, Blue: 0 , Moves: 9
+
+RED's move...
+> 1 1 2 1
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+  | |
+2 . .-.
+
+Turn: BLUE, Red: 2, Blue: 0 , Moves: 10
+
+BLUE's move...
+> 2 0 2 1
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+  |B|
+2 .-.-.
+
+Turn: BLUE, Red: 2, Blue: 1 , Moves: 11
+
+BLUE's move...
+> 1 2 2 2
+  0 1 2
+0 .-.-.
+  |R|R|
+1 .-.-.
+  |B|B|
+2 .-.-.
+
+TIE game 2 to 2!

@@ -1,0 +1,20 @@
+Simulation time: 4 seconds
+Starting drones: 1
+Starting nectar workers: 0
+Starting pollen workers: 0
+*BH* QUEEN #1 is born!
+*BH* DRONE #2 is born!
+*BH* Bee hive begins buzzing!
+*QC* DRONE #2 enters chamber
+*BH* Bee hive is becoming inactive!
+*QC* DRONE #2 leaves chamber
+*BH* Bee hive stops buzzing!
+
+STATISTICS
+==========
+Bees born: 2
+Bees perished: 0
+Nectar gathered: 0
+Pollen gathered: 0
+Nectar remaining: 0
+Pollen remaining: 0

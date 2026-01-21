@@ -1,0 +1,111 @@
+Simulation time: 10 seconds
+Starting drones: 10
+Starting nectar workers: 1
+Starting pollen workers: 1
+*BH* QUEEN #1 is born!
+*BH* DRONE #2 is born!
+*BH* DRONE #3 is born!
+*BH* DRONE #4 is born!
+*BH* DRONE #5 is born!
+*BH* DRONE #6 is born!
+*BH* DRONE #7 is born!
+*BH* DRONE #8 is born!
+*BH* DRONE #9 is born!
+*BH* DRONE #10 is born!
+*BH* DRONE #11 is born!
+*BH* NECTAR WORKER #12 is born!
+*BH* POLLEN WORKER #13 is born!
+*BH* Bee hive begins buzzing!
+*QC* DRONE #2 enters chamber
+*QC* DRONE #3 enters chamber
+*QC* DRONE #4 enters chamber
+*QC* DRONE #5 enters chamber
+*QC* DRONE #6 enters chamber
+*QC* DRONE #7 enters chamber
+*QC* DRONE #8 enters chamber
+*QC* DRONE #9 enters chamber
+*QC* DRONE #10 enters chamber
+*QC* DRONE #11 enters chamber
+*FF* NECTAR WORKER #12 enters field
+*FF* POLLEN WORKER #13 enters field
+*FF* POLLEN WORKER #13 leaves field
+*FF* NECTAR WORKER #12 leaves field
+*BH* POLLEN WORKER #13 deposits
+*BH* NECTAR WORKER #12 deposits
+*FF* POLLEN WORKER #13 enters field
+*FF* NECTAR WORKER #12 enters field
+*QC* Queen mates with DRONE #2
+*QC* DRONE #2 leaves chamber
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* NECTAR WORKER #12 leaves field
+*FF* POLLEN WORKER #13 enters field
+*BH* NECTAR WORKER #12 deposits
+*FF* NECTAR WORKER #12 enters field
+*D* DRONE #2 has perished!
+*BH* DRONE #14 is born!
+*BH* NECTAR WORKER #15 is born!
+*QC* DRONE #14 enters chamber
+*FF* NECTAR WORKER #15 enters field
+*Q* Queen birthed 2 children
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* NECTAR WORKER #12 leaves field
+*BH* NECTAR WORKER #12 deposits
+*FF* POLLEN WORKER #13 enters field
+*FF* NECTAR WORKER #12 enters field
+*QC* Queen mates with DRONE #3
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*QC* DRONE #3 leaves chamber
+*FF* NECTAR WORKER #15 enters field
+*D* DRONE #3 has perished!
+*BH* DRONE #16 is born!
+*Q* Queen birthed 1 children
+*QC* DRONE #16 enters chamber
+*FF* NECTAR WORKER #12 leaves field
+*BH* NECTAR WORKER #12 deposits
+*FF* POLLEN WORKER #13 leaves field
+*FF* NECTAR WORKER #12 enters field
+*BH* POLLEN WORKER #13 deposits
+*FF* POLLEN WORKER #13 enters field
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*FF* NECTAR WORKER #15 enters field
+*QC* Queen mates with DRONE #4
+*QC* DRONE #4 leaves chamber
+*BH* POLLEN WORKER #17 is born!
+*Q* Queen birthed 1 children
+*FF* POLLEN WORKER #17 enters field
+*D* DRONE #4 has perished!
+*BH* Bee hive is becoming inactive!
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* NECTAR WORKER #12 leaves field
+*BH* NECTAR WORKER #12 deposits
+*FF* NECTAR WORKER #15 leaves field
+*BH* NECTAR WORKER #15 deposits
+*QC* DRONE #5 leaves chamber
+*QC* DRONE #6 leaves chamber
+*QC* DRONE #7 leaves chamber
+*QC* DRONE #8 leaves chamber
+*QC* DRONE #9 leaves chamber
+*QC* DRONE #10 leaves chamber
+*QC* DRONE #11 leaves chamber
+*QC* DRONE #14 leaves chamber
+*QC* DRONE #16 leaves chamber
+*FF* POLLEN WORKER #17 leaves field
+*BH* POLLEN WORKER #17 deposits
+*BH* Bee hive stops buzzing!
+
+STATISTICS
+==========
+Bees born: 17
+Bees perished: 3
+	DRONE #2
+	DRONE #3
+	DRONE #4
+Nectar gathered: 8
+Pollen gathered: 6
+Nectar remaining: 4
+Pollen remaining: 2

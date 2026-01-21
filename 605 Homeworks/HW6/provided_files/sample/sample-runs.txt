@@ -1,0 +1,166 @@
+$ java Jukebox tracks-1.txt 0
+Jukebox of 1 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Faster Pussy cat, Song: Silent Night
+	Artist: Faster Pussy cat, Song: Silent Night
+	Artist: Faster Pussy cat, Song: Silent Night
+	Artist: Faster Pussy cat, Song: Silent Night
+	Artist: Faster Pussy cat, Song: Silent Night
+Simulation took 0 second/s
+Number of simulations run: 50000
+Total number of songs played: 50000
+Average number of songs played per simulation to get duplicate: 1
+Most played song: "Silent Night" by "Faster Pussy cat"
+All songs alphabetically by "Faster Pussy cat":
+	"Silent Night" with 50000 plays
+
+$ java Jukebox tracks-10.txt 0
+Jukebox of 10 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Joseph Locke, Song: Goodbye
+	Artist: Faster Pussy cat, Song: Silent Night
+	Artist: The Sun Harbor's Chorus-Documentary Recordings, Song: Mama_ mama can't you see ?
+	Artist: Hudson Mohawke, Song: No One Could Ever
+	Artist: Yerba Brava, Song: Si Vos Querés
+Simulation took 0 second/s
+Number of simulations run: 50000
+Total number of songs played: 183052
+Average number of songs played per simulation to get duplicate: 3
+Most played song: "Si Vos Querés" by "Yerba Brava"
+All songs alphabetically by "Yerba Brava":
+	"Si Vos Querés" with 18374 plays
+    
+$ java Jukebox tracks-100.txt 0
+Jukebox of 100 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Christian Castro, Song: Tu Vida Con La Mía
+	Artist: Finis Tasby, Song: Sitting In My Window (Finis Tasby BMI)
+	Artist: Kool Savas, Song: Fick uns
+	Artist: Sheb Wooley, Song: Mule Boogie
+	Artist: Kultiration, Song: Bakslag
+Simulation took 0 second/s
+Number of simulations run: 50000
+Total number of songs played: 609901
+Average number of songs played per simulation to get duplicate: 12
+Most played song: "(Looking For) The Heart Of Saturday" by "Shawn Colvin"
+All songs alphabetically by "Shawn Colvin":
+	"(Looking For) The Heart Of Saturday" with 6279 plays
+
+$ java Jukebox tracks-1K.txt 0
+Jukebox of 1000 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Peter Broderick, Song: Part 5: Awaken/Panic/Restraint
+	Artist: Max Brannslokker, Song: Telze'
+	Artist: George Duke, Song: Summer Breezin'
+	Artist: Verdena, Song: La tua fretta
+	Artist: Aerosmith, Song: Cryin'
+Simulation took 0 second/s
+Number of simulations run: 50000
+Total number of songs played: 1971343
+Average number of songs played per simulation to get duplicate: 39
+Most played song: "Anyone Else But You" by "Michael Cera & Ellen Page"
+All songs alphabetically by "Michael Cera & Ellen Page":
+	"Anyone Else But You" with 2102 plays
+    
+$ java Jukebox tracks-10K.txt 0
+Jukebox of 9990 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Vrse Murphy, Song: Perfect Game
+	Artist: Shotgun Honeymoon, Song: Labels Of Blues
+	Artist: Helen Humes, Song: He Don't Love Me Anymore
+	Artist: The Flying Burrito Brothers, Song: Take A Walk On The Edge
+	Artist: The Detroit Cobras, Song: Hittin' On Nothing
+Simulation took 1 second/s
+Number of simulations run: 50000
+Total number of songs played: 6230338
+Average number of songs played per simulation to get duplicate: 124
+Most played song: "Once In A While" by "The Orioles"
+All songs alphabetically by "The Orioles":
+	"Crying In The Chapel" with 595 plays
+	"I Cross My Fingers" with 637 plays
+	"Once In A While" with 722 plays
+    
+$ java Jukebox tracks-100K.txt 0
+Jukebox of 98853 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Caracoles_ Los, Song: Agosto
+	Artist: Alex Gaudino_ Featuring Alexandra Prince, Song: Just Because of You
+	Artist: Freefall Feat. Jan Johnston, Song: Skydive (I Feel Wonderful)
+	Artist: Haustor, Song: IZVOD
+	Artist: Ray Daytona And Googoobombos, Song: Hole In The Ground
+Simulation took 4 second/s
+Number of simulations run: 50000
+Total number of songs played: 19637389
+Average number of songs played per simulation to get duplicate: 392
+Most played song: "Scheidung" by "Bacio di Tosca"
+All songs alphabetically by "Bacio di Tosca":
+	"Gestutzte Eiche" with 190 plays
+	"Lehn' Deine Wang'" with 196 plays
+	"O wärst Du mein!" with 206 plays
+	"Scheidung" with 261 plays
+    
+$ java Jukebox tracks-1M.txt 0
+Jukebox of 926096 songs starts rockin'...
+Printing first 5 songs played...
+	Artist: Señor Trepador, Song: Volver atras
+	Artist: RJD2, Song: Laws Of The Gods (Instrumental)
+	Artist: Daniel Johnston, Song: Too Young To Die
+	Artist: Deadmau5 & Chris Lake, Song: I Said
+	Artist: The Fabulous Les Paul & Mary Ford, Song: Goodnight_ Irene
+Simulation took 23 second/s
+Number of simulations run: 50000
+Total number of songs played: 60087812
+Average number of songs played per simulation to get duplicate: 1201
+Most played song: "Mizrab" by "Gabor Szabo"
+All songs alphabetically by "Gabor Szabo":
+	"(Just A Little) Communication" with 55 plays
+	"Amazon" with 64 plays
+	"Azure Blue" with 71 plays
+	"Bacchanal" with 64 plays
+	"Both Sides Now" with 58 plays
+	"Breezin'" with 60 plays
+	"Comin' Back" with 60 plays
+	"Corcovado" with 67 plays
+	"Dear Prudence" with 77 plays
+	"Fingers" with 69 plays
+	"Flea Market" with 69 plays
+	"Gypsy '66" with 78 plays
+	"Gypsy Jam" with 53 plays
+	"Gypsy Queen" with 61 plays
+	"I Remember When" with 69 plays
+	"I'm All Smiles" with 74 plays
+	"I've Just Seen A Face" with 60 plays
+	"If I Fell" with 59 plays
+	"If You Don't Want My Love" with 56 plays
+	"In My Life" with 63 plays
+	"Little Boat" with 60 plays
+	"Los Matodoros" with 76 plays
+	"Lou-ise" with 59 plays
+	"Love Is Blue" with 64 plays
+	"Michael From Mountains" with 68 plays
+	"Mizrab" with 105 plays
+	"People" with 75 plays
+	"Raga Doll" with 62 plays
+	"Sealed With a Kiss" with 62 plays
+	"Some Velvet Morning" with 69 plays
+	"Somewhere I Belong" with 62 plays
+	"Song Of Love" with 81 plays
+	"Sophisticated Wheels" with 74 plays
+	"Space" with 75 plays
+	"Spellbinder" with 71 plays
+	"Stormy" with 54 plays
+	"Stronger Than Us" with 60 plays
+	"Sunshine Superman" with 64 plays
+	"The Beat Goes On" with 52 plays
+	"The Divided City" with 70 plays
+	"The Echo Of Love" with 59 plays
+	"The Last One To Be Loved" with 58 plays
+	"The Look Of Love" with 59 plays
+	"Theme From 'Valley Of The Dolls'" with 57 plays
+	"Three King Fishers" with 72 plays
+	"Until It's Time For You To Go" with 53 plays
+	"Walk Away Renee" with 63 plays
+	"Walk On By" with 70 plays
+	"What Is This Thing Called Love?" with 72 plays
+	"Yesterday" with 74 plays
+	"You Won't See Me" with 61 plays

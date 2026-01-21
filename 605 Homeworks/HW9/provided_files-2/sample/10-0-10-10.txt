@@ -1,0 +1,217 @@
+Simulation time: 10 seconds
+Starting drones: 0
+Starting nectar workers: 10
+Starting pollen workers: 10
+*BH* QUEEN #1 is born!
+*BH* NECTAR WORKER #2 is born!
+*BH* NECTAR WORKER #3 is born!
+*BH* NECTAR WORKER #4 is born!
+*BH* NECTAR WORKER #5 is born!
+*BH* NECTAR WORKER #6 is born!
+*BH* NECTAR WORKER #7 is born!
+*BH* NECTAR WORKER #8 is born!
+*BH* NECTAR WORKER #9 is born!
+*BH* NECTAR WORKER #10 is born!
+*BH* NECTAR WORKER #11 is born!
+*BH* POLLEN WORKER #12 is born!
+*BH* POLLEN WORKER #13 is born!
+*BH* POLLEN WORKER #14 is born!
+*BH* POLLEN WORKER #15 is born!
+*BH* POLLEN WORKER #16 is born!
+*BH* POLLEN WORKER #17 is born!
+*BH* POLLEN WORKER #18 is born!
+*BH* POLLEN WORKER #19 is born!
+*BH* POLLEN WORKER #20 is born!
+*BH* POLLEN WORKER #21 is born!
+*BH* Bee hive begins buzzing!
+*FF* NECTAR WORKER #2 enters field
+*FF* NECTAR WORKER #3 enters field
+*FF* NECTAR WORKER #4 enters field
+*FF* NECTAR WORKER #5 enters field
+*FF* NECTAR WORKER #6 enters field
+*FF* NECTAR WORKER #7 enters field
+*FF* NECTAR WORKER #8 enters field
+*FF* NECTAR WORKER #9 enters field
+*FF* NECTAR WORKER #10 enters field
+*FF* NECTAR WORKER #11 enters field
+*FF* POLLEN WORKER #12 enters field
+*FF* POLLEN WORKER #13 enters field
+*FF* POLLEN WORKER #14 enters field
+*FF* POLLEN WORKER #15 enters field
+*FF* POLLEN WORKER #16 enters field
+*FF* POLLEN WORKER #17 enters field
+*FF* POLLEN WORKER #18 enters field
+*FF* POLLEN WORKER #19 enters field
+*FF* POLLEN WORKER #20 enters field
+*FF* POLLEN WORKER #21 enters field
+*FF* NECTAR WORKER #2 leaves field
+*FF* NECTAR WORKER #4 leaves field
+*FF* NECTAR WORKER #3 leaves field
+*BH* NECTAR WORKER #2 deposits
+*FF* NECTAR WORKER #2 enters field
+*BH* NECTAR WORKER #3 deposits
+*FF* NECTAR WORKER #3 enters field
+*BH* NECTAR WORKER #4 deposits
+*FF* NECTAR WORKER #4 enters field
+*FF* NECTAR WORKER #6 leaves field
+*BH* NECTAR WORKER #6 deposits
+*FF* NECTAR WORKER #11 leaves field
+*BH* NECTAR WORKER #11 deposits
+*FF* NECTAR WORKER #10 leaves field
+*BH* NECTAR WORKER #10 deposits
+*FF* NECTAR WORKER #9 leaves field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #8 leaves field
+*FF* NECTAR WORKER #7 leaves field
+*BH* NECTAR WORKER #8 deposits
+*FF* NECTAR WORKER #5 leaves field
+*BH* NECTAR WORKER #7 deposits
+*FF* NECTAR WORKER #8 enters field
+*BH* NECTAR WORKER #5 deposits
+*FF* NECTAR WORKER #9 enters field
+*FF* NECTAR WORKER #10 enters field
+*FF* NECTAR WORKER #11 enters field
+*FF* NECTAR WORKER #6 enters field
+*FF* NECTAR WORKER #5 enters field
+*FF* NECTAR WORKER #7 enters field
+*FF* POLLEN WORKER #12 leaves field
+*BH* POLLEN WORKER #12 deposits
+*FF* POLLEN WORKER #12 enters field
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* POLLEN WORKER #14 leaves field
+*BH* POLLEN WORKER #14 deposits
+*FF* POLLEN WORKER #13 enters field
+*FF* POLLEN WORKER #14 enters field
+*FF* POLLEN WORKER #15 leaves field
+*FF* NECTAR WORKER #10 leaves field
+*BH* POLLEN WORKER #15 deposits
+*FF* NECTAR WORKER #9 leaves field
+*BH* NECTAR WORKER #10 deposits
+*FF* POLLEN WORKER #19 leaves field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #8 leaves field
+*BH* POLLEN WORKER #19 deposits
+*FF* POLLEN WORKER #20 leaves field
+*BH* NECTAR WORKER #8 deposits
+*FF* POLLEN WORKER #21 leaves field
+*BH* POLLEN WORKER #20 deposits
+*FF* NECTAR WORKER #8 enters field
+*BH* POLLEN WORKER #21 deposits
+*FF* POLLEN WORKER #19 enters field
+*FF* NECTAR WORKER #9 enters field
+*FF* NECTAR WORKER #10 enters field
+*FF* POLLEN WORKER #15 enters field
+*FF* POLLEN WORKER #21 enters field
+*FF* POLLEN WORKER #20 enters field
+*FF* NECTAR WORKER #2 leaves field
+*BH* NECTAR WORKER #2 deposits
+*FF* NECTAR WORKER #2 enters field
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* NECTAR WORKER #4 leaves field
+*FF* POLLEN WORKER #13 enters field
+*BH* NECTAR WORKER #4 deposits
+*FF* NECTAR WORKER #4 enters field
+*FF* POLLEN WORKER #18 leaves field
+*BH* POLLEN WORKER #18 deposits
+*FF* POLLEN WORKER #18 enters field
+*FF* NECTAR WORKER #7 leaves field
+*BH* NECTAR WORKER #7 deposits
+*FF* POLLEN WORKER #16 leaves field
+*BH* POLLEN WORKER #16 deposits
+*FF* NECTAR WORKER #9 leaves field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #5 leaves field
+*FF* NECTAR WORKER #8 leaves field
+*BH* NECTAR WORKER #5 deposits
+*FF* POLLEN WORKER #19 leaves field
+*BH* NECTAR WORKER #8 deposits
+*FF* NECTAR WORKER #5 enters field
+*BH* POLLEN WORKER #19 deposits
+*FF* NECTAR WORKER #9 enters field
+*FF* POLLEN WORKER #16 enters field
+*FF* NECTAR WORKER #7 enters field
+*FF* POLLEN WORKER #19 enters field
+*FF* NECTAR WORKER #8 enters field
+*FF* POLLEN WORKER #12 leaves field
+*BH* POLLEN WORKER #12 deposits
+*FF* POLLEN WORKER #12 enters field
+*FF* NECTAR WORKER #3 leaves field
+*FF* POLLEN WORKER #14 leaves field
+*FF* NECTAR WORKER #10 leaves field
+*FF* NECTAR WORKER #6 leaves field
+*FF* POLLEN WORKER #20 leaves field
+*FF* NECTAR WORKER #5 leaves field
+*FF* POLLEN WORKER #21 leaves field
+*FF* NECTAR WORKER #9 leaves field
+*FF* NECTAR WORKER #11 leaves field
+*BH* NECTAR WORKER #3 deposits
+*FF* NECTAR WORKER #3 enters field
+*BH* POLLEN WORKER #14 deposits
+*FF* POLLEN WORKER #14 enters field
+*BH* NECTAR WORKER #11 deposits
+*FF* NECTAR WORKER #11 enters field
+*BH* NECTAR WORKER #9 deposits
+*FF* NECTAR WORKER #9 enters field
+*BH* POLLEN WORKER #21 deposits
+*FF* POLLEN WORKER #21 enters field
+*BH* NECTAR WORKER #5 deposits
+*FF* NECTAR WORKER #5 enters field
+*BH* POLLEN WORKER #20 deposits
+*FF* POLLEN WORKER #20 enters field
+*BH* NECTAR WORKER #6 deposits
+*FF* NECTAR WORKER #6 enters field
+*BH* NECTAR WORKER #10 deposits
+*FF* NECTAR WORKER #10 enters field
+*BH* Bee hive is becoming inactive!
+*FF* NECTAR WORKER #2 leaves field
+*BH* NECTAR WORKER #2 deposits
+*FF* POLLEN WORKER #13 leaves field
+*BH* POLLEN WORKER #13 deposits
+*FF* NECTAR WORKER #9 leaves field
+*BH* NECTAR WORKER #9 deposits
+*FF* POLLEN WORKER #19 leaves field
+*BH* POLLEN WORKER #19 deposits
+*FF* NECTAR WORKER #11 leaves field
+*BH* NECTAR WORKER #11 deposits
+*FF* NECTAR WORKER #8 leaves field
+*BH* NECTAR WORKER #8 deposits
+*FF* POLLEN WORKER #14 leaves field
+*FF* NECTAR WORKER #3 leaves field
+*BH* POLLEN WORKER #14 deposits
+*FF* POLLEN WORKER #15 leaves field
+*BH* NECTAR WORKER #3 deposits
+*BH* POLLEN WORKER #15 deposits
+*FF* POLLEN WORKER #21 leaves field
+*BH* POLLEN WORKER #21 deposits
+*FF* POLLEN WORKER #12 leaves field
+*BH* POLLEN WORKER #12 deposits
+*FF* NECTAR WORKER #6 leaves field
+*BH* NECTAR WORKER #6 deposits
+*FF* NECTAR WORKER #10 leaves field
+*BH* NECTAR WORKER #10 deposits
+*FF* NECTAR WORKER #5 leaves field
+*BH* NECTAR WORKER #5 deposits
+*FF* POLLEN WORKER #17 leaves field
+*BH* POLLEN WORKER #17 deposits
+*FF* POLLEN WORKER #16 leaves field
+*BH* POLLEN WORKER #16 deposits
+*FF* POLLEN WORKER #20 leaves field
+*BH* POLLEN WORKER #20 deposits
+*FF* POLLEN WORKER #18 leaves field
+*BH* POLLEN WORKER #18 deposits
+*FF* NECTAR WORKER #7 leaves field
+*BH* NECTAR WORKER #7 deposits
+*FF* NECTAR WORKER #4 leaves field
+*BH* NECTAR WORKER #4 deposits
+*BH* Bee hive stops buzzing!
+
+STATISTICS
+==========
+Bees born: 21
+Bees perished: 0
+Nectar gathered: 35
+Pollen gathered: 25
+Nectar remaining: 35
+Pollen remaining: 25

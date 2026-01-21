@@ -1,0 +1,80 @@
+Problem1.java
+
+/* The problem is that the Problem class has the public access modifire 
+* however the filename is not Problem.java and there is no package assigned 
+* to the file. This results in a syntax error. To easily fix this you can 
+* either remove the public access modifier, change the class name from 
+* Problem to Problem1, change the file name from Problem1.java to 
+* Problem.java.
+*/
+
+
+Problem2.java
+
+/*
+* The problem is that i is declared as an integer however it is initialized 
+* as in.next(). According to the java api on Scanner, the next() method had a 
+* modifier and type of string which is incompatable with int. To fix this we can 
+* replace .next() with .nextint() which is compatible with integers.
+* Source: 
+* https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#findWithinHorizon-java.lang.String-int-
+*/
+
+
+Problem3.java
+
+// 5 divided by 0 is undefined and therefore this results in a runtime error.
+
+
+Problem4.java
+
+/* 
+* The problem with the syntax as y is not declared as an integer. As it is 
+* a syntax error it would result in a compile error.
+*/
+
+
+Problem5.java
+/*
+* There is no return statement for when x is greater than or equal to y. 
+* Because it is not void there must be a return statement for every scenario. 
+* Therefore this will result in a compile error
+*/
+
+
+Problem6.java
+/*
+* There are no values in the array list yet so getting a value at index 0 
+* will return a null causing a run time error.
+*/
+
+
+Problem7.java
+
+/*
+*To use char u can only use single quotes. This is a compile error and to fix 
+* this you can replace "a" with 'a'.
+*/
+
+
+Problem8.java
+/*
+* The k variable is assigned to the j variable but the j variable is not 
+* initialized. Attempting to usa a local variable with no value assigned
+* will result in an error when the program compiles.
+*/
+
+
+Problem9.java
+/*
+* By default java assumes a number with a decimal is a double if not specified. 
+* There is a syntax error because sum is declared a float but 0.0 is a double. 
+* To fix this you can change 0.0 to 0.0f.
+*/
+
+
+Problem10.java
+/*
+* There are only 11 characters in "Hello World however the index ends at 12 
+* instead of 10. This returns a null values which causes a runtime error.
+*/

@@ -1,0 +1,76 @@
+Simulation time: 10 seconds
+Starting drones: 1
+Starting nectar workers: 1
+Starting pollen workers: 1
+*BH* QUEEN #1 is born!
+*BH* DRONE #2 is born!
+*BH* NECTAR WORKER #3 is born!
+*BH* POLLEN WORKER #4 is born!
+*BH* Bee hive begins buzzing!
+*QC* DRONE #2 enters chamber
+*FF* NECTAR WORKER #3 enters field
+*FF* POLLEN WORKER #4 enters field
+*FF* NECTAR WORKER #3 leaves field
+*FF* POLLEN WORKER #4 leaves field
+*BH* NECTAR WORKER #3 deposits
+*BH* POLLEN WORKER #4 deposits
+*FF* NECTAR WORKER #3 enters field
+*FF* POLLEN WORKER #4 enters field
+*QC* Queen mates with DRONE #2
+*QC* DRONE #2 leaves chamber
+*FF* NECTAR WORKER #3 leaves field
+*BH* NECTAR WORKER #3 deposits
+*FF* POLLEN WORKER #4 leaves field
+*BH* POLLEN WORKER #4 deposits
+*FF* NECTAR WORKER #3 enters field
+*FF* POLLEN WORKER #4 enters field
+*D* DRONE #2 has perished!
+*BH* NECTAR WORKER #5 is born!
+*BH* POLLEN WORKER #6 is born!
+*FF* NECTAR WORKER #5 enters field
+*FF* POLLEN WORKER #6 enters field
+*Q* Queen birthed 2 children
+*FF* NECTAR WORKER #3 leaves field
+*BH* NECTAR WORKER #3 deposits
+*FF* POLLEN WORKER #4 leaves field
+*BH* POLLEN WORKER #4 deposits
+*FF* NECTAR WORKER #3 enters field
+*FF* POLLEN WORKER #4 enters field
+*FF* NECTAR WORKER #5 leaves field
+*BH* NECTAR WORKER #5 deposits
+*FF* POLLEN WORKER #6 leaves field
+*BH* POLLEN WORKER #6 deposits
+*FF* NECTAR WORKER #5 enters field
+*FF* POLLEN WORKER #6 enters field
+*FF* NECTAR WORKER #3 leaves field
+*BH* NECTAR WORKER #3 deposits
+*FF* POLLEN WORKER #4 leaves field
+*FF* NECTAR WORKER #3 enters field
+*BH* POLLEN WORKER #4 deposits
+*FF* POLLEN WORKER #4 enters field
+*FF* POLLEN WORKER #6 leaves field
+*BH* POLLEN WORKER #6 deposits
+*FF* NECTAR WORKER #5 leaves field
+*FF* POLLEN WORKER #6 enters field
+*BH* NECTAR WORKER #5 deposits
+*FF* NECTAR WORKER #5 enters field
+*BH* Bee hive is becoming inactive!
+*FF* POLLEN WORKER #4 leaves field
+*BH* POLLEN WORKER #4 deposits
+*FF* NECTAR WORKER #3 leaves field
+*BH* NECTAR WORKER #3 deposits
+*FF* NECTAR WORKER #5 leaves field
+*BH* NECTAR WORKER #5 deposits
+*FF* POLLEN WORKER #6 leaves field
+*BH* POLLEN WORKER #6 deposits
+*BH* Bee hive stops buzzing!
+
+STATISTICS
+==========
+Bees born: 6
+Bees perished: 1
+	DRONE #2
+Nectar gathered: 8
+Pollen gathered: 8
+Nectar remaining: 6
+Pollen remaining: 6

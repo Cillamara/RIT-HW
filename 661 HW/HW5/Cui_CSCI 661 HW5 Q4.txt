@@ -1,0 +1,51 @@
+//QUESTION 4 with bonus
+
+
+initial q1,
+accept q0,
+
+q1 0 q2 $ r,
+q1 1 q3 $ r,
+q1 _ q11 _ r,
+
+q2 0 q2 0 r,
+q2 1 q2 1 r,
+q2 _ q4 _ r,
+
+q3 0 q3 0 r,
+q3 1 q3 1 r,
+q3 _ q5 _ r,
+
+q4 _ q4 _ r,
+q4 0 q7 _ r,
+q4 1 q6 _ r,
+
+q5 _ q5 _ r,
+q5 0 q6 _ r,
+q5 1 q7 _ r,
+
+
+q6 0 q6 0 r,
+q6 1 q6 1 r,
+q6 _ q8 _ r,
+
+q7 0 q7 0 r,
+q7 1 q7 1 r,
+q7 _ q9 _ r,
+
+q8 _ q10 0 l,
+q8 0 q8 0 r,
+q8 1 q8 1 r,
+
+q9 _ q10 1 l,
+q9 0 q9 0 r,
+q9 1 q9 1 r,
+
+q10 0 q10 0 l,
+q10 1 q10 1 l,
+q10 _ q10 _ l,
+q10 $ q1 _ r,
+
+q11 _ q11 _ r,
+q11 0 q0 0 l,
+q11 1 q0 1 l,

@@ -1,0 +1,161 @@
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Jack Nicholson
+Coolness (1-10): 7
+Regular (y/n): y
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Tina Turner
+Coolness (1-10): 8
+Regular (y/n): y
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Regular Tina Turner with coolness factor 8 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Regular Jack Nicholson with coolness factor 7 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Queue is empty.
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Calvin Klein
+Coolness (1-10): 6
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Brooke Shields
+Coolness (1-10): 9
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: John Travolta
+Coolness (1-10): 4
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Brooke Shields with coolness factor 9 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Michael Jackson
+Coolness (1-10): 10
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Liza Minnelli
+Coolness (1-10): 10
+Regular (y/n): y
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Regular Liza Minnelli with coolness factor 10 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Michael Jackson with coolness factor 10 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: James Heliotis
+Coolness (1-10): 9
+Regular (y/n): y
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Regular James Heliotis with coolness factor 9 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Andy Warhol
+Coolness (1-10): 6
+Regular (y/n): y
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Elizabeth Taylor
+Coolness (1-10): 7
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Elizabeth Taylor with coolness factor 7 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Regular Andy Warhol with coolness factor 6 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Elton John
+Coolness (1-10): 8
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 1
+Patron name: Bianca Jagger
+Coolness (1-10): 5
+Regular (y/n): n
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 2
+Elton John with coolness factor 8 gets in!!!
+Enter an option
+1 to Add a patron to the queue
+2 to Admit a patron
+3 to Close for the night (quit)
+Your choice: 3

@@ -1,0 +1,54 @@
+Concentration server starting on port 50000, DIM=2
+Client #1: Client 1 connected: Socket[addr=/127.0.0.1,port=49808,localport=50000]
+SOLUTION:
+  01
+0|AA
+1|BB
+
+Client #1: Client started...
+Client #1:
+  01
+0|..
+1|..
+
+Client #1: received: REVEAL 0 0
+Client #1: sending: CARD 0 0 A
+Client #1:
+  01
+0|A.
+1|..
+
+Client #1: received: REVEAL 1 0
+Client #1: sending: CARD 1 0 B
+Client #1: sending: MISMATCH 0 0 1 0
+Client #1:
+  01
+0|..
+1|..
+
+Client #1: received: REVEAL 0 0
+Client #1: sending: CARD 0 0 A
+Client #1:
+  01
+0|A.
+1|..
+
+Client #1: received: REVEAL 0 1
+Client #1: sending: CARD 0 1 A
+Client #1: sending: MATCH 0 0 0 1
+Client #1:
+  01
+0|AA
+1|..
+
+Client #1: received: REVEAL 1 1
+Client #1: sending: CARD 1 1 B
+Client #1:
+  01
+0|AA
+1|.B
+
+Client #1: received: REVEAL 1 0
+Client #1: sending: CARD 1 0 B
+Client #1: sending: MATCH 1 1 1 0
+Client #1: Client ending...

@@ -1,0 +1,59 @@
+Checking if data/4-4-0-0-2.txt is a saved game file... no; will read as a text setup file.
+
+   0 1 2 3
+ 0 _ _ _ _
+ 1 _ _ _ _
+ 2 _ _ _ _
+ 3 _ _ _ _
+
+> h 0 0
+
+   0 1 2 3
+ 0 ☐ _ _ _
+ 1 _ _ _ _
+ 2 _ _ _ _
+ 3 _ _ _ _
+
+> h 0 1
+A battleship has been sunk!
+
+   0 1 2 3
+ 0 * * _ _
+ 1 _ _ _ _
+ 2 _ _ _ _
+ 3 _ _ _ _
+
+> h 0 2
+
+   0 1 2 3
+ 0 * * . _
+ 1 _ _ _ _
+ 2 _ _ _ _
+ 3 _ _ _ _
+
+> h 2 3
+
+   0 1 2 3
+ 0 * * . _
+ 1 _ _ _ _
+ 2 _ _ _ ☐
+ 3 _ _ _ _
+
+> h 2 2
+
+   0 1 2 3
+ 0 * * . _
+ 1 _ _ _ _
+ 2 _ _ . ☐
+ 3 _ _ _ _
+
+> h 3 3
+A battleship has been sunk!
+
+   0 1 2 3
+ 0 * * . _
+ 1 _ _ _ _
+ 2 _ _ . *
+ 3 _ _ _ *
+
+All ships sunk!

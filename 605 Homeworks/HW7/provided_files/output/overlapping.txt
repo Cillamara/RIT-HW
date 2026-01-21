@@ -1,0 +1,2 @@
+Checking if overlapping.txt is a saved game file... no; will read as a text setup file.
+battleship.OverlapException: Ships placed in overlapping positions, row=0, column=1
