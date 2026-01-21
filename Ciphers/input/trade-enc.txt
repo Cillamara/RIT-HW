@@ -1,0 +1,10 @@
+E
+SAUCE
+T0,3
+E
+FRIED
+T1,2
+E
+ABCDEFG
+T2,6
+Q

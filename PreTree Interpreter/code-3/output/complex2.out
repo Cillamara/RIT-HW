@@ -1,0 +1,16 @@
+PRETEE: Compiling complex2.pre...
+
+PRETEE: Infix source...
+x = 10
+y = 20
+z = (x + (5 * y))
+print ((30 - 20) + x)
+print (x * (y + z))
+print ((z // y) + (x * y))
+print ((x * (y + 10)) // (y + (10 * z)))
+
+PRETEE: Executing...
+20
+1300
+205
+0

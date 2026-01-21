@@ -1,0 +1,10 @@
+E
+CAUSE
+T0,3
+E
+FIRED
+T1,2
+E
+ABGDEFC
+T2,6
+Q

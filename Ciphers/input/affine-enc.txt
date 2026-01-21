@@ -1,0 +1,16 @@
+E
+BALL
+A5,7
+E
+ZOO
+A5,3
+E
+AAB
+A5,7
+E
+STORE
+A7,5
+E
+STORE
+A7,3
+Q

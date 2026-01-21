@@ -1,0 +1,20 @@
+PRETEE: Compiling simple3.pre...
+
+PRETEE: Infix source...
+x = 10
+print
+print 5
+print 10
+y = 513
+z = -19
+print x
+print z
+print y
+
+PRETEE: Executing...
+
+5
+10
+10
+-19
+513

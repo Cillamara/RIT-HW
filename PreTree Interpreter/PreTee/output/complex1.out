@@ -1,0 +1,9 @@
+PRETEE: Compiling complex1.pre...
+
+PRETEE: Infix source...
+x = 10
+y = 20
+print (((x - 10) // y) * (4 + x))
+
+PRETEE: Executing...
+0

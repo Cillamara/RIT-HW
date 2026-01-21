@@ -1,0 +1,16 @@
+E
+TOPS
+R
+E
+TOPS
+R1
+E
+TRAIN
+R2
+E
+INTRA
+R-2
+E
+ABCDEFG
+R-14
+Q

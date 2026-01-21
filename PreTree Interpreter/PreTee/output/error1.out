@@ -1,0 +1,11 @@
+PRETEE: Compiling syntax_errors.pre...
+*** Syntax error line 3 : Incomplete statement
+*** Syntax error line 4 : Bad assignment to non-variable
+*** Syntax error line 5 : Invalid token @
+*** Syntax error line 6 : Illegal action ^
+*** Syntax error line 7 : Illegal action +
+
+PRETEE: Infix source...
+x = 10
+
+PRETEE: Executing...

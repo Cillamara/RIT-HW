@@ -1,0 +1,23 @@
+PRETEE: Compiling simple2.pre...
+
+PRETEE: Infix source...
+x = 10
+y = 20
+print (10 + 20)
+print (x + y)
+print (20 - 10)
+print (y - x)
+print (10 * 20)
+print (x * y)
+print (20 // 10)
+print (y // x)
+
+PRETEE: Executing...
+30
+30
+10
+10
+200
+200
+2
+2

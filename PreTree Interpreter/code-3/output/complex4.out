@@ -1,0 +1,18 @@
+PRETEE: Compiling complex4.pre...
+
+PRETEE: Infix source...
+print (4 + 1)
+print (3 - 11)
+print (3 * -9)
+print (20 // 4)
+a = (4 + (4 + 1))
+b = (3 - (3 - -15))
+c = (-2 * (6 * -11))
+print (1 + (3 - ((4 // 2) * (5 - 6))))
+
+PRETEE: Executing...
+5
+-8
+-27
+5
+6

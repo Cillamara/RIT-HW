@@ -1,0 +1,8 @@
+# more complex math and mixed literal / variables
+= x 10
+= y 20
+= z + x * 5 y
+@ + - 30 20 x
+@ * x + y z
+@ + // z y * x y
+@ // * x + y 10 + y * 10 z

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #e9e9e9;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Python: module variable</title>
+</head>
+<body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">variable</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmjcvcs%5Cpycharmprojects%5Ccsci603%5Cpretee_20245%5Csol%5Cnodes%5Cexpression%5Cvariable.py">c:\users\mjcvcs\pycharmprojects\csci603\pretee_20245\sol\nodes\expression\variable.py</a></td></tr></table>
+    <p><span class="code">CSCI-603&nbsp;PreTee&nbsp;Lab<br>
+Author:&nbsp;RIT&nbsp;CS<br>
+&nbsp;<br>
+A&nbsp;variable&nbsp;expression&nbsp;is&nbsp;a&nbsp;legal&nbsp;identifier&nbsp;in&nbsp;Python:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'{id}'<br>
+&nbsp;<br>
+For&nbsp;example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'x'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'y'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'variable'<br>
+&nbsp;<br>
+When&nbsp;emitted,&nbsp;the&nbsp;variable&nbsp;name&nbsp;is&nbsp;returned&nbsp;as&nbsp;a&nbsp;string,&nbsp;e.g.:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'x'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'y'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'variable'<br>
+&nbsp;<br>
+When&nbsp;evaluated,&nbsp;the&nbsp;value&nbsp;associated&nbsp;with&nbsp;the&nbsp;variable&nbsp;name&nbsp;in&nbsp;the&nbsp;symbol<br>
+table&nbsp;is&nbsp;returned.&nbsp;&nbsp;For&nbsp;example&nbsp;if&nbsp;the&nbsp;symbol&nbsp;table&nbsp;contains&nbsp;<br>
+{...,&nbsp;'x':&nbsp;10,&nbsp;'y'&nbsp;:&nbsp;20,&nbsp;'z'&nbsp;:&nbsp;30,&nbsp;...},&nbsp;the&nbsp;evaluations<br>
+would&nbsp;be:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30<br>
+&nbsp;<br>
+A&nbsp;runtime&nbsp;exception&nbsp;is&nbsp;raised&nbsp;if&nbsp;the&nbsp;variable&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;symbol&nbsp;table,&nbsp;e.g.:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'a'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;error&nbsp;message:&nbsp;Unrecognized&nbsp;variable&nbsp;a</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="errors.runtime_error.html">errors.runtime_error</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="variable.html#Variable">Variable</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Variable">class <strong>Variable</strong></a>(<a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Variable">Variable</a>(id:&nbsp;str,&nbsp;sym_tbl:&nbsp;dict[str,&nbsp;int])<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="variable.html#Variable">Variable</a></dd>
+<dd><a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a></dd>
+<dd><a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Variable-__init__"><strong>__init__</strong></a>(self, id: str, sym_tbl: dict[str, int])</dt><dd><span class="code">Initialize&nbsp;a&nbsp;VariableNode.<br>
+:param&nbsp;id:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;variable<br>
+:param&nbsp;sym_tbl:&nbsp;The&nbsp;symbol&nbsp;table&nbsp;which&nbsp;associates&nbsp;variable<br>
+names&nbsp;(key=str)&nbsp;with&nbsp;values&nbsp;(value=int)<br>
+:return:&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Variable-emit"><strong>emit</strong></a>(self) -&gt; str</dt><dd><span class="code">Return&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;variable.<br>
+:return:&nbsp;The&nbsp;variable&nbsp;name</span></dd></dl>
+
+<dl><dt><a name="Variable-evaluate"><strong>evaluate</strong></a>(self)</dt><dd><span class="code">Evaluates&nbsp;the&nbsp;variable&nbsp;to&nbsp;retrieve&nbsp;its&nbsp;stored&nbsp;value.<br>
+:exception:&nbsp;raises&nbsp;a&nbsp;runtime_error.RuntimeError&nbsp;if&nbsp;the&nbsp;variable&nbsp;name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;symbol&nbsp;table,&nbsp;with&nbsp;the&nbsp;message,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'Unrecognized&nbsp;variable&nbsp;{variable}'<br>
+:return:&nbsp;The&nbsp;value&nbsp;associated&nbsp;with&nbsp;the&nbsp;variable&nbsp;(int)</span></dd></dl>
+
+<dl><dt><a name="Variable-get_id"><strong>get_id</strong></a>(self)</dt><dd><span class="code">Return&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;variable<br>
+:return:&nbsp;the&nbsp;name</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'_id': &lt;class 'str'&gt;}</dl>
+
+<hr>
+Data descriptors inherited from <a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

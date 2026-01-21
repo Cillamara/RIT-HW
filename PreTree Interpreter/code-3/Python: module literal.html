@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #e9e9e9;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Python: module literal</title>
+</head>
+<body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">literal</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmjcvcs%5Cpycharmprojects%5Ccsci603%5Cpretee_20245%5Csol%5Cnodes%5Cexpression%5Cliteral.py">c:\users\mjcvcs\pycharmprojects\csci603\pretee_20245\sol\nodes\expression\literal.py</a></td></tr></table>
+    <p><span class="code">CSCI-603&nbsp;PreTee&nbsp;Lab<br>
+Author:&nbsp;RIT&nbsp;CS<br>
+&nbsp;<br>
+A&nbsp;literal&nbsp;expression&nbsp;is&nbsp;of&nbsp;the&nbsp;prefix&nbsp;form,&nbsp;where&nbsp;{value}&nbsp;is&nbsp;an&nbsp;integer:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'{value}'<br>
+&nbsp;<br>
+For&nbsp;example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'10'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'4'<br>
+&nbsp;<br>
+When&nbsp;emitted,&nbsp;the&nbsp;expressions&nbsp;are&nbsp;displayed&nbsp;infix&nbsp;as&nbsp;strings:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'10'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'4'<br>
+&nbsp;<br>
+When&nbsp;evaluated,&nbsp;their&nbsp;integer&nbsp;form&nbsp;is&nbsp;returns:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="literal.html#Literal">Literal</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Literal">class <strong>Literal</strong></a>(<a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Literal">Literal</a>(val:&nbsp;int)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="literal.html#Literal">Literal</a></dd>
+<dd><a href="nodes.expression.math_node.html#MathNode">nodes.expression.math_node.MathNode</a></dd>
+<dd><a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Literal-__init__"><strong>__init__</strong></a>(self, val: int)</dt><dd><span class="code">Initialize&nbsp;a&nbsp;<a href="#Literal">Literal</a>&nbsp;node.<br>
+:param&nbsp;val:&nbsp;the&nbsp;value&nbsp;(int)<br>
+:return:&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Literal-emit"><strong>emit</strong></a>(self) -&gt; str</dt><dd><span class="code">Return&nbsp;a&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;value,&nbsp;e.g.:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'{value}'<br>
+:return:&nbsp;the&nbsp;string&nbsp;form&nbsp;of&nbsp;the&nbsp;value</span></dd></dl>
+
+<dl><dt><a name="Literal-evaluate"><strong>evaluate</strong></a>(self) -&gt; int</dt><dd><span class="code">Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;literal.<br>
+:return:&nbsp;The&nbsp;value&nbsp;(int)</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'_val': &lt;class 'int'&gt;}</dl>
+
+<hr>
+Data descriptors inherited from <a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

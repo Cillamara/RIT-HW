@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #e9e9e9;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Python: module assignment</title>
+</head>
+<body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">assignment</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmjcvcs%5Cpycharmprojects%5Ccsci603%5Cpretee_20245%5Csol%5Cnodes%5Caction%5Cassignment.py">c:\users\mjcvcs\pycharmprojects\csci603\pretee_20245\sol\nodes\action\assignment.py</a></td></tr></table>
+    <p><span class="code">CSCI-603&nbsp;PreTee&nbsp;Lab<br>
+Author:&nbsp;RIT&nbsp;CS<br>
+&nbsp;<br>
+An&nbsp;assignment&nbsp;statement&nbsp;is&nbsp;of&nbsp;the&nbsp;prefix&nbsp;form:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'=&nbsp;{variable}&nbsp;{expression}'<br>
+&nbsp;<br>
+For&nbsp;example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'=&nbsp;x&nbsp;10'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'=&nbsp;y&nbsp;20'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'=&nbsp;z&nbsp;+&nbsp;x&nbsp;y'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'=&nbsp;x&nbsp;40'<br>
+&nbsp;<br>
+When&nbsp;emitted,&nbsp;the&nbsp;variable&nbsp;is&nbsp;emitted,&nbsp;followed&nbsp;by&nbsp;the&nbsp;equals&nbsp;sign,&nbsp;followed<br>
+by&nbsp;the&nbsp;emission&nbsp;of&nbsp;the&nbsp;expression&nbsp;that&nbsp;followed.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'x&nbsp;=&nbsp;10'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'y&nbsp;=&nbsp;20'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'z&nbsp;=&nbsp;(x&nbsp;+&nbsp;y)'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'x&nbsp;=&nbsp;40'<br>
+&nbsp;<br>
+When&nbsp;evaluated,&nbsp;the&nbsp;expression&nbsp;is&nbsp;evaluated&nbsp;and&nbsp;its&nbsp;result&nbsp;is<br>
+stored&nbsp;in&nbsp;the&nbsp;symbol&nbsp;table&nbsp;for&nbsp;the&nbsp;variable.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;symbol&nbsp;table:&nbsp;{...,&nbsp;'x':&nbsp;10,&nbsp;...}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;symbol&nbsp;table:&nbsp;{...,&nbsp;'y':&nbsp;20,&nbsp;...}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;symbol&nbsp;table:&nbsp;{...,&nbsp;'z':&nbsp;30,&nbsp;...}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;symbol&nbsp;table:&nbsp;{...,&nbsp;'x':&nbsp;40,&nbsp;...}<br>
+&nbsp;<br>
+A&nbsp;syntax_error.SyntaxError&nbsp;will&nbsp;be&nbsp;raised&nbsp;for&nbsp;the&nbsp;following:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<a href="#Assignment">Assignment</a>&nbsp;to&nbsp;a&nbsp;non-variable&nbsp;node,&nbsp;e.g.:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;10&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;error&nbsp;message:&nbsp;Bad&nbsp;assignment&nbsp;to&nbsp;non-variable<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;Bad&nbsp;expression&nbsp;for&nbsp;assignment,&nbsp;e.g.:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;x&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;error&nbsp;message:&nbsp;Bad&nbsp;assignment&nbsp;expression</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="errors.syntax_error.html">errors.syntax_error</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="nodes.action.action_node.html#ActionNode">nodes.action.action_node.ActionNode</a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="assignment.html#Assignment">Assignment</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Assignment">class <strong>Assignment</strong></a>(<a href="nodes.action.action_node.html#ActionNode">nodes.action.action_node.ActionNode</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Assignment">Assignment</a>(variable:&nbsp;nodes.expression.math_node.MathNode,&nbsp;expression:&nbsp;nodes.expression.math_node.MathNode,&nbsp;sym_tbl:&nbsp;dict[str,&nbsp;int],&nbsp;token:&nbsp;str)<br>
+&nbsp;<br>
+<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="assignment.html#Assignment">Assignment</a></dd>
+<dd><a href="nodes.action.action_node.html#ActionNode">nodes.action.action_node.ActionNode</a></dd>
+<dd><a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Assignment-__init__"><strong>__init__</strong></a>(self, variable: nodes.expression.math_node.MathNode, expression: nodes.expression.math_node.MathNode, sym_tbl: dict[str, int], token: str)</dt><dd><span class="code">Initialize&nbsp;an&nbsp;<a href="#Assignment">Assignment</a>&nbsp;node.<br>
+&nbsp;<br>
+:param&nbsp;variable:&nbsp;The&nbsp;variable&nbsp;node&nbsp;<br>
+:param&nbsp;expression:&nbsp;The&nbsp;expression&nbsp;that&nbsp;represents&nbsp;the&nbsp;value&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;variable&nbsp;<br>
+:param&nbsp;sym_tbl:&nbsp;The&nbsp;symbol&nbsp;table&nbsp;which&nbsp;associates&nbsp;variable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;names&nbsp;with&nbsp;values&nbsp;(int)<br>
+:param&nbsp;token:&nbsp;The&nbsp;character&nbsp;associated&nbsp;with&nbsp;assignment<br>
+&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;emitting&nbsp;(str)<br>
+:exception:&nbsp;raises&nbsp;syntax_error.SyntaxError&nbsp;if&nbsp;there&nbsp;is&nbsp;an&nbsp;assignment<br>
+&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;a&nbsp;non-variable,&nbsp;with&nbsp;the&nbsp;message,&nbsp;'Bad&nbsp;assignment&nbsp;to&nbsp;non-variable'<br>
+:exception:&nbsp;raises&nbsp;syntax_error.SyntaxError&nbsp;if&nbsp;the&nbsp;expression&nbsp;is&nbsp;not&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;math&nbsp;expression&nbsp;with&nbsp;the&nbsp;message,&nbsp;'Bad&nbsp;assignment&nbsp;expression'.<br>
+:return:&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Assignment-emit"><strong>emit</strong></a>(self)</dt><dd><span class="code">Returns&nbsp;a&nbsp;string&nbsp;in&nbsp;infix&nbsp;form:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'{variable-emit}&nbsp;{token}&nbsp;{expression-token}'<br>
+:return:&nbsp;The&nbsp;infix&nbsp;string&nbsp;(str)</span></dd></dl>
+
+<dl><dt><a name="Assignment-execute"><strong>execute</strong></a>(self)</dt><dd><span class="code">Evaluates&nbsp;the&nbsp;expression&nbsp;and&nbsp;stores&nbsp;the&nbsp;result&nbsp;in&nbsp;the&nbsp;symbol&nbsp;table<br>
+for&nbsp;the&nbsp;variable&nbsp;name.<br>
+:exception:&nbsp;runtime_error.RunTimeError&nbsp;may&nbsp;be&nbsp;raised&nbsp;if&nbsp;an&nbsp;assignment<br>
+&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;an&nbsp;invalid&nbsp;expression&nbsp;is&nbsp;made&nbsp;(e.g.&nbsp;unknown&nbsp;variable&nbsp;name&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bad&nbsp;expression).<br>
+:return:&nbsp;None</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'_expression': &lt;class 'nodes.expression.math_node.MathNode'&gt;, '_sym_tbl': dict[str, int], '_token': &lt;class 'str'&gt;, '_variable': &lt;class 'nodes.expression.variable.Variable'&gt;}</dl>
+
+<hr>
+Methods inherited from <a href="nodes.action.action_node.html#ActionNode">nodes.action.action_node.ActionNode</a>:<br>
+<dl><dt><a name="Assignment-get_expression"><strong>get_expression</strong></a>(self)</dt><dd><span class="code">Returns&nbsp;the&nbsp;child&nbsp;math&nbsp;expression.<br>
+This&nbsp;method&nbsp;is&nbsp;used&nbsp;by&nbsp;the&nbsp;subclasses&nbsp;that&nbsp;need&nbsp;access&nbsp;to&nbsp;the<br>
+math&nbsp;expression.<br>
+:return:&nbsp;the&nbsp;child&nbsp;expression</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

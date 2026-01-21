@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #e9e9e9;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <title>Python: module math_node</title>
+</head>
+<body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">math_node</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmjcvcs%5Cpycharmprojects%5Ccsci603%5Cpretee_20245%5Csol%5Cnodes%5Cexpression%5Cmath_node.py">c:\users\mjcvcs\pycharmprojects\csci603\pretee_20245\sol\nodes\expression\math_node.py</a></td></tr></table>
+    <p><span class="code">CSCI-603&nbsp;PreTee&nbsp;Lab<br>
+Author:&nbsp;RIT&nbsp;CS<br>
+&nbsp;<br>
+An&nbsp;abstraction&nbsp;of&nbsp;all&nbsp;expression&nbsp;nodes&nbsp;that&nbsp;can&nbsp;be&nbsp;evaluated&nbsp;to<br>
+get&nbsp;an&nbsp;integer&nbsp;value&nbsp;as&nbsp;result.&nbsp;By&nbsp;definition,&nbsp;these&nbsp;nodes&nbsp;do&nbsp;not<br>
+alter&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;program,&nbsp;i.e.&nbsp;the&nbsp;symbol&nbsp;table.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="abc.html#ABC">abc.ABC</a>(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="math_node.html#MathNode">MathNode</a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>(<a href="abc.html#ABC">abc.ABC</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="math_node.html#MathNode">MathNode</a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MathNode">class <strong>MathNode</strong></a>(<a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>, <a href="abc.html#ABC">abc.ABC</a>)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="math_node.html#MathNode">MathNode</a></dd>
+<dd><a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MathNode-evaluate"><strong>evaluate</strong></a>(self) -&gt; int</dt><dd><span class="code">Returns&nbsp;the&nbsp;mathematical&nbsp;evaluation&nbsp;of&nbsp;this&nbsp;node.<br>
+:return:&nbsp;the&nbsp;result&nbsp;of&nbsp;this&nbsp;operation&nbsp;(an&nbsp;integer&nbsp;value)</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'emit', 'evaluate'})</dl>
+
+<hr>
+Methods inherited from <a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>:<br>
+<dl><dt><a name="MathNode-emit"><strong>emit</strong></a>(self) -&gt; str</dt><dd><span class="code">Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;node<br>
+in&nbsp;infix&nbsp;form</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="nodes.pretee_node.html#PreTreeNode">nodes.pretee_node.PreTreeNode</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

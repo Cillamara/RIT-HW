@@ -1,0 +1,10 @@
+# simple assignment and print
+= x 10
+@
+@ 5
+@ 10
+= y 513
+= z -19
+@ x
+@ z
+@ y

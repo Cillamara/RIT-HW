@@ -1,0 +1,16 @@
+D
+STOP
+R
+D
+STOP
+R1
+D
+INTRA
+R2
+D
+TRAIN
+R-2
+E
+ABCDEFG
+R-14
+Q

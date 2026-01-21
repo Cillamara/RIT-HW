@@ -1,0 +1,11 @@
+# simple math expressions
+= x 10
+= y 20
+@ + 10 20
+@ + x y
+@ - 20 10
+@ - y x
+@ * 10 20
+@ * x y
+@ // 20 10
+@ // y x

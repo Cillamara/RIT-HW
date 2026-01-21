@@ -1,0 +1,21 @@
+# Create three variables
+= x 10
+= y 20
+= z + x y
+
+# Print some expressions
+@
+@ + 10 20
+@ - 10 20
+@ * 10 20
+@ // 20 10
+@ z
+@ * x + y z
+@ // * x + y 10 - y * 10 z
+
+# Commented out syntax errors
+# =
+# = 10 10
+# = x @
+# ^
+# + 3
