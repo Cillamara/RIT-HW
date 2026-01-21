@@ -1,0 +1,9 @@
+c 0 0
+c 0 1
+q
+
+Grid's dimension: 1x2
+Testing:
+    - red player's game over condition
+    - red player wins
+    - claim command does nothing if the game is already over

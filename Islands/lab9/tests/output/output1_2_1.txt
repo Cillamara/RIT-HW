@@ -1,0 +1,35 @@
+Welcome to Islands!
+List of commands available:
+	c(laim) row column -- claim the cell in that row and column
+	s(how) {red|blue}  -- show the islands by the given player
+	h(elp)             -- display this list of commands
+	q(uit)             -- quit this game
+
+
+      0
+    ___
+ 0 |
+ 1 |
+
+Player: RED, islands: 0, Player: BLUE, islands: 0
+Moves: 0, Turn: RED
+> RED's move...
+
+      0
+    ___
+ 0 |  *
+ 1 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 0
+Moves: 1, Turn: BLUE
+> BLUE's move...
+
+      0
+    ___
+ 0 |  *
+ 1 |  -
+
+Player: RED, islands: 1, Player: BLUE, islands: 1
+
+Tie game 1 to 1!
+> > Bye!

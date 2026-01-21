@@ -1,0 +1,40 @@
+Liam Cui
+603 lab 7
+
+Question 1
+
+Enter filename: ../data/atotc.txt
+imbalance: 108.93
+Capacity: 100, Size: 10993, Load Factor: 109.9, Load Limit: 0.75
+
+Enter filename: ../data/atotc.txt
+imbalance: 9.993
+Capacity: 1000, Size: 10993, Load Factor: 11.0, Load Limit: 0.75
+
+Enter filename: ../data/mb.txt
+imbalance: 33.05
+Capacity: 100, Size: 3405, Load Factor: 34.0, Load Limit: 0.75
+
+Enter filename: ../data/mb.txt
+imbalance: 2.5542797494780793
+Capacity: 1000, Size: 3405, Load Factor: 3.4, Load Limit: 0.75
+
+
+
+Question 2
+
+Enter filename: ../data/atotc.txt
+Imbalance: 108.93
+Capacity: 100, Size: 10993, Load Factor: 109.9, Load Limit: 0.75
+
+Enter filename: ../data/atotc.txt
+Imbalance: 9.993
+Capacity: 1000, Size: 10993, Load Factor: 11.0, Load Limit: 0.75
+
+Enter filename: ../data/mb.txt
+imbalance: 33.05
+Capacity: 100, Size: 3405, Load Factor: 34.0, Load Limit: 0.75
+
+Enter filename: ../data/mb.txt
+imbalance: 2.5175619834710745
+Capacity: 1000, Size: 3405, Load Factor: 3.4, Load Limit: 0.75

@@ -1,0 +1,88 @@
+Welcome to Islands!
+List of commands available:
+	c(laim) row column -- claim the cell in that row and column
+	s(how) {red|blue}  -- show the islands by the given player
+	h(elp)             -- display this list of commands
+	q(uit)             -- quit this game
+
+
+      0  1  2
+    _________
+ 0 |
+ 1 |
+ 2 |
+
+Player: RED, islands: 0, Player: BLUE, islands: 0
+Moves: 0, Turn: RED
+> RED's move...
+
+      0  1  2
+    _________
+ 0 |  *
+ 1 |
+ 2 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 0
+Moves: 1, Turn: BLUE
+> BLUE's move...
+
+      0  1  2
+    _________
+ 0 |  *
+ 1 |     -
+ 2 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 1
+Moves: 2, Turn: RED
+> RED's move...
+
+      0  1  2
+    _________
+ 0 |  *
+ 1 |     -  *
+ 2 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+Moves: 3, Turn: BLUE
+> BLUE's move...
+
+      0  1  2
+    _________
+ 0 |  *     -
+ 1 |     -  *
+ 2 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+Moves: 4, Turn: RED
+> RED's move...
+
+      0  1  2
+    _________
+ 0 |  *     -
+ 1 |     -  *
+ 2 |     *
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+Moves: 5, Turn: BLUE
+> BLUE's move...
+Invalid cell coordinates!
+> BLUE's move...
+
+      0  1  2
+    _________
+ 0 |  *     -
+ 1 |     -  *
+ 2 |  -  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+
+RED wins 2 to 1!
+> Player: RED, islands: 2
+Island[size:1]
+	(0,0)
+Island[size:2]
+	(1,2)(2,1)
+> Player: BLUE, islands: 1
+Island[size:3]
+	(0,2)(1,1)(2,0)
+> Bye!

@@ -1,0 +1,736 @@
+Welcome to Islands!
+List of commands available:
+	c(laim) row column -- claim the cell in that row and column
+	s(how) {red|blue}  -- show the islands by the given player
+	h(elp)             -- display this list of commands
+	q(uit)             -- quit this game
+
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |
+ 1 |
+ 2 |
+ 3 |
+ 4 |
+ 5 |
+ 6 |
+
+Player: RED, islands: 0, Player: BLUE, islands: 0
+Moves: 0, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |
+ 1 |
+ 2 |
+ 3 |
+ 4 |              *
+ 5 |
+ 6 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 0
+Moves: 1, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -
+ 1 |
+ 2 |
+ 3 |
+ 4 |              *
+ 5 |
+ 6 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 1
+Moves: 2, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -
+ 1 |
+ 2 |
+ 3 |
+ 4 |              *
+ 5 |
+ 6 |  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+Moves: 3, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |
+ 2 |
+ 3 |
+ 4 |              *
+ 5 |
+ 6 |  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 2
+Moves: 4, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |
+ 2 |
+ 3 |  *
+ 4 |              *
+ 5 |
+ 6 |  *
+
+Player: RED, islands: 3, Player: BLUE, islands: 2
+Moves: 5, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |
+ 3 |  *
+ 4 |              *
+ 5 |
+ 6 |  *
+
+Player: RED, islands: 3, Player: BLUE, islands: 3
+Moves: 6, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *
+ 4 |              *
+ 5 |
+ 6 |  *
+
+Player: RED, islands: 4, Player: BLUE, islands: 3
+Moves: 7, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *
+ 4 |              *
+ 5 |           -
+ 6 |  *
+
+Player: RED, islands: 4, Player: BLUE, islands: 4
+Moves: 8, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *
+ 4 |        *     *
+ 5 |           -
+ 6 |  *
+
+Player: RED, islands: 5, Player: BLUE, islands: 4
+Moves: 9, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *              -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *
+
+Player: RED, islands: 5, Player: BLUE, islands: 5
+Moves: 10, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *              -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *           *
+
+Player: RED, islands: 6, Player: BLUE, islands: 5
+Moves: 11, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -
+ 2 |        *
+ 3 |  *              -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *           *  -
+
+Player: RED, islands: 6, Player: BLUE, islands: 6
+Moves: 12, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -     *
+ 2 |        *
+ 3 |  *              -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *           *  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 6
+Moves: 13, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |              -     *
+ 2 |        *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *           *  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 7
+Moves: 14, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |     *        -     *
+ 2 |        *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |           -
+ 6 |  *           *  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 7
+Moves: 15, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -              -
+ 1 |     *        -     *
+ 2 |        *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *           *  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 8
+Moves: 16, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |        *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *           *  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 8
+Moves: 17, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |     -  *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *           *  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 9
+Moves: 18, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |     -  *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *     *     *  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 9
+Moves: 19, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |     -  *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 9
+Moves: 20, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |     -  *     *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 10, Player: BLUE, islands: 9
+Moves: 21, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *
+ 3 |  *        -     -
+ 4 |        *     *
+ 5 |     -     -
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 10, Player: BLUE, islands: 9
+Moves: 22, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |     -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *
+ 3 |  *        -     -
+ 4 |        *     *     *
+ 5 |     -     -
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 11, Player: BLUE, islands: 9
+Moves: 23, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *
+ 3 |  *        -     -
+ 4 |        *     *     *
+ 5 |     -     -
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 11, Player: BLUE, islands: 9
+Moves: 24, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *
+ 3 |  *        -     -
+ 4 |        *     *     *
+ 5 |     -     -        *
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 11, Player: BLUE, islands: 9
+Moves: 25, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *     *     *
+ 5 |     -     -        *
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 11, Player: BLUE, islands: 8
+Moves: 26, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *     *     *  -  -
+
+Player: RED, islands: 10, Player: BLUE, islands: 8
+Moves: 27, Turn: BLUE
+> Player: RED, islands: 10
+Island[size:1]
+	(0,3)
+Island[size:2]
+	(1,1)(2,2)
+Island[size:1]
+	(1,6)
+Island[size:1]
+	(2,4)
+Island[size:1]
+	(3,0)
+Island[size:3]
+	(4,2)(4,3)(4,4)
+Island[size:2]
+	(4,6)(5,6)
+Island[size:1]
+	(6,0)
+Island[size:1]
+	(6,2)
+Island[size:1]
+	(6,4)
+> Player: BLUE, islands: 8
+Island[size:2]
+	(0,0)(0,1)
+Island[size:1]
+	(0,6)
+Island[size:3]
+	(1,4)(2,5)(3,5)
+Island[size:2]
+	(2,0)(2,1)
+Island[size:1]
+	(3,3)
+Island[size:1]
+	(5,1)
+Island[size:1]
+	(5,3)
+Island[size:2]
+	(6,5)(6,6)
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -     *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *     *  -  -
+
+Player: RED, islands: 10, Player: BLUE, islands: 8
+Moves: 28, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *        -
+ 1 |     *        -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *     *  -  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 8
+Moves: 29, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *        -
+ 1 |     *     -  -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *     *  -  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 8
+Moves: 30, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |     *     -  -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *     *  -  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 8
+Moves: 31, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |     *     -  -     *
+ 2 |  -  -  *     *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 9, Player: BLUE, islands: 8
+Moves: 32, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |     *     -  -     *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |        *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 8
+Moves: 33, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |     *     -  -     *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 8
+Moves: 34, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -     *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 8
+Moves: 35, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |     -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 7
+Moves: 36, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |  *  -     -        *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 7
+Moves: 37, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |  *  -     -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 7
+Moves: 38, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |  *  -     -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 7
+Moves: 39, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -     -
+ 4 |     -  *  *  *     *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 8, Player: BLUE, islands: 6
+Moves: 40, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -     -
+ 4 |  *  -  *  *  *     *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 6
+Moves: 41, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -  -  -
+ 4 |  *  -  *  *  *     *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 7, Player: BLUE, islands: 5
+Moves: 42, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -  -  -
+ 4 |  *  -  *  *  *  *  *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 6, Player: BLUE, islands: 5
+Moves: 43, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *        -  -  -  -
+ 4 |  *  -  *  *  *  *  *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 6, Player: BLUE, islands: 5
+Moves: 44, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *     *  -  -  -  -
+ 4 |  *  -  *  *  *  *  *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 5, Player: BLUE, islands: 5
+Moves: 45, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *  -  *  -  -  -  -
+ 4 |  *  -  *  *  *  *  *
+ 5 |  *  -  -  -     -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 5, Player: BLUE, islands: 4
+Moves: 46, Turn: RED
+> RED's move...
+
+      0  1  2  3  4  5  6
+    _____________________
+ 0 |  -  -  *  *     *  -
+ 1 |  *  *     -  -  -  *
+ 2 |  -  -  *  *  *  -  *
+ 3 |  *  -  *  -  -  -  -
+ 4 |  *  -  *  *  *  *  *
+ 5 |  *  -  -  -  *  -  *
+ 6 |  *  -  *  -  *  -  -
+
+Player: RED, islands: 4, Player: BLUE, islands: 4
+
+Tie game 4 to 4!
+> > Player: RED, islands: 4
+Island[size:16]
+	(0,2)(1,1)(2,2)(3,2)(4,2)(4,3)(4,4)(5,4)(6,4)(4,5)(4,6)(5,6)(2,3)(2,4)(1,0)(0,3)
+Island[size:3]
+	(0,5)(1,6)(2,6)
+Island[size:4]
+	(3,0)(4,0)(5,0)(6,0)
+Island[size:1]
+	(6,2)
+> Player: BLUE, islands: 4
+Island[size:2]
+	(0,0)(0,1)
+Island[size:9]
+	(0,6)(1,5)(2,5)(3,5)(3,4)(3,3)(3,6)(1,4)(1,3)
+Island[size:9]
+	(2,0)(3,1)(2,1)(4,1)(5,1)(6,1)(5,2)(6,3)(5,3)
+Island[size:3]
+	(5,5)(6,6)(6,5)
+> Bye!

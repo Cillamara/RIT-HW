@@ -1,0 +1,11 @@
+c 0 0
+c 1 0
+c 0 0
+q
+
+
+Grid's dimension: 2x1
+Testing:
+    - game over condition: no more cells to claim
+    - tie between players
+    - claim command does nothing if the game is already over

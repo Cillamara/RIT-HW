@@ -1,0 +1,19 @@
+c 1 1
+c 0 1
+c 0 2
+c 1 2
+c 0 0
+c 1 0
+s
+s pink
+s blue
+q
+
+
+Grid's dimension: 3x3
+Testing:
+    - show command: invalid input
+    - connect cell with southwest neighbor
+    - blue's player game over condition
+    - tie game
+    - show command

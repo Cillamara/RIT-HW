@@ -1,0 +1,174 @@
+Welcome to Islands!
+List of commands available:
+	c(laim) row column -- claim the cell in that row and column
+	s(how) {red|blue}  -- show the islands by the given player
+	h(elp)             -- display this list of commands
+	q(uit)             -- quit this game
+
+
+      0  1  2  3
+    ____________
+ 0 |
+ 1 |
+ 2 |
+ 3 |
+
+Player: RED, islands: 0, Player: BLUE, islands: 0
+Moves: 0, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |
+ 1 |        *
+ 2 |
+ 3 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 0
+Moves: 1, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |
+ 1 |        *
+ 2 |     -
+ 3 |
+
+Player: RED, islands: 1, Player: BLUE, islands: 1
+Moves: 2, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |
+ 1 |        *
+ 2 |  *  -
+ 3 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 1
+Moves: 3, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -
+ 1 |        *
+ 2 |  *  -
+ 3 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 2
+Moves: 4, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *
+ 1 |        *
+ 2 |  *  -
+ 3 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 2
+Moves: 5, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -
+ 1 |        *
+ 2 |  *  -
+ 3 |
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+Moves: 6, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -
+ 1 |        *
+ 2 |  *  -
+ 3 |     *
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+Moves: 7, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -
+ 1 |        *
+ 2 |  *  -
+ 3 |  -  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+Moves: 8, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -  *
+ 1 |        *
+ 2 |  *  -
+ 3 |  -  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+Moves: 9, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -  *
+ 1 |        *  -
+ 2 |  *  -
+ 3 |  -  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+Moves: 10, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -  *
+ 1 |        *  -
+ 2 |  *  -
+ 3 |  -  *     *
+
+Player: RED, islands: 3, Player: BLUE, islands: 3
+Moves: 11, Turn: BLUE
+> BLUE's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -  *
+ 1 |        *  -
+ 2 |  *  -
+ 3 |  -  *  -  *
+
+Player: RED, islands: 3, Player: BLUE, islands: 3
+Moves: 12, Turn: RED
+> RED's move...
+
+      0  1  2  3
+    ____________
+ 0 |  -  *  -  *
+ 1 |  *     *  -
+ 2 |  *  -
+ 3 |  -  *  -  *
+
+Player: RED, islands: 2, Player: BLUE, islands: 3
+
+BLUE wins 3 to 2!
+> Player: RED, islands: 2
+Island[size:6]
+	(0,1)(1,2)(0,3)(1,0)(2,0)(3,1)
+Island[size:1]
+	(3,3)
+> Player: BLUE, islands: 3
+Island[size:1]
+	(0,0)
+Island[size:2]
+	(0,2)(1,3)
+Island[size:3]
+	(2,1)(3,0)(3,2)
+> Bye!

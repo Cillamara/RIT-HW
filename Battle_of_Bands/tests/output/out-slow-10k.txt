@@ -1,0 +1,4 @@
+Search type: slow
+Number of bands: 10000
+Elapsed time: 0.053495700005441904 seconds
+Most Mediocre Band: Band(name='Alex Harvey Band', votes=502935)

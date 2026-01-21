@@ -1,0 +1,4 @@
+Search type: fast
+Number of bands: 1000000
+Elapsed time: 0.3772863789999974 seconds
+Most Mediocre Band: Band(name='The Circumstantiating Stellaria Medias', votes=49996613)

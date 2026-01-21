@@ -1,0 +1,19 @@
+c 0 0
+c 1 1
+c 1 2
+c 0 2
+c 2 1
+c 1 2
+c 2 0
+s red
+s blue
+q
+
+Grid's dimension: 3x3
+Testing:
+    - attempt to claim a cell that has been already claimed
+    - connect cell with northeast neighbor cell
+    - connect cell with southwest neighbor cell
+    - show command
+    - blue player's game over condition
+    - red player wins
