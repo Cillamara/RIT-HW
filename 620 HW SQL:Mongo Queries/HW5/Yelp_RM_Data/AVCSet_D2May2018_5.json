@@ -1,0 +1,3 @@
+{"_id":{"$oid":"69b168efe885106c472e4ca4"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"594"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4ca5"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"440"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4ca6"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"1"},"label":{"$numberInt":"5"}}

@@ -1,0 +1,13 @@
+{
+	"collection": "&AssignmentCollectionI&",
+	"query": [
+		{"$lookup": {"from": "&AssignmentCollectionJ&", "localField": "pid", "foreignField": "pid", "as": "_j"}},
+		{"$unwind": "$_j"},
+		{"$group": {
+			"_id": {"i": "$cid", "j": "$_j.cid"},
+			"count": {"$sum": 1}
+		}},
+		{"$project": {"_id": 0, "cid_i": "$_id.i", "cid_j": "$_id.j", "count": 1}},
+		{"$sort": {"cid_i": 1, "cid_j": 1}}
+	]
+}

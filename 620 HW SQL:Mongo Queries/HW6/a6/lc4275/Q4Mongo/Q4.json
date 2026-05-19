@@ -1,0 +1,9 @@
+{
+	"collection": "&DistanceCollection&",
+	"query": [
+		{"$sort": {"pid": 1, "distance": 1, "cid": 1}},
+		{"$group": {"_id": "$pid", "cid": {"$first": "$cid"}, "distance": {"$first": "$distance"}}},
+		{"$project": {"_id": 0, "pid": "$_id", "cid": 1, "distance": 1}},
+		{"$sort": {"pid": 1}}
+	]
+}

@@ -1,0 +1,17 @@
+WITH stats AS (
+    SELECT
+        CAST(MIN(funny) AS DECIMAL(32, 24)) AS min_funny,
+        CAST(MAX(funny) AS DECIMAL(32, 24)) AS max_funny
+    FROM user
+    WHERE yelping_since BETWEEN '&init_date&' AND '&end_date&'
+)
+SELECT
+    u.id,
+    CAST(
+        (CAST(u.funny AS DECIMAL(32, 24)) - s.min_funny)
+        /
+        (s.max_funny - s.min_funny)
+    AS DECIMAL(32, 24)) AS scaled_funny
+FROM user u, stats s
+WHERE u.yelping_since BETWEEN '&init_date&' AND '&end_date&'
+ORDER BY scaled_funny DESC, id ASC

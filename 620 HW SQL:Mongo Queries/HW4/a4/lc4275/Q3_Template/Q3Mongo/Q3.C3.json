@@ -1,0 +1,15 @@
+{
+	"collection": "&LCollection&",
+	"query": [
+		{"$lookup": {
+			"from": "&LCollection&",
+			"localField": "iid_1",
+			"foreignField": "iid_1",
+			"as": "matches"
+		}},
+		{"$unwind": "$matches"},
+		{"$match": {"$expr": {"$lt": ["$iid_2", "$matches.iid_2"]}}},
+		{"$project": {"_id": 0, "iid_1": 1, "iid_2": 1, "iid_3": "$matches.iid_2"}},
+		{"$sort": {"iid_1": 1, "iid_2": 1, "iid_3": 1}}
+	]
+}

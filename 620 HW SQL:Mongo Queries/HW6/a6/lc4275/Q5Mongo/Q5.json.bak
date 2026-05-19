@@ -1,0 +1,12 @@
+{
+	"collection": "&AssignmentCollection&",
+	"query": [
+		{"$group": {
+			"_id": "$cid",
+			"see": {"$sum": {"$multiply": ["$distance", "$distance"]}},
+			"size": {"$sum": 1}
+		}},
+		{"$project": {"_id": 0, "cid": "$_id", "see": 1, "size": 1}},
+		{"$sort": {"cid": 1}}
+	]
+}

@@ -1,0 +1,205 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q2Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.MinMax.json",
+			"parameters" : {
+				"Collection": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 104, "scaled_dim_1": {"$numberDecimal": "0.4656446028364125566320465970453748"}, "scaled_dim_2": {"$numberDecimal": "0.9796536604138857405047146262165370"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "0.005149330587023686920700308959835221"}},
+				{"_id": 153, "scaled_dim_1": {"$numberDecimal": "0.01080036298793332658554870514404693"}, "scaled_dim_2": {"$numberDecimal": "0.8217111446390987181089578703480122"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.4838709677419354838709677419354839"}, "scaled_dim_5": {"$numberDecimal": "0.625"}, "scaled_dim_6": {"$numberDecimal": "0.04347826086956521739130434782608696"}, "scaled_dim_7": {"$numberDecimal": "0.003861997940267765190525231719876416"}},
+				{"_id": 159, "scaled_dim_1": {"$numberDecimal": "0.3285030614605106844975857266519323"}, "scaled_dim_2": {"$numberDecimal": "0.7334884742582163077781873055624137"}, "scaled_dim_3": {"$numberDecimal": "0.6666666666666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.3440860215053763440860215053763441"}, "scaled_dim_5": {"$numberDecimal": "0.5833333333333333333333333333333333"}, "scaled_dim_6": {"$numberDecimal": "0.08695652173913043478260869565217391"}, "scaled_dim_7": {"$numberDecimal": "0.04582904222451081359423274974253347"}},
+				{"_id": 278, "scaled_dim_1": {"$numberDecimal": "0.08980204373651799873956055338857610"}, "scaled_dim_2": {"$numberDecimal": "0.6606595742264227219892956413794296"}, "scaled_dim_3": {"$numberDecimal": "0.6666666666666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.4784946236559139784946236559139785"}, "scaled_dim_5": {"$numberDecimal": "0.4444444444444444444444444444444444"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "0.01364572605561277033985581874356334"}},
+				{"_id": 290, "scaled_dim_1": {"$numberDecimal": "0.3296117468348780792084099389588302"}, "scaled_dim_2": {"$numberDecimal": "0.7368131938792557548552049570074479"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.3924731182795698924731182795698925"}, "scaled_dim_5": {"$numberDecimal": "0.5277777777777777777777777777777778"}, "scaled_dim_6": {"$numberDecimal": "0.04347826086956521739130434782608696"}, "scaled_dim_7": {"$numberDecimal": "0.0007723995880535530381050463439752832"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.Mean.json",
+			"parameters" : {
+				"Collection": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 104, "scaled_dim_1": {"$numberDecimal": "0.1348365981055073194266093842587790"}, "scaled_dim_2": {"$numberDecimal": "0.3540354070211248512488841243607693"}, "scaled_dim_3": {"$numberDecimal": "-0.05746376811594202898550724637681167"}, "scaled_dim_4": {"$numberDecimal": "-0.4211393563970702820632694405485428"}, "scaled_dim_5": {"$numberDecimal": "-0.4304276368760064412238325281803542"}, "scaled_dim_6": {"$numberDecimal": "-0.09856332703213610586011342155009452"}, "scaled_dim_7": {"$numberDecimal": "-0.01768789459544172301079120583889312"}},
+				{"_id": 153, "scaled_dim_1": {"$numberDecimal": "-0.3200076417429719106198885076425489"}, "scaled_dim_2": {"$numberDecimal": "0.1960928912463378288531273684922444"}, "scaled_dim_3": {"$numberDecimal": "-0.05746376811594202898550724637681167"}, "scaled_dim_4": {"$numberDecimal": "0.06273161134486520180769830138694108"}, "scaled_dim_5": {"$numberDecimal": "0.1945723631239935587761674718196458"}, "scaled_dim_6": {"$numberDecimal": "-0.05508506616257088846880907372400757"}, "scaled_dim_7": {"$numberDecimal": "-0.01897522724219764474096628307885192"}},
+				{"_id": 159, "scaled_dim_1": {"$numberDecimal": "-0.002304943270394552707851486134663519"}, "scaled_dim_2": {"$numberDecimal": "0.1078702208654554185223568037066460"}, "scaled_dim_3": {"$numberDecimal": "0.2758695652173913043478260869565217"}, "scaled_dim_4": {"$numberDecimal": "-0.07705333489169393797724793517219871"}, "scaled_dim_5": {"$numberDecimal": "0.1529056964573268921095008051529792"}, "scaled_dim_6": {"$numberDecimal": "-0.01160680529300567107750472589792061"}, "scaled_dim_7": {"$numberDecimal": "0.02299181704204540366274123494380513"}},
+				{"_id": 278, "scaled_dim_1": {"$numberDecimal": "-0.2410059609943872384658766593980197"}, "scaled_dim_2": {"$numberDecimal": "0.03504132083366183273346513952366189"}, "scaled_dim_3": {"$numberDecimal": "0.2758695652173913043478260869565217"}, "scaled_dim_4": {"$numberDecimal": "0.05735526725884369643135421536543570"}, "scaled_dim_5": {"$numberDecimal": "0.01401680756843800322061191626409028"}, "scaled_dim_6": {"$numberDecimal": "-0.09856332703213610586011342155009452"}, "scaled_dim_7": {"$numberDecimal": "-0.009191499126852639591635696055165003"}},
+				{"_id": 290, "scaled_dim_1": {"$numberDecimal": "-0.001196257896027157997027273827765591"}, "scaled_dim_2": {"$numberDecimal": "0.1111949404864948655993744551516802"}, "scaled_dim_3": {"$numberDecimal": "-0.05746376811594202898550724637681167"}, "scaled_dim_4": {"$numberDecimal": "-0.02866623811750038959015116097865032"}, "scaled_dim_5": {"$numberDecimal": "0.09735014090177133655394524959742361"}, "scaled_dim_6": {"$numberDecimal": "-0.05508506616257088846880907372400757"}, "scaled_dim_7": {"$numberDecimal": "-0.02206482559441185689338646845475306"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.ZScore.json",
+			"parameters" : {
+				"Collection": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 104, "scaled_dim_1": {"$numberDecimal": "0.6950910622533095938957269195031342"}, "scaled_dim_2": {"$numberDecimal": "1.065094436879119332372001407536228"}, "scaled_dim_3": {"$numberDecimal": "-0.2403587562927958398358283687033774"}, "scaled_dim_4": {"$numberDecimal": "-1.785302223049886212320175330571835"}, "scaled_dim_5": {"$numberDecimal": "-1.690395244509694272960881655039043"}, "scaled_dim_6": {"$numberDecimal": "-0.9677783563934763226970072887443307"}, "scaled_dim_7": {"$numberDecimal": "-0.3938357505003048924243241788778783"}},
+				{"_id": 153, "scaled_dim_1": {"$numberDecimal": "-1.649659326574286223451219988676399"}, "scaled_dim_2": {"$numberDecimal": "0.5899337846893780177046186432411072"}, "scaled_dim_3": {"$numberDecimal": "-0.2403587562927958398358283687033774"}, "scaled_dim_4": {"$numberDecimal": "0.2659330777052695705100031606869988"}, "scaled_dim_5": {"$numberDecimal": "0.7641335480336727337133955969898929"}, "scaled_dim_6": {"$numberDecimal": "-0.5408719084255063299461218334102377"}, "scaled_dim_7": {"$numberDecimal": "-0.4224992873810209649571764950809901"}},
+				{"_id": 159, "scaled_dim_1": {"$numberDecimal": "-0.01188212613461603182052695323051878"}, "scaled_dim_2": {"$numberDecimal": "0.3245211350904882988677103735578002"}, "scaled_dim_3": {"$numberDecimal": "1.153903890550660482036568221505367"}, "scaled_dim_4": {"$numberDecimal": "-0.3266460091795532111964928478988865"}, "scaled_dim_5": {"$numberDecimal": "0.6004982951974482666017771135212972"}, "scaled_dim_6": {"$numberDecimal": "-0.1139654604575363371952363780761448"}, "scaled_dim_7": {"$numberDecimal": "0.5119320149303229996138090131404559"}},
+				{"_id": 278, "scaled_dim_1": {"$numberDecimal": "-1.242400741272676961674147861615950"}, "scaled_dim_2": {"$numberDecimal": "0.1054197267862607484331094650537548"}, "scaled_dim_3": {"$numberDecimal": "1.153903890550660482036568221505367"}, "scaled_dim_4": {"$numberDecimal": "0.2431415743635456173674456218952340"}, "scaled_dim_5": {"$numberDecimal": "0.05504745241003337622971550195931149"}, "scaled_dim_6": {"$numberDecimal": "-0.9677783563934763226970072887443307"}, "scaled_dim_7": {"$numberDecimal": "-0.2046564070875788137074988919373402"}},
+				{"_id": 290, "scaled_dim_1": {"$numberDecimal": "-0.006166783969347740357138130564594006"}, "scaled_dim_2": {"$numberDecimal": "0.3345233560614000401378463190003696"}, "scaled_dim_3": {"$numberDecimal": "-0.2403587562927958398358283687033774"}, "scaled_dim_4": {"$numberDecimal": "-0.1215224791040376329134749987730031"}, "scaled_dim_5": {"$numberDecimal": "0.3823179580824823104529524688965029"}, "scaled_dim_6": {"$numberDecimal": "-0.5408719084255063299461218334102377"}, "scaled_dim_7": {"$numberDecimal": "-0.4912917758947395390360220539684586"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.MinMax.json",
+			"parameters" : {
+				"Collection": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 19, "scaled_dim_1": {"$numberDecimal": "0.4724130184913611857635399516782191"}, "scaled_dim_2": {"$numberDecimal": "0.9903426858534639221906138199353432"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.5696202531645569620253164556962025"}, "scaled_dim_5": {"$numberDecimal": "0.2142857142857142857142857142857143"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "0.1599684791174152876280535855003940"}},
+				{"_id": 409, "scaled_dim_1": {"$numberDecimal": "0.4766172144788351551522383527977016"}, "scaled_dim_2": {"$numberDecimal": "0.9911216328473701021386082385415477"}, "scaled_dim_3": {"$numberDecimal": "0.6666666666666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.7594936708860759493670886075949367"}, "scaled_dim_5": {"$numberDecimal": "0.5714285714285714285714285714285714"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "0.2789598108747044917257683215130024"}},
+				{"_id": 610, "scaled_dim_1": {"$numberDecimal": "0.4834340375345485644587347494901801"}, "scaled_dim_2": {"$numberDecimal": "0.9953376720192881555976367230843271"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.4556962025316455696202531645569620"}, "scaled_dim_5": {"$numberDecimal": "0.3214285714285714285714285714285714"}, "scaled_dim_6": {"$numberDecimal": "0.6"}, "scaled_dim_7": {"$numberDecimal": "0.09850275807722616233254531126871552"}},
+				{"_id": 840, "scaled_dim_1": {"$numberDecimal": "0.9980742366422743241394938286670552"}, "scaled_dim_2": {"$numberDecimal": "0.1415710655378833938178912720247306"}, "scaled_dim_3": {"$numberDecimal": "0.6666666666666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.6962025316455696202531645569620253"}, "scaled_dim_5": {"$numberDecimal": "0.2619047619047619047619047619047619"}, "scaled_dim_6": {"$numberDecimal": "0.2"}, "scaled_dim_7": {"$numberDecimal": "0.01970055161544523246650906225374310"}},
+				{"_id": 1062, "scaled_dim_1": {"$numberDecimal": "0.4226521029000415394632525838682236"}, "scaled_dim_2": {"$numberDecimal": "0.6551861300331668946945163999377987"}, "scaled_dim_3": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.5063291139240506329113924050632911"}, "scaled_dim_5": {"$numberDecimal": "0.4523809523809523809523809523809524"}, "scaled_dim_6": {"$numberDecimal": "0.2"}, "scaled_dim_7": {"$numberDecimal": "0.05200945626477541371158392434988180"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.Mean.json",
+			"parameters" : {
+				"Collection": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 19, "scaled_dim_1": {"$numberDecimal": "0.02495800202063504389460680541349503"}, "scaled_dim_2": {"$numberDecimal": "0.3132008113486217461720365080612941"}, "scaled_dim_3": {"$numberDecimal": "-0.1629778672032193158953722334004023"}, "scaled_dim_4": {"$numberDecimal": "0.1339556325293533352010798971041438"}, "scaled_dim_5": {"$numberDecimal": "-0.1112508383635144198524480214621060"}, "scaled_dim_6": {"$numberDecimal": "-0.2551307847082494969818913480885312"}, "scaled_dim_7": {"$numberDecimal": "0.07459730804052050680759101496290591"}},
+				{"_id": 409, "scaled_dim_1": {"$numberDecimal": "0.02916219800810901328330520653297763"}, "scaled_dim_2": {"$numberDecimal": "0.3139797583425279261200309266674985"}, "scaled_dim_3": {"$numberDecimal": "0.170355466130114017437961099932931"}, "scaled_dim_4": {"$numberDecimal": "0.3238290502508723225428520490028780"}, "scaled_dim_5": {"$numberDecimal": "0.2458920187793427230046948356807512"}, "scaled_dim_6": {"$numberDecimal": "-0.2551307847082494969818913480885312"}, "scaled_dim_7": {"$numberDecimal": "0.1935886397978097109053057509755143"}},
+				{"_id": 610, "scaled_dim_1": {"$numberDecimal": "0.03597902106382242258980160322545610"}, "scaled_dim_2": {"$numberDecimal": "0.3181957975144459795790594112102779"}, "scaled_dim_3": {"$numberDecimal": "-0.1629778672032193158953722334004023"}, "scaled_dim_4": {"$numberDecimal": "0.02003158189644194279601660596490329"}, "scaled_dim_5": {"$numberDecimal": "-0.004107981220657276995305164319248810"}, "scaled_dim_6": {"$numberDecimal": "0.3448692152917505030181086519114688"}, "scaled_dim_7": {"$numberDecimal": "0.01313158700033138151208274073122742"}},
+				{"_id": 840, "scaled_dim_1": {"$numberDecimal": "0.5506192201715481822705606824023312"}, "scaled_dim_2": {"$numberDecimal": "-0.5355708089669587822006860398493185"}, "scaled_dim_3": {"$numberDecimal": "0.170355466130114017437961099932931"}, "scaled_dim_4": {"$numberDecimal": "0.2605379110103659934289279983699666"}, "scaled_dim_5": {"$numberDecimal": "-0.06363179074446680080482897384305833"}, "scaled_dim_6": {"$numberDecimal": "-0.0551307847082494969818913480885312"}, "scaled_dim_7": {"$numberDecimal": "-0.06567061946144954835395350828374500"}},
+				{"_id": 1062, "scaled_dim_1": {"$numberDecimal": "-0.02480291357068460240568056239650043"}, "scaled_dim_2": {"$numberDecimal": "-0.02195574447167528132406091193625048"}, "scaled_dim_3": {"$numberDecimal": "-0.1629778672032193158953722334004023"}, "scaled_dim_4": {"$numberDecimal": "0.07066449328884700608715584647123241"}, "scaled_dim_5": {"$numberDecimal": "0.1268443997317236753856472166331321"}, "scaled_dim_6": {"$numberDecimal": "-0.0551307847082494969818913480885312"}, "scaled_dim_7": {"$numberDecimal": "-0.03336171481211936710887864618760630"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.ZScore.json",
+			"parameters" : {
+				"Collection": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 19, "scaled_dim_1": {"$numberDecimal": "0.1004171548072021665710230352806919"}, "scaled_dim_2": {"$numberDecimal": "0.8869940508540442544860702554859248"}, "scaled_dim_3": {"$numberDecimal": "-0.6249657687970719983341300173406787"}, "scaled_dim_4": {"$numberDecimal": "0.5337240511055132794282271589464340"}, "scaled_dim_5": {"$numberDecimal": "-0.5387866616186980739109203911765846"}, "scaled_dim_6": {"$numberDecimal": "-1.227526675410846561272467036898735"}, "scaled_dim_7": {"$numberDecimal": "0.6148177105089512121033020217375509"}},
+				{"_id": 409, "scaled_dim_1": {"$numberDecimal": "0.1173325072045993110083610234499992"}, "scaled_dim_2": {"$numberDecimal": "0.8892000520024779445392248648940592"}, "scaled_dim_3": {"$numberDecimal": "0.6532564003064044756249754090721504"}, "scaled_dim_4": {"$numberDecimal": "1.290243264146981384407299973842463"}, "scaled_dim_5": {"$numberDecimal": "1.190852508310204559744332710867312"}, "scaled_dim_6": {"$numberDecimal": "-1.227526675410846561272467036898735"}, "scaled_dim_7": {"$numberDecimal": "1.595523048048597139979439303350754"}},
+				{"_id": 610, "scaled_dim_1": {"$numberDecimal": "0.1447596215831027918877930688255357"}, "scaled_dim_2": {"$numberDecimal": "0.9011400008409131002002520789775479"}, "scaled_dim_3": {"$numberDecimal": "-0.6249657687970719983341300173406787"}, "scaled_dim_4": {"$numberDecimal": "0.07981252328063241644078347000881631"}, "scaled_dim_5": {"$numberDecimal": "-0.01989491064002728381434446056341563"}, "scaled_dim_6": {"$numberDecimal": "1.659290789948100162477136041990876"}, "scaled_dim_7": {"$numberDecimal": "0.1082281984023791433990721676592077"}},
+				{"_id": 840, "scaled_dim_1": {"$numberDecimal": "2.215386288777150286436279645369226"}, "scaled_dim_2": {"$numberDecimal": "-1.516752524743645523283678771575170"}, "scaled_dim_3": {"$numberDecimal": "0.6532564003064044756249754090721504"}, "scaled_dim_4": {"$numberDecimal": "1.038070193133158682747609035543787"}, "scaled_dim_5": {"$numberDecimal": "-0.3081681056281777227568866442373984"}, "scaled_dim_6": {"$numberDecimal": "-0.2652541869578643200225993439355310"}, "scaled_dim_7": {"$numberDecimal": "-0.5412455350675850472473763632104630"}},
+				{"_id": 1062, "scaled_dim_1": {"$numberDecimal": "-0.09979316491912513021845869752667101"}, "scaled_dim_2": {"$numberDecimal": "-0.06217932400810571647598344824209974"}, "scaled_dim_3": {"$numberDecimal": "-0.6249657687970719983341300173406787"}, "scaled_dim_4": {"$numberDecimal": "0.2815509800916905777685362206477575"}, "scaled_dim_5": {"$numberDecimal": "0.6143061183339036818592483435193464"}, "scaled_dim_6": {"$numberDecimal": "-0.2652541869578643200225993439355310"}, "scaled_dim_7": {"$numberDecimal": "-0.2749613043448997290823324655538980"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.MinMax.json",
+			"parameters" : {
+				"Collection": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 43579, "scaled_dim_1": {"$numberDecimal": "0.0005316321105794790005316321105794790"}, "scaled_dim_2": {"$numberDecimal": "0.001199040767386091127098321342925659"}, "scaled_dim_3": {"$numberDecimal": "0"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.02777777777777777777777777777777778"}, "scaled_dim_6": {"$numberDecimal": "0.01449275362318840579710144927536232"}, "scaled_dim_7": {"$numberDecimal": "0.75"}},
+				{"_id": 43715, "scaled_dim_1": {"$numberDecimal": "0.008506113769271664008506113769271664"}, "scaled_dim_2": {"$numberDecimal": "0.001199040767386091127098321342925659"}, "scaled_dim_3": {"$numberDecimal": "0.004154302670623145400593471810089021"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.1488095238095238095238095238095238"}, "scaled_dim_6": {"$numberDecimal": "0.09661835748792270531400966183574879"}, "scaled_dim_7": {"$numberDecimal": "0.8333333333333333333333333333333332"}},
+				{"_id": 45976, "scaled_dim_1": {"$numberDecimal": "0.003721424774056353003721424774056353"}, "scaled_dim_2": {"$numberDecimal": "0.002398081534772182254196642685851319"}, "scaled_dim_3": {"$numberDecimal": "0.001780415430267062314540059347181009"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.02579365079365079365079365079365079"}, "scaled_dim_6": {"$numberDecimal": "0.1014492753623188405797101449275362"}, "scaled_dim_7": {"$numberDecimal": "0.7045454545454545454545454545454545"}},
+				{"_id": 46957, "scaled_dim_1": {"$numberDecimal": "0.1616161616161616161616161616161616"}, "scaled_dim_2": {"$numberDecimal": "0.1750599520383693045563549160671463"}, "scaled_dim_3": {"$numberDecimal": "0.2486646884272997032640949554896142"}, "scaled_dim_4": {"$numberDecimal": "0.75"}, "scaled_dim_5": {"$numberDecimal": "0.08531746031746031746031746031746032"}, "scaled_dim_6": {"$numberDecimal": "0.01449275362318840579710144927536232"}, "scaled_dim_7": {"$numberDecimal": "0.8125"}},
+				{"_id": 47092, "scaled_dim_1": {"$numberDecimal": "0"}, "scaled_dim_2": {"$numberDecimal": "0"}, "scaled_dim_3": {"$numberDecimal": "0"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.01587301587301587301587301587301587"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "0"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.Mean.json",
+			"parameters" : {
+				"Collection": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 43579, "scaled_dim_1": {"$numberDecimal": "-0.002482647269902764962252762212431501"}, "scaled_dim_2": {"$numberDecimal": "-0.0003093310791979443265311122749310132"}, "scaled_dim_3": {"$numberDecimal": "-0.001507791686089035930435705325708395"}, "scaled_dim_4": {"$numberDecimal": "-0.01269157088122605363984674329501916"}, "scaled_dim_5": {"$numberDecimal": "0.01898350868657382067343753167507957"}, "scaled_dim_6": {"$numberDecimal": "0.007526329427878653265959612786199493"}, "scaled_dim_7": {"$numberDecimal": "0.134274737313663504633994313422195"}},
+				{"_id": 43715, "scaled_dim_1": {"$numberDecimal": "0.005491834388789420045721719446260686"}, "scaled_dim_2": {"$numberDecimal": "-0.0003093310791979443265311122749310132"}, "scaled_dim_3": {"$numberDecimal": "0.002646510984534109470157766484380626"}, "scaled_dim_4": {"$numberDecimal": "-0.01269157088122605363984674329501916"}, "scaled_dim_5": {"$numberDecimal": "0.1400152547183198524194692777068256"}, "scaled_dim_6": {"$numberDecimal": "0.08965193329261295278286782534658599"}, "scaled_dim_7": {"$numberDecimal": "0.2176080706469968379673276467555282"}},
+				{"_id": 45976, "scaled_dim_1": {"$numberDecimal": "0.0007071453935741090409370304510453732"}, "scaled_dim_2": {"$numberDecimal": "0.0008897096881881468005672090679946463"}, "scaled_dim_3": {"$numberDecimal": "0.0002726237441780263841043540214726136"}, "scaled_dim_4": {"$numberDecimal": "-0.01269157088122605363984674329501916"}, "scaled_dim_5": {"$numberDecimal": "0.01699938170244683654645340469095258"}, "scaled_dim_6": {"$numberDecimal": "0.09448285116700908804856830843837343"}, "scaled_dim_7": {"$numberDecimal": "0.0888201918591180500885397679676495"}},
+				{"_id": 46957, "scaled_dim_1": {"$numberDecimal": "0.1586018822356793721988317672931506"}, "scaled_dim_2": {"$numberDecimal": "0.1735515801917852691027254824492896"}, "scaled_dim_3": {"$numberDecimal": "0.2471568967412106673336592501639059"}, "scaled_dim_4": {"$numberDecimal": "0.7373084291187739463601532567049808"}, "scaled_dim_5": {"$numberDecimal": "0.07652319122625636035597721421476210"}, "scaled_dim_6": {"$numberDecimal": "0.007526329427878653265959612786199493"}, "scaled_dim_7": {"$numberDecimal": "0.196774737313663504633994313422195"}},
+				{"_id": 47092, "scaled_dim_1": {"$numberDecimal": "-0.003014279380482243962784394323010980"}, "scaled_dim_2": {"$numberDecimal": "-0.001508371846584035453629433617856673"}, "scaled_dim_3": {"$numberDecimal": "-0.001507791686089035930435705325708395"}, "scaled_dim_4": {"$numberDecimal": "-0.01269157088122605363984674329501916"}, "scaled_dim_5": {"$numberDecimal": "0.007078746781811915911532769770317663"}, "scaled_dim_6": {"$numberDecimal": "-0.006966424195309752531141836489162826"}, "scaled_dim_7": {"$numberDecimal": "-0.615725262686336495366005686577805"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.ZScore.json",
+			"parameters" : {
+				"Collection": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 43579, "scaled_dim_1": {"$numberDecimal": "-0.1182459970307790261577876381766100"}, "scaled_dim_2": {"$numberDecimal": "-0.01987346468884770337610353029144050"}, "scaled_dim_3": {"$numberDecimal": "-0.08619861320422434887899414917502821"}, "scaled_dim_4": {"$numberDecimal": "-0.1322617301895570950636789881917623"}, "scaled_dim_5": {"$numberDecimal": "0.7089601124932354175365392145635587"}, "scaled_dim_6": {"$numberDecimal": "0.2778816913224101979677619855234569"}, "scaled_dim_7": {"$numberDecimal": "0.3293946285741540653844756005682426"}},
+				{"_id": 43715, "scaled_dim_1": {"$numberDecimal": "0.2615705584530168612272023277427895"}, "scaled_dim_2": {"$numberDecimal": "-0.01987346468884770337610353029144050"}, "scaled_dim_3": {"$numberDecimal": "0.1512978077815954537944254023676930"}, "scaled_dim_4": {"$numberDecimal": "-0.1322617301895570950636789881917623"}, "scaled_dim_5": {"$numberDecimal": "5.229024432457782337085057202309571"}, "scaled_dim_6": {"$numberDecimal": "3.310063835552435524455213395957097"}, "scaled_dim_7": {"$numberDecimal": "0.5338228995232739846179616373340980"}},
+				{"_id": 45976, "scaled_dim_1": {"$numberDecimal": "0.03368062516273932879620834819114980"}, "scaled_dim_2": {"$numberDecimal": "0.05716080685257681020552550049171746"}, "scaled_dim_3": {"$numberDecimal": "0.01558556721826985226675708720042375"}, "scaled_dim_4": {"$numberDecimal": "-0.1322617301895570950636789881917623"}, "scaled_dim_5": {"$numberDecimal": "0.6348606974118494024619733459119847"}, "scaled_dim_6": {"$numberDecimal": "3.488427491095378190719181125982605"}, "scaled_dim_7": {"$numberDecimal": "0.2178882989655432003480286714232303"}},
+				{"_id": 46957, "scaled_dim_1": {"$numberDecimal": "7.554048423741897899019009673395258"}, "scaled_dim_2": {"$numberDecimal": "11.15009590881770676596010593326646"}, "scaled_dim_3": {"$numberDecimal": "14.12965858580413241114426186459643"}, "scaled_dim_4": {"$numberDecimal": "7.683657872710307466057879332876155"}, "scaled_dim_5": {"$numberDecimal": "2.857843149853429854698949405459204"}, "scaled_dim_6": {"$numberDecimal": "0.2778816913224101979677619855234569"}, "scaled_dim_7": {"$numberDecimal": "0.4827158317859940048095901281426343"}},
+				{"_id": 47092, "scaled_dim_1": {"$numberDecimal": "-0.1435671007296987519834536359045699"}, "scaled_dim_2": {"$numberDecimal": "-0.09690773623027221695773256107459847"}, "scaled_dim_3": {"$numberDecimal": "-0.08619861320422434887899414917502821"}, "scaled_dim_4": {"$numberDecimal": "-0.1322617301895570950636789881917623"}, "scaled_dim_5": {"$numberDecimal": "0.2643636220049193270891440026541148"}, "scaled_dim_6": {"$numberDecimal": "-0.2572092753064178008241412045530676"}, "scaled_dim_7": {"$numberDecimal": "-1.510459809967925207716898730324458"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.MinMax.json",
+			"parameters" : {
+				"Collection": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 42935, "scaled_dim_1": {"$numberDecimal": "0.002439343119745611360369386243847193"}, "scaled_dim_2": {"$numberDecimal": "0.0007922360863537334125569419687066746"}, "scaled_dim_3": {"$numberDecimal": "0.001086295298513948031632919092726167"}, "scaled_dim_4": {"$numberDecimal": "0.5"}, "scaled_dim_5": {"$numberDecimal": "0.1715328467153284671532846715328467"}, "scaled_dim_6": {"$numberDecimal": "0.2804232804232804232804232804232804"}, "scaled_dim_7": {"$numberDecimal": "0.7037037037037037037037037037037038"}},
+				{"_id": 43288, "scaled_dim_1": {"$numberDecimal": "0.002962059502548242366162826153243020"}, "scaled_dim_2": {"$numberDecimal": "0.001980590215884333531392354921766686"}, "scaled_dim_3": {"$numberDecimal": "0.0009124880507517163465716520378899800"}, "scaled_dim_4": {"$numberDecimal": "0.75"}, "scaled_dim_5": {"$numberDecimal": "0.09854014598540145985401459854014599"}, "scaled_dim_6": {"$numberDecimal": "0.01587301587301587301587301587301587"}, "scaled_dim_7": {"$numberDecimal": "0.875"}},
+				{"_id": 45173, "scaled_dim_1": {"$numberDecimal": "0"}, "scaled_dim_2": {"$numberDecimal": "0"}, "scaled_dim_3": {"$numberDecimal": "0"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.07299270072992700729927007299270073"}, "scaled_dim_6": {"$numberDecimal": "0"}, "scaled_dim_7": {"$numberDecimal": "1"}},
+				{"_id": 45289, "scaled_dim_1": {"$numberDecimal": "0.004791566842357450886439865836128414"}, "scaled_dim_2": {"$numberDecimal": "0.007031095266389384036442859972271737"}, "scaled_dim_3": {"$numberDecimal": "0.001868427913443990614408620839489007"}, "scaled_dim_4": {"$numberDecimal": "0.25"}, "scaled_dim_5": {"$numberDecimal": "0.08394160583941605839416058394160584"}, "scaled_dim_6": {"$numberDecimal": "0.1904761904761904761904761904761905"}, "scaled_dim_7": {"$numberDecimal": "0.5743243243243243243243243243243242"}},
+				{"_id": 46154, "scaled_dim_1": {"$numberDecimal": "0.00008711939713377183429890665156597116"}, "scaled_dim_2": {"$numberDecimal": "0"}, "scaled_dim_3": {"$numberDecimal": "0"}, "scaled_dim_4": {"$numberDecimal": "0"}, "scaled_dim_5": {"$numberDecimal": "0.01459854014598540145985401459854015"}, "scaled_dim_6": {"$numberDecimal": "0.01058201058201058201058201058201058"}, "scaled_dim_7": {"$numberDecimal": "0.75"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.Mean.json",
+			"parameters" : {
+				"Collection": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 42935, "scaled_dim_1": {"$numberDecimal": "0.002146455608704788593744011436845046"}, "scaled_dim_2": {"$numberDecimal": "0.0005945370474079655519238449519788298"}, "scaled_dim_3": {"$numberDecimal": "0.0009102579205387380838652012121257887"}, "scaled_dim_4": {"$numberDecimal": "0.489116323351220356586463562402631"}, "scaled_dim_5": {"$numberDecimal": "0.1569636830673865277484714744727708"}, "scaled_dim_6": {"$numberDecimal": "0.2732295464682516785684519802574156"}, "scaled_dim_7": {"$numberDecimal": "0.1039851472596016522718758876779092"}},
+				{"_id": 43288, "scaled_dim_1": {"$numberDecimal": "0.002669171991507419599537451346240873"}, "scaled_dim_2": {"$numberDecimal": "0.001782891176938565670759257905038841"}, "scaled_dim_3": {"$numberDecimal": "0.0007364506727765063988039341572896020"}, "scaled_dim_4": {"$numberDecimal": "0.739116323351220356586463562402631"}, "scaled_dim_5": {"$numberDecimal": "0.08397098233745952044920140148007011"}, "scaled_dim_6": {"$numberDecimal": "0.008679281917987128303901715707151053"}, "scaled_dim_7": {"$numberDecimal": "0.2752814435558979485681721839742055"}},
+				{"_id": 45173, "scaled_dim_1": {"$numberDecimal": "-0.0002928875110408227666253748070021465"}, "scaled_dim_2": {"$numberDecimal": "-0.0001976990389457678606330970167278448"}, "scaled_dim_3": {"$numberDecimal": "-0.0001760373779752099477677178806003778"}, "scaled_dim_4": {"$numberDecimal": "-0.01088367664877964341353643759736888"}, "scaled_dim_5": {"$numberDecimal": "0.05842353708198506789445687593262485"}, "scaled_dim_6": {"$numberDecimal": "-0.007193733955028744711971300165864820"}, "scaled_dim_7": {"$numberDecimal": "0.4002814435558979485681721839742055"}},
+				{"_id": 45289, "scaled_dim_1": {"$numberDecimal": "0.004498679331316628119814491029126266"}, "scaled_dim_2": {"$numberDecimal": "0.006833396227443616175809762955543892"}, "scaled_dim_3": {"$numberDecimal": "0.001692390535468780666640902958888629"}, "scaled_dim_4": {"$numberDecimal": "0.2391163233512203565864635624026311"}, "scaled_dim_5": {"$numberDecimal": "0.06937244219147411898934738688152996"}, "scaled_dim_6": {"$numberDecimal": "0.1832824565211617314785048903103257"}, "scaled_dim_7": {"$numberDecimal": "-0.02539423211977772710750349170147025"}},
+				{"_id": 46154, "scaled_dim_1": {"$numberDecimal": "-0.0002057681139070509323264681554361754"}, "scaled_dim_2": {"$numberDecimal": "-0.0001976990389457678606330970167278448"}, "scaled_dim_3": {"$numberDecimal": "-0.0001760373779752099477677178806003778"}, "scaled_dim_4": {"$numberDecimal": "-0.01088367664877964341353643759736888"}, "scaled_dim_5": {"$numberDecimal": "0.00002937649804346205504081753846425912"}, "scaled_dim_6": {"$numberDecimal": "0.003388276626981837298610710416145762"}, "scaled_dim_7": {"$numberDecimal": "0.1502814435558979485681721839742055"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.ZScore.json",
+			"parameters" : {
+				"Collection": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"_id": 42935, "scaled_dim_1": {"$numberDecimal": "0.2284051109890623074366874560617346"}, "scaled_dim_2": {"$numberDecimal": "0.06350409292967783216819460923157040"}, "scaled_dim_3": {"$numberDecimal": "0.09737842772000582230050961009291733"}, "scaled_dim_4": {"$numberDecimal": "5.582535804767118629300757478805121"}, "scaled_dim_5": {"$numberDecimal": "3.568993832742955779986774806622557"}, "scaled_dim_6": {"$numberDecimal": "10.01081067853651701161874272381813"}, "scaled_dim_7": {"$numberDecimal": "0.2515557001750813915499404479782169"}},
+				{"_id": 43288, "scaled_dim_1": {"$numberDecimal": "0.2840275487164742107584140299679577"}, "scaled_dim_2": {"$numberDecimal": "0.1904353773703832508813371600596241"}, "scaled_dim_3": {"$numberDecimal": "0.07878471254155345644745020222377835"}, "scaled_dim_4": {"$numberDecimal": "8.435914202833001780946010825857294"}, "scaled_dim_5": {"$numberDecimal": "1.909307377574079369253864907918875"}, "scaled_dim_6": {"$numberDecimal": "0.3179987275523673004597480124033986"}, "scaled_dim_7": {"$numberDecimal": "0.6659471867268703845383855040828901"}},
+				{"_id": 45173, "scaled_dim_1": {"$numberDecimal": "-0.03116626507219324139803655550064017"}, "scaled_dim_2": {"$numberDecimal": "-0.02111676336412578030723375798713206"}, "scaled_dim_3": {"$numberDecimal": "-0.01883229214532146428111168908920128"}, "scaled_dim_4": {"$numberDecimal": "-0.1242209913646476739897492152992248"}, "scaled_dim_5": {"$numberDecimal": "1.328417118264972625497346443372586"}, "scaled_dim_6": {"$numberDecimal": "-0.2635699895066816822097916702814853"}, "scaled_dim_7": {"$numberDecimal": "0.9683409742106082983407643288079219"}},
+				{"_id": 45289, "scaled_dim_1": {"$numberDecimal": "0.4787060807624158723844570386397387"}, "scaled_dim_2": {"$numberDecimal": "0.7298933362433812804121930010788522"}, "scaled_dim_3": {"$numberDecimal": "0.1810501460230414686392769455040428"}, "scaled_dim_4": {"$numberDecimal": "2.729157406701235477655504131752949"}, "scaled_dim_5": {"$numberDecimal": "1.577370086540304087107282928178138"}, "scaled_dim_6": {"$numberDecimal": "6.715254615201906109824684521937121"}, "scaled_dim_7": {"$numberDecimal": "-0.06143246424752621893220139863407868"}},
+				{"_id": 46154, "scaled_dim_1": {"$numberDecimal": "-0.02189585878429125751108212651626965"}, "scaled_dim_2": {"$numberDecimal": "-0.02111676336412578030723375798713206"}, "scaled_dim_3": {"$numberDecimal": "-0.01883229214532146428111168908920128"}, "scaled_dim_4": {"$numberDecimal": "-0.1242209913646476739897492152992248"}, "scaled_dim_5": {"$numberDecimal": "0.0006679541298714969110185244096392532"}, "scaled_dim_6": {"$numberDecimal": "0.1241424885326843062365681181751040"}, "scaled_dim_7": {"$numberDecimal": "0.3635533992431324707360066793578582"}}
+			]
+		}
+	]
+}

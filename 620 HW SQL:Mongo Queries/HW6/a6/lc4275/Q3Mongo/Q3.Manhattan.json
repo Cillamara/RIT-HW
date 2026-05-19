@@ -1,0 +1,22 @@
+{
+	"collection": "&PointCollection&",
+	"query": [
+		{"$lookup": {"from": "&CentroidCollection&", "pipeline": [], "as": "_c"}},
+		{"$unwind": "$_c"},
+		{"$project": {
+			"_id": 0,
+			"pid": "$_id",
+			"cid": "$_c._id",
+			"distance": {"$add": [
+				{"$abs": {"$subtract": ["$scaled_dim_1", "$_c.scaled_dim_1"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_2", "$_c.scaled_dim_2"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_3", "$_c.scaled_dim_3"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_4", "$_c.scaled_dim_4"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_5", "$_c.scaled_dim_5"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_6", "$_c.scaled_dim_6"]}},
+				{"$abs": {"$subtract": ["$scaled_dim_7", "$_c.scaled_dim_7"]}}
+			]}
+		}},
+		{"$sort": {"pid": 1, "cid": 1}}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "TODOTODO__YOUR_SCHEMA_NAME__TODOTODO", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "TODOTODO__YOUR_USERNAME__TODOTODO", "pwd" : "TODOTODO__YOUR_PASSWORD__TODOTODO"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q5SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.L3.sql",
+			"parameters" : {
+				"CRelation": "C3_Pruned_T1",
+				"TRelation": "T1",
+				"MinSup": 10
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 374, "iid_2": 32534, "iid_3": 64219, "count": 10},
+				{"iid_1": 447, "iid_2": 22099, "iid_3": 53892, "count": 10},
+				{"iid_1": 1115, "iid_2": 1206, "iid_3": 20053, "count": 15},
+				{"iid_1": 1115, "iid_2": 1206, "iid_3": 65375, "count": 10},
+				{"iid_1": 1206, "iid_2": 1417, "iid_3": 20053, "count": 14},
+				{"iid_1": 1206, "iid_2": 5595, "iid_3": 20053, "count": 10},
+				{"iid_1": 1206, "iid_2": 7267, "iid_3": 20053, "count": 11},
+				{"iid_1": 1206, "iid_2": 7888, "iid_3": 20053, "count": 10},
+				{"iid_1": 1206, "iid_2": 8262, "iid_3": 20053, "count": 14},
+				{"iid_1": 1206, "iid_2": 8869, "iid_3": 20053, "count": 13},
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 27616, "count": 11},
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 31048, "count": 10},
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 35057, "count": 10},
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 44041, "count": 10},
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 44345, "count": 13}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.L3.sql",
+			"parameters" : {
+				"CRelation": "C3_Pruned_T2",
+				"TRelation": "T2",
+				"MinSup": 6
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 9062, "iid_2": 18538, "iid_3": 18726, "count": 9},
+				{"iid_1": 9062, "iid_2": 18538, "iid_3": 26382, "count": 6},
+				{"iid_1": 9062, "iid_2": 18538, "iid_3": 40971, "count": 6},
+				{"iid_1": 9062, "iid_2": 18726, "iid_3": 26382, "count": 8},
+				{"iid_1": 9062, "iid_2": 18726, "iid_3": 40971, "count": 7},
+				{"iid_1": 9062, "iid_2": 18726, "iid_3": 61385, "count": 7},
+				{"iid_1": 18538, "iid_2": 18726, "iid_3": 26382, "count": 6},
+				{"iid_1": 18726, "iid_2": 26382, "iid_3": 59321, "count": 7},
+				{"iid_1": 18726, "iid_2": 26382, "iid_3": 61385, "count": 6},
+				{"iid_1": 18726, "iid_2": 40971, "iid_3": 61385, "count": 7},
+				{"iid_1": 19928, "iid_2": 67275, "iid_3": 117127, "count": 6},
+				{"iid_1": 20078, "iid_2": 28035, "iid_3": 64928, "count": 6},
+				{"iid_1": 28035, "iid_2": 98379, "iid_3": 119926, "count": 7},
+				{"iid_1": 32326, "iid_2": 91757, "iid_3": 132465, "count": 6},
+				{"iid_1": 108101, "iid_2": 117127, "iid_3": 121653, "count": 7}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.L4.sql",
+			"parameters" : {
+				"CRelation": "C4_Pruned_T1",
+				"TRelation": "T1",
+				"MinSup": 10
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 65375, "iid_4": 214469, "count": 10},
+				{"iid_1": 1242, "iid_2": 7566, "iid_3": 26055, "iid_4": 56963, "count": 11},
+				{"iid_1": 1242, "iid_2": 10262, "iid_3": 26055, "iid_4": 56963, "count": 10},
+				{"iid_1": 1242, "iid_2": 11451, "iid_3": 26055, "iid_4": 56963, "count": 10},
+				{"iid_1": 1242, "iid_2": 26055, "iid_3": 38948, "iid_4": 56963, "count": 10},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 32339, "iid_4": 56963, "count": 11},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 35665, "iid_4": 56963, "count": 10},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 54448, "iid_4": 56963, "count": 10},
+				{"iid_1": 1242, "iid_2": 32339, "iid_3": 35665, "iid_4": 56963, "count": 10},
+				{"iid_1": 4207, "iid_2": 7406, "iid_3": 17989, "iid_4": 21888, "count": 10},
+				{"iid_1": 4851, "iid_2": 7406, "iid_3": 12613, "iid_4": 21888, "count": 10},
+				{"iid_1": 4851, "iid_2": 7406, "iid_3": 17989, "iid_4": 21888, "count": 12},
+				{"iid_1": 4851, "iid_2": 7406, "iid_3": 21888, "iid_4": 24858, "count": 10},
+				{"iid_1": 4851, "iid_2": 7406, "iid_3": 21888, "iid_4": 35162, "count": 10},
+				{"iid_1": 4851, "iid_2": 7406, "iid_3": 21888, "iid_4": 45609, "count": 10}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.L4.sql",
+			"parameters" : {
+				"CRelation": "C4_Pruned_T2",
+				"TRelation": "T2",
+				"MinSup": 6
+			},
+			"limit": 15,
+			"expected" : []
+		}
+	]
+}

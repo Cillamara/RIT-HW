@@ -1,0 +1,96 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q5SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_0"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.491493383742911153119093"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_3"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.335369561384283527316051"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_2"
+			},
+			"expected" : []
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_5"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0E-24"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_2"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.499173772225527133320114"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_4"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.483712076145151695419393"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_3"
+			},
+			"expected" : []
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.Gini.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_5"
+			},
+			"expected" : []
+		}
+	]
+}

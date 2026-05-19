@@ -1,0 +1,127 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q9Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Manhattan.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Mexican_MinMax_Manhattan_Assignment",
+				"PointCollection": "P1Mexican_MinMax",
+				"ClusterI": 12282,
+				"ClusterJ": 19844
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "0.01040857837704752876879893587842897"}, "max_distance": {"$numberDecimal": "3.193272351509537809755175409082764"}, "mean_distance": {"$numberDecimal": "0.9518575516935675841870873137054358"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Euclidean.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Mexican_MinMax_Euclidean_Assignment",
+				"PointCollection": "P1Mexican_MinMax",
+				"ClusterI": 1046,
+				"ClusterJ": 12282
+			},
+			"limit": 25,
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "0.5003217559455248276289625278280991"}, "max_distance": {"$numberDecimal": "1.448658616448556213027724143856584"}, "mean_distance": {"$numberDecimal": "0.9608744424654685000032783292956081"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Manhattan.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Korean_Mean_Manhattan_Assignment",
+				"PointCollection": "P1Korean_Mean",
+				"ClusterI": 5549,
+				"ClusterJ": 16704
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "0.3166205976237183371580316201762958"}, "max_distance": {"$numberDecimal": "3.798585463182075930121470264846184"}, "mean_distance": {"$numberDecimal": "1.489430481792670718863315825597757"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Euclidean.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Korean_Mean_Euclidean_Assignment",
+				"PointCollection": "P1Korean_Mean",
+				"ClusterI": 5549,
+				"ClusterJ": 37881
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "0.6161375063173075118878737372262446"}, "max_distance": {"$numberDecimal": "1.758510763153213841061309833825591"}, "mean_distance": {"$numberDecimal": "1.085977314706265649244464282365216"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Manhattan.json",
+			"parameters" : {
+				"AssignmentCollection": "P2Jan2018_ZScore_Manhattan_Assignment",
+				"PointCollection": "P2Jan2018_ZScore",
+				"ClusterI": 198459,
+				"ClusterJ": 272740
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "1.991180581827088360032622036927780"}, "max_distance": {"$numberDecimal": "29.08891433352606899140416846662814"}, "mean_distance": {"$numberDecimal": "7.752909720789187038210511823600066"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Euclidean.json",
+			"parameters" : {
+				"AssignmentCollection": "P2Jan2018_ZScore_Euclidean_Assignment",
+				"PointCollection": "P2Jan2018_ZScore",
+				"ClusterI": 198459,
+				"ClusterJ": 272740
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "1.471731587318408091513794674600274"}, "max_distance": {"$numberDecimal": "21.16293246431911116277855168576124"}, "mean_distance": {"$numberDecimal": "4.984814373121246515225511618655986"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Manhattan.json",
+			"parameters" : {
+				"AssignmentCollection": "P2May2018_ZScore_Manhattan_Assignment",
+				"PointCollection": "P2May2018_ZScore",
+				"ClusterI": 161047,
+				"ClusterJ": 242412
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "2.116756512386165396616651773075223"}, "max_distance": {"$numberDecimal": "18.72890926212873374610363286029526"}, "mean_distance": {"$numberDecimal": "2.957861949590693804320824468074781"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q9.Euclidean.json",
+			"parameters" : {
+				"AssignmentCollection": "P2May2018_MinMax_Euclidean_Assignment",
+				"PointCollection": "P2May2018_MinMax",
+				"ClusterI": 519352,
+				"ClusterJ": 550374
+			},
+			"expected" : [
+				{"min_distance": {"$numberDecimal": "0.06448412698412698412698412698412699"}, "max_distance": {"$numberDecimal": "1.077091233376112371664889273094527"}, "mean_distance": {"$numberDecimal": "0.1853616110258670850813906149003965"}}
+			]
+		}
+	]
+}

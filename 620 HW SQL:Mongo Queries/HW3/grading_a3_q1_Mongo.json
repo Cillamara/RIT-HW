@@ -1,0 +1,121 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q1Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.1.json",
+			"parameters" : {
+				"init_date": "2020-01-01 00:00:00",
+				"end_date": "2020-12-31 23:59:59"
+			},
+			"limit": 15,
+			"expected" : [
+				{"count": 358311, "category": "Restaurants"},
+				{"count": 146234, "category": "Food"},
+				{"count": 104666, "category": "Nightlife"},
+				{"count": 99945, "category": "Bars"},
+				{"count": 69907, "category": "American (Traditional)"},
+				{"count": 62806, "category": "Breakfast & Brunch"},
+				{"count": 61841, "category": "American (New)"},
+				{"count": 53678, "category": "Sandwiches"},
+				{"count": 47678, "category": "Seafood"},
+				{"count": 45008, "category": "Shopping"},
+				{"count": 41289, "category": "Event Planning & Services"},
+				{"count": 40917, "category": "Pizza"},
+				{"count": 37116, "category": "Mexican"},
+				{"count": 36272, "category": "Coffee & Tea"},
+				{"count": 35386, "category": "Burgers"}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.2.json",
+			"parameters" : {
+				"init_date": "2021-03-01 00:00:00",
+				"end_date": "2024-05-31 23:59:59"
+			},
+			"limit": 15,
+			"expected" : [
+				{"count": 350772, "category": "Restaurants", "year": 2021},
+				{"count": 139778, "category": "Food", "year": 2021},
+				{"count": 115086, "category": "Nightlife", "year": 2021},
+				{"count": 110088, "category": "Bars", "year": 2021},
+				{"count": 72272, "category": "American (Traditional)", "year": 2021},
+				{"count": 66305, "category": "Breakfast & Brunch", "year": 2021},
+				{"count": 65726, "category": "American (New)", "year": 2021},
+				{"count": 50446, "category": "Sandwiches", "year": 2021},
+				{"count": 50292, "category": "Seafood", "year": 2021},
+				{"count": 42632, "category": "Event Planning & Services", "year": 2021},
+				{"count": 37775, "category": "Shopping", "year": 2021},
+				{"count": 36772, "category": "Mexican", "year": 2021},
+				{"count": 36188, "category": "Coffee & Tea", "year": 2021},
+				{"count": 35978, "category": "Pizza", "year": 2021},
+				{"count": 35182, "category": "Burgers", "year": 2021}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.3.json",
+			"parameters" : {
+				"category": "Mexican",
+				"quantile": 0.5
+			},
+			"expected" : [
+				{"stars": 4},
+				{"stars": 4}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.3.json",
+			"parameters" : {
+				"category": "Korean",
+				"quantile": 0.75
+			},
+			"expected" : [
+				{"stars": 5},
+				{"stars": 5}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.3.json",
+			"parameters" : {
+				"category": "Kiosk",
+				"quantile": 0.25
+			},
+			"expected" : [
+				{"stars": 4},
+				{"stars": 4}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.4.json",
+			"parameters" : {
+				"category": "Mexican"
+			},
+			"expected" : [
+				{"mode": 1}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"collection": "&AssignmentCollection&",
+	"query": [
+		{"$lookup": {"from": "&PointCollection&", "localField": "pid", "foreignField": "_id", "as": "_p"}},
+		{"$unwind": "$_p"},
+		{"$sort": {"_id": 1}},
+		{"$group": {
+			"_id": "$cid",
+			"dim_1": {"$avg": "$_p.scaled_dim_1"},
+			"dim_2": {"$avg": "$_p.scaled_dim_2"},
+			"dim_3": {"$avg": "$_p.scaled_dim_3"},
+			"dim_4": {"$avg": "$_p.scaled_dim_4"},
+			"dim_5": {"$avg": "$_p.scaled_dim_5"},
+			"dim_6": {"$avg": "$_p.scaled_dim_6"},
+			"dim_7": {"$avg": "$_p.scaled_dim_7"}
+		}},
+		{"$project": {"_id": 0, "cid": "$_id", "dim_1": 1, "dim_2": 1, "dim_3": 1, "dim_4": 1, "dim_5": 1, "dim_6": 1, "dim_7": 1}},
+		{"$sort": {"cid": 1}}
+	]
+}

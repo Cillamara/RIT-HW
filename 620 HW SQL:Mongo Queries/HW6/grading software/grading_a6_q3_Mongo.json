@@ -1,0 +1,408 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q3Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_MinMax",
+				"CentroidCollection": "P1Mexican_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 1046, "distance": {"$numberDecimal": "1.027867968031588300948027519306146"}},
+				{"pid": 104, "cid": 12282, "distance": {"$numberDecimal": "1.396068745205279181598941596975248"}},
+				{"pid": 104, "cid": 19844, "distance": {"$numberDecimal": "0.9199556367024315523721103306243166"}},
+				{"pid": 104, "cid": 43615, "distance": {"$numberDecimal": "1.563693153661393106486019063850381"}},
+				{"pid": 104, "cid": 47220, "distance": {"$numberDecimal": "1.224575603437292381893748105166667"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_MinMax",
+				"CentroidCollection": "P1Mexican_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 1046, "distance": {"$numberDecimal": "0.5931453963444168473427370242484857"}},
+				{"pid": 104, "cid": 12282, "distance": {"$numberDecimal": "0.9006836678539413478722733662152466"}},
+				{"pid": 104, "cid": 19844, "distance": {"$numberDecimal": "0.6491336779465579640645481314777129"}},
+				{"pid": 104, "cid": 43615, "distance": {"$numberDecimal": "0.9865361577625494175055020984643163"}},
+				{"pid": 104, "cid": 47220, "distance": {"$numberDecimal": "0.9263003844403727373059414801110953"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_MinMax",
+				"CentroidCollection": "P1Korean_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 19686, "distance": {"$numberDecimal": "2.018826085429418272892863298470288"}},
+				{"pid": 19, "cid": 41428, "distance": {"$numberDecimal": "0.8242849022647157441180633768276704"}},
+				{"pid": 19, "cid": 46106, "distance": {"$numberDecimal": "2.399233768011330227005232380534895"}},
+				{"pid": 19, "cid": 48516, "distance": {"$numberDecimal": "1.446889690515844182160565029384347"}},
+				{"pid": 19, "cid": 66305, "distance": {"$numberDecimal": "2.136793137509325867183637389246107"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_MinMax",
+				"CentroidCollection": "P1Korean_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 19686, "distance": {"$numberDecimal": "1.147264253679268410182850670063171"}},
+				{"pid": 19, "cid": 41428, "distance": {"$numberDecimal": "0.4805728931931033174332980774522617"}},
+				{"pid": 19, "cid": 46106, "distance": {"$numberDecimal": "1.277553557311311804589542897616773"}},
+				{"pid": 19, "cid": 48516, "distance": {"$numberDecimal": "0.6389603353204530501805485247070295"}},
+				{"pid": 19, "cid": 66305, "distance": {"$numberDecimal": "1.073466980230174128149046775563252"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_MinMax",
+				"CentroidCollection": "P2Jan2018_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 77073, "distance": {"$numberDecimal": "0.7880488233265508013215567995542643"}},
+				{"pid": 43579, "cid": 175949, "distance": {"$numberDecimal": "0.2940012042789317537025091805066452"}},
+				{"pid": 43579, "cid": 239774, "distance": {"$numberDecimal": "0.7662234265011539759247314027288675"}},
+				{"pid": 43579, "cid": 271345, "distance": {"$numberDecimal": "0.2452024947250734584254496013875696"}},
+				{"pid": 43579, "cid": 494967, "distance": {"$numberDecimal": "0.7940012042789317537025091805066452"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_MinMax",
+				"CentroidCollection": "P2Jan2018_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 77073, "distance": {"$numberDecimal": "0.7504585985819812935015771992302037"}},
+				{"pid": 43579, "cid": 175949, "distance": {"$numberDecimal": "0.2519590545650560632371414712821045"}},
+				{"pid": 43579, "cid": 239774, "distance": {"$numberDecimal": "0.7501411602085605418838155311786440"}},
+				{"pid": 43579, "cid": 271345, "distance": {"$numberDecimal": "0.1973903771214411848764154865052663"}},
+				{"pid": 43579, "cid": 494967, "distance": {"$numberDecimal": "0.7506552905144390565442025308579265"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_MinMax",
+				"CentroidCollection": "P2May2018_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 519352, "distance": {"$numberDecimal": "1.002483286429011035696148725468211"}},
+				{"pid": 42935, "cid": 550374, "distance": {"$numberDecimal": "1.122180263137718971852702872520610"}},
+				{"pid": 42935, "cid": 576124, "distance": {"$numberDecimal": "0.9121408592350438383086045887171484"}},
+				{"pid": 42935, "cid": 656834, "distance": {"$numberDecimal": "1.386208816266943969683844401702493"}},
+				{"pid": 42935, "cid": 676587, "distance": {"$numberDecimal": "1.226749800152234922626419812085186"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_MinMax",
+				"CentroidCollection": "P2May2018_MinMax_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 519352, "distance": {"$numberDecimal": "0.6001762538580877611652146580317351"}},
+				{"pid": 42935, "cid": 550374, "distance": {"$numberDecimal": "0.6200575121827350848803527697071441"}},
+				{"pid": 42935, "cid": 576124, "distance": {"$numberDecimal": "0.5776173375782431259973427028332923"}},
+				{"pid": 42935, "cid": 656834, "distance": {"$numberDecimal": "0.7450154364865607958158544178262887"}},
+				{"pid": 42935, "cid": 676587, "distance": {"$numberDecimal": "0.6616248643432077551193433493802451"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_Mean",
+				"CentroidCollection": "P1Mexican_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 22668, "distance": {"$numberDecimal": "2.128274968323059179137128206149736"}},
+				{"pid": 104, "cid": 29938, "distance": {"$numberDecimal": "1.469808054134805453718915471881492"}},
+				{"pid": 104, "cid": 35915, "distance": {"$numberDecimal": "0.3515725300515969021896357854547774"}},
+				{"pid": 104, "cid": 44719, "distance": {"$numberDecimal": "0.2705365013633659302540687782888688"}},
+				{"pid": 104, "cid": 49627, "distance": {"$numberDecimal": "1.420687203538106004135839559484461"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_Mean",
+				"CentroidCollection": "P1Mexican_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 22668, "distance": {"$numberDecimal": "1.083676076857902597048198834945065"}},
+				{"pid": 104, "cid": 29938, "distance": {"$numberDecimal": "0.8531635215261075734114820524748198"}},
+				{"pid": 104, "cid": 35915, "distance": {"$numberDecimal": "0.3335134997452382162010335488264793"}},
+				{"pid": 104, "cid": 44719, "distance": {"$numberDecimal": "0.2307957777654215480340658651506201"}},
+				{"pid": 104, "cid": 49627, "distance": {"$numberDecimal": "0.8118841371450481529224994965628337"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_Mean",
+				"CentroidCollection": "P1Korean_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 5549, "distance": {"$numberDecimal": "1.437570395091235088367756007225989"}},
+				{"pid": 19, "cid": 16704, "distance": {"$numberDecimal": "1.560070741848786450860625334271833"}},
+				{"pid": 19, "cid": 37881, "distance": {"$numberDecimal": "2.247049251172892178187222053103298"}},
+				{"pid": 19, "cid": 41989, "distance": {"$numberDecimal": "1.151545171281063703595468416746132"}},
+				{"pid": 19, "cid": 58645, "distance": {"$numberDecimal": "2.300602678804585148136773087231201"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_Mean",
+				"CentroidCollection": "P1Korean_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 5549, "distance": {"$numberDecimal": "0.6486560942358138228379273894937230"}},
+				{"pid": 19, "cid": 16704, "distance": {"$numberDecimal": "0.7002699702439834351757237761676499"}},
+				{"pid": 19, "cid": 37881, "distance": {"$numberDecimal": "1.097077171578672501662485827715549"}},
+				{"pid": 19, "cid": 41989, "distance": {"$numberDecimal": "0.5319395014387370254622554534001470"}},
+				{"pid": 19, "cid": 58645, "distance": {"$numberDecimal": "1.036527040497627277767428668889601"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_Mean",
+				"CentroidCollection": "P2Jan2018_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 781305, "distance": {"$numberDecimal": "0.04400120427893175370250918050664524"}},
+				{"pid": 43579, "cid": 931708, "distance": {"$numberDecimal": "0.3030383270859039006310839076515121"}},
+				{"pid": 43579, "cid": 935516, "distance": {"$numberDecimal": "0.2947339663083685755260519025412427"}},
+				{"pid": 43579, "cid": 1063678, "distance": {"$numberDecimal": "0.1590029916688955590557421221036782"}},
+				{"pid": 43579, "cid": 1161312, "distance": {"$numberDecimal": "0.2170084506557433479054077312312829"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_Mean",
+				"CentroidCollection": "P2Jan2018_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 781305, "distance": {"$numberDecimal": "0.03135865394619001531094934249465822"}},
+				{"pid": 43579, "cid": 931708, "distance": {"$numberDecimal": "0.2520494993249979115697434447043748"}},
+				{"pid": 43579, "cid": 935516, "distance": {"$numberDecimal": "0.2517655219644838201000457133131067"}},
+				{"pid": 43579, "cid": 1063678, "distance": {"$numberDecimal": "0.1276147606148047462829952808768493"}},
+				{"pid": 43579, "cid": 1161312, "distance": {"$numberDecimal": "0.1895509832993077827150223309144625"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_Mean",
+				"CentroidCollection": "P2May2018_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 70971, "distance": {"$numberDecimal": "1.627130990018458733657299370118395"}},
+				{"pid": 42935, "cid": 97811, "distance": {"$numberDecimal": "1.216073947574554975884928459061353"}},
+				{"pid": 42935, "cid": 310809, "distance": {"$numberDecimal": "0.9972357329499463026121230369409150"}},
+				{"pid": 42935, "cid": 514409, "distance": {"$numberDecimal": "1.252570297939518479534563495557703"}},
+				{"pid": 42935, "cid": 813210, "distance": {"$numberDecimal": "1.248789983807321471418151631930719"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_Mean",
+				"CentroidCollection": "P2May2018_Mean_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 70971, "distance": {"$numberDecimal": "0.9181926376959605565981793360254444"}},
+				{"pid": 42935, "cid": 97811, "distance": {"$numberDecimal": "0.6592960828180207311470129701843557"}},
+				{"pid": 42935, "cid": 310809, "distance": {"$numberDecimal": "0.5977224948303134264813209122359685"}},
+				{"pid": 42935, "cid": 514409, "distance": {"$numberDecimal": "0.6677274795714706039657834152187720"}},
+				{"pid": 42935, "cid": 813210, "distance": {"$numberDecimal": "0.6667987865697746920882700151749517"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_ZScore",
+				"CentroidCollection": "P1Mexican_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 23287, "distance": {"$numberDecimal": "5.008023189923857293110578010658689"}},
+				{"pid": 104, "cid": 53697, "distance": {"$numberDecimal": "3.992903781207740254204271335841628"}},
+				{"pid": 104, "cid": 79970, "distance": {"$numberDecimal": "9.860197687842019914852476167542723"}},
+				{"pid": 104, "cid": 82451, "distance": {"$numberDecimal": "3.280215323477228457568938238887782"}},
+				{"pid": 104, "cid": 108113, "distance": {"$numberDecimal": "2.666474571298693984160388531574730"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Mexican_ZScore",
+				"CentroidCollection": "P1Mexican_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 23287, "distance": {"$numberDecimal": "3.435438973847026970550766461423926"}},
+				{"pid": 104, "cid": 53697, "distance": {"$numberDecimal": "1.894408460686407241024551981558284"}},
+				{"pid": 104, "cid": 79970, "distance": {"$numberDecimal": "4.397984473078763548391381894095694"}},
+				{"pid": 104, "cid": 82451, "distance": {"$numberDecimal": "2.654638028689754180538259500420363"}},
+				{"pid": 104, "cid": 108113, "distance": {"$numberDecimal": "1.713712185818145809500957557385426"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_ZScore",
+				"CentroidCollection": "P1Korean_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 6183, "distance": {"$numberDecimal": "10.53081466981922892217455270380234"}},
+				{"pid": 19, "cid": 24987, "distance": {"$numberDecimal": "7.827096023615542758546794403979529"}},
+				{"pid": 19, "cid": 32425, "distance": {"$numberDecimal": "9.279948956594308427598915467225078"}},
+				{"pid": 19, "cid": 54154, "distance": {"$numberDecimal": "5.265518386223387949895831651817366"}},
+				{"pid": 19, "cid": 56096, "distance": {"$numberDecimal": "8.492815374339450019615072930301560"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P1Korean_ZScore",
+				"CentroidCollection": "P1Korean_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 6183, "distance": {"$numberDecimal": "5.691300148427428753605207090823602"}},
+				{"pid": 19, "cid": 24987, "distance": {"$numberDecimal": "3.645107048849368068983950218310603"}},
+				{"pid": 19, "cid": 32425, "distance": {"$numberDecimal": "3.998587643251212927495077303220508"}},
+				{"pid": 19, "cid": 54154, "distance": {"$numberDecimal": "3.326549183065169762926278591540315"}},
+				{"pid": 19, "cid": 56096, "distance": {"$numberDecimal": "3.674321434411660088911357419995866"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_ZScore",
+				"CentroidCollection": "P2Jan2018_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 198459, "distance": {"$numberDecimal": "3.361650039706632781906192978304831"}},
+				{"pid": 43579, "cid": 272740, "distance": {"$numberDecimal": "2.700929747556314037419816940077939"}},
+				{"pid": 43579, "cid": 380071, "distance": {"$numberDecimal": "1.914960158880859822133040908568970"}},
+				{"pid": 43579, "cid": 430201, "distance": {"$numberDecimal": "1.276052258415451721725322326613169"}},
+				{"pid": 43579, "cid": 435625, "distance": {"$numberDecimal": "2.168502111440393433313534494520600"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2Jan2018_ZScore",
+				"CentroidCollection": "P2Jan2018_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 198459, "distance": {"$numberDecimal": "2.144061429035719762719668505478749"}},
+				{"pid": 43579, "cid": 272740, "distance": {"$numberDecimal": "1.540905652471746113202780905718632"}},
+				{"pid": 43579, "cid": 380071, "distance": {"$numberDecimal": "1.292653064798938632054995998271798"}},
+				{"pid": 43579, "cid": 430201, "distance": {"$numberDecimal": "0.8191089771202842303398132305471222"}},
+				{"pid": 43579, "cid": 435625, "distance": {"$numberDecimal": "1.064125047268839990945188320729205"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Manhattan.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_ZScore",
+				"CentroidCollection": "P2May2018_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 161047, "distance": {"$numberDecimal": "22.03953340873263642191788253059918"}},
+				{"pid": 42935, "cid": 242412, "distance": {"$numberDecimal": "20.97560453731929409648733141401534"}},
+				{"pid": 42935, "cid": 729741, "distance": {"$numberDecimal": "22.04416861187658741386135974509137"}},
+				{"pid": 42935, "cid": 735733, "distance": {"$numberDecimal": "21.05858886007773791702397690895052"}},
+				{"pid": 42935, "cid": 923058, "distance": {"$numberDecimal": "20.25066141415201501178929729881269"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.Euclidean.json",
+			"parameters" : {
+				"PointCollection": "P2May2018_ZScore",
+				"CentroidCollection": "P2May2018_ZScore_Centroid"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 161047, "distance": {"$numberDecimal": "12.50302878460803147030933955521128"}},
+				{"pid": 42935, "cid": 242412, "distance": {"$numberDecimal": "12.38157554942155551224539613904791"}},
+				{"pid": 42935, "cid": 729741, "distance": {"$numberDecimal": "12.50312415501604145159574658632900"}},
+				{"pid": 42935, "cid": 735733, "distance": {"$numberDecimal": "12.40741101453626017138674387787300"}},
+				{"pid": 42935, "cid": 923058, "distance": {"$numberDecimal": "12.22674288017077955489978621805094"}}
+			]
+		}
+	]
+}

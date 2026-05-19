@@ -1,0 +1,135 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3",
+		"__comment__": "I know, I know, not very safe...",
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+
+	"database_mongo" : {
+		"db_name": "yelp_DB",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+
+
+
+
+
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "LoadBusinesses",
+
+	"maxTimeMin" : 30,
+	"maxMemory" : 64,
+
+
+	"__comment__" : "These are Mongo collections that will be removed... missing SQL so much! They make sure we have a fresh database.",
+	"before_mongo_queries" : ["Businesses"],
+
+	"__comment__" : "These are the input parameters provided to your program in order.",
+	"input_command_line" : [{"value":"$database_mysql.schema", "special":"MySQLSchema"}, {"value":"$database_mysql.user"}, {"value":"$database_mysql.pwd"},
+		{"value" : "$database_mongo.url"}, {"value" : "$database_mongo.db_name"}],
+
+
+	"__comment__" : "These are the test cases to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [{"$count":"b_count"}],
+			"expected" : [{"b_count": 150346}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"is_open":{"$exists":true}}},
+				{"$count":"isopen_set"}
+			],
+			"expected" : [{"isopen_set": 150346}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"bike_parking":{"$exists":true}}},
+				{"$count":"bp_set"}
+			],
+			"expected" : [{"bp_set": 72558}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"good_for_dancing":{"$exists":true}}},
+				{"$count":"gfd_set"}
+			],
+			"expected" : [{"gfd_set": 4628}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"restaurants_price_range":{"$exists":true}}},
+				{"$count":"rpr_set"}
+			],
+			"expected" : [{"rpr_set": 85280}]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"location.zipcode":"19348"}},
+				{"$limit":1},
+				{"$project": {"_id": 0, "location.state": 1, "location.city": 1, "location.zipcode": 1, "location.longitude": {"$toString":"$location.longitude"}, "location.latitude": {"$toString":"$location.latitude"}}}
+			],
+			"expected" : [
+				{"location": {"city": "Kennett Square", "state": "PA", "zipcode": "19348", "longitude": "-75.69460988", "latitude": "39.85624753"}}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"_id": 57921}},
+				{"$unwind": "$categories"},
+				{"$sort": {"categories": 1}},
+				{"$project": {"_id": 0, "business": "$bname", "category": "$categories"}}
+			],
+			"expected" : [
+				{"business": "Taco Bell", "category": "Fast Food"},
+				{"business": "Taco Bell", "category": "Mexican"},
+				{"business": "Taco Bell", "category": "Restaurants"},
+				{"business": "Taco Bell", "category": "Tacos"},
+				{"business": "Taco Bell", "category": "Tex-Mex"}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"_id": 57921}},
+				{"$unwind": "$hours"},
+				{"$project": {"_id": 0, "business": "$bname", 
+				"open_time": {"hours": {"$hour": "$hours.1.opening"}, "minutes": { "$minute": "$hours.1.opening" }, "seconds": { "$second": "$hours.1.opening" }}, 
+				"closing_time": {"hours": {"$hour": "$hours.1.closing"}, "minutes": { "$minute": "$hours.1.closing" }, "seconds": { "$second": "$hours.1.closing" }}}}
+			],
+			"expected" : [{"business": "Taco Bell", "open_time": {"hours": 10, "minutes": 0, "seconds": 0}, "closing_time": {"hours": 23, "minutes": 0, "seconds": 0}}]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"collection": "Businesses",
+			"query" : [
+				{"$match":{"_id": 57955}},
+				{"$project": {"_id": 0, "bname": 1, "is_open": 1, "by_appointment_only": 1, "business_accepts_credit_cards": 1}}
+			],
+			"expected" : [
+				{"bname": "Live In Harmony Massage Therapy", "is_open": 1, "by_appointment_only": 0, "business_accepts_credit_cards": 1}
+			]
+		}
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"collection": "&CCollection&",
+	"query": [
+		{"$lookup": {
+			"from": "&LCollection&",
+			"let": {"i2": "$iid_2", "i3": "$iid_3"},
+			"pipeline": [
+				{"$match": {"$expr": {"$and": [
+					{"$eq": ["$iid_1", "$$i2"]},
+					{"$eq": ["$iid_2", "$$i3"]}
+				]}}}
+			],
+			"as": "check"
+		}},
+		{"$match": {"check.0": {"$exists": true}}},
+		{"$project": {"_id": 0, "iid_1": 1, "iid_2": 1, "iid_3": 1}},
+		{"$sort": {"iid_1": 1, "iid_2": 1, "iid_3": 1}}
+	]
+}

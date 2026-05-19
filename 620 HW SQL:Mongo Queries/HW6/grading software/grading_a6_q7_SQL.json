@@ -1,0 +1,294 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q7SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Manhattan_Assignment",
+				"PointRelation": "P1Mexican_MinMax",
+				"PointId": 100899
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.836790447495854658543177"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Manhattan_Assignment",
+				"PointRelation": "P1Mexican_MinMax",
+				"PointId": 100899
+			},
+			"expected" : [
+				{"cid": 1046, "distance": {"$numberDecimal": "1.422355920196574517731200"}},
+				{"cid": 12282, "distance": {"$numberDecimal": "1.157721698230848278531401"}},
+				{"cid": 19844, "distance": {"$numberDecimal": "1.170397075282841906819567"}},
+				{"cid": 43615, "distance": {"$numberDecimal": "1.513245302727443879792927"}},
+				{"cid": 47220, "distance": {"$numberDecimal": "1.845153719029689451613427"}},
+				{"cid": 63584, "distance": {"$numberDecimal": "1.481682676502875879616361"}},
+				{"cid": 106421, "distance": {"$numberDecimal": "0.930872800729360213721227"}},
+				{"cid": 109740, "distance": {"$numberDecimal": "1.151054967676236527860717"}},
+				{"cid": 125298, "distance": {"$numberDecimal": "1.515689268196067664124490"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Euclidean_Assignment",
+				"PointRelation": "P1Mexican_MinMax",
+				"PointId": 5467
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.233838581073472063774263"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Euclidean_Assignment",
+				"PointRelation": "P1Mexican_MinMax",
+				"PointId": 5467
+			},
+			"expected" : [
+				{"cid": 1046, "distance": {"$numberDecimal": "0.843798231289795371018634"}},
+				{"cid": 12282, "distance": {"$numberDecimal": "0.225261641829168652080578"}},
+				{"cid": 19844, "distance": {"$numberDecimal": "0.518999557763860587752995"}},
+				{"cid": 43615, "distance": {"$numberDecimal": "0.278737080559844333754317"}},
+				{"cid": 47220, "distance": {"$numberDecimal": "1.109522387792516032367068"}},
+				{"cid": 63584, "distance": {"$numberDecimal": "0.588391856226005111758460"}},
+				{"cid": 109740, "distance": {"$numberDecimal": "0.388206184360818388019641"}},
+				{"cid": 125298, "distance": {"$numberDecimal": "0.631953132902556395651752"}},
+				{"cid": 148180, "distance": {"$numberDecimal": "0.149231083689280087090584"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Manhattan_Assignment",
+				"PointRelation": "P1Korean_Mean",
+				"PointId": 7287
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.929465801318508613041347"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Manhattan_Assignment",
+				"PointRelation": "P1Korean_Mean",
+				"PointId": 7287
+			},
+			"expected" : [
+				{"cid": 5549, "distance": {"$numberDecimal": "1.828667782141425306144179"}},
+				{"cid": 16704, "distance": {"$numberDecimal": "1.326357901482393577189319"}},
+				{"cid": 37881, "distance": {"$numberDecimal": "2.378214607735866475355542"}},
+				{"cid": 41989, "distance": {"$numberDecimal": "1.158862530777083301812759"}},
+				{"cid": 58645, "distance": {"$numberDecimal": "2.640922067620031183270359"}},
+				{"cid": 85584, "distance": {"$numberDecimal": "1.939276235426814557388128"}},
+				{"cid": 111313, "distance": {"$numberDecimal": "1.609288330713598529632644"}},
+				{"cid": 124380, "distance": {"$numberDecimal": "2.169864793632231797548338"}},
+				{"cid": 133352, "distance": {"$numberDecimal": "2.235858529054068015120371"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Euclidean_Assignment",
+				"PointRelation": "P1Korean_Mean",
+				"PointId": 102044
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.231785805977531240837164"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Euclidean_Assignment",
+				"PointRelation": "P1Korean_Mean",
+				"PointId": 102044
+			},
+			"expected" : [
+				{"cid": 16704, "distance": {"$numberDecimal": "0.393919446211302068576522"}},
+				{"cid": 37881, "distance": {"$numberDecimal": "1.221023124121672570758296"}},
+				{"cid": 41989, "distance": {"$numberDecimal": "0.313065436264639691087820"}},
+				{"cid": 58645, "distance": {"$numberDecimal": "0.857406514633473685985265"}},
+				{"cid": 85584, "distance": {"$numberDecimal": "0.610277492989640694600398"}},
+				{"cid": 111313, "distance": {"$numberDecimal": "0.262020560366937688060401"}},
+				{"cid": 124380, "distance": {"$numberDecimal": "0.768654059056110206763156"}},
+				{"cid": 133352, "distance": {"$numberDecimal": "1.127554847631936051160629"}},
+				{"cid": 145309, "distance": {"$numberDecimal": "0.671844466774547654224153"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Manhattan_Assignment",
+				"PointRelation": "P2Jan2018_ZScore",
+				"PointId": 266259
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.226678230197209171043142"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Manhattan_Assignment",
+				"PointRelation": "P2Jan2018_ZScore",
+				"PointId": 266259
+			},
+			"expected" : [
+				{"cid": 198459, "distance": {"$numberDecimal": "2.049329311933912410372743"}},
+				{"cid": 272740, "distance": {"$numberDecimal": "59.357997277911519257917988"}},
+				{"cid": 380071, "distance": {"$numberDecimal": "3.933281317748069893566970"}},
+				{"cid": 430201, "distance": {"$numberDecimal": "6.000802488992734859546779"}},
+				{"cid": 435625, "distance": {"$numberDecimal": "38.755935695747330584543686"}},
+				{"cid": 457903, "distance": {"$numberDecimal": "365.269621713833211281682515"}},
+				{"cid": 689984, "distance": {"$numberDecimal": "2.495701023657101074969184"}},
+				{"cid": 708303, "distance": {"$numberDecimal": "5.182828651616354696432699"}},
+				{"cid": 900939, "distance": {"$numberDecimal": "3.615464447734984620807554"}},
+				{"cid": 1108172, "distance": {"$numberDecimal": "1.637527669351005660729809"}},
+				{"cid": 1179348, "distance": {"$numberDecimal": "0.377609395982071230997502"}},
+				{"cid": 1183296, "distance": {"$numberDecimal": "1.613146763001653558130409"}},
+				{"cid": 1422650, "distance": {"$numberDecimal": "5.384039307850106341300438"}},
+				{"cid": 1551995, "distance": {"$numberDecimal": "1.849855964287904552628306"}},
+				{"cid": 1881525, "distance": {"$numberDecimal": "1.991924693593864876048231"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Euclidean_Assignment",
+				"PointRelation": "P2Jan2018_ZScore",
+				"PointId": 1133882
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "2.254252079121728903998763"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Euclidean_Assignment",
+				"PointRelation": "P2Jan2018_ZScore",
+				"PointId": 1133882
+			},
+			"expected" : [
+				{"cid": 198459, "distance": {"$numberDecimal": "2.099351438692770454777930"}},
+				{"cid": 272740, "distance": {"$numberDecimal": "1613.193524765818314844138829"}},
+				{"cid": 380071, "distance": {"$numberDecimal": "3.474724296702312974007158"}},
+				{"cid": 430201, "distance": {"$numberDecimal": "3.233265626448328524475572"}},
+				{"cid": 435625, "distance": {"$numberDecimal": "2845.640892955542451883671543"}},
+				{"cid": 457903, "distance": {"$numberDecimal": "564521.819159623051161240436663"}},
+				{"cid": 689984, "distance": {"$numberDecimal": "0.800934953985594611645329"}},
+				{"cid": 708303, "distance": {"$numberDecimal": "0.111398804933375369278863"}},
+				{"cid": 900939, "distance": {"$numberDecimal": "8.226798734466383153469977"}},
+				{"cid": 1108172, "distance": {"$numberDecimal": "2.189712498004093016790334"}},
+				{"cid": 1183296, "distance": {"$numberDecimal": "4.074693475238694003247198"}},
+				{"cid": 1422650, "distance": {"$numberDecimal": "15.045935256970157413627796"}},
+				{"cid": 1551995, "distance": {"$numberDecimal": "4.426755001921046076026340"}},
+				{"cid": 1704618, "distance": {"$numberDecimal": "1.353637569007571671512399"}},
+				{"cid": 1881525, "distance": {"$numberDecimal": "2.336033111987385625653020"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_ZScore_Manhattan_Assignment",
+				"PointRelation": "P2May2018_ZScore",
+				"PointId": 1970687
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.062177773917045694341705"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Manhattan.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_ZScore_Manhattan_Assignment",
+				"PointRelation": "P2May2018_ZScore",
+				"PointId": 1970687
+			},
+			"expected" : [
+				{"cid": 242412, "distance": {"$numberDecimal": "1.726468880909894341412553"}},
+				{"cid": 729741, "distance": {"$numberDecimal": "0.090605505776441550431210"}},
+				{"cid": 735733, "distance": {"$numberDecimal": "1.489913839357983258564058"}},
+				{"cid": 923058, "distance": {"$numberDecimal": "2.646496845257895799983168"}},
+				{"cid": 1062103, "distance": {"$numberDecimal": "10.992213409556509396339865"}},
+				{"cid": 1282782, "distance": {"$numberDecimal": "78.349621853205202572478787"}},
+				{"cid": 1382408, "distance": {"$numberDecimal": "5.224429189453791117668135"}},
+				{"cid": 1387092, "distance": {"$numberDecimal": "6.393778420654357040309281"}},
+				{"cid": 1466042, "distance": {"$numberDecimal": "2.883923701240541274404245"}},
+				{"cid": 1571437, "distance": {"$numberDecimal": "6.990088821187334744185429"}},
+				{"cid": 1984632, "distance": {"$numberDecimal": "2.183460552246714114728442"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_SameCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_MinMax_Euclidean_Assignment",
+				"PointRelation": "P2May2018_MinMax",
+				"PointId": 627370
+			},
+			"expected" : [
+				{"distance": {"$numberDecimal": "0.033177464807149981114406"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7_OtherCluster_Euclidean.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_MinMax_Euclidean_Assignment",
+				"PointRelation": "P2May2018_MinMax",
+				"PointId": 627370
+			},
+			"expected" : [
+				{"cid": 519352, "distance": {"$numberDecimal": "0.077575508172471966187345"}},
+				{"cid": 550374, "distance": {"$numberDecimal": "0.056194012640881457384019"}},
+				{"cid": 576124, "distance": {"$numberDecimal": "0.181037898384653332936752"}},
+				{"cid": 656834, "distance": {"$numberDecimal": "0.561647028817827487140265"}},
+				{"cid": 708579, "distance": {"$numberDecimal": "0.995631099921636390746917"}},
+				{"cid": 793986, "distance": {"$numberDecimal": "0.004489296309912749286589"}},
+				{"cid": 1190861, "distance": {"$numberDecimal": "0.268451639310518111691154"}},
+				{"cid": 1208257, "distance": {"$numberDecimal": "0.008934786694094824149182"}},
+				{"cid": 1234399, "distance": {"$numberDecimal": "1.002766016727527065586336"}},
+				{"cid": 1507698, "distance": {"$numberDecimal": "0.995075312038964394243610"}},
+				{"cid": 1521595, "distance": {"$numberDecimal": "0.082770088715812518244341"}}
+			]
+		}
+	]
+}

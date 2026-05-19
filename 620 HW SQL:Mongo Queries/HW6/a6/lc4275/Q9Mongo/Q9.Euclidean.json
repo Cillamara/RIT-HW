@@ -1,0 +1,30 @@
+{
+	"collection": "&AssignmentCollection&",
+	"query": [
+		{"$match": {"$expr": {"$let": {"vars": {"v": {"$toInt": "&ClusterI&"}}, "in": {"$eq": ["$cid", "$$v"]}}}}},
+		{"$lookup": {"from": "&PointCollection&", "localField": "pid", "foreignField": "_id", "as": "_pi"}},
+		{"$unwind": "$_pi"},
+		{"$lookup": {"from": "&AssignmentCollection&", "let": {"cj_v": {"$toInt": "&ClusterJ&"}}, "pipeline": [
+			{"$match": {"$expr": {"$eq": ["$cid", "$$cj_v"]}}}
+		], "as": "_aj"}},
+		{"$unwind": "$_aj"},
+		{"$lookup": {"from": "&PointCollection&", "localField": "_aj.pid", "foreignField": "_id", "as": "_pj"}},
+		{"$unwind": "$_pj"},
+		{"$project": {
+			"_id": 1,
+			"_aj_id": "$_aj._id",
+			"d": {"$sqrt": {"$add": [
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_1", "$_pj.scaled_dim_1"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_2", "$_pj.scaled_dim_2"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_3", "$_pj.scaled_dim_3"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_4", "$_pj.scaled_dim_4"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_5", "$_pj.scaled_dim_5"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_6", "$_pj.scaled_dim_6"]}, 2]},
+				{"$pow": [{"$subtract": ["$_pi.scaled_dim_7", "$_pj.scaled_dim_7"]}, 2]}
+			]}}
+		}},
+		{"$sort": {"_id": 1, "_aj_id": 1}},
+		{"$group": {"_id": null, "min_distance": {"$min": "$d"}, "max_distance": {"$max": "$d"}, "mean_distance": {"$avg": "$d"}}},
+		{"$project": {"_id": 0, "min_distance": 1, "max_distance": 1, "mean_distance": 1}}
+	]
+}

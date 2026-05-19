@@ -1,0 +1,54 @@
+{
+	"collection":"Users",
+	"query": [
+		{"$match": {"$expr": {"$and": [
+			{"$gte": [{"$dateToString": {"format": "%Y-%m-%d", "date": "$yelping_since"}}, {"$dateToString": {"format": "%Y-%m-%d", "date": {"$toDate": "&StartDate&"}}}]},
+			{"$lte": [{"$dateToString": {"format": "%Y-%m-%d", "date": "$yelping_since"}}, {"$dateToString": {"format": "%Y-%m-%d", "date": {"$toDate": "&EndDate&"}}}]}
+		]}}},
+		{"$lookup": {
+			"from": "Reviews",
+			"localField": "_id",
+			"foreignField": "user_id",
+			"pipeline": [{"$count": "c"}],
+			"as": "rc"
+		}},
+		{"$addFields": {
+			"review_count": {"$ifNull": [{"$arrayElemAt": ["$rc.c", 0]}, 0]},
+			"friend_count": {"$size": {"$ifNull": ["$friends", []]}},
+			"elite_count": {"$size": {"$ifNull": ["$elite_years", []]}}
+		}},
+		{"$setWindowFields": {
+			"sortBy": {"_id": 1},
+			"output": {
+				"max_useful": {"$max": "$useful"},
+				"max_funny": {"$max": "$funny"},
+				"max_cool": {"$max": "$cool"},
+				"max_fans": {"$max": "$fans"},
+				"total": {"$count": {}}
+			}
+		}},
+		{"$addFields": {
+			"att_3": {"$cond": {"if": {"$eq": ["$max_useful", 0]}, "then": 0, "else": {"$toInt": {"$floor": {"$divide": [{"$multiply": ["$useful", {"$toInt": "&k&"}]}, "$max_useful"]}}}}},
+			"att_4": {"$cond": {"if": {"$eq": ["$max_funny", 0]}, "then": 0, "else": {"$toInt": {"$floor": {"$divide": [{"$multiply": ["$funny", {"$toInt": "&k&"}]}, "$max_funny"]}}}}},
+			"att_5": {"$cond": {"if": {"$eq": ["$max_cool", 0]}, "then": 0, "else": {"$toInt": {"$floor": {"$divide": [{"$multiply": ["$cool", {"$toInt": "&k&"}]}, "$max_cool"]}}}}},
+			"att_6": {"$cond": {"if": {"$eq": ["$max_fans", 0]}, "then": 0, "else": {"$toInt": {"$floor": {"$divide": [{"$multiply": ["$fans", {"$toInt": "&k&"}]}, "$max_fans"]}}}}}
+		}},
+		{"$sort": {"review_count": 1, "_id": 1}},
+		{"$group": {"_id": null, "docs": {"$push": "$$ROOT"}, "total": {"$first": "$total"}}},
+		{"$unwind": {"path": "$docs", "includeArrayIndex": "idx"}},
+		{"$addFields": {"docs.att_1": {"$toInt": {"$ceil": {"$divide": [{"$multiply": [{"$add": ["$idx", 1]}, {"$toInt": "&k&"}]}, "$total"]}}}}},
+		{"$replaceRoot": {"newRoot": {"$mergeObjects": ["$docs", {"att_1": "$docs.att_1"}]}}},
+		{"$sort": {"friend_count": 1, "_id": 1}},
+		{"$group": {"_id": null, "docs": {"$push": "$$ROOT"}, "total": {"$first": "$total"}}},
+		{"$unwind": {"path": "$docs", "includeArrayIndex": "idx"}},
+		{"$addFields": {"docs.att_2": {"$toInt": {"$ceil": {"$divide": [{"$multiply": [{"$add": ["$idx", 1]}, {"$toInt": "&k&"}]}, "$total"]}}}}},
+		{"$replaceRoot": {"newRoot": {"$mergeObjects": ["$docs", {"att_2": "$docs.att_2"}]}}},
+		{"$sort": {"elite_count": 1, "_id": 1}},
+		{"$group": {"_id": null, "docs": {"$push": "$$ROOT"}, "total": {"$first": "$total"}}},
+		{"$unwind": {"path": "$docs", "includeArrayIndex": "idx"}},
+		{"$addFields": {"docs.label": {"$toInt": {"$ceil": {"$divide": [{"$multiply": [{"$add": ["$idx", 1]}, {"$toInt": "&k&"}]}, "$total"]}}}}},
+		{"$replaceRoot": {"newRoot": {"$mergeObjects": ["$docs", {"label": "$docs.label"}]}}},
+		{"$project": {"_id": 1, "att_1": 1, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 1, "att_6": 1, "label": 1}},
+		{"$sort": {"_id": 1}}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"collection":"&AVCSet&",
+	"query": [
+		{"$group": {"_id": "$attribute", "att_total": {"$sum": {"$toDecimal": "$count"}}, "pairs": {"$push": {"label": "$label", "count": {"$toDecimal": "$count"}}}}},
+		{"$group": {"_id": null, "atts": {"$push": {"attribute": "$_id", "att_total": "$att_total", "pairs": "$pairs"}}, "grand_total": {"$sum": "$att_total"}}},
+		{"$unwind": "$atts"},
+		{"$unwind": "$atts.pairs"},
+		{"$addFields": {"p_sq": {"$divide": [{"$multiply": ["$atts.pairs.count", "$atts.pairs.count"]}, {"$multiply": ["$atts.att_total", "$atts.att_total"]}]}}},
+		{"$group": {"_id": "$atts.attribute", "sum_p_sq": {"$sum": "$p_sq"}, "att_total": {"$first": "$atts.att_total"}, "grand_total": {"$first": "$grand_total"}}},
+		{"$addFields": {"weighted_gini": {"$multiply": [{"$divide": ["$att_total", "$grand_total"]}, {"$subtract": [{"$toDecimal": "1"}, "$sum_p_sq"]}]}}},
+		{"$group": {"_id": null, "gini_a": {"$sum": "$weighted_gini"}}},
+		{"$project": {"_id": 0, "gini_a": {"$round": ["$gini_a", 30]}}}
+	]
+}

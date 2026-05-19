@@ -1,0 +1,164 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q1Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.D1.json",
+			"parameters" : {
+				"Category": "Mexican"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 104, "dim_1": {"$numberDecimal": "39.73208860"}, "dim_2": {"$numberDecimal": "-75.62567330"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "25"}},
+				{"_id": 153, "dim_1": {"$numberDecimal": "27.89416700"}, "dim_2": {"$numberDecimal": "-82.77986600"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "45"}, "dim_5": {"$numberDecimal": "22.5"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "20"}},
+				{"_id": 159, "dim_1": {"$numberDecimal": "36.16279900"}, "dim_2": {"$numberDecimal": "-86.77601600"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "32"}, "dim_5": {"$numberDecimal": "21"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "183"}},
+				{"_id": 278, "dim_1": {"$numberDecimal": "29.95029000"}, "dim_2": {"$numberDecimal": "-90.07488700"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "44.5"}, "dim_5": {"$numberDecimal": "16"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "58"}},
+				{"_id": 290, "dim_1": {"$numberDecimal": "36.19165400"}, "dim_2": {"$numberDecimal": "-86.62541890"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "36.5"}, "dim_5": {"$numberDecimal": "19"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "8"}},
+				{"_id": 345, "dim_1": {"$numberDecimal": "28.09213620"}, "dim_2": {"$numberDecimal": "-82.57857360"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "56"}, "dim_5": {"$numberDecimal": "22.5"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "87"}},
+				{"_id": 348, "dim_1": {"$numberDecimal": "40.18072710"}, "dim_2": {"$numberDecimal": "-75.13469930"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "48.5"}, "dim_5": {"$numberDecimal": "10.5"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "77"}},
+				{"_id": 351, "dim_1": {"$numberDecimal": "39.85186172"}, "dim_2": {"$numberDecimal": "-86.38475776"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "58"}, "dim_5": {"$numberDecimal": "23.5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "78"}},
+				{"_id": 401, "dim_1": {"$numberDecimal": "34.41155520"}, "dim_2": {"$numberDecimal": "-119.85507720"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "48"}, "dim_5": {"$numberDecimal": "18.5"}, "dim_6": {"$numberDecimal": "7"}, "dim_7": {"$numberDecimal": "52"}},
+				{"_id": 438, "dim_1": {"$numberDecimal": "38.59395490"}, "dim_2": {"$numberDecimal": "-90.22919310"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "44"}, "dim_5": {"$numberDecimal": "19.5"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "10"}},
+				{"_id": 470, "dim_1": {"$numberDecimal": "34.43054190"}, "dim_2": {"$numberDecimal": "-119.88236700"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "50"}, "dim_5": {"$numberDecimal": "25"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "199"}},
+				{"_id": 553, "dim_1": {"$numberDecimal": "32.27123132"}, "dim_2": {"$numberDecimal": "-110.99207545"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "6"}, "dim_5": {"$numberDecimal": "6"}, "dim_6": {"$numberDecimal": "8"}, "dim_7": {"$numberDecimal": "25"}},
+				{"_id": 583, "dim_1": {"$numberDecimal": "38.76874450"}, "dim_2": {"$numberDecimal": "-90.52197950"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "55.5"}, "dim_5": {"$numberDecimal": "22.5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "70"}},
+				{"_id": 662, "dim_1": {"$numberDecimal": "27.79697626"}, "dim_2": {"$numberDecimal": "-82.63816781"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "51"}, "dim_5": {"$numberDecimal": "11"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "211"}},
+				{"_id": 703, "dim_1": {"$numberDecimal": "39.53511050"}, "dim_2": {"$numberDecimal": "-119.75485670"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "46"}, "dim_5": {"$numberDecimal": "19"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "292"}},
+				{"_id": 778, "dim_1": {"$numberDecimal": "29.93165599"}, "dim_2": {"$numberDecimal": "-90.07364881"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "56"}, "dim_5": {"$numberDecimal": "12"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "79"}},
+				{"_id": 800, "dim_1": {"$numberDecimal": "27.78521790"}, "dim_2": {"$numberDecimal": "-82.78211180"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "55"}, "dim_5": {"$numberDecimal": "22"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "29"}},
+				{"_id": 890, "dim_1": {"$numberDecimal": "39.58365270"}, "dim_2": {"$numberDecimal": "-119.74093500"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "64"}, "dim_5": {"$numberDecimal": "19"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "63"}},
+				{"_id": 902, "dim_1": {"$numberDecimal": "39.91616900"}, "dim_2": {"$numberDecimal": "-75.38234700"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "40"}, "dim_5": {"$numberDecimal": "20"}, "dim_6": {"$numberDecimal": "9"}, "dim_7": {"$numberDecimal": "89"}},
+				{"_id": 916, "dim_1": {"$numberDecimal": "29.95224808"}, "dim_2": {"$numberDecimal": "-90.07826400"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "45"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "9"}},
+				{"_id": 1018, "dim_1": {"$numberDecimal": "39.75061017"}, "dim_2": {"$numberDecimal": "-75.57085007"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "30"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "12"}, "dim_7": {"$numberDecimal": "13"}},
+				{"_id": 1046, "dim_1": {"$numberDecimal": "30.02378170"}, "dim_2": {"$numberDecimal": "-90.06082720"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "14"}},
+				{"_id": 1059, "dim_1": {"$numberDecimal": "53.45315160"}, "dim_2": {"$numberDecimal": "-113.48298000"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "8"}},
+				{"_id": 1061, "dim_1": {"$numberDecimal": "28.28674310"}, "dim_2": {"$numberDecimal": "-82.71528980"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "47.5"}, "dim_5": {"$numberDecimal": "17.5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "9"}},
+				{"_id": 1067, "dim_1": {"$numberDecimal": "27.94491800"}, "dim_2": {"$numberDecimal": "-82.52321300"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "24"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "42"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.D1.json",
+			"parameters" : {
+				"Category": "Korean"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 19, "dim_1": {"$numberDecimal": "39.94322300"}, "dim_2": {"$numberDecimal": "-75.16256800"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "45"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "208"}},
+				{"_id": 409, "dim_1": {"$numberDecimal": "40.05206430"}, "dim_2": {"$numberDecimal": "-75.12739390"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "60"}, "dim_5": {"$numberDecimal": "24"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "359"}},
+				{"_id": 610, "dim_1": {"$numberDecimal": "40.22854320"}, "dim_2": {"$numberDecimal": "-74.93701460"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "36"}, "dim_5": {"$numberDecimal": "13.5"}, "dim_6": {"$numberDecimal": "8"}, "dim_7": {"$numberDecimal": "130"}},
+				{"_id": 840, "dim_1": {"$numberDecimal": "53.55192500"}, "dim_2": {"$numberDecimal": "-113.48966610"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "55"}, "dim_5": {"$numberDecimal": "11"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "30"}},
+				{"_id": 1062, "dim_1": {"$numberDecimal": "38.65497603"}, "dim_2": {"$numberDecimal": "-90.29688433"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "40"}, "dim_5": {"$numberDecimal": "19"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "71"}},
+				{"_id": 1437, "dim_1": {"$numberDecimal": "39.94556870"}, "dim_2": {"$numberDecimal": "-75.17179010"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "21"}, "dim_5": {"$numberDecimal": "15"}, "dim_6": {"$numberDecimal": "8"}, "dim_7": {"$numberDecimal": "330"}},
+				{"_id": 1538, "dim_1": {"$numberDecimal": "36.04078800"}, "dim_2": {"$numberDecimal": "-86.74028010"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "48.5"}, "dim_5": {"$numberDecimal": "19"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "149"}},
+				{"_id": 1704, "dim_1": {"$numberDecimal": "39.91105350"}, "dim_2": {"$numberDecimal": "-74.99151090"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "52.5"}, "dim_5": {"$numberDecimal": "10.5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "34"}},
+				{"_id": 1988, "dim_1": {"$numberDecimal": "53.54320790"}, "dim_2": {"$numberDecimal": "-113.48424340"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 2817, "dim_1": {"$numberDecimal": "27.83448658"}, "dim_2": {"$numberDecimal": "-82.72788126"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "60"}, "dim_5": {"$numberDecimal": "24"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "117"}},
+				{"_id": 3396, "dim_1": {"$numberDecimal": "53.60178057"}, "dim_2": {"$numberDecimal": "-113.44710424"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "55"}, "dim_5": {"$numberDecimal": "12.5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 4020, "dim_1": {"$numberDecimal": "27.95654290"}, "dim_2": {"$numberDecimal": "-82.42652170"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "15"}, "dim_5": {"$numberDecimal": "8"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "6"}},
+				{"_id": 4516, "dim_1": {"$numberDecimal": "40.06755290"}, "dim_2": {"$numberDecimal": "-75.14724690"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "0"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "8"}},
+				{"_id": 5124, "dim_1": {"$numberDecimal": "30.00569100"}, "dim_2": {"$numberDecimal": "-90.16072730"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "51"}, "dim_5": {"$numberDecimal": "21"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "126"}},
+				{"_id": 5407, "dim_1": {"$numberDecimal": "53.46452460"}, "dim_2": {"$numberDecimal": "-113.48675660"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "21"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "16"}},
+				{"_id": 5549, "dim_1": {"$numberDecimal": "38.56843980"}, "dim_2": {"$numberDecimal": "-90.47490030"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "20.5"}, "dim_5": {"$numberDecimal": "10.5"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "124"}},
+				{"_id": 5574, "dim_1": {"$numberDecimal": "39.52810990"}, "dim_2": {"$numberDecimal": "-119.81693460"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "40"}, "dim_5": {"$numberDecimal": "20"}, "dim_6": {"$numberDecimal": "8"}, "dim_7": {"$numberDecimal": "498"}},
+				{"_id": 5672, "dim_1": {"$numberDecimal": "53.51835420"}, "dim_2": {"$numberDecimal": "-113.51061830"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "36"}, "dim_5": {"$numberDecimal": "22"}, "dim_6": {"$numberDecimal": "10"}, "dim_7": {"$numberDecimal": "46"}},
+				{"_id": 5866, "dim_1": {"$numberDecimal": "34.41195000"}, "dim_2": {"$numberDecimal": "-119.85743300"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "36"}, "dim_5": {"$numberDecimal": "18"}, "dim_6": {"$numberDecimal": "11"}, "dim_7": {"$numberDecimal": "168"}},
+				{"_id": 6183, "dim_1": {"$numberDecimal": "39.94679490"}, "dim_2": {"$numberDecimal": "-75.15770250"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "18"}, "dim_5": {"$numberDecimal": "12"}, "dim_6": {"$numberDecimal": "9"}, "dim_7": {"$numberDecimal": "851"}},
+				{"_id": 6291, "dim_1": {"$numberDecimal": "27.87164220"}, "dim_2": {"$numberDecimal": "-82.63893960"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "28.5"}, "dim_5": {"$numberDecimal": "6.5"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "17"}},
+				{"_id": 6907, "dim_1": {"$numberDecimal": "39.46424193"}, "dim_2": {"$numberDecimal": "-119.78341889"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "52.5"}, "dim_5": {"$numberDecimal": "20.5"}, "dim_6": {"$numberDecimal": "7"}, "dim_7": {"$numberDecimal": "91"}},
+				{"_id": 7287, "dim_1": {"$numberDecimal": "40.04531729"}, "dim_2": {"$numberDecimal": "-75.11765264"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "44.5"}, "dim_5": {"$numberDecimal": "22.5"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "78"}},
+				{"_id": 7661, "dim_1": {"$numberDecimal": "27.92714586"}, "dim_2": {"$numberDecimal": "-82.31524643"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "55"}, "dim_5": {"$numberDecimal": "20.5"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "191"}},
+				{"_id": 8455, "dim_1": {"$numberDecimal": "53.46682700"}, "dim_2": {"$numberDecimal": "-113.48707600"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "40"}, "dim_5": {"$numberDecimal": "18"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "56"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.D2.json",
+			"parameters" : {
+				"StartDate": "2018-01-01 00:00:00",
+				"EndDate": "2018-01-31 23:59:59"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 43579, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "14"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "4"}},
+				{"_id": 43715, "dim_1": {"$numberDecimal": "16"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "7"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "75"}, "dim_6": {"$numberDecimal": "21"}, "dim_7": {"$numberDecimal": "4.333333333333333333333333333333333"}},
+				{"_id": 45976, "dim_1": {"$numberDecimal": "7"}, "dim_2": {"$numberDecimal": "2"}, "dim_3": {"$numberDecimal": "3"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "13"}, "dim_6": {"$numberDecimal": "22"}, "dim_7": {"$numberDecimal": "3.818181818181818181818181818181818"}},
+				{"_id": 46957, "dim_1": {"$numberDecimal": "304"}, "dim_2": {"$numberDecimal": "146"}, "dim_3": {"$numberDecimal": "419"}, "dim_4": {"$numberDecimal": "3"}, "dim_5": {"$numberDecimal": "43"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "4.25"}},
+				{"_id": 47092, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "8"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "1"}},
+				{"_id": 47141, "dim_1": {"$numberDecimal": "5"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "2"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 47171, "dim_1": {"$numberDecimal": "198"}, "dim_2": {"$numberDecimal": "11"}, "dim_3": {"$numberDecimal": "139"}, "dim_4": {"$numberDecimal": "4"}, "dim_5": {"$numberDecimal": "15"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "4.333333333333333333333333333333333"}},
+				{"_id": 47429, "dim_1": {"$numberDecimal": "13"}, "dim_2": {"$numberDecimal": "4"}, "dim_3": {"$numberDecimal": "7"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "40"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "3"}},
+				{"_id": 48109, "dim_1": {"$numberDecimal": "7"}, "dim_2": {"$numberDecimal": "3"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "3"}, "dim_6": {"$numberDecimal": "7"}, "dim_7": {"$numberDecimal": "4.428571428571428571428571428571429"}},
+				{"_id": 48292, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "22"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "3.5"}},
+				{"_id": 48428, "dim_1": {"$numberDecimal": "542"}, "dim_2": {"$numberDecimal": "36"}, "dim_3": {"$numberDecimal": "297"}, "dim_4": {"$numberDecimal": "4"}, "dim_5": {"$numberDecimal": "118"}, "dim_6": {"$numberDecimal": "161"}, "dim_7": {"$numberDecimal": "4.428571428571428571428571428571429"}},
+				{"_id": 49139, "dim_1": {"$numberDecimal": "282"}, "dim_2": {"$numberDecimal": "96"}, "dim_3": {"$numberDecimal": "273"}, "dim_4": {"$numberDecimal": "4"}, "dim_5": {"$numberDecimal": "416"}, "dim_6": {"$numberDecimal": "81"}, "dim_7": {"$numberDecimal": "4.691358024691358024691358024691358"}},
+				{"_id": 49706, "dim_1": {"$numberDecimal": "117"}, "dim_2": {"$numberDecimal": "26"}, "dim_3": {"$numberDecimal": "57"}, "dim_4": {"$numberDecimal": "3"}, "dim_5": {"$numberDecimal": "22"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "4.333333333333333333333333333333333"}},
+				{"_id": 49762, "dim_1": {"$numberDecimal": "4"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "21"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "4.5"}},
+				{"_id": 50763, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "60"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 50829, "dim_1": {"$numberDecimal": "3"}, "dim_2": {"$numberDecimal": "3"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "3"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 51302, "dim_1": {"$numberDecimal": "7"}, "dim_2": {"$numberDecimal": "3"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "30"}, "dim_7": {"$numberDecimal": "3.766666666666666666666666666666667"}},
+				{"_id": 52046, "dim_1": {"$numberDecimal": "10"}, "dim_2": {"$numberDecimal": "3"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "82"}, "dim_6": {"$numberDecimal": "21"}, "dim_7": {"$numberDecimal": "4.428571428571428571428571428571429"}},
+				{"_id": 52067, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "6"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 52126, "dim_1": {"$numberDecimal": "87"}, "dim_2": {"$numberDecimal": "19"}, "dim_3": {"$numberDecimal": "55"}, "dim_4": {"$numberDecimal": "1"}, "dim_5": {"$numberDecimal": "27"}, "dim_6": {"$numberDecimal": "40"}, "dim_7": {"$numberDecimal": "4.25"}},
+				{"_id": 52616, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "57"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 52869, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "16"}, "dim_6": {"$numberDecimal": "5"}, "dim_7": {"$numberDecimal": "4.6"}},
+				{"_id": 53210, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "56"}, "dim_6": {"$numberDecimal": "8"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 53327, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "7"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 53444, "dim_1": {"$numberDecimal": "5"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "3"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "54"}, "dim_6": {"$numberDecimal": "19"}, "dim_7": {"$numberDecimal": "4.578947368421052631578947368421053"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q1.D2.json",
+			"parameters" : {
+				"StartDate": "2018-05-01 00:00:00",
+				"EndDate": "2018-05-31 23:59:59"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 42935, "dim_1": {"$numberDecimal": "56"}, "dim_2": {"$numberDecimal": "8"}, "dim_3": {"$numberDecimal": "25"}, "dim_4": {"$numberDecimal": "2"}, "dim_5": {"$numberDecimal": "47"}, "dim_6": {"$numberDecimal": "54"}, "dim_7": {"$numberDecimal": "3.814814814814814814814814814814815"}},
+				{"_id": 43288, "dim_1": {"$numberDecimal": "68"}, "dim_2": {"$numberDecimal": "20"}, "dim_3": {"$numberDecimal": "21"}, "dim_4": {"$numberDecimal": "3"}, "dim_5": {"$numberDecimal": "27"}, "dim_6": {"$numberDecimal": "4"}, "dim_7": {"$numberDecimal": "4.5"}},
+				{"_id": 45173, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "20"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 45289, "dim_1": {"$numberDecimal": "110"}, "dim_2": {"$numberDecimal": "71"}, "dim_3": {"$numberDecimal": "43"}, "dim_4": {"$numberDecimal": "1"}, "dim_5": {"$numberDecimal": "23"}, "dim_6": {"$numberDecimal": "37"}, "dim_7": {"$numberDecimal": "3.297297297297297297297297297297297"}},
+				{"_id": 46154, "dim_1": {"$numberDecimal": "2"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "4"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "4"}},
+				{"_id": 46737, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "63"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 46819, "dim_1": {"$numberDecimal": "18"}, "dim_2": {"$numberDecimal": "2"}, "dim_3": {"$numberDecimal": "14"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "24"}, "dim_6": {"$numberDecimal": "33"}, "dim_7": {"$numberDecimal": "4.636363636363636363636363636363636"}},
+				{"_id": 50038, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "35"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "1.5"}},
+				{"_id": 50772, "dim_1": {"$numberDecimal": "357"}, "dim_2": {"$numberDecimal": "54"}, "dim_3": {"$numberDecimal": "192"}, "dim_4": {"$numberDecimal": "4"}, "dim_5": {"$numberDecimal": "91"}, "dim_6": {"$numberDecimal": "66"}, "dim_7": {"$numberDecimal": "4.045454545454545454545454545454545"}},
+				{"_id": 50795, "dim_1": {"$numberDecimal": "42"}, "dim_2": {"$numberDecimal": "8"}, "dim_3": {"$numberDecimal": "4"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "15"}, "dim_6": {"$numberDecimal": "35"}, "dim_7": {"$numberDecimal": "3.428571428571428571428571428571429"}},
+				{"_id": 51773, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "11"}, "dim_6": {"$numberDecimal": "3"}, "dim_7": {"$numberDecimal": "3.666666666666666666666666666666667"}},
+				{"_id": 53077, "dim_1": {"$numberDecimal": "11"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "2"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "17"}, "dim_6": {"$numberDecimal": "18"}, "dim_7": {"$numberDecimal": "3.444444444444444444444444444444444"}},
+				{"_id": 53222, "dim_1": {"$numberDecimal": "20"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "5"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "12"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 54941, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 55278, "dim_1": {"$numberDecimal": "16"}, "dim_2": {"$numberDecimal": "6"}, "dim_3": {"$numberDecimal": "11"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "1"}, "dim_6": {"$numberDecimal": "22"}, "dim_7": {"$numberDecimal": "4.409090909090909090909090909090909"}},
+				{"_id": 55636, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "44"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "3.5"}},
+				{"_id": 55695, "dim_1": {"$numberDecimal": "5"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "49"}, "dim_6": {"$numberDecimal": "6"}, "dim_7": {"$numberDecimal": "3"}},
+				{"_id": 56034, "dim_1": {"$numberDecimal": "19"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "9"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "2"}, "dim_6": {"$numberDecimal": "12"}, "dim_7": {"$numberDecimal": "3.416666666666666666666666666666667"}},
+				{"_id": 57014, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "1"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "5"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 57265, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "17"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 57340, "dim_1": {"$numberDecimal": "0"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "9"}, "dim_6": {"$numberDecimal": "2"}, "dim_7": {"$numberDecimal": "3.5"}},
+				{"_id": 57475, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "1"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "12"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "4"}},
+				{"_id": 59062, "dim_1": {"$numberDecimal": "17"}, "dim_2": {"$numberDecimal": "6"}, "dim_3": {"$numberDecimal": "15"}, "dim_4": {"$numberDecimal": "3"}, "dim_5": {"$numberDecimal": "4"}, "dim_6": {"$numberDecimal": "7"}, "dim_7": {"$numberDecimal": "4.142857142857142857142857142857143"}},
+				{"_id": 59401, "dim_1": {"$numberDecimal": "1"}, "dim_2": {"$numberDecimal": "0"}, "dim_3": {"$numberDecimal": "0"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "39"}, "dim_6": {"$numberDecimal": "1"}, "dim_7": {"$numberDecimal": "5"}},
+				{"_id": 60276, "dim_1": {"$numberDecimal": "22"}, "dim_2": {"$numberDecimal": "4"}, "dim_3": {"$numberDecimal": "4"}, "dim_4": {"$numberDecimal": "0"}, "dim_5": {"$numberDecimal": "14"}, "dim_6": {"$numberDecimal": "17"}, "dim_7": {"$numberDecimal": "3.823529411764705882352941176470588"}}
+			]
+		}
+	]
+}

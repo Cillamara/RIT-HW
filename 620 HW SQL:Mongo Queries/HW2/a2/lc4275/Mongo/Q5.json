@@ -1,0 +1,42 @@
+{
+	"collection": "Users",
+	"query": [
+		{ "$match": { 
+			"uname": { "$regex": "ch|th", "$options": "i" },
+			"$or": [ { "friends": { "$size": 0 } }, { "friends": { "$exists": false } }, { "friends": "None" }, { "friends": "" }, { "friends": null } ]
+		}},
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "user_id", "as": "revs" } },
+		{ "$unwind": "$revs" },
+		{ "$lookup": { "from": "Businesses", "localField": "revs.business_id", "foreignField": "_id", "as": "b" } },
+		{ "$unwind": "$b" },
+		{ "$addFields": {
+			"cat_array": {
+				"$cond": {
+					"if": { "$eq": [{ "$type": "$b.categories" }, "array"] },
+					"then": "$b.categories",
+					"else": { "$split": [{ "$ifNull": ["$b.categories", ""] }, ","] }
+				}
+			},
+			"rev_year": { "$year": "$revs.review_date" }
+		}},
+		{ "$group": {
+			"_id": { "user": "$_id", "biz": "$b._id" },
+			"categories": { "$first": "$cat_array" },
+			"max_year": { "$max": "$rev_year" }
+		}},
+		{ "$group": {
+			"_id": "$_id.user",
+			"ks_count": { "$sum": { "$cond": [ { "$or": [ 
+				{ "$in": ["Korean", { "$ifNull": ["$categories", []] }] }, 
+				{ "$in": ["Seafood", { "$ifNull": ["$categories", []] }] } 
+			] }, 1, 0 ] } },
+			"bad_mex_count": { "$sum": { "$cond": [ { "$and": [ 
+				{ "$in": ["Mexican", { "$ifNull": ["$categories", []] }] }, 
+				{ "$gt": ["$max_year", 2020] } 
+			] }, 1, 0 ] } }
+		}},
+		{ "$match": { "ks_count": { "$gt": 20 }, "bad_mex_count": 0 } },
+		{ "$project": { "_id": 0, "id": "$_id", "number_of_reviewed_businesses": "$ks_count" } },
+		{ "$sort": { "number_of_reviewed_businesses": -1, "id": 1 } }
+	]
+}

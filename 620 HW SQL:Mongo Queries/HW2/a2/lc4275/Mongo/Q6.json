@@ -1,0 +1,33 @@
+{
+	"collection": "Users",
+	"query": [
+		{ "$match": { 
+			"$expr": { "$and": [
+				{ "$eq": [{ "$year": "$yelping_since" }, 2021] },
+				{ "$gte": [{ "$month": "$yelping_since" }, 1] },
+				{ "$lte": [{ "$month": "$yelping_since" }, 5] }
+			]},
+			"friends.1": { "$exists": true },
+			"$and": [
+				{ "$or": [ 
+					{ "elite_years": { "$exists": false } }, 
+					{ "elite_years": { "$size": 0 } }, 
+					{ "elite_years": [""] },
+					{ "elite_years": null }
+				]},
+				{ "$or": [ 
+					{ "elite": { "$exists": false } }, 
+					{ "elite": "" },
+					{ "elite": "None" },
+					{ "elite": null }
+				]}
+			]
+		}},
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "user_id", "as": "reviews" } },
+		{ "$lookup": { "from": "Businesses", "localField": "reviews.business_id", "foreignField": "_id", "as": "businesses" } },
+		{ "$project": { "az_count": { "$size": { "$setUnion": { "$filter": { "input": "$businesses", "as": "b", "cond": { "$eq": ["$$b.location.state", "AZ"] } } } } } } },
+		{ "$match": { "az_count": { "$gt": 3 } } },
+		{ "$project": { "_id": 0, "id": "$_id" } },
+		{ "$sort": { "id": 1 } }
+	]
+}

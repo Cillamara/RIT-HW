@@ -1,0 +1,183 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3",
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the input parameters provided to your program in order.",
+	"input_command_line" : [{"value":"$database_mysql.schema", "special":"MySQLSchema"}, {"value":"$database_mysql.user"}, {"value":"$database_mysql.pwd"}],
+	
+	
+	"__comment__" : "These are the SQL queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.sql",
+			"expected" : [
+				{"id": 111339, "number_of_categories": 14},
+				{"id": 105016, "number_of_categories": 11},
+				{"id": 112300, "number_of_categories": 11},
+				{"id": 36172, "number_of_categories": 10},
+				{"id": 12280, "number_of_categories": 9},
+				{"id": 94869, "number_of_categories": 9},
+				{"id": 131979, "number_of_categories": 9},
+				{"id": 103423, "number_of_categories": 8},
+				{"id": 123227, "number_of_categories": 8},
+				{"id": 4937, "number_of_categories": 7},
+				{"id": 11471, "number_of_categories": 7},
+				{"id": 14517, "number_of_categories": 7},
+				{"id": 18846, "number_of_categories": 7},
+				{"id": 49680, "number_of_categories": 7},
+				{"id": 97073, "number_of_categories": 7},
+				{"id": 103797, "number_of_categories": 7},
+				{"id": 5460, "number_of_categories": 6},
+				{"id": 18661, "number_of_categories": 6},
+				{"id": 72873, "number_of_categories": 6},
+				{"id": 94147, "number_of_categories": 6},
+				{"id": 132749, "number_of_categories": 6}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.sql",
+			"expected" : [
+				{ "number_of_reviews": 80, "id": 2661, "category": "Restaurants" },
+				{ "number_of_reviews": 71, "id": 32028, "category": "Restaurants" },
+				{ "number_of_reviews": 69, "id": 7394, "category": "Food" },
+				{ "number_of_reviews": 69, "id": 7213, "category": "Restaurants" },
+				{ "number_of_reviews": 64, "id": 199146, "category": "Restaurants" },
+				{ "number_of_reviews": 63, "id": 48012, "category": "Restaurants" },
+				{ "number_of_reviews": 62, "id": 7394, "category": "Restaurants" },
+				{ "number_of_reviews": 56, "id": 2661, "category": "Nightlife" },
+				{ "number_of_reviews": 52, "id": 2661, "category": "Bars" },
+				{ "number_of_reviews": 52, "id": 3627, "category": "Restaurants" },
+				{ "number_of_reviews": 50, "id": 32028, "category": "Shopping" },
+				{ "number_of_reviews": 49, "id": 8221, "category": "Restaurants" },
+				{ "number_of_reviews": 48, "id": 5971, "category": "Restaurants" },
+				{ "number_of_reviews": 46, "id": 13310, "category": "Restaurants" },
+				{ "number_of_reviews": 45, "id": 32028, "category": "Food" }
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.sql",
+			"expected" : [
+				{"original": 818927, "posterior": 7885306},
+				{"original": 843355, "posterior": 3805005},
+				{"original": 1130802, "posterior": 2288805},
+				{"original": 2242837, "posterior": 10661465},
+				{"original": 2435009, "posterior": 10661465},
+				{"original": 2840057, "posterior": 3805005},
+				{"original": 4603808, "posterior": 12207926},
+				{"original": 4891142, "posterior": 9615756},
+				{"original": 4912238, "posterior": 9615756},
+				{"original": 5651801, "posterior": 3805005},
+				{"original": 5822929, "posterior": 3903781},
+				{"original": 6403315, "posterior": 10661465},
+				{"original": 6562359, "posterior": 8043274},
+				{"original": 7848762, "posterior": 10631269},
+				{"original": 7944444, "posterior": 2288805},
+				{"original": 9367282, "posterior": 8043274},
+				{"original": 9393518, "posterior": 9615756},
+				{"original": 10724307, "posterior": 12207926},
+				{"original": 11315656, "posterior": 3805005},
+				{"original": 13401207, "posterior": 7912198},
+				{"original": 13490157, "posterior": 2487489},
+				{"original": 13634065, "posterior": 3805005}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q4.sql",
+			"expected" : [
+				{"id": 927, "number_of_reviews": 3048},
+				{"id": 1206, "number_of_reviews": 1840},
+				{"id": 1417, "number_of_reviews": 1747},
+				{"id": 4516, "number_of_reviews": 1578},
+				{"id": 50152, "number_of_reviews": 1396}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"expected" : [
+				{"id": 177743, "number_of_reviewed_businesses": 34},
+				{"id": 150510, "number_of_reviewed_businesses": 27},
+				{"id": 146699, "number_of_reviewed_businesses": 26},
+				{"id": 155151, "number_of_reviewed_businesses": 26},
+				{"id": 156272, "number_of_reviewed_businesses": 22}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"expected" : [
+				{"id": 300619},
+				{"id": 306615},
+				{"id": 307418},
+				{"id": 507312},
+				{"id": 891830}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q7.sql",
+			"expected" : [
+				{"id": 246709},
+				{"id": 255353},
+				{"id": 268237},
+				{"id": 284569},
+				{"id": 289753},
+				{"id": 296955},
+				{"id": 500676},
+				{"id": 508719},
+				{"id": 695764},
+				{"id": 1679236}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q8.sql",
+			"expected" : [
+				{"id": 1615236, "friend_count": 21},
+				{"id": 1422327, "friend_count": 13},
+				{"id": 1462755, "friend_count": 11},
+				{"id": 1024751, "friend_count": 9},
+				{"id": 45455, "friend_count": 8},
+				{"id": 209004, "friend_count": 6},
+				{"id": 1629461, "friend_count": 6}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q9.sql",
+			"expected" : [
+				{"id": 4676, "rating": "4.0000"},
+				{"id": 124946, "rating": "3.2000"}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q10.sql",
+			"expected" : [
+				{"id": 71946, "total_useful_votes": "969"},
+				{"id": 55042, "total_useful_votes": "641"},
+				{"id": 98656, "total_useful_votes": "39"},
+				{"id": 79608, "total_useful_votes": "31"},
+				{"id": 39387, "total_useful_votes": "16"}
+			]
+		}
+	]
+}

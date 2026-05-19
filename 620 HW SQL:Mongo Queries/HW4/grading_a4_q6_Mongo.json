@@ -1,0 +1,117 @@
+{
+	"__comment__" : "This is the database to connect to. We can have Myjson or MongoDB.",
+	"database_mongo" : {
+		"db_name": "TODOTODO__YOUR_DB_NAME__TODOTODO",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "TODOTODO__YOUR_MONGO_URL__TODOTODO"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q6Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.L3.json",
+			"parameters" : {
+				"LKCollection": "L3_T1",
+				"LKMinusOneCollection": "L2_T1",
+				"LOneCollection": "L1_T1",
+				"TCollection": "T1",
+				"Iid_1Filter": 1206
+			},
+			"expected" : [
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.8235294117647058823529411764705882"}, "lift": {"$numberDecimal": "49.19786096256684491978609625668448"}, "a_iid_1": 1417, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.8333333333333333333333333333333333"}, "lift": {"$numberDecimal": "49.78354978354978354978354978354978"}, "a_iid_1": 5595, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.7333333333333333333333333333333333"}, "lift": {"$numberDecimal": "43.80952380952380952380952380952380"}, "a_iid_1": 7267, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.8333333333333333333333333333333333"}, "lift": {"$numberDecimal": "49.78354978354978354978354978354978"}, "a_iid_1": 7888, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.875"}, "lift": {"$numberDecimal": "52.27272727272727272727272727272727"}, "a_iid_1": 8262, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.8125"}, "lift": {"$numberDecimal": "48.53896103896103896103896103896103"}, "a_iid_1": 8869, "a_iid_2": 20053, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.8461538461538461538461538461538462"}, "lift": {"$numberDecimal": "50.54945054945054945054945054945055"}, "a_iid_1": 20053, "a_iid_2": 27616, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.625"}, "lift": {"$numberDecimal": "37.33766233766233766233766233766233"}, "a_iid_1": 20053, "a_iid_2": 31048, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "1"}, "lift": {"$numberDecimal": "59.74025974025974025974025974025973"}, "a_iid_1": 20053, "a_iid_2": 35057, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.9090909090909090909090909090909091"}, "lift": {"$numberDecimal": "54.30932703659976387249114521841794"}, "a_iid_1": 20053, "a_iid_2": 44041, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.8125"}, "lift": {"$numberDecimal": "48.53896103896103896103896103896103"}, "a_iid_1": 20053, "a_iid_2": 44345, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.6875"}, "lift": {"$numberDecimal": "41.07142857142857142857142857142857"}, "a_iid_1": 20053, "a_iid_2": 44735, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.8461538461538461538461538461538462"}, "lift": {"$numberDecimal": "50.54945054945054945054945054945055"}, "a_iid_1": 20053, "a_iid_2": 55853, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002608695652173913043478260869565217"}, "confidence": {"$numberDecimal": "0.9230769230769230769230769230769231"}, "lift": {"$numberDecimal": "55.14485514485514485514485514485514"}, "a_iid_1": 20053, "a_iid_2": 55910, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.7692307692307692307692307692307692"}, "lift": {"$numberDecimal": "45.95404595404595404595404595404595"}, "a_iid_1": 20053, "a_iid_2": 58637, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "1"}, "lift": {"$numberDecimal": "59.74025974025974025974025974025973"}, "a_iid_1": 20053, "a_iid_2": 59857, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.003695652173913043478260869565217391"}, "confidence": {"$numberDecimal": "0.7083333333333333333333333333333333"}, "lift": {"$numberDecimal": "42.31601731601731601731601731601731"}, "a_iid_1": 20053, "a_iid_2": 65375, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.7"}, "lift": {"$numberDecimal": "41.81818181818181818181818181818181"}, "a_iid_1": 20053, "a_iid_2": 91920, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.003260869565217391304347826086956522"}, "confidence": {"$numberDecimal": "0.625"}, "lift": {"$numberDecimal": "37.33766233766233766233766233766233"}, "a_iid_1": 20053, "a_iid_2": 214469, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.625"}, "lift": {"$numberDecimal": "37.33766233766233766233766233766233"}, "a_iid_1": 65375, "a_iid_2": 214469, "c_iid": 1206},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.3684210526315789473684210526315789"}, "lift": {"$numberDecimal": "60.52631578947368421052631578947368"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 1417},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "93.11740890688259109311740890688259"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 5595},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.2894736842105263157894736842105263"}, "lift": {"$numberDecimal": "63.40852130325814536340852130325815"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 7267},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "67.25146198830409356725146198830409"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 7888},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.3684210526315789473684210526315789"}, "lift": {"$numberDecimal": "52.96052631578947368421052631578947"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 8262},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.3421052631578947368421052631578947"}, "lift": {"$numberDecimal": "58.28460038986354775828460038986354"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 8869},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.8235294117647058823529411764705882"}, "lift": {"$numberDecimal": "54.11764705882352941176470588235296"}, "a_iid_1": 1206, "a_iid_2": 1417, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.9090909090909090909090909090909091"}, "lift": {"$numberDecimal": "59.74025974025974025974025974025976"}, "a_iid_1": 1206, "a_iid_2": 5595, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.7857142857142857142857142857142857"}, "lift": {"$numberDecimal": "51.63265306122448979591836734693879"}, "a_iid_1": 1206, "a_iid_2": 7267, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "1"}, "lift": {"$numberDecimal": "65.71428571428571428571428571428573"}, "a_iid_1": 1206, "a_iid_2": 7888, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.7"}, "lift": {"$numberDecimal": "46.00000000000000000000000000000001"}, "a_iid_1": 1206, "a_iid_2": 8262, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.8125"}, "lift": {"$numberDecimal": "53.39285714285714285714285714285716"}, "a_iid_1": 1206, "a_iid_2": 8869, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.8461538461538461538461538461538462"}, "lift": {"$numberDecimal": "55.60439560439560439560439560439562"}, "a_iid_1": 1206, "a_iid_2": 27616, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.8333333333333333333333333333333333"}, "lift": {"$numberDecimal": "54.76190476190476190476190476190478"}, "a_iid_1": 1206, "a_iid_2": 31048, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.9090909090909090909090909090909091"}, "lift": {"$numberDecimal": "59.74025974025974025974025974025976"}, "a_iid_1": 1206, "a_iid_2": 35057, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "1"}, "lift": {"$numberDecimal": "65.71428571428571428571428571428573"}, "a_iid_1": 1206, "a_iid_2": 44041, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.8666666666666666666666666666666667"}, "lift": {"$numberDecimal": "56.95238095238095238095238095238097"}, "a_iid_1": 1206, "a_iid_2": 44345, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.9166666666666666666666666666666667"}, "lift": {"$numberDecimal": "60.23809523809523809523809523809526"}, "a_iid_1": 1206, "a_iid_2": 44735, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.9166666666666666666666666666666667"}, "lift": {"$numberDecimal": "60.23809523809523809523809523809526"}, "a_iid_1": 1206, "a_iid_2": 55853, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002608695652173913043478260869565217"}, "confidence": {"$numberDecimal": "0.9230769230769230769230769230769231"}, "lift": {"$numberDecimal": "60.65934065934065934065934065934068"}, "a_iid_1": 1206, "a_iid_2": 55910, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.9090909090909090909090909090909091"}, "lift": {"$numberDecimal": "59.74025974025974025974025974025976"}, "a_iid_1": 1206, "a_iid_2": 58637, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "1"}, "lift": {"$numberDecimal": "65.71428571428571428571428571428573"}, "a_iid_1": 1206, "a_iid_2": 59857, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.003695652173913043478260869565217391"}, "confidence": {"$numberDecimal": "0.7391304347826086956521739130434783"}, "lift": {"$numberDecimal": "48.57142857142857142857142857142859"}, "a_iid_1": 1206, "a_iid_2": 65375, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.9333333333333333333333333333333333"}, "lift": {"$numberDecimal": "61.33333333333333333333333333333335"}, "a_iid_1": 1206, "a_iid_2": 91920, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.003260869565217391304347826086956522"}, "confidence": {"$numberDecimal": "0.7894736842105263157894736842105263"}, "lift": {"$numberDecimal": "51.87969924812030075187969924812032"}, "a_iid_1": 1206, "a_iid_2": 214469, "c_iid": 20053},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.2894736842105263157894736842105263"}, "lift": {"$numberDecimal": "63.40852130325814536340852130325815"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 27616},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "48.42105263157894736842105263157894"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 31048},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "100.8771929824561403508771929824562"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 35057},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "86.46616541353383458646616541353383"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 44041},
+				{"support": {"$numberDecimal": "0.002826086956521739130434782608695652"}, "confidence": {"$numberDecimal": "0.3421052631578947368421052631578947"}, "lift": {"$numberDecimal": "68.42105263157894736842105263157894"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 44345},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.2894736842105263157894736842105263"}, "lift": {"$numberDecimal": "70.08310249307479224376731301939058"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 44735},
+				{"support": {"$numberDecimal": "0.002391304347826086956521739130434783"}, "confidence": {"$numberDecimal": "0.2894736842105263157894736842105263"}, "lift": {"$numberDecimal": "78.32817337461300309597523219814242"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 55853},
+				{"support": {"$numberDecimal": "0.002608695652173913043478260869565217"}, "confidence": {"$numberDecimal": "0.3157894736842105263157894736842105"}, "lift": {"$numberDecimal": "96.84210526315789473684210526315788"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 55910},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "67.25146198830409356725146198830409"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 58637},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.2631578947368421052631578947368421"}, "lift": {"$numberDecimal": "121.0526315789473684210526315789474"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 59857},
+				{"support": {"$numberDecimal": "0.003695652173913043478260869565217391"}, "confidence": {"$numberDecimal": "0.4473684210526315789473684210526316"}, "lift": {"$numberDecimal": "55.61877667140825035561877667140825"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 65375},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.5263157894736842105263157894736842"}, "lift": {"$numberDecimal": "65.43385490753911806543385490753912"}, "a_iid_1": 1206, "a_iid_2": 214469, "c_iid": 65375},
+				{"support": {"$numberDecimal": "0.003043478260869565217391304347826087"}, "confidence": {"$numberDecimal": "0.3684210526315789473684210526315789"}, "lift": {"$numberDecimal": "65.18218623481781376518218623481781"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 91920},
+				{"support": {"$numberDecimal": "0.003260869565217391304347826086956522"}, "confidence": {"$numberDecimal": "0.3947368421052631578947368421052632"}, "lift": {"$numberDecimal": "44.28754813863928112965340179717587"}, "a_iid_1": 1206, "a_iid_2": 20053, "c_iid": 214469},
+				{"support": {"$numberDecimal": "0.002173913043478260869565217391304348"}, "confidence": {"$numberDecimal": "0.4347826086956521739130434782608696"}, "lift": {"$numberDecimal": "48.78048780487804878048780487804878"}, "a_iid_1": 1206, "a_iid_2": 65375, "c_iid": 214469}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.L3.json",
+			"parameters" : {
+				"LKCollection": "L3_T2",
+				"LKMinusOneCollection": "L2_T2",
+				"LOneCollection": "L1_T2",
+				"TCollection": "T2",
+				"Iid_1Filter": 18726
+			},
+			"expected" : [
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.7"}, "lift": {"$numberDecimal": "702.6723529411764705882352941176471"}, "a_iid_1": 26382, "a_iid_2": 59321, "c_iid": 18726},
+				{"support": {"$numberDecimal": "0.00003515988959794666244747991491306717"}, "confidence": {"$numberDecimal": "0.6666666666666666666666666666666667"}, "lift": {"$numberDecimal": "669.2117647058823529411764705882353"}, "a_iid_1": 26382, "a_iid_2": 61385, "c_iid": 18726},
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.7"}, "lift": {"$numberDecimal": "702.6723529411764705882352941176471"}, "a_iid_1": 40971, "a_iid_2": 61385, "c_iid": 18726},
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.5384615384615384615384615384615385"}, "lift": {"$numberDecimal": "1331.709030100334448160535117056856"}, "a_iid_1": 18726, "a_iid_2": 59321, "c_iid": 26382},
+				{"support": {"$numberDecimal": "0.00003515988959794666244747991491306717"}, "confidence": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "lift": {"$numberDecimal": "824.3913043478260869565217391304347"}, "a_iid_1": 18726, "a_iid_2": 61385, "c_iid": 26382},
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.3888888888888888888888888888888889"}, "lift": {"$numberDecimal": "840.0443037974683544303797468354430"}, "a_iid_1": 18726, "a_iid_2": 61385, "c_iid": 40971},
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.3888888888888888888888888888888889"}, "lift": {"$numberDecimal": "1618.621951219512195121951219512195"}, "a_iid_1": 18726, "a_iid_2": 26382, "c_iid": 59321},
+				{"support": {"$numberDecimal": "0.00003515988959794666244747991491306717"}, "confidence": {"$numberDecimal": "0.3333333333333333333333333333333333"}, "lift": {"$numberDecimal": "669.2117647058823529411764705882352"}, "a_iid_1": 18726, "a_iid_2": 26382, "c_iid": 61385},
+				{"support": {"$numberDecimal": "0.00004101987119760443952205990073191170"}, "confidence": {"$numberDecimal": "0.4666666666666666666666666666666667"}, "lift": {"$numberDecimal": "936.8964705882352941176470588235294"}, "a_iid_1": 18726, "a_iid_2": 40971, "c_iid": 61385}
+			]
+		}
+	]
+}

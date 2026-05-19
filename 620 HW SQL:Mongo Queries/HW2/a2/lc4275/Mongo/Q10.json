@@ -1,0 +1,50 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{ "$facet": {
+			"bayou": [
+				{ "$match": { "bname": "Bayou Daiquiris" } },
+				{ "$project": { "ha": { "$objectToArray": { "$ifNull": ["$hours", "$location.hours"] } } } }
+			],
+			"korean": [
+				{ "$match": { "categories": { "$regex": "Korean" } } },
+				{ "$project": { "ha": { "$objectToArray": { "$ifNull": ["$hours", "$location.hours"] } } } }
+			]
+		}},
+		{ "$unwind": "$bayou" },
+		{ "$unwind": "$korean" },
+		{ "$project": {
+			"korean": 1,
+			"valid": {
+				"$allElementsTrue": {
+					"$map": {
+						"input": ["1", "2", "3", "4", "5"],
+						"as": "d",
+						"in": {
+							"$let": {
+								"vars": {
+									"kd": { "$arrayElemAt": [{ "$filter": { "input": "$korean.ha", "as": "h", "cond": { "$eq": ["$$h.k", "$$d"] } } }, 0] },
+									"bd": { "$arrayElemAt": [{ "$filter": { "input": "$bayou.ha", "as": "h", "cond": { "$eq": ["$$h.k", "$$d"] } } }, 0] }
+								},
+								"in": {
+									"$or": [
+										{ "$eq": ["$$bd", null] },
+										{ "$and": [
+											{ "$ne": ["$$kd", null] },
+											{ "$gte": ["$$kd.v.opening", "$$bd.v.opening"] },
+											{ "$gte": ["$$kd.v.closing", "$$bd.v.closing"] }
+										]}
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		}},
+		{ "$match": { "valid": true } },
+		{ "$lookup": { "from": "Reviews", "localField": "korean._id", "foreignField": "business_id", "as": "revs" } },
+		{ "$project": { "_id": 0, "id": "$korean._id", "total_useful_votes": { "$sum": "$revs.useful" } } },
+		{ "$sort": { "total_useful_votes": -1, "id": 1 } }
+	]
+}

@@ -1,0 +1,136 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_DB", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	"yelp_gz_file" : "/Users/liamcui/Library/Mobile Documents/com~apple~CloudDocs/RIT/Spring 2026/CSCI 620/Yelp JSON/yelp_dataset.tar.gz",
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "LoadBusinesses",
+	
+	"maxTimeMin" : 30,
+	"maxMemory" : 196,
+	
+	
+	"__comment__" : "These are SQL queries to execute before a student's solution. They make sure we have a fresh database.",
+	"before_sql_queries" : [
+		"DROP TABLE IF EXISTS BusinessCategory",
+		"DROP TABLE IF EXISTS BusinessHour",
+		"DROP TABLE IF EXISTS Business",
+		"DROP TABLE IF EXISTS Zipcode",
+		"DROP TABLE IF EXISTS City",
+		"DROP TABLE IF EXISTS State",
+		"DROP TABLE IF EXISTS Category"
+	],
+	
+	"__comment__" : "These are the input parameters provided to your program in order.",
+	"input_command_line" : [
+		{"value":"$database_mysql.schema", "special":"MySQLSchema"},
+		{"value":"$database_mysql.user"}, {"value":"$database_mysql.pwd"},
+		{"value":"$yelp_gz_file"}
+	],
+	
+	
+	"__comment__" : "These are the test cases to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM State",
+			"expected" : [{"cnt": 27}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM City",
+			"expected" : [{"cnt": 568}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Zipcode",
+			"expected" : [{"cnt": 3362}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Category",
+			"expected" : [{"cnt": 1311}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Business",
+			"expected" : [{"cnt": 150346}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM BusinessCategory",
+			"expected" : [{"cnt": 668549}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM BusinessHour",
+			"expected" : [{"cnt": 801015}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Business WHERE is_open IS NOT NULL",
+			"expected" : [{"cnt": 150346}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Business WHERE bike_parking IS NOT NULL",
+			"expected" : [{"cnt": 72558}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Business WHERE good_for_dancing IS NOT NULL",
+			"expected" : [{"cnt": 4628}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM Business WHERE restaurants_price_range IS NOT NULL",
+			"expected" : [{"cnt": 85280}]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT s.name AS state, c.name AS city FROM Zipcode AS z JOIN City AS c ON z.city_id=c.id JOIN State AS s ON c.state_id=s.id WHERE code='19348'",
+			"expected" : [
+				{"state": "PA", "city": "Kennett Square"}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT b.name AS business, c.name AS category FROM Business AS b JOIN BusinessCategory AS bc ON b.id=bc.bid JOIN Category AS c ON c.id=bc.cid WHERE b.id='xZrVLrxNd6TfRz8GTFbmRQ' ORDER BY category",
+			"expected" : [
+				{"business": "Taco Bell", "category": "Fast Food"},
+				{"business": "Taco Bell", "category": "Mexican"},
+				{"business": "Taco Bell", "category": "Restaurants"},
+				{"business": "Taco Bell", "category": "Tacos"},
+				{"business": "Taco Bell", "category": "Tex-Mex"}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT b.name AS business, CAST(open_time AS CHAR(8)) AS open_time, CAST(closing_time AS CHAR(8)) AS closing_time FROM Business AS b JOIN BusinessHour AS bh ON b.id=bh.bid WHERE b.id='xZrVLrxNd6TfRz8GTFbmRQ' AND bh.day=1",
+			"expected" : [
+				{"business": "Taco Bell", "open_time": "10:00:00", "closing_time": "23:00:00"}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT name, address, CAST(latitude AS CHAR(11)) AS la, CAST(longitude AS CHAR(11)) AS lo, is_open, bike_parking, good_for_dancing, restaurants_good_for_groups, restaurants_price_range, restaurants_take_out, restaurants_delivery, restaurants_counter_service, restaurants_table_service, restaurants_reservations, drive_thru, wheelchair_accessible, by_appointment_only, dogs_allowed, happy_hour, byob, corkage, outdoor_seating, accepts_insurance, caters, coat_check, good_for_kids, open_24_hours,  has_tv, business_accepts_credit_cards, business_accepts_bitcoin FROM Business WHERE id='bFPfsUVZCXTDebLhaIssXg'",
+			"expected" : [
+				{"name": "Live In Harmony Massage Therapy", "address": "2780 Hwy 31 W", "la": "36.45512500", "lo": "-86.6692900", "is_open": 1, "bike_parking": null, "good_for_dancing": null, "restaurants_good_for_groups": null, "restaurants_price_range": null, "restaurants_take_out": null, "restaurants_delivery": null, "restaurants_counter_service": null, "restaurants_table_service": null, "restaurants_reservations": null, "drive_thru": null, "wheelchair_accessible": null, "by_appointment_only": 0, "dogs_allowed": null, "happy_hour": null, "byob": null, "corkage": null, "outdoor_seating": null, "accepts_insurance": null, "caters": null, "coat_check": null, "good_for_kids": null, "open_24_hours": null, "has_tv": null, "business_accepts_credit_cards": 1, "business_accepts_bitcoin": null}
+			]
+		}
+	]
+
+}

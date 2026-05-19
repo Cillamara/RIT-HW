@@ -1,0 +1,2 @@
+{"_id":{"$oid":"69b168efe885106c472e4c6a"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"550"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c6b"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"553"},"label":{"$numberInt":"2"}}

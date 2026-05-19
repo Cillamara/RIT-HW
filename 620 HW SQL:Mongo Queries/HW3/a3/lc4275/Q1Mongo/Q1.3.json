@@ -1,0 +1,23 @@
+{
+    "collection": "Businesses",
+    "query": [
+        {"$match": {"categories": "&category&"}},
+        {"$lookup": {"from": "Reviews", "localField": "_id", "foreignField": "business_id", "as": "reviews"}},
+        {"$unwind": "$reviews"},
+        {"$replaceRoot": {"newRoot": "$reviews"}},
+        {"$setWindowFields": {
+            "sortBy": {"stars": 1},
+            "output": {
+                "rn":    {"$documentNumber": {}},
+                "total": {"$sum": 1, "window": {"documents": ["unbounded", "unbounded"]}}
+            }
+        }},
+        {"$match": {"$expr": {
+            "$or": [
+                {"$eq": ["$rn", {"$floor": {"$multiply": [{"$toDouble": "&quantile&"}, "$total"]}}]},
+                {"$eq": ["$rn", {"$add": [{"$floor": {"$multiply": [{"$toDouble": "&quantile&"}, "$total"]}}, 1]}]}
+            ]
+        }}},
+        {"$project": {"_id": 0, "stars": 1}}
+    ]
+}

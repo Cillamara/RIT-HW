@@ -1,0 +1,19 @@
+{
+	"collection":"&RuleCoverage&",
+	"query": [
+		{"$match": {"antecedent": 1}},
+		{"$group": {
+			"_id": null,
+			"total": {"$sum": {"$toDecimal": "$count"}},
+			"sum_sq": {"$sum": {"$multiply": [{"$toDecimal": "$count"}, {"$toDecimal": "$count"}]}}
+		}},
+		{"$match": {"total": {"$gt": 0}}},
+		{"$project": {
+			"_id": 0,
+			"gini": {"$round": [{"$subtract": [
+				{"$toDecimal": "1"},
+				{"$divide": ["$sum_sq", {"$multiply": ["$total", "$total"]}]}
+			]}, 30]}
+		}}
+	]
+}

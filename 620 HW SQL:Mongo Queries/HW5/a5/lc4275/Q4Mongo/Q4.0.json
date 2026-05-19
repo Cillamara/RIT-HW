@@ -1,0 +1,19 @@
+{
+	"collection":"&Collection&",
+	"query": [
+		{"$addFields": {
+			"antecedent": {"$let": {"vars": {"a": "&AttributeName1&", "v": {"$toInt": "&AttributeValue1&"}}, "in": {"$cond": [{"$eq": ["$$a", "$$v"]}, 1, 0]}}},
+			"consequent": {"$let": {"vars": {"lv": {"$toInt": "&LabelValue&"}}, "in": {"$cond": [{"$eq": ["$label", "$$lv"]}, 1, 0]}}}
+		}},
+		{"$group": {"_id": {"antecedent": "$antecedent", "consequent": "$consequent"}, "count": {"$sum": 1}}},
+		{"$unionWith": {"coll": "&Collection&", "pipeline": [
+			{"$limit": 1}, {"$project": {"_id": 0}},
+			{"$set": {"combos": [{"antecedent": 1, "consequent": 1}, {"antecedent": 1, "consequent": 0}, {"antecedent": 0, "consequent": 1}, {"antecedent": 0, "consequent": 0}]}},
+			{"$unwind": "$combos"}, {"$replaceRoot": {"newRoot": "$combos"}},
+			{"$addFields": {"_id": {"antecedent": "$antecedent", "consequent": "$consequent"}, "count": 0}}
+		]}},
+		{"$group": {"_id": "$_id", "count": {"$max": "$count"}}},
+		{"$project": {"_id": 0, "antecedent": "$_id.antecedent", "consequent": "$_id.consequent", "count": 1}},
+		{"$sort": {"antecedent": -1, "consequent": -1}}
+	]
+}

@@ -1,0 +1,6 @@
+{"_id":{"$oid":"69b168efe885106c472e4bea"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"386"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4beb"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"109"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4bec"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"214"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4bed"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"52"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4bee"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"134"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4bef"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"25"},"label":{"$numberInt":"0"}}

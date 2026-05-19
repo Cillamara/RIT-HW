@@ -1,0 +1,32 @@
+{
+	"collection": "Users",
+	"query": [
+		{ "$match": { "friends.74": { "$exists": true } } },
+		{ "$lookup": {
+			"from": "Reviews",
+			"localField": "_id",
+			"foreignField": "user_id",
+			"pipeline": [
+				{ "$match": { "funny": { "$gt": 3 }, "cool": { "$gt": 3 } } },
+				{ "$limit": 1 }
+			],
+			"as": "good_reviews"
+		}},
+		{ "$match": { "good_reviews.0": { "$exists": true } } },
+		{ "$lookup": {
+			"from": "Users",
+			"localField": "friends",
+			"foreignField": "_id",
+			"pipeline": [
+				{ "$project": { "yelping_since": 1 } },
+				{ "$sort": { "yelping_since": -1 } },
+				{ "$limit": 1 }
+			],
+			"as": "friend_docs"
+		}},
+		{ "$project": { "id": "$_id", "yelping_since": 1, "max_friend_date": { "$max": "$friend_docs.yelping_since" } } },
+		{ "$match": { "$expr": { "$gt": ["$yelping_since", "$max_friend_date"] } } },
+		{ "$project": { "_id": 0, "id": 1 } },
+		{ "$sort": { "id": 1 } }
+	]
+}

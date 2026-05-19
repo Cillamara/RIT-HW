@@ -1,0 +1,22 @@
+{
+	"collection":"&RuleCoverage&",
+	"query": [
+		{"$group": {
+			"_id": null,
+			"TP": {"$sum": {"$cond": [{"$and": [{"$eq": ["$antecedent", 1]}, {"$eq": ["$consequent", 1]}]}, {"$toDecimal": "$count"}, {"$toDecimal": "0"}]}},
+			"FP": {"$sum": {"$cond": [{"$and": [{"$eq": ["$antecedent", 1]}, {"$eq": ["$consequent", 0]}]}, {"$toDecimal": "$count"}, {"$toDecimal": "0"}]}},
+			"FN": {"$sum": {"$cond": [{"$and": [{"$eq": ["$antecedent", 0]}, {"$eq": ["$consequent", 1]}]}, {"$toDecimal": "$count"}, {"$toDecimal": "0"}]}},
+			"TN": {"$sum": {"$cond": [{"$and": [{"$eq": ["$antecedent", 0]}, {"$eq": ["$consequent", 0]}]}, {"$toDecimal": "$count"}, {"$toDecimal": "0"}]}}
+		}},
+		{"$addFields": {"total": {"$add": ["$TP", "$FP", "$FN", "$TN"]}}},
+		{"$match": {"total": {"$gt": 0}}},
+		{"$project": {
+			"_id": 0,
+			"prec": {"$cond": [{"$eq": [{"$add": ["$TP", "$FP"]}, {"$toDecimal": "0"}]}, {"$toDecimal": "0"}, {"$divide": ["$TP", {"$add": ["$TP", "$FP"]}]}]},
+			"recall": {"$cond": [{"$eq": [{"$add": ["$TP", "$FN"]}, {"$toDecimal": "0"}]}, {"$toDecimal": "0"}, {"$divide": ["$TP", {"$add": ["$TP", "$FN"]}]}]},
+			"specificity": {"$cond": [{"$eq": [{"$add": ["$TN", "$FP"]}, {"$toDecimal": "0"}]}, {"$toDecimal": "1"}, {"$divide": ["$TN", {"$add": ["$TN", "$FP"]}]}]},
+			"accuracy": {"$divide": [{"$add": ["$TP", "$TN"]}, "$total"]},
+			"error_rate": {"$divide": [{"$add": ["$FP", "$FN"]}, "$total"]}
+		}}
+	]
+}

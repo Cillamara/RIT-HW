@@ -1,0 +1,24 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{ "$match": { "is_open": 1, "categories.5": { "$exists": true } } },
+		{ "$project": {
+			"id": "$_id",
+			"categories": 1,
+			"hours": { "$ifNull": ["$hours", "$location.hours"] }
+		}},
+		{ "$match": {
+			"$and": [
+				{ "$or": [ { "hours.0": { "$exists": false } }, { "hours.0": null }, { "hours.0": "closed" } ] },
+				{ "$or": [ { "hours.6": { "$exists": false } }, { "hours.6": null }, { "hours.6": "closed" } ] },
+				{ "$or": [ { "hours.Sunday": { "$exists": false } }, { "hours.Sunday": null }, { "hours.Sunday": "closed" } ] },
+				{ "$or": [ { "hours.Saturday": { "$exists": false } }, { "hours.Saturday": null }, { "hours.Saturday": "closed" } ] }
+			]
+		}},
+		{ "$lookup": { "from": "Reviews", "localField": "id", "foreignField": "business_id", "as": "reviews" } },
+		{ "$project": { "id": 1, "number_of_categories": { "$size": "$categories" }, "review_count": { "$size": "$reviews" } } },
+		{ "$match": { "review_count": { "$gt": 250 } } },
+		{ "$project": { "_id": 0, "id": 1, "number_of_categories": 1 } },
+		{ "$sort": { "number_of_categories": -1, "id": 1 } }
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"collection": "&LCollection&",
+	"query": [
+		{"$lookup": {
+			"from": "&LCollection&",
+			"let": {"iid1": "$iid_1", "iid2": "$iid_2", "iid3": "$iid_3"},
+			"pipeline": [
+				{"$match": {"$expr": {"$and": [
+					{"$eq": ["$iid_1", "$$iid1"]},
+					{"$eq": ["$iid_2", "$$iid2"]},
+					{"$gt": ["$iid_3", "$$iid3"]}
+				]}}}
+			],
+			"as": "matches"
+		}},
+		{"$unwind": "$matches"},
+		{"$set": {
+			"trans_intersect": {"$sortArray": {
+				"input": {"$setIntersection": ["$transactions", "$matches.transactions"]},
+				"sortBy": 1
+			}}
+		}},
+		{"$set": {"count": {"$size": "$trans_intersect"}}},
+		{"$match": {"count": {"$gte": "&MinSup&"}}},
+		{"$project": {
+			"_id": 0,
+			"eclass": "$_id",
+			"iid_1": 1,
+			"iid_2": 1,
+			"iid_3": 1,
+			"iid_4": "$matches.iid_3",
+			"count": 1,
+			"transactions": "$trans_intersect"
+		}},
+		{"$sort": {"iid_1": 1, "iid_2": 1, "iid_3": 1, "iid_4": 1}}
+	]
+}

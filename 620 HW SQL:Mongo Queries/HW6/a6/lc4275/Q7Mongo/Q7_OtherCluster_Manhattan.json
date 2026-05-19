@@ -1,0 +1,29 @@
+{
+	"collection": "&AssignmentCollection&",
+	"query": [
+		{"$match": {"$expr": {"$let": {"vars": {"v": {"$toInt": "&PointId&"}}, "in": {"$eq": ["$pid", "$$v"]}}}}},
+		{"$lookup": {"from": "&PointCollection&", "localField": "pid", "foreignField": "_id", "as": "_self"}},
+		{"$unwind": "$_self"},
+		{"$lookup": {"from": "&AssignmentCollection&", "let": {"my_cid": "$cid", "self": "$_self"}, "pipeline": [
+			{"$match": {"$expr": {"$ne": ["$cid", "$$my_cid"]}}}
+		], "as": "_a"}},
+		{"$unwind": "$_a"},
+		{"$lookup": {"from": "&PointCollection&", "localField": "_a.pid", "foreignField": "_id", "as": "_p"}},
+		{"$unwind": "$_p"},
+		{"$sort": {"_a._id": 1}},
+		{"$group": {
+			"_id": "$_a.cid",
+			"distance": {"$avg": {"$add": [
+				{"$abs": {"$subtract": ["$_self.scaled_dim_1", "$_p.scaled_dim_1"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_2", "$_p.scaled_dim_2"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_3", "$_p.scaled_dim_3"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_4", "$_p.scaled_dim_4"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_5", "$_p.scaled_dim_5"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_6", "$_p.scaled_dim_6"]}},
+				{"$abs": {"$subtract": ["$_self.scaled_dim_7", "$_p.scaled_dim_7"]}}
+			]}}
+		}},
+		{"$project": {"_id": 0, "cid": "$_id", "distance": 1}},
+		{"$sort": {"cid": 1}}
+	]
+}

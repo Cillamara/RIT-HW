@@ -1,0 +1,33 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{"$match": {"categories": "&Category&"}},
+		{"$lookup": {"from": "Reviews", "localField": "_id", "foreignField": "business_id", "as": "_revs"}},
+		{"$project": {
+			"_id": 1,
+			"dim_1": {"$toDecimal": "$location.latitude"},
+			"dim_2": {"$toDecimal": "$location.longitude"},
+			"dim_3": {"$toDecimal": {"$ifNull": ["$restaurants_price_range", 0]}},
+			"dim_4": {"$divide": [
+				{"$toDecimal": {"$add": [
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.1.closing", "$hours.1.opening"]}, 0]}},
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.2.closing", "$hours.2.opening"]}, 0]}},
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.3.closing", "$hours.3.opening"]}, 0]}},
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.4.closing", "$hours.4.opening"]}, 0]}},
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.5.closing", "$hours.5.opening"]}, 0]}}
+				]}},
+				{"$toDecimal": 3600000}
+			]},
+			"dim_5": {"$divide": [
+				{"$toDecimal": {"$add": [
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.0.closing", "$hours.0.opening"]}, 0]}},
+					{"$abs": {"$ifNull": [{"$subtract": ["$hours.6.closing", "$hours.6.opening"]}, 0]}}
+				]}},
+				{"$toDecimal": 3600000}
+			]},
+			"dim_6": {"$toDecimal": {"$size": "$categories"}},
+			"dim_7": {"$toDecimal": {"$size": "$_revs"}}
+		}},
+		{"$sort": {"_id": 1}}
+	]
+}

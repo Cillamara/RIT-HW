@@ -1,0 +1,17 @@
+{"_id":{"$oid":"69b168efe885106c472e4c06"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"1"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4c07"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"1"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4c08"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"21"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c09"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"51"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0a"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"40"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0b"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"35"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0c"},"attribute":{"$numberInt":"3"},"count":{"$numberInt":"20"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0d"},"attribute":{"$numberInt":"5"},"count":{"$numberInt":"9"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0e"},"attribute":{"$numberInt":"4"},"count":{"$numberInt":"6"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c0f"},"attribute":{"$numberInt":"5"},"count":{"$numberInt":"4"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4c10"},"attribute":{"$numberInt":"5"},"count":{"$numberInt":"87"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c11"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"26"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c12"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"23"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c13"},"attribute":{"$numberInt":"3"},"count":{"$numberInt":"17"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c14"},"attribute":{"$numberInt":"3"},"count":{"$numberInt":"63"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c15"},"attribute":{"$numberInt":"4"},"count":{"$numberInt":"74"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c16"},"attribute":{"$numberInt":"4"},"count":{"$numberInt":"19"},"label":{"$numberInt":"1"}}

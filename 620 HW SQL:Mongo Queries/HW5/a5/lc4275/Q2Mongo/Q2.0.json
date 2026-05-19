@@ -1,0 +1,8 @@
+{
+	"collection":"&Collection&",
+	"query": [
+		{"$group": {"_id": {"attribute": "&AttributeReturn&", "label": "$label"}, "count": {"$sum": 1}}},
+		{"$project": {"_id": 0, "attribute": "$_id.attribute", "label": "$_id.label", "count": 1}},
+		{"$sort": {"attribute": 1, "label": 1}}
+	]
+}

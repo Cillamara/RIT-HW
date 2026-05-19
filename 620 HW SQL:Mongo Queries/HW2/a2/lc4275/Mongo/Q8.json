@@ -1,0 +1,42 @@
+{
+  "collection": "Users",
+  "query": [
+    { "$match": { "fans": { "$gt": 50 }, "friends.5": { "$exists": true } } },
+    { "$lookup": {
+      "from": "Reviews",
+      "localField": "_id",
+      "foreignField": "user_id",
+      "pipeline": [
+        { "$lookup": {
+          "from": "Businesses",
+          "localField": "business_id",
+          "foreignField": "_id",
+          "pipeline": [
+            { "$match": { "location.city": "Largo" } }
+          ],
+          "as": "biz"
+        }},
+        { "$match": { "biz.0": { "$exists": true } } },
+        { "$limit": 1 }
+      ],
+      "as": "largo_revs"
+    }},
+    { "$match": { "largo_revs.0": { "$exists": false } } },
+    { "$project": { "friends": 1 } },
+    { "$lookup": {
+      "from": "Reviews",
+      "localField": "friends",
+      "foreignField": "user_id",
+      "pipeline": [
+        { "$match": { "stars": 5 } },
+        { "$group": { "_id": "$user_id", "cnt": { "$sum": 1 } } },
+        { "$match": { "cnt": { "$gt": 3 } } },
+        { "$limit": 1 }
+      ],
+      "as": "bad_friends"
+    }},
+    { "$match": { "bad_friends.0": { "$exists": false } } },
+    { "$project": { "_id": 0, "id": "$_id", "friend_count": { "$size": "$friends" } } },
+    { "$sort": { "friend_count": -1, "id": 1 } }
+  ]
+}

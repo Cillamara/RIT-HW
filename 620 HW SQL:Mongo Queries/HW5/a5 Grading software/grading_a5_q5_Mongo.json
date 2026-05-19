@@ -1,0 +1,96 @@
+{
+	"__comment__" : "This is the database to connect to. We can have Myjson or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q5Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_0"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.491493383742911153119092627599"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_3"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.335369561384283527316051486304"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_2"
+			},
+			"expected" : []
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_5"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0E-30"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_2"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.499173772225527133320113688942"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_4"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.483712076145151695419393218322"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_3"
+			},
+			"expected" : []
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.Gini.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_5"
+			},
+			"expected" : []
+		}
+	]
+}

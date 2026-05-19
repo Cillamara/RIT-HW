@@ -1,0 +1,168 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q1SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.D1.sql",
+			"parameters" : {
+				"Category": "Mexican",
+				"k": 5
+			},
+			"limit": 25,
+			"expected" : [
+				{"id": 104, "att_1": 2, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 1},
+				{"id": 153, "att_1": 2, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 1, "att_6": 2, "att_7": 2, "att_8": 1, "label": 1},
+				{"id": 159, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 0, "att_6": 2, "att_7": 1, "att_8": 2, "label": 2},
+				{"id": 278, "att_1": 4, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 1, "label": 2},
+				{"id": 290, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 2, "label": 1},
+				{"id": 345, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 0, "label": 1},
+				{"id": 348, "att_1": 4, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 1, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 351, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 1, "label": 2},
+				{"id": 401, "att_1": 3, "att_2": 0, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 1, "label": 0},
+				{"id": 438, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 0, "att_7": 2, "att_8": 2, "label": 1},
+				{"id": 470, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 0, "att_6": 1, "att_7": 1, "att_8": 1, "label": 1},
+				{"id": 553, "att_1": 2, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 2, "label": 1},
+				{"id": 583, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 662, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 1, "label": 1},
+				{"id": 703, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 0, "att_6": 1, "att_7": 1, "att_8": 1, "label": 2},
+				{"id": 778, "att_1": 4, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 800, "att_1": 3, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 1, "label": 0},
+				{"id": 890, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 1, "att_6": 2, "att_7": 2, "att_8": 1, "label": 2},
+				{"id": 902, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 0, "label": 1},
+				{"id": 916, "att_1": 1, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 1},
+				{"id": 1018, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 1, "label": 2},
+				{"id": 1046, "att_1": 2, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 1059, "att_1": 1, "att_2": 1, "att_3": 2, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 2, "label": 0},
+				{"id": 1061, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 1067, "att_1": 3, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 1, "att_6": 2, "att_7": 2, "att_8": 0, "label": 1}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.D1.sql",
+			"parameters" : {
+				"Category": "Korean",
+				"k": 5
+			},
+			"limit": 25,
+			"expected" : [
+				{"id": 19, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 2, "label": 1},
+				{"id": 409, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 610, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 1},
+				{"id": 840, "att_1": 2, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 1062, "att_1": 3, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 0, "att_8": 1, "label": 1},
+				{"id": 1437, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 0, "att_7": 1, "att_8": 1, "label": 2},
+				{"id": 1538, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 1704, "att_1": 2, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 1988, "att_1": 1, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 2817, "att_1": 4, "att_2": 0, "att_3": 0, "att_4": 0, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 3396, "att_1": 1, "att_2": 1, "att_3": 2, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 2, "label": 0},
+				{"id": 4020, "att_1": 1, "att_2": 0, "att_3": 2, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 2, "label": 1},
+				{"id": 4516, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 2, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 5124, "att_1": 4, "att_2": 0, "att_3": 0, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 1, "label": 2},
+				{"id": 5407, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 5549, "att_1": 4, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 5574, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 1, "att_8": 1, "label": 2},
+				{"id": 5672, "att_1": 3, "att_2": 0, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 1, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 5866, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 0, "att_8": 1, "label": 2},
+				{"id": 6183, "att_1": 5, "att_2": 0, "att_3": 1, "att_4": 1, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 6291, "att_1": 1, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 6907, "att_1": 4, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 1, "att_7": 2, "att_8": 0, "label": 2},
+				{"id": 7287, "att_1": 3, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 1, "att_7": 0, "att_8": 0, "label": 0},
+				{"id": 7661, "att_1": 5, "att_2": 1, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 1, "att_8": 0, "label": 2},
+				{"id": 8455, "att_1": 3, "att_2": 0, "att_3": 1, "att_4": 0, "att_5": 2, "att_6": 2, "att_7": 2, "att_8": 0, "label": 2}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.D2.sql",
+			"parameters" : {
+				"StartDate": "2018-01-01",
+				"EndDate": "2018-01-31",
+				"k": 5
+			},
+			"limit": 25,
+			"expected" : [
+				{"id": 43579, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 43715, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 45976, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 46957, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 1, "att_6": 1, "label": 5},
+				{"id": 47092, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 47141, "att_1": 4, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 47171, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 47429, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 48109, "att_1": 5, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 48292, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 48428, "att_1": 5, "att_2": 5, "att_3": 1, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 49139, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 2, "label": 5},
+				{"id": 49706, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 49762, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 50763, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 50829, "att_1": 4, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 51302, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 52046, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 52067, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 52126, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 52616, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 52869, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 53210, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 53327, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 53444, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.D2.sql",
+			"parameters" : {
+				"StartDate": "2018-05-01",
+				"EndDate": "2018-05-31",
+				"k": 5
+			},
+			"limit": 25,
+			"expected" : [
+				{"id": 42935, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 43288, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 45173, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 45289, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 46154, "att_1": 5, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 46737, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 46819, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 50038, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 50772, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 1, "label": 5},
+				{"id": 50795, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 51773, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 53077, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 53222, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 54941, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 55278, "att_1": 5, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 55636, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 55695, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 56034, "att_1": 5, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 57014, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 57265, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 57340, "att_1": 4, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 57475, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 59062, "att_1": 5, "att_2": 4, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 5},
+				{"id": 59401, "att_1": 1, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1},
+				{"id": 60276, "att_1": 5, "att_2": 5, "att_3": 0, "att_4": 0, "att_5": 0, "att_6": 0, "label": 1}
+			]
+		}
+	]
+}

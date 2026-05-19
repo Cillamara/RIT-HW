@@ -1,0 +1,25 @@
+{
+	"collection": "&Collection&",
+	"query": [
+		{"$setWindowFields": {"output": {
+			"_min1": {"$min": "$dim_1"}, "_max1": {"$max": "$dim_1"},
+			"_min2": {"$min": "$dim_2"}, "_max2": {"$max": "$dim_2"},
+			"_min3": {"$min": "$dim_3"}, "_max3": {"$max": "$dim_3"},
+			"_min4": {"$min": "$dim_4"}, "_max4": {"$max": "$dim_4"},
+			"_min5": {"$min": "$dim_5"}, "_max5": {"$max": "$dim_5"},
+			"_min6": {"$min": "$dim_6"}, "_max6": {"$max": "$dim_6"},
+			"_min7": {"$min": "$dim_7"}, "_max7": {"$max": "$dim_7"}
+		}}},
+		{"$project": {
+			"_id": 1,
+			"scaled_dim_1": {"$cond": [{"$eq": ["$_max1", "$_min1"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_1", "$_min1"]}, {"$subtract": ["$_max1", "$_min1"]}]}]},
+			"scaled_dim_2": {"$cond": [{"$eq": ["$_max2", "$_min2"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_2", "$_min2"]}, {"$subtract": ["$_max2", "$_min2"]}]}]},
+			"scaled_dim_3": {"$cond": [{"$eq": ["$_max3", "$_min3"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_3", "$_min3"]}, {"$subtract": ["$_max3", "$_min3"]}]}]},
+			"scaled_dim_4": {"$cond": [{"$eq": ["$_max4", "$_min4"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_4", "$_min4"]}, {"$subtract": ["$_max4", "$_min4"]}]}]},
+			"scaled_dim_5": {"$cond": [{"$eq": ["$_max5", "$_min5"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_5", "$_min5"]}, {"$subtract": ["$_max5", "$_min5"]}]}]},
+			"scaled_dim_6": {"$cond": [{"$eq": ["$_max6", "$_min6"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_6", "$_min6"]}, {"$subtract": ["$_max6", "$_min6"]}]}]},
+			"scaled_dim_7": {"$cond": [{"$eq": ["$_max7", "$_min7"]}, {"$toDecimal": 0}, {"$divide": [{"$subtract": ["$dim_7", "$_min7"]}, {"$subtract": ["$_max7", "$_min7"]}]}]}
+		}},
+		{"$sort": {"_id": 1}}
+	]
+}

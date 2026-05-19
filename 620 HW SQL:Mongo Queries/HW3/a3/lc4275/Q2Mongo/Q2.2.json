@@ -1,0 +1,22 @@
+{
+    "collection": "Reviews",
+    "query": [
+        {"$match": {"$expr": {"$and": [{"$gte": ["$review_date", {"$toDate": "&init_date&"}]}, {"$lte": ["$review_date", {"$toDate": "&end_date&"}]}]}}},
+        {"$addFields": {"funny_d": {"$toDecimal": "$funny"}}},
+        {"$setWindowFields": {
+            "output": {
+                "mean_funny": {"$avg": "$funny_d", "window": {"documents": ["unbounded", "unbounded"]}},
+                "min_funny":  {"$min": "$funny_d", "window": {"documents": ["unbounded", "unbounded"]}},
+                "max_funny":  {"$max": "$funny_d", "window": {"documents": ["unbounded", "unbounded"]}}
+            }
+        }},
+        {"$project": {
+            "_id": 1,
+            "scaled_funny": {"$divide": [
+                {"$subtract": ["$funny_d", "$mean_funny"]},
+                {"$subtract": ["$max_funny", "$min_funny"]}
+            ]}
+        }},
+        {"$sort": {"scaled_funny": -1, "_id": 1}}
+    ]
+}

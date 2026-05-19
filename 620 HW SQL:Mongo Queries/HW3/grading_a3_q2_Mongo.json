@@ -1,0 +1,196 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q2Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.1.json",
+			"parameters" : {
+				"init_date": "2020-01-01 00:00:00",
+				"end_date": "2020-12-31 23:59:59"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 684429, "scaled_funny": {"$numberDecimal": "1"}},
+				{"_id": 296006, "scaled_funny": {"$numberDecimal": "0.2670731707317073170731707317073171"}},
+				{"_id": 684888, "scaled_funny": {"$numberDecimal": "0.1306402439024390243902439024390244"}},
+				{"_id": 693360, "scaled_funny": {"$numberDecimal": "0.09847560975609756097560975609756098"}},
+				{"_id": 293414, "scaled_funny": {"$numberDecimal": "0.09146341463414634146341463414634146"}},
+				{"_id": 1684479, "scaled_funny": {"$numberDecimal": "0.075"}},
+				{"_id": 1870786, "scaled_funny": {"$numberDecimal": "0.06966463414634146341463414634146341"}},
+				{"_id": 298715, "scaled_funny": {"$numberDecimal": "0.06737804878048780487804878048780488"}},
+				{"_id": 1874100, "scaled_funny": {"$numberDecimal": "0.06204268292682926829268292682926829"}},
+				{"_id": 1684235, "scaled_funny": {"$numberDecimal": "0.04512195121951219512195121951219512"}},
+				{"_id": 895987, "scaled_funny": {"$numberDecimal": "0.03765243902439024390243902439024390"}},
+				{"_id": 295846, "scaled_funny": {"$numberDecimal": "0.03429878048780487804878048780487805"}},
+				{"_id": 892922, "scaled_funny": {"$numberDecimal": "0.03140243902439024390243902439024390"}},
+				{"_id": 296997, "scaled_funny": {"$numberDecimal": "0.03109756097560975609756097560975610"}},
+				{"_id": 293319, "scaled_funny": {"$numberDecimal": "0.02759146341463414634146341463414634"}},
+				{"_id": 1478126, "scaled_funny": {"$numberDecimal": "0.02667682926829268292682926829268293"}},
+				{"_id": 298068, "scaled_funny": {"$numberDecimal": "0.02439024390243902439024390243902439"}},
+				{"_id": 297293, "scaled_funny": {"$numberDecimal": "0.02347560975609756097560975609756098"}},
+				{"_id": 895502, "scaled_funny": {"$numberDecimal": "0.02210365853658536585365853658536585"}},
+				{"_id": 297873, "scaled_funny": {"$numberDecimal": "0.01981707317073170731707317073170732"}},
+				{"_id": 299000, "scaled_funny": {"$numberDecimal": "0.01981707317073170731707317073170732"}},
+				{"_id": 296107, "scaled_funny": {"$numberDecimal": "0.01768292682926829268292682926829268"}},
+				{"_id": 510994, "scaled_funny": {"$numberDecimal": "0.01631097560975609756097560975609756"}},
+				{"_id": 1290226, "scaled_funny": {"$numberDecimal": "0.01570121951219512195121951219512195"}},
+				{"_id": 1091244, "scaled_funny": {"$numberDecimal": "0.01539634146341463414634146341463415"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.2.json",
+			"parameters" : {
+				"init_date": "2021-03-01 00:00:00",
+				"end_date": "2024-05-31 23:59:59"
+			},
+			"limit": 35,
+			"expected" : [
+				{"_id": 4170744, "scaled_funny": {"$numberDecimal": "0.9979498482401682529584235162508069"}},
+				{"_id": 1315690, "scaled_funny": {"$numberDecimal": "0.9880488581411583519683245063498167"}},
+				{"_id": 12349838, "scaled_funny": {"$numberDecimal": "0.9781478680421484509782254964488266"}},
+				{"_id": 5581751, "scaled_funny": {"$numberDecimal": "0.9583458878441286489980274766468464"}},
+				{"_id": 13699406, "scaled_funny": {"$numberDecimal": "0.9088409373490791440475324271418959"}},
+				{"_id": 5279458, "scaled_funny": {"$numberDecimal": "0.8890389571510593420673344073399157"}},
+				{"_id": 13921922, "scaled_funny": {"$numberDecimal": "0.8890389571510593420673344073399157"}},
+				{"_id": 829179, "scaled_funny": {"$numberDecimal": "0.8692369769530395400871363875379355"}},
+				{"_id": 11163102, "scaled_funny": {"$numberDecimal": "0.8098310363589801341465423281319950"}},
+				{"_id": 8307406, "scaled_funny": {"$numberDecimal": "0.7603260858639306291960472786270445"}},
+				{"_id": 12417378, "scaled_funny": {"$numberDecimal": "0.7504250957649207282059482687260544"}},
+				{"_id": 1252702, "scaled_funny": {"$numberDecimal": "0.7306231155669009262257502489240742"}},
+				{"_id": 10974509, "scaled_funny": {"$numberDecimal": "0.7207221254678910252356512390230841"}},
+				{"_id": 8106984, "scaled_funny": {"$numberDecimal": "0.7108211353688811242455522291220940"}},
+				{"_id": 9651424, "scaled_funny": {"$numberDecimal": "0.7108211353688811242455522291220940"}},
+				{"_id": 12571120, "scaled_funny": {"$numberDecimal": "0.6514151947748217183049581697161534"}},
+				{"_id": 2813803, "scaled_funny": {"$numberDecimal": "0.6415142046758118173148591598151633"}},
+				{"_id": 2789407, "scaled_funny": {"$numberDecimal": "0.6118112343787821143445621301121930"}},
+				{"_id": 6939907, "scaled_funny": {"$numberDecimal": "0.6118112343787821143445621301121930"}},
+				{"_id": 12202778, "scaled_funny": {"$numberDecimal": "0.6019102442797722133544631202112029"}},
+				{"_id": 5541747, "scaled_funny": {"$numberDecimal": "0.5920092541807623123643641103102128"}},
+				{"_id": 11120213, "scaled_funny": {"$numberDecimal": "0.5920092541807623123643641103102128"}},
+				{"_id": 5541767, "scaled_funny": {"$numberDecimal": "0.5821082640817524113742651004092227"}},
+				{"_id": 1246984, "scaled_funny": {"$numberDecimal": "0.5722072739827425103841660905082326"}},
+				{"_id": 9464448, "scaled_funny": {"$numberDecimal": "0.5623062838837326093940670806072425"}},
+				{"_id": 6955567, "scaled_funny": {"$numberDecimal": "0.5524052937847227084039680707062524"}},
+				{"_id": 6964843, "scaled_funny": {"$numberDecimal": "0.5524052937847227084039680707062524"}},
+				{"_id": 5311548, "scaled_funny": {"$numberDecimal": "0.5425043036857128074138690608052623"}},
+				{"_id": 6972345, "scaled_funny": {"$numberDecimal": "0.5425043036857128074138690608052623"}},
+				{"_id": 9466222, "scaled_funny": {"$numberDecimal": "0.5425043036857128074138690608052623"}},
+				{"_id": 12202454, "scaled_funny": {"$numberDecimal": "0.5128013333886831044435720311022920"}},
+				{"_id": 5584001, "scaled_funny": {"$numberDecimal": "0.5029003432896732034534730212013019"}},
+				{"_id": 9693566, "scaled_funny": {"$numberDecimal": "0.5029003432896732034534730212013019"}},
+				{"_id": 12321130, "scaled_funny": {"$numberDecimal": "0.5029003432896732034534730212013019"}},
+				{"_id": 5605756, "scaled_funny": {"$numberDecimal": "0.4929993531906633024633740113003118"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.3.json",
+			"parameters" : {
+				"init_date": "2021-05-01 00:00:00",
+				"end_date": "2024-05-31 23:59:59"
+			},
+			"limit": 45,
+			"expected" : [
+				{"_id": 1687932, "scaled_cool": {"$numberDecimal": "73.54445639109243392323498036753174"}},
+				{"_id": 508719, "scaled_cool": {"$numberDecimal": "49.01136685847268226345304779833449"}},
+				{"_id": 296955, "scaled_cool": {"$numberDecimal": "44.92251860303605698682272570346828"}},
+				{"_id": 506565, "scaled_cool": {"$numberDecimal": "44.92251860303605698682272570346828"}},
+				{"_id": 297888, "scaled_cool": {"$numberDecimal": "36.74482209216280643356208151373587"}},
+				{"_id": 301105, "scaled_cool": {"$numberDecimal": "36.74482209216280643356208151373587"}},
+				{"_id": 1481610, "scaled_cool": {"$numberDecimal": "36.74482209216280643356208151373587"}},
+				{"_id": 699991, "scaled_cool": {"$numberDecimal": "32.65597383672618115693175941886966"}},
+				{"_id": 1685775, "scaled_cool": {"$numberDecimal": "28.56712558128955588030143732400345"}},
+				{"_id": 297310, "scaled_cool": {"$numberDecimal": "24.47827732585293060367111522913724"}},
+				{"_id": 301019, "scaled_cool": {"$numberDecimal": "20.38942907041630532704079313427103"}},
+				{"_id": 301988, "scaled_cool": {"$numberDecimal": "20.38942907041630532704079313427103"}},
+				{"_id": 889656, "scaled_cool": {"$numberDecimal": "20.38942907041630532704079313427103"}},
+				{"_id": 896112, "scaled_cool": {"$numberDecimal": "20.38942907041630532704079313427103"}},
+				{"_id": 1091296, "scaled_cool": {"$numberDecimal": "20.38942907041630532704079313427103"}},
+				{"_id": 296869, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 506995, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 510279, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 511723, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 1479943, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 1688759, "scaled_cool": {"$numberDecimal": "16.30058081497968005041047103940482"}},
+				{"_id": 295805, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 305521, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 308448, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 308769, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 312672, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 506860, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 699441, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 700140, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 897040, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 898767, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 906484, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 1092337, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 1095304, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 1286747, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 1879888, "scaled_cool": {"$numberDecimal": "12.21173255954305477378014894453862"}},
+				{"_id": 298461, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 300842, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 301827, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 304485, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 305456, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 305579, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 305641, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 306883, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}},
+				{"_id": 308869, "scaled_cool": {"$numberDecimal": "8.122884304106429497149826849672408"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.4.json",
+			"parameters" : {
+				"category": "Mexican"
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 80771, "scaled_latitude": {"$numberDecimal": "-1.434522182226693889902195017886094"}},
+				{"_id": 135360, "scaled_latitude": {"$numberDecimal": "-1.426358004673042091796200986782520"}},
+				{"_id": 129265, "scaled_latitude": {"$numberDecimal": "-1.424765689301404434652290877362245"}},
+				{"_id": 72045, "scaled_latitude": {"$numberDecimal": "-1.424703713204934250958420029158943"}},
+				{"_id": 4608, "scaled_latitude": {"$numberDecimal": "-1.421573018910201685489848373533435"}},
+				{"_id": 78503, "scaled_latitude": {"$numberDecimal": "-1.421570562859161130149534773309526"}},
+				{"_id": 31813, "scaled_latitude": {"$numberDecimal": "-1.421562776654798518538753359833732"}},
+				{"_id": 11313, "scaled_latitude": {"$numberDecimal": "-1.421533190384630722372752240540727"}},
+				{"_id": 118531, "scaled_latitude": {"$numberDecimal": "-1.421510155761254620372534475036498"}},
+				{"_id": 39291, "scaled_latitude": {"$numberDecimal": "-1.421507034747458935953380650071117"}},
+				{"_id": 24364, "scaled_latitude": {"$numberDecimal": "-1.421503739981116233523449320409044"}},
+				{"_id": 61225, "scaled_latitude": {"$numberDecimal": "-1.421328340050926871530978958886627"}},
+				{"_id": 146662, "scaled_latitude": {"$numberDecimal": "-1.421314911461221622412317524470907"}},
+				{"_id": 70551, "scaled_latitude": {"$numberDecimal": "-1.420866590697611315957307849556762"}},
+				{"_id": 46190, "scaled_latitude": {"$numberDecimal": "-1.420763240592388798418898852900708"}},
+				{"_id": 130429, "scaled_latitude": {"$numberDecimal": "-1.420760392618309856588109678172985"}},
+				{"_id": 137952, "scaled_latitude": {"$numberDecimal": "-1.420508369121295679797727997324681"}},
+				{"_id": 93436, "scaled_latitude": {"$numberDecimal": "-1.420451731016608320104134473863342"}},
+				{"_id": 41962, "scaled_latitude": {"$numberDecimal": "-1.420430942112242172694341750265974"}},
+				{"_id": 40531, "scaled_latitude": {"$numberDecimal": "-1.420427493189504371578156694632400"}},
+				{"_id": 15689, "scaled_latitude": {"$numberDecimal": "-1.420025193335471534789757229871243"}},
+				{"_id": 38738, "scaled_latitude": {"$numberDecimal": "-1.419424657502212683163843929165372"}},
+				{"_id": 72972, "scaled_latitude": {"$numberDecimal": "-1.419415717737707087316096074733348"}},
+				{"_id": 39695, "scaled_latitude": {"$numberDecimal": "-1.418890870081621434730825722204258"}},
+				{"_id": 34269, "scaled_latitude": {"$numberDecimal": "-1.418556269706829352352208745317116"}}
+			]
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"collection": "Reviews",
+	"query": [
+		{"$match": {"$expr": {"$and": [ 
+			{ "$eq": [{ "$year": "$review_date" }, 2020] }, 
+			{ "$eq": [{ "$month": "$review_date" }, 1] }, 
+			{ "$eq": [{ "$dayOfMonth": "$review_date" }, 1] } 
+		]}}},
+		{ "$lookup": { "from": "Users", "localField": "user_id", "foreignField": "_id", "as": "u" } },
+		{ "$unwind": "$u" },
+		{ "$match": { "$expr": { "$and": [ 
+			{ "$eq": [{ "$year": "$u.yelping_since" }, 2015] }, 
+			{ "$eq": [{ "$month": "$u.yelping_since" }, 6] } 
+		]}}},
+		{ "$lookup": {
+			"from": "Reviews",
+			"let": { "uid": "$user_id", "s": "$stars", "f": "$funny", "c": "$cool", "us": "$useful", "pdate": "$review_date" },
+			"pipeline": [
+				{ "$match": { "$expr": { "$and": [
+					{ "$eq": ["$user_id", "$$uid"] },
+					{ "$lt": ["$review_date", "$$pdate"] },
+					{ "$eq": ["$stars", "$$s"] },
+					{ "$eq": ["$funny", "$$f"] },
+					{ "$eq": ["$cool", "$$c"] },
+					{ "$eq": ["$useful", "$$us"] }
+				]
+				}
+				}
+			}
+			],
+			"as": "original"
+		}},
+		{ "$unwind": "$original" },
+		{ "$project": { "_id": 0, "original": "$original._id", "posterior": "$_id" } },
+		{ "$sort": { "original": 1, "posterior": 1 } }
+	]
+}

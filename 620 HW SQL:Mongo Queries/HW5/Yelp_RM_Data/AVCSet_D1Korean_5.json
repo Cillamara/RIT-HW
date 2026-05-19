@@ -1,0 +1,7 @@
+{"_id":{"$oid":"69b168efe885106c472e4c38"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"1"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c39"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"4"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c3a"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"32"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c3b"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"15"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c3c"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"1"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4c3d"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"3"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4c3e"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"1"},"label":{"$numberInt":"1"}}

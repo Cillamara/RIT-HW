@@ -1,0 +1,142 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q3SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Mexican_0"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.628141304347826086956522"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Mexican_0"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.560033553875236294896030"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Mexican_2"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.582417296786389413988658"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Mexican_3"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.517921384854121205592006"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Korean_3"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.620548923579226609529640"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Korean_4"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.553110546544199074978828"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Korean_5"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.533087103724222837796245"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D1Korean_4"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.553110546544199074978828"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D2Jan2018_5"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.499996301194549769071246"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D2Jan2018_2"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.312514990016216229908054"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.Gini.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D2May2018_5"
+			},
+			"expected" : [
+				{"gini": {"$numberDecimal": "0.489895213423883871268874"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q3.GiniA.sql",
+			"parameters" : {
+				"AVCSet": "AVCSet_D2May2018_4"
+			},
+			"expected" : [
+				{"gini_a": {"$numberDecimal": "0.552605961165215814402339"}}
+			]
+		}
+	]
+}

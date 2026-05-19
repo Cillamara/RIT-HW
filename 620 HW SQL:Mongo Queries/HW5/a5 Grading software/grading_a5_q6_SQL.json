@@ -1,0 +1,100 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q6SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_0"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.565217391304347826086957"}, "recall": {"$numberDecimal": "0.241748024174802417480242"}, "specificity": {"$numberDecimal": "0.836668027766435279706002"}, "accuracy": {"$numberDecimal": "0.558478260869565217391304"}, "error_rate": {"$numberDecimal": "0.441521739130434782608696"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_3"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.213093709884467265725289"}, "recall": {"$numberDecimal": "0.198327359617682198327360"}, "specificity": {"$numberDecimal": "0.837098060058463991496147"}, "accuracy": {"$numberDecimal": "0.720869565217391304347826"}, "error_rate": {"$numberDecimal": "0.279130434782608695652174"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_2"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0E-24"}, "recall": {"$numberDecimal": "0E-24"}, "specificity": {"$numberDecimal": "1.000000000000000000000000"}, "accuracy": {"$numberDecimal": "0.830985915492957746478873"}, "error_rate": {"$numberDecimal": "0.169014084507042253521127"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_5"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0E-24"}, "recall": {"$numberDecimal": "0E-24"}, "specificity": {"$numberDecimal": "0.997878546804561124370194"}, "accuracy": {"$numberDecimal": "0.816623263888888888888889"}, "error_rate": {"$numberDecimal": "0.183376736111111111111111"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_2"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.479674796747967479674797"}, "recall": {"$numberDecimal": "0.070630486831604150039904"}, "specificity": {"$numberDecimal": "0.980842147275992815805228"}, "accuracy": {"$numberDecimal": "0.798770753512132822477650"}, "error_rate": {"$numberDecimal": "0.201229246487867177522350"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_4"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.590243902439024390243902"}, "recall": {"$numberDecimal": "0.096606786427145708582834"}, "specificity": {"$numberDecimal": "0.983238551331936545944328"}, "accuracy": {"$numberDecimal": "0.805954661558109833971903"}, "error_rate": {"$numberDecimal": "0.194045338441890166028097"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_3"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0E-24"}, "recall": {"$numberDecimal": "0E-24"}, "specificity": {"$numberDecimal": "1.000000000000000000000000"}, "accuracy": {"$numberDecimal": "0.799982689977496970746062"}, "error_rate": {"$numberDecimal": "0.200017310022503029253938"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q6.sql",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_5"
+			},
+			"expected" : []
+		}
+	]
+}

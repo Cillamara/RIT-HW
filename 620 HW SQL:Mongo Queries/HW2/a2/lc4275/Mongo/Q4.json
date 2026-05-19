@@ -1,0 +1,15 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{ "$match": { "categories": { "$regex": "Bookstores" } } },
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "business_id", "as": "r" } },
+		{ "$unwind": "$r" },
+		{ "$match": { "r.stars": { "$gte": 4 } } },
+		{ "$group": { "_id": "$r.user_id", "qualifying_count": { "$sum": 1 } } },
+		{ "$match": { "qualifying_count": { "$gte": 5 } } },
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "user_id", "as": "all_reviews" } },
+		{ "$project": { "id": "$_id", "number_of_reviews": { "$size": "$all_reviews" }, "_id": 0 } },
+		{ "$sort": { "number_of_reviews": -1, "id": 1 } },
+		{ "$limit": 5 }
+	]
+}

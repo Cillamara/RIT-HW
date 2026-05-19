@@ -1,0 +1,23 @@
+{
+	"collection": "Users",
+	"query": [
+		{"$match": {"$expr": {"$gte": ["$yelping_since", {"$toDate": "&YelpingStart&"}]}}},
+		{"$match": {"$expr": {"$lte": ["$yelping_since", {"$toDate": "&YelpingEnd&"}]}}},
+		{"$lookup": {
+			"from": "Reviews",
+			"localField": "_id",
+			"foreignField": "user_id",
+			"as": "reviews"
+		}},
+		{"$unwind": "$reviews"},
+		{"$group": {
+			"_id": "$_id",
+			"items": {"$addToSet": "$reviews.business_id"}
+		}},
+		{"$set": {
+			"items": {"$sortArray": {"input": "$items", "sortBy": 1}}
+		}},
+		{"$sort": {"_id": 1}},
+		{"$out": "T2"}
+	]
+}

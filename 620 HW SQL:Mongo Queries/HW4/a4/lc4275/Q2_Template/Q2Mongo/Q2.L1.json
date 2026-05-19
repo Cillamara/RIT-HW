@@ -1,0 +1,10 @@
+{
+	"collection": "&TCollection&",
+	"query": [
+		{"$unwind": "$items"},
+		{"$group": {"_id": "$items", "count": {"$sum": 1}}},
+		{"$match": {"count": {"$gte": "&MinSup&"}}},
+		{"$project": {"_id": 0, "iid_1": "$_id", "count": 1}},
+		{"$sort": {"iid_1": 1}}
+	]
+}

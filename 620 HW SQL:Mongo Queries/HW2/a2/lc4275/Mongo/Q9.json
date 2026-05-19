@@ -1,0 +1,25 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{ "$match": { "bname": "Garage Burger Bar & Grill" } },
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "business_id", "as": "r" } },
+		{ "$project": { "uids": { "$setUnion": ["$r.user_id", []] } } },
+		{ "$project": { "uids": 1, "num_req": { "$size": "$uids" } } },
+		{ "$lookup": {
+			"from": "Reviews",
+			"let": { "garage_users": "$uids", "num_req": "$num_req", "garage_id": "$_id" },
+			"pipeline": [
+				{ "$match": { "$expr": { "$and": [
+					{ "$in": ["$user_id", "$$garage_users"] },
+					{ "$ne": ["$business_id", "$$garage_id"] }
+				] } } },
+				{ "$group": { "_id": "$business_id", "users": { "$addToSet": "$user_id" }, "rating": { "$avg": "$stars" } } },
+				{ "$match": { "$expr": { "$eq": [{ "$size": "$users" }, "$$num_req"] } } }
+			],
+			"as": "matches"
+		}},
+		{ "$unwind": "$matches" },
+		{ "$project": { "_id": 0, "id": "$matches._id", "rating": "$matches.rating" } },
+		{ "$sort": { "rating": -1, "id": 1 } }
+	]
+}

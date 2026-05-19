@@ -1,0 +1,21 @@
+{
+    "collection": "Users",
+    "query": [
+        {"$match": {"$expr": {"$and": [{"$gte": ["$yelping_since", {"$toDate": "&init_date&"}]}, {"$lte": ["$yelping_since", {"$toDate": "&end_date&"}]}]}}},
+        {"$addFields": {"cool_d": {"$toDecimal": "$compliment_cool"}}},
+        {"$setWindowFields": {
+            "output": {
+                "mean_cool":    {"$avg": "$cool_d", "window": {"documents": ["unbounded", "unbounded"]}},
+                "mean_sq_cool": {"$avg": {"$multiply": ["$cool_d", "$cool_d"]}, "window": {"documents": ["unbounded", "unbounded"]}}
+            }
+        }},
+        {"$project": {
+            "_id": 1,
+            "scaled_cool": {"$divide": [
+                {"$subtract": ["$cool_d", "$mean_cool"]},
+                {"$toDecimal": {"$sqrt": {"$subtract": ["$mean_sq_cool", {"$multiply": ["$mean_cool", "$mean_cool"]}]}}}
+            ]}
+        }},
+        {"$sort": {"scaled_cool": -1, "_id": 1}}
+    ]
+}

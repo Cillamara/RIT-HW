@@ -1,0 +1,12 @@
+{"_id":{"$oid":"69b168efe885106c472e4bde"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"5"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4bdf"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"1981"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4be0"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"1483"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4be1"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"521"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4be2"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"121"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4be3"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"80"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4be4"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"31"},"label":{"$numberInt":"2"}}
+{"_id":{"$oid":"69b168efe885106c472e4be5"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"9"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4be6"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"307"},"label":{"$numberInt":"0"}}
+{"_id":{"$oid":"69b168efe885106c472e4be7"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"2"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4be8"},"attribute":{"$numberInt":"2"},"count":{"$numberInt":"49"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4be9"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"11"},"label":{"$numberInt":"3"}}

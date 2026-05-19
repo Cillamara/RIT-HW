@@ -1,0 +1,185 @@
+{
+	"__comment__" : "This is the database to connect to. We can have Myjson or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q4Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.0.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeName1": "$att_1",
+				"AttributeValue1": 1,
+				"LabelValue": 1
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 376},
+				{"antecedent": 1, "consequent": 0, "count": 544},
+				{"antecedent": 0, "consequent": 1, "count": 1775},
+				{"antecedent": 0, "consequent": 0, "count": 1905}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.0.json",
+			"parameters" : {
+				"Collection": "D1Korean",
+				"AttributeName1": "$att_3",
+				"AttributeValue1": 2,
+				"LabelValue": 3
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 0},
+				{"antecedent": 1, "consequent": 0, "count": 45},
+				{"antecedent": 0, "consequent": 1, "count": 6},
+				{"antecedent": 0, "consequent": 0, "count": 446}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.0.json",
+			"parameters" : {
+				"Collection": "D2Jan2018",
+				"AttributeName1": "$att_5",
+				"AttributeValue1": 0,
+				"LabelValue": 2
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 2506},
+				{"antecedent": 1, "consequent": 0, "count": 10013},
+				{"antecedent": 0, "consequent": 1, "count": 0},
+				{"antecedent": 0, "consequent": 0, "count": 9}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.1.json",
+			"parameters" : {
+				"Collection": "D2May2018",
+				"AttributeName1": "$att_4",
+				"AttributeValue1": 0,
+				"AttributeName2": "$att_2",
+				"AttributeValue2": 4,
+				"LabelValue": 1
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 406},
+				{"antecedent": 1, "consequent": 0, "count": 1905},
+				{"antecedent": 0, "consequent": 1, "count": 1904},
+				{"antecedent": 0, "consequent": 0, "count": 7339}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.1.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeName1": "$att_3",
+				"AttributeValue1": 3,
+				"AttributeName2": "$att_1",
+				"AttributeValue2": 4,
+				"LabelValue": 0
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 0},
+				{"antecedent": 1, "consequent": 0, "count": 0},
+				{"antecedent": 0, "consequent": 1, "count": 837},
+				{"antecedent": 0, "consequent": 0, "count": 3763}
+			]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.1.json",
+			"parameters" : {
+				"Collection": "D2May2018",
+				"AttributeName1": "$att_6",
+				"AttributeValue1": 1,
+				"AttributeName2": "$att_2",
+				"AttributeValue2": 1,
+				"LabelValue": 3
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 0},
+				{"antecedent": 1, "consequent": 0, "count": 0},
+				{"antecedent": 0, "consequent": 1, "count": 2311},
+				{"antecedent": 0, "consequent": 0, "count": 9243}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.2.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeName1": "$att_2",
+				"AttributeValue1": 2,
+				"AttributeName2": "$att_3",
+				"AttributeValue2": 1,
+				"AttributeName3": "$att_1",
+				"AttributeValue3": 3,
+				"LabelValue": 3
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 0},
+				{"antecedent": 1, "consequent": 0, "count": 0},
+				{"antecedent": 0, "consequent": 1, "count": 18},
+				{"antecedent": 0, "consequent": 0, "count": 4582}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.2.json",
+			"parameters" : {
+				"Collection": "D2Jan2018",
+				"AttributeName1": "$att_5",
+				"AttributeValue1": 0,
+				"AttributeName2": "$att_1",
+				"AttributeValue2": 5,
+				"AttributeName3": "$att_2",
+				"AttributeValue3": 5,
+				"LabelValue": 2
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 159},
+				{"antecedent": 1, "consequent": 0, "count": 474},
+				{"antecedent": 0, "consequent": 1, "count": 2347},
+				{"antecedent": 0, "consequent": 0, "count": 9548}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.2.json",
+			"parameters" : {
+				"Collection": "D1Korean",
+				"AttributeName1": "$att_4",
+				"AttributeValue1": 2,
+				"AttributeName2": "$att_2",
+				"AttributeValue2": 0,
+				"AttributeName3": "$att_3",
+				"AttributeValue3": 0,
+				"LabelValue": 0
+			},
+			"expected" : [
+				{"antecedent": 1, "consequent": 1, "count": 0},
+				{"antecedent": 1, "consequent": 0, "count": 0},
+				{"antecedent": 0, "consequent": 1, "count": 84},
+				{"antecedent": 0, "consequent": 0, "count": 413}
+			]
+		}
+	]
+}

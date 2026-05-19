@@ -1,0 +1,199 @@
+{
+	"__comment__" : "This is the database to connect to. We can have Myjson or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q2Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.0.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeReturn": "$att_1"
+			},
+			"expected" : [
+				{"attribute": 1, "label": 0, "count": 382},
+				{"attribute": 1, "label": 1, "count": 376},
+				{"attribute": 1, "label": 2, "count": 158},
+				{"attribute": 1, "label": 3, "count": 4},
+				{"attribute": 2, "label": 0, "count": 239},
+				{"attribute": 2, "label": 1, "count": 520},
+				{"attribute": 2, "label": 2, "count": 161},
+				{"attribute": 3, "label": 0, "count": 141},
+				{"attribute": 3, "label": 1, "count": 532},
+				{"attribute": 3, "label": 2, "count": 245},
+				{"attribute": 3, "label": 3, "count": 2},
+				{"attribute": 4, "label": 0, "count": 66},
+				{"attribute": 4, "label": 1, "count": 444},
+				{"attribute": 4, "label": 2, "count": 407},
+				{"attribute": 4, "label": 3, "count": 3},
+				{"attribute": 5, "label": 0, "count": 9},
+				{"attribute": 5, "label": 1, "count": 279},
+				{"attribute": 5, "label": 2, "count": 623},
+				{"attribute": 5, "label": 3, "count": 9}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.0.json",
+			"parameters" : {
+				"Collection": "D1Korean",
+				"AttributeReturn": "$att_3"
+			},
+			"expected" : [
+				{"attribute": 0, "label": 0, "count": 1},
+				{"attribute": 0, "label": 1, "count": 4},
+				{"attribute": 0, "label": 2, "count": 10},
+				{"attribute": 0, "label": 3, "count": 2},
+				{"attribute": 1, "label": 0, "count": 65},
+				{"attribute": 1, "label": 1, "count": 84},
+				{"attribute": 1, "label": 2, "count": 282},
+				{"attribute": 1, "label": 3, "count": 4},
+				{"attribute": 2, "label": 0, "count": 18},
+				{"attribute": 2, "label": 1, "count": 4},
+				{"attribute": 2, "label": 2, "count": 23}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.0.json",
+			"parameters" : {
+				"Collection": "D2Jan2018",
+				"AttributeReturn": "$att_5"
+			},
+			"expected" : [
+				{"attribute": 0, "label": 1, "count": 2505},
+				{"attribute": 0, "label": 2, "count": 2506},
+				{"attribute": 0, "label": 3, "count": 2505},
+				{"attribute": 0, "label": 4, "count": 2506},
+				{"attribute": 0, "label": 5, "count": 2497},
+				{"attribute": 1, "label": 5, "count": 5},
+				{"attribute": 3, "label": 5, "count": 2},
+				{"attribute": 4, "label": 5, "count": 1},
+				{"attribute": 5, "label": 5, "count": 1}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.1.json",
+			"parameters" : {
+				"Collection": "D2May2018",
+				"AttributeReturn": "$att_4",
+				"AttributeName1": "$att_2",
+				"AttributeValue1": 2
+			},
+			"expected" : [
+				{"attribute": 0, "label": 2, "count": 719},
+				{"attribute": 0, "label": 3, "count": 1558},
+				{"attribute": 0, "label": 4, "count": 33},
+				{"attribute": 0, "label": 5, "count": 1}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.1.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeReturn": "$att_3",
+				"AttributeName1": "$att_1",
+				"AttributeValue1": 4
+			},
+			"expected" : [
+				{"attribute": 0, "label": 0, "count": 1},
+				{"attribute": 0, "label": 1, "count": 10},
+				{"attribute": 0, "label": 2, "count": 5},
+				{"attribute": 0, "label": 3, "count": 2},
+				{"attribute": 1, "label": 0, "count": 55},
+				{"attribute": 1, "label": 1, "count": 432},
+				{"attribute": 1, "label": 2, "count": 389},
+				{"attribute": 1, "label": 3, "count": 1},
+				{"attribute": 2, "label": 0, "count": 10},
+				{"attribute": 2, "label": 1, "count": 2},
+				{"attribute": 2, "label": 2, "count": 13}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.1.json",
+			"parameters" : {
+				"Collection": "D2May2018",
+				"AttributeReturn": "$att_6",
+				"AttributeName1": "$att_2",
+				"AttributeValue1": 1
+			},
+			"expected" : [
+				{"attribute": 0, "label": 1, "count": 1414},
+				{"attribute": 0, "label": 2, "count": 891},
+				{"attribute": 0, "label": 5, "count": 5}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.2.json",
+			"parameters" : {
+				"Collection": "D1Mexican",
+				"AttributeReturn": "$att_2",
+				"AttributeName1": "$att_3",
+				"AttributeValue1": 1,
+				"AttributeName2": "$att_1",
+				"AttributeValue2": 3
+			},
+			"expected" : [
+				{"attribute": 0, "label": 0, "count": 17},
+				{"attribute": 0, "label": 1, "count": 113},
+				{"attribute": 0, "label": 2, "count": 110},
+				{"attribute": 1, "label": 0, "count": 87},
+				{"attribute": 1, "label": 1, "count": 378},
+				{"attribute": 1, "label": 2, "count": 115},
+				{"attribute": 1, "label": 3, "count": 1}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.2.json",
+			"parameters" : {
+				"Collection": "D2Jan2018",
+				"AttributeReturn": "$att_5",
+				"AttributeName1": "$att_1",
+				"AttributeValue1": 1,
+				"AttributeName2": "$att_2",
+				"AttributeValue2": 1
+			},
+			"expected" : [
+				{"attribute": 0, "label": 1, "count": 550},
+				{"attribute": 0, "label": 2, "count": 553}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q2.2.json",
+			"parameters" : {
+				"Collection": "D1Korean",
+				"AttributeReturn": "$att_4",
+				"AttributeName1": "$att_2",
+				"AttributeValue1": 0,
+				"AttributeName2": "$att_3",
+				"AttributeValue2": 0
+			},
+			"expected" : [
+				{"attribute": 0, "label": 0, "count": 1},
+				{"attribute": 0, "label": 1, "count": 2},
+				{"attribute": 0, "label": 2, "count": 7}
+			]
+		}
+	]
+}

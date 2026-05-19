@@ -1,0 +1,142 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q4Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P1Mexican_MinMax_Manhattan"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 19844, "distance": {"$numberDecimal": "0.9199556367024315523721103306243166"}},
+				{"pid": 153, "cid": 106421, "distance": {"$numberDecimal": "0.7097410972676867348872838871062087"}},
+				{"pid": 159, "cid": 148180, "distance": {"$numberDecimal": "0.5079006017196832050628438080667104"}},
+				{"pid": 278, "cid": 1046, "distance": {"$numberDecimal": "0.9374017378037761707642047925190629"}},
+				{"pid": 290, "cid": 106421, "distance": {"$numberDecimal": "0.3787971835207387010968760818996147"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P1Mexican_MinMax_Euclidean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 104, "cid": 1046, "distance": {"$numberDecimal": "0.5931453963444168473427370242484857"}},
+				{"pid": 153, "cid": 106421, "distance": {"$numberDecimal": "0.4742701999161349572409658172586305"}},
+				{"pid": 159, "cid": 148180, "distance": {"$numberDecimal": "0.3010350842102951343948674614943537"}},
+				{"pid": 278, "cid": 109740, "distance": {"$numberDecimal": "0.4675809107412020770020031331317626"}},
+				{"pid": 290, "cid": 106421, "distance": {"$numberDecimal": "0.2081797680839386707537654330639733"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P1Korean_Mean_Manhattan"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 41989, "distance": {"$numberDecimal": "1.151545171281063703595468416746132"}},
+				{"pid": 409, "cid": 41989, "distance": {"$numberDecimal": "1.035482905987666765598773483832466"}},
+				{"pid": 610, "cid": 41989, "distance": {"$numberDecimal": "1.083689818491960947795668483214034"}},
+				{"pid": 840, "cid": 133352, "distance": {"$numberDecimal": "0.3575926354847410624158529897866930"}},
+				{"pid": 1062, "cid": 145309, "distance": {"$numberDecimal": "0.8708685156867648967719216987546148"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P1Korean_Mean_Euclidean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 19, "cid": 41989, "distance": {"$numberDecimal": "0.5319395014387370254622554534001470"}},
+				{"pid": 409, "cid": 41989, "distance": {"$numberDecimal": "0.5610528819212647886934545808182769"}},
+				{"pid": 610, "cid": 41989, "distance": {"$numberDecimal": "0.5563112518361730921267181202382716"}},
+				{"pid": 840, "cid": 133352, "distance": {"$numberDecimal": "0.2585154859098312318946724905942413"}},
+				{"pid": 1062, "cid": 5549, "distance": {"$numberDecimal": "0.4740969739914020308467877589030195"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P2Jan2018_ZScore_Manhattan"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 1422650, "distance": {"$numberDecimal": "0.8886028192137617551089252832861055"}},
+				{"pid": 43715, "cid": 272740, "distance": {"$numberDecimal": "5.976911208444030527816039985065209"}},
+				{"pid": 45976, "cid": 272740, "distance": {"$numberDecimal": "3.780040894429378872596517926067521"}},
+				{"pid": 46957, "cid": 457903, "distance": {"$numberDecimal": "27.97180984070353377124766802806466"}},
+				{"pid": 47092, "cid": 1881525, "distance": {"$numberDecimal": "0.1247416224792254667258978641074939"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P2Jan2018_ZScore_Euclidean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 43579, "cid": 1422650, "distance": {"$numberDecimal": "0.4991804404675761683000134938087767"}},
+				{"pid": 43715, "cid": 272740, "distance": {"$numberDecimal": "4.071277929891796175102950796294854"}},
+				{"pid": 45976, "cid": 272740, "distance": {"$numberDecimal": "2.412699508957273147004274616189738"}},
+				{"pid": 46957, "cid": 457903, "distance": {"$numberDecimal": "16.09908956551322118514877866242870"}},
+				{"pid": 47092, "cid": 1881525, "distance": {"$numberDecimal": "0.08975163778744832522567006666707252"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P2May2018_ZScore_Manhattan"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 1282782, "distance": {"$numberDecimal": "19.26946322477049416579104847803478"}},
+				{"pid": 43288, "cid": 1282782, "distance": {"$numberDecimal": "10.51991173712122715873776187572901"}},
+				{"pid": 45173, "cid": 1282782, "distance": {"$numberDecimal": "0.2954078256552549815733095220824187"}},
+				{"pid": 45289, "cid": 1282782, "distance": {"$numberDecimal": "12.44225511298004868948492220710589"}},
+				{"pid": 46154, "cid": 1387092, "distance": {"$numberDecimal": "0.5350639363413602602567163029534017"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q4.json",
+			"parameters" : {
+				"DistanceCollection": "P2May2018_MinMax_Euclidean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"pid": 42935, "cid": 576124, "distance": {"$numberDecimal": "0.5776173375782431259973427028332923"}},
+				{"pid": 43288, "cid": 550374, "distance": {"$numberDecimal": "0.7565284436294569060977492061245592"}},
+				{"pid": 45173, "cid": 676587, "distance": {"$numberDecimal": "0.04744551839646479065323911191177031"}},
+				{"pid": 45289, "cid": 576124, "distance": {"$numberDecimal": "0.3253038250515531636764099418720659"}},
+				{"pid": 46154, "cid": 1521595, "distance": {"$numberDecimal": "0.01552802953283997340086918971874079"}}
+			]
+		}
+	]
+}

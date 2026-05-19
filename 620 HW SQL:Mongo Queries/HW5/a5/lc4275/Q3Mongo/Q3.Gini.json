@@ -1,0 +1,11 @@
+{
+	"collection":"&AVCSet&",
+	"query": [
+		{"$group": {"_id": "$label", "label_total": {"$sum": "$count"}}},
+		{"$group": {"_id": null, "labels": {"$push": {"label_total": {"$toDecimal": "$label_total"}}}, "grand_total": {"$sum": {"$toDecimal": "$label_total"}}}},
+		{"$unwind": "$labels"},
+		{"$addFields": {"p_sq": {"$divide": [{"$multiply": ["$labels.label_total", "$labels.label_total"]}, {"$multiply": ["$grand_total", "$grand_total"]}]}}},
+		{"$group": {"_id": null, "sum_p_sq": {"$sum": "$p_sq"}}},
+		{"$project": {"_id": 0, "gini": {"$round": [{"$subtract": [{"$toDecimal": "1"}, "$sum_p_sq"]}, 30]}}}
+	]
+}

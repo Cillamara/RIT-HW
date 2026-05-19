@@ -1,0 +1,205 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q2SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.MinMax.sql",
+			"parameters" : {
+				"Relation": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 104, "scaled_dim_1": {"$numberDecimal": "0.465644602836412556632047"}, "scaled_dim_2": {"$numberDecimal": "0.979653660413885740504715"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0E-24"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "0.005149330587023686920700"}},
+				{"id": 153, "scaled_dim_1": {"$numberDecimal": "0.010800362987933326585549"}, "scaled_dim_2": {"$numberDecimal": "0.821711144639098718108958"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.483870967741935483870968"}, "scaled_dim_5": {"$numberDecimal": "0.625000000000000000000000"}, "scaled_dim_6": {"$numberDecimal": "0.043478260869565217391304"}, "scaled_dim_7": {"$numberDecimal": "0.003861997940267765190525"}},
+				{"id": 159, "scaled_dim_1": {"$numberDecimal": "0.328503061460510684497586"}, "scaled_dim_2": {"$numberDecimal": "0.733488474258216307778187"}, "scaled_dim_3": {"$numberDecimal": "0.666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.344086021505376344086022"}, "scaled_dim_5": {"$numberDecimal": "0.583333333333333333333333"}, "scaled_dim_6": {"$numberDecimal": "0.086956521739130434782609"}, "scaled_dim_7": {"$numberDecimal": "0.045829042224510813594233"}},
+				{"id": 278, "scaled_dim_1": {"$numberDecimal": "0.089802043736517998739561"}, "scaled_dim_2": {"$numberDecimal": "0.660659574226422721989296"}, "scaled_dim_3": {"$numberDecimal": "0.666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.478494623655913978494624"}, "scaled_dim_5": {"$numberDecimal": "0.444444444444444444444444"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "0.013645726055612770339856"}},
+				{"id": 290, "scaled_dim_1": {"$numberDecimal": "0.329611746834878079208410"}, "scaled_dim_2": {"$numberDecimal": "0.736813193879255754855205"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.392473118279569892473118"}, "scaled_dim_5": {"$numberDecimal": "0.527777777777777777777778"}, "scaled_dim_6": {"$numberDecimal": "0.043478260869565217391304"}, "scaled_dim_7": {"$numberDecimal": "0.000772399588053553038105"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.Mean.sql",
+			"parameters" : {
+				"Relation": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 104, "scaled_dim_1": {"$numberDecimal": "0.134836598105507319426609"}, "scaled_dim_2": {"$numberDecimal": "0.354035407021124851248884"}, "scaled_dim_3": {"$numberDecimal": "-0.057463768115942028985507"}, "scaled_dim_4": {"$numberDecimal": "-0.421139356397070282063269"}, "scaled_dim_5": {"$numberDecimal": "-0.430427636876006441223833"}, "scaled_dim_6": {"$numberDecimal": "-0.098563327032136105860113"}, "scaled_dim_7": {"$numberDecimal": "-0.017687894595441723010791"}},
+				{"id": 153, "scaled_dim_1": {"$numberDecimal": "-0.320007641742971910619888"}, "scaled_dim_2": {"$numberDecimal": "0.196092891246337828853127"}, "scaled_dim_3": {"$numberDecimal": "-0.057463768115942028985507"}, "scaled_dim_4": {"$numberDecimal": "0.062731611344865201807698"}, "scaled_dim_5": {"$numberDecimal": "0.194572363123993558776167"}, "scaled_dim_6": {"$numberDecimal": "-0.055085066162570888468809"}, "scaled_dim_7": {"$numberDecimal": "-0.018975227242197644740966"}},
+				{"id": 159, "scaled_dim_1": {"$numberDecimal": "-0.002304943270394552707851"}, "scaled_dim_2": {"$numberDecimal": "0.107870220865455418522357"}, "scaled_dim_3": {"$numberDecimal": "0.275869565217391304347826"}, "scaled_dim_4": {"$numberDecimal": "-0.077053334891693937977248"}, "scaled_dim_5": {"$numberDecimal": "0.152905696457326892109501"}, "scaled_dim_6": {"$numberDecimal": "-0.011606805293005671077505"}, "scaled_dim_7": {"$numberDecimal": "0.022991817042045403662741"}},
+				{"id": 278, "scaled_dim_1": {"$numberDecimal": "-0.241005960994387238465877"}, "scaled_dim_2": {"$numberDecimal": "0.035041320833661832733465"}, "scaled_dim_3": {"$numberDecimal": "0.275869565217391304347826"}, "scaled_dim_4": {"$numberDecimal": "0.057355267258843696431354"}, "scaled_dim_5": {"$numberDecimal": "0.014016807568438003220612"}, "scaled_dim_6": {"$numberDecimal": "-0.098563327032136105860113"}, "scaled_dim_7": {"$numberDecimal": "-0.009191499126852639591636"}},
+				{"id": 290, "scaled_dim_1": {"$numberDecimal": "-0.001196257896027157997027"}, "scaled_dim_2": {"$numberDecimal": "0.111194940486494865599374"}, "scaled_dim_3": {"$numberDecimal": "-0.057463768115942028985507"}, "scaled_dim_4": {"$numberDecimal": "-0.028666238117500389590151"}, "scaled_dim_5": {"$numberDecimal": "0.097350140901771336553945"}, "scaled_dim_6": {"$numberDecimal": "-0.055085066162570888468809"}, "scaled_dim_7": {"$numberDecimal": "-0.022064825594411856893386"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.ZScore.sql",
+			"parameters" : {
+				"Relation": "P1Mexican"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 104, "scaled_dim_1": {"$numberDecimal": "0.483151584824434313335705"}, "scaled_dim_2": {"$numberDecimal": "1.134426159470848315751758"}, "scaled_dim_3": {"$numberDecimal": "0.057772331726619623735559"}, "scaled_dim_4": {"$numberDecimal": "3.187304027626865660507007"}, "scaled_dim_5": {"$numberDecimal": "2.857436082660989086074013"}, "scaled_dim_6": {"$numberDecimal": "0.936594947103658473564094"}},
+				{"id": 153, "scaled_dim_1": {"$numberDecimal": "2.721375893753527524949055"}, "scaled_dim_2": {"$numberDecimal": "0.348021870317933421657051"}, "scaled_dim_3": {"$numberDecimal": "0.057772331726619623735559"}, "scaled_dim_4": {"$numberDecimal": "0.070720401817796943497792"}, "scaled_dim_5": {"$numberDecimal": "0.583900079230529234967686"}, "scaled_dim_6": {"$numberDecimal": "0.292542421323849305269129"}},
+				{"id": 159, "scaled_dim_1": {"$numberDecimal": "0.000141184921478925321544"}, "scaled_dim_2": {"$numberDecimal": "0.105313967120418955913725"}, "scaled_dim_3": {"$numberDecimal": "1.331494188627950644885769"}, "scaled_dim_4": {"$numberDecimal": "0.106697615312928760713176"}, "scaled_dim_5": {"$numberDecimal": "0.360598202535041719929131"}, "scaled_dim_6": {"$numberDecimal": "0.012988126177298278479680"}},
+				{"id": 278, "scaled_dim_1": {"$numberDecimal": "1.543559601914897199549533"}, "scaled_dim_2": {"$numberDecimal": "0.011113318795689861946953"}, "scaled_dim_3": {"$numberDecimal": "1.331494188627950644885769"}, "scaled_dim_4": {"$numberDecimal": "0.059117825183983583387210"}, "scaled_dim_5": {"$numberDecimal": "0.003030222016834889360934"}, "scaled_dim_6": {"$numberDecimal": "0.936594947103658473564094"}},
+				{"id": 290, "scaled_dim_1": {"$numberDecimal": "0.000038029224524604272281"}, "scaled_dim_2": {"$numberDecimal": "0.111905875750582230974664"}, "scaled_dim_3": {"$numberDecimal": "0.057772331726619623735559"}, "scaled_dim_4": {"$numberDecimal": "0.014767712927591263132699"}, "scaled_dim_5": {"$numberDecimal": "0.146167021072358701013793"}, "scaled_dim_6": {"$numberDecimal": "0.292542421323849305269129"}}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.MinMax.sql",
+			"parameters" : {
+				"Relation": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 19, "scaled_dim_1": {"$numberDecimal": "0.472413018491361185763540"}, "scaled_dim_2": {"$numberDecimal": "0.990342685853463922190614"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.569620253164556962025316"}, "scaled_dim_5": {"$numberDecimal": "0.214285714285714285714286"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "0.159968479117415287628054"}},
+				{"id": 409, "scaled_dim_1": {"$numberDecimal": "0.476617214478835155152238"}, "scaled_dim_2": {"$numberDecimal": "0.991121632847370102138608"}, "scaled_dim_3": {"$numberDecimal": "0.666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.759493670886075949367089"}, "scaled_dim_5": {"$numberDecimal": "0.571428571428571428571429"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "0.278959810874704491725768"}},
+				{"id": 610, "scaled_dim_1": {"$numberDecimal": "0.483434037534548564458735"}, "scaled_dim_2": {"$numberDecimal": "0.995337672019288155597637"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.455696202531645569620253"}, "scaled_dim_5": {"$numberDecimal": "0.321428571428571428571429"}, "scaled_dim_6": {"$numberDecimal": "0.600000000000000000000000"}, "scaled_dim_7": {"$numberDecimal": "0.098502758077226162332545"}},
+				{"id": 840, "scaled_dim_1": {"$numberDecimal": "0.998074236642274324139494"}, "scaled_dim_2": {"$numberDecimal": "0.141571065537883393817891"}, "scaled_dim_3": {"$numberDecimal": "0.666666666666666666666667"}, "scaled_dim_4": {"$numberDecimal": "0.696202531645569620253165"}, "scaled_dim_5": {"$numberDecimal": "0.261904761904761904761905"}, "scaled_dim_6": {"$numberDecimal": "0.200000000000000000000000"}, "scaled_dim_7": {"$numberDecimal": "0.019700551615445232466509"}},
+				{"id": 1062, "scaled_dim_1": {"$numberDecimal": "0.422652102900041539463253"}, "scaled_dim_2": {"$numberDecimal": "0.655186130033166894694516"}, "scaled_dim_3": {"$numberDecimal": "0.333333333333333333333333"}, "scaled_dim_4": {"$numberDecimal": "0.506329113924050632911392"}, "scaled_dim_5": {"$numberDecimal": "0.452380952380952380952381"}, "scaled_dim_6": {"$numberDecimal": "0.200000000000000000000000"}, "scaled_dim_7": {"$numberDecimal": "0.052009456264775413711584"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.Mean.sql",
+			"parameters" : {
+				"Relation": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 19, "scaled_dim_1": {"$numberDecimal": "0.024958002020635043894607"}, "scaled_dim_2": {"$numberDecimal": "0.313200811348621746172037"}, "scaled_dim_3": {"$numberDecimal": "-0.162977867203219315895372"}, "scaled_dim_4": {"$numberDecimal": "0.133955632529353335201080"}, "scaled_dim_5": {"$numberDecimal": "-0.111250838363514419852448"}, "scaled_dim_6": {"$numberDecimal": "-0.255130784708249496981891"}, "scaled_dim_7": {"$numberDecimal": "0.074597308040520506807591"}},
+				{"id": 409, "scaled_dim_1": {"$numberDecimal": "0.029162198008109013283305"}, "scaled_dim_2": {"$numberDecimal": "0.313979758342527926120031"}, "scaled_dim_3": {"$numberDecimal": "0.170355466130114017437961"}, "scaled_dim_4": {"$numberDecimal": "0.323829050250872322542852"}, "scaled_dim_5": {"$numberDecimal": "0.245892018779342723004695"}, "scaled_dim_6": {"$numberDecimal": "-0.255130784708249496981891"}, "scaled_dim_7": {"$numberDecimal": "0.193588639797809710905306"}},
+				{"id": 610, "scaled_dim_1": {"$numberDecimal": "0.035979021063822422589802"}, "scaled_dim_2": {"$numberDecimal": "0.318195797514445979579059"}, "scaled_dim_3": {"$numberDecimal": "-0.162977867203219315895372"}, "scaled_dim_4": {"$numberDecimal": "0.020031581896441942796017"}, "scaled_dim_5": {"$numberDecimal": "-0.004107981220657276995305"}, "scaled_dim_6": {"$numberDecimal": "0.344869215291750503018109"}, "scaled_dim_7": {"$numberDecimal": "0.013131587000331381512083"}},
+				{"id": 840, "scaled_dim_1": {"$numberDecimal": "0.550619220171548182270561"}, "scaled_dim_2": {"$numberDecimal": "-0.535570808966958782200686"}, "scaled_dim_3": {"$numberDecimal": "0.170355466130114017437961"}, "scaled_dim_4": {"$numberDecimal": "0.260537911010365993428928"}, "scaled_dim_5": {"$numberDecimal": "-0.063631790744466800804829"}, "scaled_dim_6": {"$numberDecimal": "-0.055130784708249496981891"}, "scaled_dim_7": {"$numberDecimal": "-0.065670619461449548353954"}},
+				{"id": 1062, "scaled_dim_1": {"$numberDecimal": "-0.024802913570684602405681"}, "scaled_dim_2": {"$numberDecimal": "-0.021955744471675281324061"}, "scaled_dim_3": {"$numberDecimal": "-0.162977867203219315895372"}, "scaled_dim_4": {"$numberDecimal": "0.070664493288847006087156"}, "scaled_dim_5": {"$numberDecimal": "0.126844399731723675385647"}, "scaled_dim_6": {"$numberDecimal": "-0.055130784708249496981891"}, "scaled_dim_7": {"$numberDecimal": "-0.033361714812119367108879"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.ZScore.sql",
+			"parameters" : {
+				"Relation": "P1Korean"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 19, "scaled_dim_1": {"$numberDecimal": "0.010083604979573605190967"}, "scaled_dim_2": {"$numberDecimal": "0.786758446250466845061052"}, "scaled_dim_3": {"$numberDecimal": "0.390582212168115251815692"}, "scaled_dim_4": {"$numberDecimal": "0.284861362728480550872590"}, "scaled_dim_5": {"$numberDecimal": "0.290291066738221460201979"}, "scaled_dim_6": {"$numberDecimal": "1.506821738845205851756745"}},
+				{"id": 409, "scaled_dim_1": {"$numberDecimal": "0.013766917246917349224028"}, "scaled_dim_2": {"$numberDecimal": "0.790676732481209480826270"}, "scaled_dim_3": {"$numberDecimal": "0.426743924541281369475202"}, "scaled_dim_4": {"$numberDecimal": "1.664727680676657178351430"}, "scaled_dim_5": {"$numberDecimal": "1.418129696548705820025376"}, "scaled_dim_6": {"$numberDecimal": "1.506821738845205851756745"}},
+				{"id": 610, "scaled_dim_1": {"$numberDecimal": "0.020955348040883119655446"}, "scaled_dim_2": {"$numberDecimal": "0.812053301115560862936045"}, "scaled_dim_3": {"$numberDecimal": "0.390582212168115251815692"}, "scaled_dim_4": {"$numberDecimal": "0.006370038872421491462206"}, "scaled_dim_5": {"$numberDecimal": "0.000395807469374670827697"}, "scaled_dim_6": {"$numberDecimal": "2.753245925606590255194324"}},
+				{"id": 840, "scaled_dim_1": {"$numberDecimal": "4.907936408501795121176375"}, "scaled_dim_2": {"$numberDecimal": "2.300538221316223025356650"}, "scaled_dim_3": {"$numberDecimal": "0.426743924541281369475202"}, "scaled_dim_4": {"$numberDecimal": "1.077589725871513368016604"}, "scaled_dim_5": {"$numberDecimal": "0.094967581326459702245018"}, "scaled_dim_6": {"$numberDecimal": "0.070359783698677637929580"}},
+				{"id": 1062, "scaled_dim_1": {"$numberDecimal": "0.009958675764575706557615"}, "scaled_dim_2": {"$numberDecimal": "0.003866268334104991942090"}, "scaled_dim_3": {"$numberDecimal": "0.390582212168115251815692"}, "scaled_dim_4": {"$numberDecimal": "0.079270954390591544063402"}, "scaled_dim_5": {"$numberDecimal": "0.377372007022468073289215"}, "scaled_dim_6": {"$numberDecimal": "0.070359783698677637929580"}}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.MinMax.sql",
+			"parameters" : {
+				"Relation": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 43579, "scaled_dim_1": {"$numberDecimal": "0.000531632110579479000532"}, "scaled_dim_2": {"$numberDecimal": "0.001199040767386091127098"}, "scaled_dim_3": {"$numberDecimal": "0E-24"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.027777777777777777777778"}, "scaled_dim_6": {"$numberDecimal": "0.014492753623188405797101"}, "scaled_dim_7": {"$numberDecimal": "0.750000000000000000000000"}},
+				{"id": 43715, "scaled_dim_1": {"$numberDecimal": "0.008506113769271664008506"}, "scaled_dim_2": {"$numberDecimal": "0.001199040767386091127098"}, "scaled_dim_3": {"$numberDecimal": "0.004154302670623145400593"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.148809523809523809523810"}, "scaled_dim_6": {"$numberDecimal": "0.096618357487922705314010"}, "scaled_dim_7": {"$numberDecimal": "0.833333333333333333333333"}},
+				{"id": 45976, "scaled_dim_1": {"$numberDecimal": "0.003721424774056353003721"}, "scaled_dim_2": {"$numberDecimal": "0.002398081534772182254197"}, "scaled_dim_3": {"$numberDecimal": "0.001780415430267062314540"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.025793650793650793650794"}, "scaled_dim_6": {"$numberDecimal": "0.101449275362318840579710"}, "scaled_dim_7": {"$numberDecimal": "0.704545454545454545454546"}},
+				{"id": 46957, "scaled_dim_1": {"$numberDecimal": "0.161616161616161616161616"}, "scaled_dim_2": {"$numberDecimal": "0.175059952038369304556355"}, "scaled_dim_3": {"$numberDecimal": "0.248664688427299703264095"}, "scaled_dim_4": {"$numberDecimal": "0.750000000000000000000000"}, "scaled_dim_5": {"$numberDecimal": "0.085317460317460317460317"}, "scaled_dim_6": {"$numberDecimal": "0.014492753623188405797101"}, "scaled_dim_7": {"$numberDecimal": "0.812500000000000000000000"}},
+				{"id": 47092, "scaled_dim_1": {"$numberDecimal": "0E-24"}, "scaled_dim_2": {"$numberDecimal": "0E-24"}, "scaled_dim_3": {"$numberDecimal": "0E-24"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.015873015873015873015873"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "0E-24"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.Mean.sql",
+			"parameters" : {
+				"Relation": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 43579, "scaled_dim_1": {"$numberDecimal": "-0.002482647269902764962253"}, "scaled_dim_2": {"$numberDecimal": "-0.000309331079197944326531"}, "scaled_dim_3": {"$numberDecimal": "-0.001507791686089035930436"}, "scaled_dim_4": {"$numberDecimal": "-0.012691570881226053639847"}, "scaled_dim_5": {"$numberDecimal": "0.018983508686573820673438"}, "scaled_dim_6": {"$numberDecimal": "0.007526329427878653265960"}, "scaled_dim_7": {"$numberDecimal": "0.134274737313663504633994"}},
+				{"id": 43715, "scaled_dim_1": {"$numberDecimal": "0.005491834388789420045722"}, "scaled_dim_2": {"$numberDecimal": "-0.000309331079197944326531"}, "scaled_dim_3": {"$numberDecimal": "0.002646510984534109470158"}, "scaled_dim_4": {"$numberDecimal": "-0.012691570881226053639847"}, "scaled_dim_5": {"$numberDecimal": "0.140015254718319852419469"}, "scaled_dim_6": {"$numberDecimal": "0.089651933292612952782868"}, "scaled_dim_7": {"$numberDecimal": "0.217608070646996837967328"}},
+				{"id": 45976, "scaled_dim_1": {"$numberDecimal": "0.000707145393574109040937"}, "scaled_dim_2": {"$numberDecimal": "0.000889709688188146800567"}, "scaled_dim_3": {"$numberDecimal": "0.000272623744178026384104"}, "scaled_dim_4": {"$numberDecimal": "-0.012691570881226053639847"}, "scaled_dim_5": {"$numberDecimal": "0.016999381702446836546453"}, "scaled_dim_6": {"$numberDecimal": "0.094482851167009088048568"}, "scaled_dim_7": {"$numberDecimal": "0.088820191859118050088540"}},
+				{"id": 46957, "scaled_dim_1": {"$numberDecimal": "0.158601882235679372198832"}, "scaled_dim_2": {"$numberDecimal": "0.173551580191785269102725"}, "scaled_dim_3": {"$numberDecimal": "0.247156896741210667333659"}, "scaled_dim_4": {"$numberDecimal": "0.737308429118773946360153"}, "scaled_dim_5": {"$numberDecimal": "0.076523191226256360355977"}, "scaled_dim_6": {"$numberDecimal": "0.007526329427878653265960"}, "scaled_dim_7": {"$numberDecimal": "0.196774737313663504633994"}},
+				{"id": 47092, "scaled_dim_1": {"$numberDecimal": "-0.003014279380482243962784"}, "scaled_dim_2": {"$numberDecimal": "-0.001508371846584035453629"}, "scaled_dim_3": {"$numberDecimal": "-0.001507791686089035930436"}, "scaled_dim_4": {"$numberDecimal": "-0.012691570881226053639847"}, "scaled_dim_5": {"$numberDecimal": "0.007078746781811915911533"}, "scaled_dim_6": {"$numberDecimal": "-0.006966424195309752531142"}, "scaled_dim_7": {"$numberDecimal": "-0.615725262686336495366006"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.ZScore.sql",
+			"parameters" : {
+				"Relation": "P2Jan2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 43579, "scaled_dim_1": {"$numberDecimal": "0.013982115813803002270381"}, "scaled_dim_2": {"$numberDecimal": "0.000394954598738876543567"}, "scaled_dim_3": {"$numberDecimal": "0.007430200918331480270102"}, "scaled_dim_4": {"$numberDecimal": "0.017493165272735198689725"}, "scaled_dim_5": {"$numberDecimal": "0.502624441106421017961424"}, "scaled_dim_6": {"$numberDecimal": "0.077218234372203263117801"}},
+				{"id": 43715, "scaled_dim_1": {"$numberDecimal": "0.068419157049423110554440"}, "scaled_dim_2": {"$numberDecimal": "0.000394954598738876543567"}, "scaled_dim_3": {"$numberDecimal": "0.022891026639516605851424"}, "scaled_dim_4": {"$numberDecimal": "0.017493165272735198689725"}, "scaled_dim_5": {"$numberDecimal": "27.342696515240432674521212"}, "scaled_dim_6": {"$numberDecimal": "10.956522595432100926642105"}},
+				{"id": 45976, "scaled_dim_1": {"$numberDecimal": "0.001134384511352949638358"}, "scaled_dim_2": {"$numberDecimal": "0.003267357840037592023401"}, "scaled_dim_3": {"$numberDecimal": "0.000242909905515207860809"}, "scaled_dim_4": {"$numberDecimal": "0.017493165272735198689725"}, "scaled_dim_5": {"$numberDecimal": "0.403048105118259806581704"}, "scaled_dim_6": {"$numberDecimal": "12.169126360629994886102362"}},
+				{"id": 46957, "scaled_dim_1": {"$numberDecimal": "57.063647588237452237773539"}, "scaled_dim_2": {"$numberDecimal": "124.324638775833362194820026"}, "scaled_dim_3": {"$numberDecimal": "199.647251751388435078849168"}, "scaled_dim_4": {"$numberDecimal": "59.038598304863087490736531"}, "scaled_dim_5": {"$numberDecimal": "8.167267469164173528535259"}, "scaled_dim_6": {"$numberDecimal": "0.077218234372203263117801"}},
+				{"id": 47092, "scaled_dim_1": {"$numberDecimal": "0.020611512411931467924228"}, "scaled_dim_2": {"$numberDecimal": "0.009391109341276014471175"}, "scaled_dim_3": {"$numberDecimal": "0.007430200918331480270102"}, "scaled_dim_4": {"$numberDecimal": "0.017493165272735198689725"}, "scaled_dim_5": {"$numberDecimal": "0.069888124639559866254202"}, "scaled_dim_6": {"$numberDecimal": "0.066156611303652625888035"}}
+			]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.MinMax.sql",
+			"parameters" : {
+				"Relation": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 42935, "scaled_dim_1": {"$numberDecimal": "0.002439343119745611360369"}, "scaled_dim_2": {"$numberDecimal": "0.000792236086353733412557"}, "scaled_dim_3": {"$numberDecimal": "0.001086295298513948031633"}, "scaled_dim_4": {"$numberDecimal": "0.500000000000000000000000"}, "scaled_dim_5": {"$numberDecimal": "0.171532846715328467153285"}, "scaled_dim_6": {"$numberDecimal": "0.280423280423280423280423"}, "scaled_dim_7": {"$numberDecimal": "0.703703703703703703703704"}},
+				{"id": 43288, "scaled_dim_1": {"$numberDecimal": "0.002962059502548242366163"}, "scaled_dim_2": {"$numberDecimal": "0.001980590215884333531392"}, "scaled_dim_3": {"$numberDecimal": "0.000912488050751716346572"}, "scaled_dim_4": {"$numberDecimal": "0.750000000000000000000000"}, "scaled_dim_5": {"$numberDecimal": "0.098540145985401459854015"}, "scaled_dim_6": {"$numberDecimal": "0.015873015873015873015873"}, "scaled_dim_7": {"$numberDecimal": "0.875000000000000000000000"}},
+				{"id": 45173, "scaled_dim_1": {"$numberDecimal": "0E-24"}, "scaled_dim_2": {"$numberDecimal": "0E-24"}, "scaled_dim_3": {"$numberDecimal": "0E-24"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.072992700729927007299270"}, "scaled_dim_6": {"$numberDecimal": "0E-24"}, "scaled_dim_7": {"$numberDecimal": "1.000000000000000000000000"}},
+				{"id": 45289, "scaled_dim_1": {"$numberDecimal": "0.004791566842357450886440"}, "scaled_dim_2": {"$numberDecimal": "0.007031095266389384036443"}, "scaled_dim_3": {"$numberDecimal": "0.001868427913443990614409"}, "scaled_dim_4": {"$numberDecimal": "0.250000000000000000000000"}, "scaled_dim_5": {"$numberDecimal": "0.083941605839416058394161"}, "scaled_dim_6": {"$numberDecimal": "0.190476190476190476190476"}, "scaled_dim_7": {"$numberDecimal": "0.574324324324324324324324"}},
+				{"id": 46154, "scaled_dim_1": {"$numberDecimal": "0.000087119397133771834299"}, "scaled_dim_2": {"$numberDecimal": "0E-24"}, "scaled_dim_3": {"$numberDecimal": "0E-24"}, "scaled_dim_4": {"$numberDecimal": "0E-24"}, "scaled_dim_5": {"$numberDecimal": "0.014598540145985401459854"}, "scaled_dim_6": {"$numberDecimal": "0.010582010582010582010582"}, "scaled_dim_7": {"$numberDecimal": "0.750000000000000000000000"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.Mean.sql",
+			"parameters" : {
+				"Relation": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 42935, "scaled_dim_1": {"$numberDecimal": "0.002146455608704788593744"}, "scaled_dim_2": {"$numberDecimal": "0.000594537047407965551924"}, "scaled_dim_3": {"$numberDecimal": "0.000910257920538738083865"}, "scaled_dim_4": {"$numberDecimal": "0.489116323351220356586464"}, "scaled_dim_5": {"$numberDecimal": "0.156963683067386527748471"}, "scaled_dim_6": {"$numberDecimal": "0.273229546468251678568452"}, "scaled_dim_7": {"$numberDecimal": "0.103985147259601652271876"}},
+				{"id": 43288, "scaled_dim_1": {"$numberDecimal": "0.002669171991507419599537"}, "scaled_dim_2": {"$numberDecimal": "0.001782891176938565670759"}, "scaled_dim_3": {"$numberDecimal": "0.000736450672776506398804"}, "scaled_dim_4": {"$numberDecimal": "0.739116323351220356586464"}, "scaled_dim_5": {"$numberDecimal": "0.083970982337459520449201"}, "scaled_dim_6": {"$numberDecimal": "0.008679281917987128303902"}, "scaled_dim_7": {"$numberDecimal": "0.275281443555897948568172"}},
+				{"id": 45173, "scaled_dim_1": {"$numberDecimal": "-0.000292887511040822766625"}, "scaled_dim_2": {"$numberDecimal": "-0.000197699038945767860633"}, "scaled_dim_3": {"$numberDecimal": "-0.000176037377975209947768"}, "scaled_dim_4": {"$numberDecimal": "-0.010883676648779643413537"}, "scaled_dim_5": {"$numberDecimal": "0.058423537081985067894457"}, "scaled_dim_6": {"$numberDecimal": "-0.007193733955028744711971"}, "scaled_dim_7": {"$numberDecimal": "0.400281443555897948568172"}},
+				{"id": 45289, "scaled_dim_1": {"$numberDecimal": "0.004498679331316628119814"}, "scaled_dim_2": {"$numberDecimal": "0.006833396227443616175810"}, "scaled_dim_3": {"$numberDecimal": "0.001692390535468780666641"}, "scaled_dim_4": {"$numberDecimal": "0.239116323351220356586464"}, "scaled_dim_5": {"$numberDecimal": "0.069372442191474118989347"}, "scaled_dim_6": {"$numberDecimal": "0.183282456521161731478505"}, "scaled_dim_7": {"$numberDecimal": "-0.025394232119777727107504"}},
+				{"id": 46154, "scaled_dim_1": {"$numberDecimal": "-0.000205768113907050932326"}, "scaled_dim_2": {"$numberDecimal": "-0.000197699038945767860633"}, "scaled_dim_3": {"$numberDecimal": "-0.000176037377975209947768"}, "scaled_dim_4": {"$numberDecimal": "-0.010883676648779643413537"}, "scaled_dim_5": {"$numberDecimal": "0.000029376498043462055041"}, "scaled_dim_6": {"$numberDecimal": "0.003388276626981837298611"}, "scaled_dim_7": {"$numberDecimal": "0.150281443555897948568172"}}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q2.ZScore.sql",
+			"parameters" : {
+				"Relation": "P2May2018"
+			},
+			"limit": 5,
+			"expected" : [
+				{"id": 42935, "scaled_dim_1": {"$numberDecimal": "0.052168894725925871232105"}, "scaled_dim_2": {"$numberDecimal": "0.004032769818821158033040"}, "scaled_dim_3": {"$numberDecimal": "0.009482558185220398331339"}, "scaled_dim_4": {"$numberDecimal": "31.164706011506860844562235"}, "scaled_dim_5": {"$numberDecimal": "12.737716978157253416995080"}, "scaled_dim_6": {"$numberDecimal": "100.216330441500760141970970"}},
+				{"id": 43288, "scaled_dim_1": {"$numberDecimal": "0.080671648429889131087230"}, "scaled_dim_2": {"$numberDecimal": "0.036265632954200277169330"}, "scaled_dim_3": {"$numberDecimal": "0.006207030930255210490914"}, "scaled_dim_4": {"$numberDecimal": "71.164648437559559913041383"}, "scaled_dim_5": {"$numberDecimal": "3.645454662058808078729390"}, "scaled_dim_6": {"$numberDecimal": "0.101123190724924726070362"}},
+				{"id": 45173, "scaled_dim_1": {"$numberDecimal": "0.000971336078550212390452"}, "scaled_dim_2": {"$numberDecimal": "0.000445917694976484742463"}, "scaled_dim_3": {"$numberDecimal": "0.000354655227446736519537"}, "scaled_dim_4": {"$numberDecimal": "0.015430854695615871990671"}, "scaled_dim_5": {"$numberDecimal": "1.764692040099414267094367"}, "scaled_dim_6": {"$numberDecimal": "0.069469139368552292069799"}},
+				{"id": 45289, "scaled_dim_1": {"$numberDecimal": "0.229159511758912627779165"}, "scaled_dim_2": {"$numberDecimal": "0.532744282292493645419248"}, "scaled_dim_3": {"$numberDecimal": "0.032779155374964638522922"}, "scaled_dim_4": {"$numberDecimal": "7.448300150552212830878664"}, "scaled_dim_5": {"$numberDecimal": "2.488096389912166404985061"}, "scaled_dim_6": {"$numberDecimal": "45.094644546990500096634585"}},
+				{"id": 46154, "scaled_dim_1": {"$numberDecimal": "0.000479428631901624625321"}, "scaled_dim_2": {"$numberDecimal": "0.000445917694976484742463"}, "scaled_dim_3": {"$numberDecimal": "0.000354655227446736519537"}, "scaled_dim_4": {"$numberDecimal": "0.015430854695615871990671"}, "scaled_dim_5": {"$numberDecimal": "4.46162719612388562E-7"}, "scaled_dim_6": {"$numberDecimal": "0.015411357459087654473276"}}
+			]
+		}
+	]
+}

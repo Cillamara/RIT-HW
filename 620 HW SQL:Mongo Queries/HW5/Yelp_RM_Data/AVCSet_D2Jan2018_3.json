@@ -1,0 +1,4 @@
+{"_id":{"$oid":"69b168efe885106c472e4c65"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"1142"},"label":{"$numberInt":"4"}}
+{"_id":{"$oid":"69b168efe885106c472e4c66"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"11"},"label":{"$numberInt":"5"}}
+{"_id":{"$oid":"69b168efe885106c472e4c67"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"1352"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4c68"},"attribute":{"$numberInt":"1"},"count":{"$numberInt":"1"},"label":{"$numberInt":"5"}}

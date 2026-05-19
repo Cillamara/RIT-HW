@@ -1,0 +1,41 @@
+{
+	"collection":"Businesses",
+	"query": [
+		{"$match" : {"categories": "&Category&"}},
+		{"$lookup": {
+			"from": "Reviews",
+			"localField": "_id",
+			"foreignField": "business_id",
+			"pipeline": [{"$count": "c"}],
+			"as": "rc"
+		}},
+		{"$addFields": {
+			"review_count": {"$ifNull": [{"$arrayElemAt": ["$rc.c", 0]}, 0]}
+		}},
+		{"$match": {"review_count": {"$gt": 0}}},
+		{"$sort": {"review_count": 1, "_id": 1}},
+		{"$group": {
+			"_id": null,
+			"docs": {"$push": "$$ROOT"},
+			"total": {"$sum": 1}
+		}},
+		{"$unwind": {"path": "$docs", "includeArrayIndex": "idx"}},
+		{"$addFields": {
+			"docs.att_1": {"$toInt": {"$ceil": {"$divide": [{"$multiply": [{"$add": ["$idx", 1]}, {"$toInt": "&k&"}]}, "$total"]}}}
+		}},
+		{"$replaceRoot": {"newRoot": {"$mergeObjects": ["$docs", {"att_1": "$docs.att_1"}]}}},
+		{"$project": {
+			"_id": 1,
+			"att_1": 1,
+			"att_2": {"$ifNull": ["$is_open", 2]},
+			"att_3": {"$ifNull": ["$restaurants_take_out", 2]},
+			"att_4": {"$ifNull": ["$restaurants_delivery", 2]},
+			"att_5": {"$ifNull": ["$drive_thru", 2]},
+			"att_6": {"$ifNull": ["$wheelchair_accessible", 2]},
+			"att_7": {"$ifNull": ["$happy_hour", 2]},
+			"att_8": {"$ifNull": ["$outdoor_seating", 2]},
+			"label": {"$ifNull": ["$restaurants_price_range", 0]}
+		}},
+		{"$sort": {"_id": 1}}
+	]
+}

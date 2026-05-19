@@ -1,0 +1,190 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q5Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Mexican_MinMax_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 1046, "see": {"$numberDecimal": "289.7941335748438675143792352386315"}, "size": 500},
+				{"cid": 12282, "see": {"$numberDecimal": "67.76529600008196977014436172271525"}, "size": 240},
+				{"cid": 19844, "see": {"$numberDecimal": "74.10473237566360216696539601120551"}, "size": 220},
+				{"cid": 43615, "see": {"$numberDecimal": "165.2069743047802105389230013469724"}, "size": 194},
+				{"cid": 47220, "see": {"$numberDecimal": "364.1712363574213552334315130985699"}, "size": 454},
+				{"cid": 63584, "see": {"$numberDecimal": "128.4235845955636553138939635456460"}, "size": 283},
+				{"cid": 106421, "see": {"$numberDecimal": "626.5236226706451093085602108100705"}, "size": 1002},
+				{"cid": 109740, "see": {"$numberDecimal": "541.6996196236981011005418707996028"}, "size": 651},
+				{"cid": 125298, "see": {"$numberDecimal": "321.8373574319249770022508802189406"}, "size": 356},
+				{"cid": 148180, "see": {"$numberDecimal": "495.9389653281482932356219344603014"}, "size": 700}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Mexican_MinMax_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 1046, "see": {"$numberDecimal": "126.3723230772074455586692583605767"}, "size": 546},
+				{"cid": 12282, "see": {"$numberDecimal": "9.181991378292487179293637742130606"}, "size": 185},
+				{"cid": 19844, "see": {"$numberDecimal": "33.81140988546459370823015448950310"}, "size": 212},
+				{"cid": 43615, "see": {"$numberDecimal": "23.06715842613680402037272188423743"}, "size": 137},
+				{"cid": 47220, "see": {"$numberDecimal": "167.5626742173050940495429580741296"}, "size": 524},
+				{"cid": 63584, "see": {"$numberDecimal": "12.17588156652365769525391030377865"}, "size": 173},
+				{"cid": 106421, "see": {"$numberDecimal": "158.9747188191845013524078428819606"}, "size": 725},
+				{"cid": 109740, "see": {"$numberDecimal": "221.5787416528960620254404798880667"}, "size": 888},
+				{"cid": 125298, "see": {"$numberDecimal": "171.6890779431161577919586328051484"}, "size": 540},
+				{"cid": 148180, "see": {"$numberDecimal": "93.44367216106222193805673547538236"}, "size": 670}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Korean_Mean_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 5549, "see": {"$numberDecimal": "32.26748695630015984388933180888576"}, "size": 49},
+				{"cid": 16704, "see": {"$numberDecimal": "20.92580001613474257099626401751440"}, "size": 26},
+				{"cid": 37881, "see": {"$numberDecimal": "36.98449607085984681534272478202639"}, "size": 43},
+				{"cid": 41989, "see": {"$numberDecimal": "83.27909114728957186863240914193167"}, "size": 138},
+				{"cid": 58645, "see": {"$numberDecimal": "34.75218301603684461830570710164280"}, "size": 28},
+				{"cid": 85584, "see": {"$numberDecimal": "81.88065394253263580069626625311471"}, "size": 85},
+				{"cid": 111313, "see": {"$numberDecimal": "33.26202883351684624420122593638373"}, "size": 41},
+				{"cid": 124380, "see": {"$numberDecimal": "27.80910721048114542410742568446199"}, "size": 27},
+				{"cid": 133352, "see": {"$numberDecimal": "8.069228742945108128475527634791119"}, "size": 18},
+				{"cid": 145309, "see": {"$numberDecimal": "37.18131714333785573856872006843467"}, "size": 42}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P1Korean_Mean_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 5549, "see": {"$numberDecimal": "12.77245178847180062189843439948017"}, "size": 61},
+				{"cid": 16704, "see": {"$numberDecimal": "9.561724876220076777077572393221467"}, "size": 37},
+				{"cid": 37881, "see": {"$numberDecimal": "14.78848676804706765004688136290996"}, "size": 44},
+				{"cid": 41989, "see": {"$numberDecimal": "20.13550249944176555640116793124611"}, "size": 118},
+				{"cid": 58645, "see": {"$numberDecimal": "5.644494636624183162309880715382785"}, "size": 23},
+				{"cid": 85584, "see": {"$numberDecimal": "20.69740599232731125875981628470405"}, "size": 81},
+				{"cid": 111313, "see": {"$numberDecimal": "5.016756883297530046344467353664664"}, "size": 24},
+				{"cid": 124380, "see": {"$numberDecimal": "14.50388511549150858178742525601732"}, "size": 45},
+				{"cid": 133352, "see": {"$numberDecimal": "1.297682420198999605481618652515138"}, "size": 13},
+				{"cid": 145309, "see": {"$numberDecimal": "14.00897620570734935738210281767934"}, "size": 51}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P2Jan2018_ZScore_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 198459, "see": {"$numberDecimal": "196.6811878005016223331638214502287"}, "size": 482},
+				{"cid": 272740, "see": {"$numberDecimal": "4354.534645806268195358744330775643"}, "size": 136},
+				{"cid": 380071, "see": {"$numberDecimal": "2003.784614349576245870738678136294"}, "size": 768},
+				{"cid": 430201, "see": {"$numberDecimal": "2476.667307311412389403870750980393"}, "size": 710},
+				{"cid": 435625, "see": {"$numberDecimal": "3739.695804009590494979762562031453"}, "size": 64},
+				{"cid": 457903, "see": {"$numberDecimal": "125518.9324137544630175981882665980"}, "size": 168},
+				{"cid": 689984, "see": {"$numberDecimal": "1704.185426006619221309232101712974"}, "size": 542},
+				{"cid": 708303, "see": {"$numberDecimal": "218.1436338208922546892846211266356"}, "size": 482},
+				{"cid": 900939, "see": {"$numberDecimal": "1229.698076750139691607110812453028"}, "size": 217},
+				{"cid": 1108172, "see": {"$numberDecimal": "172.7137657234924938557204961135171"}, "size": 2051},
+				{"cid": 1179348, "see": {"$numberDecimal": "209.9919068548012995679226932761381"}, "size": 859},
+				{"cid": 1183296, "see": {"$numberDecimal": "835.3626760293900786524662408000753"}, "size": 461},
+				{"cid": 1422650, "see": {"$numberDecimal": "2431.567668121334308933889822331634"}, "size": 405},
+				{"cid": 1551995, "see": {"$numberDecimal": "290.7424784022868678756223818794376"}, "size": 705},
+				{"cid": 1704618, "see": {"$numberDecimal": "579.5924435664881322964501088452653"}, "size": 3901},
+				{"cid": 1881525, "see": {"$numberDecimal": "1759.774512506624897900666054767375"}, "size": 577}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P2Jan2018_ZScore_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 198459, "see": {"$numberDecimal": "50.58731634231527032768055649992577"}, "size": 455},
+				{"cid": 272740, "see": {"$numberDecimal": "6337.677938367696018217207135394361"}, "size": 385},
+				{"cid": 380071, "see": {"$numberDecimal": "330.8381554323251935279032965624680"}, "size": 470},
+				{"cid": 430201, "see": {"$numberDecimal": "63.38371682948073371164848367704043"}, "size": 441},
+				{"cid": 435625, "see": {"$numberDecimal": "1505.393714069304143467325609018367"}, "size": 111},
+				{"cid": 457903, "see": {"$numberDecimal": "39691.47350388571590377586917472401"}, "size": 194},
+				{"cid": 689984, "see": {"$numberDecimal": "328.1672268815343765366085488154062"}, "size": 1158},
+				{"cid": 708303, "see": {"$numberDecimal": "101.0457897606926276571447288970479"}, "size": 478},
+				{"cid": 900939, "see": {"$numberDecimal": "274.9249229973031401599071915854712"}, "size": 336},
+				{"cid": 1108172, "see": {"$numberDecimal": "74.57788334262990817651877574761758"}, "size": 2096},
+				{"cid": 1179348, "see": {"$numberDecimal": "56.00350914065798071259561276794176"}, "size": 666},
+				{"cid": 1183296, "see": {"$numberDecimal": "189.5405835070471179974665388089110"}, "size": 408},
+				{"cid": 1422650, "see": {"$numberDecimal": "500.3634904986475170225913921126921"}, "size": 472},
+				{"cid": 1551995, "see": {"$numberDecimal": "34.45984018670058844742105671853401"}, "size": 550},
+				{"cid": 1704618, "see": {"$numberDecimal": "133.5439595043714736278141466577365"}, "size": 3813},
+				{"cid": 1881525, "see": {"$numberDecimal": "375.9797648536409032136243986629678"}, "size": 495}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P2May2018_ZScore_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 161047, "see": {"$numberDecimal": "304.3075204124573213506881762982064"}, "size": 1461},
+				{"cid": 242412, "see": {"$numberDecimal": "830.8599208180844099173291265005258"}, "size": 861},
+				{"cid": 729741, "see": {"$numberDecimal": "44.61325875497634569267706327567903"}, "size": 1177},
+				{"cid": 735733, "see": {"$numberDecimal": "72.34215680350402441916214369051724"}, "size": 2854},
+				{"cid": 923058, "see": {"$numberDecimal": "6169.935677088297840496860861260490"}, "size": 390},
+				{"cid": 1062103, "see": {"$numberDecimal": "2306.395051962659077235874764327104"}, "size": 363},
+				{"cid": 1282782, "see": {"$numberDecimal": "171776.4284566634192325793356565382"}, "size": 817},
+				{"cid": 1382408, "see": {"$numberDecimal": "1153.113383929156947327409710084311"}, "size": 405},
+				{"cid": 1387092, "see": {"$numberDecimal": "343.5727939778902498589633079056444"}, "size": 792},
+				{"cid": 1466042, "see": {"$numberDecimal": "3655.451872454026227032030699351765"}, "size": 515},
+				{"cid": 1571437, "see": {"$numberDecimal": "2216.252059905326313727500533910141"}, "size": 1185},
+				{"cid": 1984632, "see": {"$numberDecimal": "555.0507955913943011987524232948023"}, "size": 734}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q5.json",
+			"parameters" : {
+				"AssignmentCollection": "P2May2018_MinMax_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 519352, "see": {"$numberDecimal": "5.403954708182795077237769824550471"}, "size": 441},
+				{"cid": 550374, "see": {"$numberDecimal": "22.62803721596449703691813115826482"}, "size": 595},
+				{"cid": 576124, "see": {"$numberDecimal": "34.67944562361261019215419206835502"}, "size": 520},
+				{"cid": 656834, "see": {"$numberDecimal": "4.278838969048678839511422435821916"}, "size": 899},
+				{"cid": 676587, "see": {"$numberDecimal": "33.19301123496774019839965957434466"}, "size": 943},
+				{"cid": 708579, "see": {"$numberDecimal": "1.561902997450866128961226437563433"}, "size": 2496},
+				{"cid": 793986, "see": {"$numberDecimal": "0.5331792067267894926537842810366955"}, "size": 3070},
+				{"cid": 1190861, "see": {"$numberDecimal": "10.23115028874320064738722660578197"}, "size": 1132},
+				{"cid": 1208257, "see": {"$numberDecimal": "3.443317833926390852112870782936353"}, "size": 621},
+				{"cid": 1234399, "see": {"$numberDecimal": "2.138244255083344185106560060984543"}, "size": 217},
+				{"cid": 1507698, "see": {"$numberDecimal": "0.7627169639441793521814497465724785"}, "size": 225},
+				{"cid": 1521595, "see": {"$numberDecimal": "9.327929249733618608581872258054499"}, "size": 395}
+			]
+		}
+	]
+}

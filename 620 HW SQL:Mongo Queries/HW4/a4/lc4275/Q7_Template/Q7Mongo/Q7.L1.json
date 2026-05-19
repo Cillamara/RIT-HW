@@ -1,0 +1,23 @@
+{
+	"collection": "&TCollection&",
+	"query": [
+		{"$unwind": "$items"},
+		{"$group": {
+			"_id": "$items",
+			"count": {"$sum": 1},
+			"transactions": {"$addToSet": "$_id"}
+		}},
+		{"$match": {"count": {"$gte": "&MinSup&"}}},
+		{"$set": {
+			"transactions": {"$sortArray": {"input": "$transactions", "sortBy": 1}}
+		}},
+		{"$project": {
+			"_id": 0,
+			"iid_1": "$_id",
+			"count": 1,
+			"transactions": 1,
+			"eclass": {"$literal": 0}
+		}},
+		{"$sort": {"iid_1": 1}}
+	]
+}

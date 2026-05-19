@@ -1,0 +1,22 @@
+{
+	"collection": "Businesses",
+	"query": [
+		{"$match": {"categories": "&Category&"}},
+		{"$lookup": {
+			"from": "Reviews",
+			"localField": "_id",
+			"foreignField": "business_id",
+			"as": "reviews"
+		}},
+		{"$unwind": "$reviews"},
+		{"$group": {
+			"_id": "$_id",
+			"items": {"$addToSet": "$reviews.user_id"}
+		}},
+		{"$set": {
+			"items": {"$sortArray": {"input": "$items", "sortBy": 1}}
+		}},
+		{"$sort": {"_id": 1}},
+		{"$out": "T1"}
+	]
+}

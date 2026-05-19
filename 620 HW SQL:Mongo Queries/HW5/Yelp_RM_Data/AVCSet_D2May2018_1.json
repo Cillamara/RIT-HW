@@ -1,0 +1,6 @@
+{"_id":{"$oid":"69b168efe885106c472e4c7f"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"2310"},"label":{"$numberInt":"1"}}
+{"_id":{"$oid":"69b168efe885106c472e4c80"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"2310"},"label":{"$numberInt":"5"}}
+{"_id":{"$oid":"69b168efe885106c472e4c81"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"2311"},"label":{"$numberInt":"4"}}
+{"_id":{"$oid":"69b168efe885106c472e4c82"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"2311"},"label":{"$numberInt":"3"}}
+{"_id":{"$oid":"69b168efe885106c472e4c83"},"attribute":{"$numberInt":"5"},"count":{"$numberInt":"1"},"label":{"$numberInt":"5"}}
+{"_id":{"$oid":"69b168efe885106c472e4c84"},"attribute":{"$numberInt":"0"},"count":{"$numberInt":"2311"},"label":{"$numberInt":"2"}}

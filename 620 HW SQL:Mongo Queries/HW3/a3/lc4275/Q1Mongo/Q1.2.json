@@ -1,0 +1,16 @@
+{
+    "collection": "Reviews",
+    "query": [
+        {"$match": {"$expr": {"$and": [{"$gte": ["$review_date", {"$toDate": "&init_date&"}]}, {"$lte": ["$review_date", {"$toDate": "&end_date&"}]}]}}},
+        {"$lookup": {"from": "Businesses", "localField": "business_id", "foreignField": "_id", "as": "business"}},
+        {"$unwind": "$business"},
+        {"$unwind": "$business.categories"},
+        {"$addFields": {"year": {"$year": "$review_date"}}},
+        {"$group": {
+            "_id": {"category": "$business.categories", "year": "$year"},
+            "count": {"$sum": 1}
+        }},
+        {"$sort": {"_id.year": 1, "count": -1}},
+        {"$project": {"_id": 0, "category": "$_id.category", "year": "$_id.year", "count": 1}}
+    ]
+}

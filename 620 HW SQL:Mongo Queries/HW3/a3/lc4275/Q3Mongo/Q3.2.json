@@ -1,0 +1,26 @@
+{
+    "collection": "Users",
+    "query": [
+        {"$match": {"$expr": {"$and": [{"$gte": ["$yelping_since", {"$toDate": "&init_date&"}]}, {"$lte": ["$yelping_since", {"$toDate": "&end_date&"}]}]}}},
+        {"$addFields": {"sort_key": {"$concat": [
+            {"$substr": [{"$toString": {"$add": [{"$toLong": "$funny"}, 1000000000]}}, 0, -1]},
+            "_",
+            {"$substr": [{"$toString": {"$add": [{"$toLong": "$_id"}, 1000000000]}}, 0, -1]}
+        ]}}},
+        {"$setWindowFields": {
+            "sortBy": {"sort_key": 1},
+            "output": {
+                "rn":    {"$documentNumber": {}},
+                "total": {"$sum": 1, "window": {"documents": ["unbounded", "unbounded"]}}
+            }
+        }},
+        {"$project": {
+            "_id": 1,
+            "bin_index": {"$toInt": {"$ceil": {"$divide": [
+                {"$multiply": [{"$toDecimal": "&k&"}, {"$toDecimal": "$rn"}]},
+                {"$toDecimal": "$total"}
+            ]}}}
+        }},
+        {"$sort": {"bin_index": -1, "_id": 1}}
+    ]
+}

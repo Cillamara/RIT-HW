@@ -1,0 +1,103 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "TODOTODO__YOUR_SCHEMA_NAME__TODOTODO", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "TODOTODO__YOUR_USERNAME__TODOTODO", "pwd" : "TODOTODO__YOUR_PASSWORD__TODOTODO"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q1SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.T1.sql",
+			"parameters" : {
+				"Category": "Mexican"
+			},
+			"limit": 25,
+			"expected" : [
+				{"tid": 104, "iid": 9892},
+				{"tid": 104, "iid": 10390},
+				{"tid": 104, "iid": 12135},
+				{"tid": 104, "iid": 12779},
+				{"tid": 104, "iid": 28535},
+				{"tid": 104, "iid": 53402},
+				{"tid": 104, "iid": 68037},
+				{"tid": 104, "iid": 76560},
+				{"tid": 104, "iid": 80882},
+				{"tid": 104, "iid": 81704},
+				{"tid": 104, "iid": 96203},
+				{"tid": 104, "iid": 113256},
+				{"tid": 104, "iid": 120068},
+				{"tid": 104, "iid": 128918},
+				{"tid": 104, "iid": 134642},
+				{"tid": 104, "iid": 141699},
+				{"tid": 104, "iid": 155369},
+				{"tid": 104, "iid": 161446},
+				{"tid": 104, "iid": 188545},
+				{"tid": 104, "iid": 271483},
+				{"tid": 104, "iid": 279186},
+				{"tid": 104, "iid": 289293},
+				{"tid": 104, "iid": 303540},
+				{"tid": 153, "iid": 58339},
+				{"tid": 153, "iid": 62837}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q1.T2.sql",
+			"parameters" : {
+				"YelpingStart": "2019-01-01",
+				"YelpingEnd": "2021-05-31"
+			},
+			"limit": 35,
+			"expected" : [
+				{"tid": 49401, "iid": 11376},
+				{"tid": 49401, "iid": 98726},
+				{"tid": 49401, "iid": 101279},
+				{"tid": 53101, "iid": 5201},
+				{"tid": 60590, "iid": 47},
+				{"tid": 60590, "iid": 16646},
+				{"tid": 60590, "iid": 26709},
+				{"tid": 60590, "iid": 32361},
+				{"tid": 60590, "iid": 38622},
+				{"tid": 60590, "iid": 44856},
+				{"tid": 60590, "iid": 45830},
+				{"tid": 60590, "iid": 87493},
+				{"tid": 60590, "iid": 108710},
+				{"tid": 60590, "iid": 118660},
+				{"tid": 67223, "iid": 3817},
+				{"tid": 67223, "iid": 10544},
+				{"tid": 67223, "iid": 16701},
+				{"tid": 67223, "iid": 19220},
+				{"tid": 67223, "iid": 47774},
+				{"tid": 67223, "iid": 55156},
+				{"tid": 67223, "iid": 67839},
+				{"tid": 67223, "iid": 72099},
+				{"tid": 67223, "iid": 74821},
+				{"tid": 67223, "iid": 137449},
+				{"tid": 67223, "iid": 143467},
+				{"tid": 67223, "iid": 149811},
+				{"tid": 67223, "iid": 150157},
+				{"tid": 73796, "iid": 3488},
+				{"tid": 73796, "iid": 127059},
+				{"tid": 73796, "iid": 128441},
+				{"tid": 75378, "iid": 205},
+				{"tid": 75378, "iid": 25084},
+				{"tid": 75378, "iid": 47842},
+				{"tid": 75378, "iid": 53452},
+				{"tid": 75378, "iid": 88331}
+			]
+		}
+	]
+}

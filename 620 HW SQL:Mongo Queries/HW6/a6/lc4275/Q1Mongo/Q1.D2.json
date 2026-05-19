@@ -1,0 +1,31 @@
+{
+	"collection": "Users",
+	"query": [
+		{"$match": {"$expr": {"$let": {
+			"vars": {"s": "&StartDate&", "e": "&EndDate&"},
+			"in": {"$and": [
+				{"$gte": [{"$dateToString": {"format": "%Y-%m-%d", "date": "$yelping_since"}}, "$$s"]},
+				{"$lte": [{"$dateToString": {"format": "%Y-%m-%d", "date": "$yelping_since"}}, "$$e"]}
+			]}
+		}}}},
+		{"$lookup": {"from": "Reviews", "localField": "_id", "foreignField": "user_id", "as": "_revs"}},
+		{"$project": {
+			"_id": 1,
+			"dim_1": {"$toDecimal": {"$ifNull": ["$useful", 0]}},
+			"dim_2": {"$toDecimal": {"$ifNull": ["$funny", 0]}},
+			"dim_3": {"$toDecimal": {"$ifNull": ["$cool", 0]}},
+			"dim_4": {"$toDecimal": {"$size": {"$ifNull": ["$elite_years", []]}}},
+			"dim_5": {"$toDecimal": {"$size": {"$ifNull": ["$friends", []]}}},
+			"dim_6": {"$toDecimal": {"$size": "$_revs"}},
+			"dim_7": {"$cond": [
+				{"$eq": [{"$size": "$_revs"}, 0]},
+				{"$toDecimal": 0},
+				{"$divide": [
+					{"$toDecimal": {"$sum": "$_revs.stars"}},
+					{"$toDecimal": {"$size": "$_revs"}}
+				]}
+			]}
+		}},
+		{"$sort": {"_id": 1}}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"__comment__" : "This is the database to connect to. We can have Myjson or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q6Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_0"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.5652173913043478260869565217391304"}, "recall": {"$numberDecimal": "0.2417480241748024174802417480241748"}, "specificity": {"$numberDecimal": "0.8366680277664352797060024499795835"}, "accuracy": {"$numberDecimal": "0.5584782608695652173913043478260870"}, "error_rate": {"$numberDecimal": "0.4415217391304347826086956521739130"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Mexican_3"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.2130937098844672657252888318356868"}, "recall": {"$numberDecimal": "0.1983273596176821983273596176821983"}, "specificity": {"$numberDecimal": "0.8370980600584639914961466914695721"}, "accuracy": {"$numberDecimal": "0.7208695652173913043478260869565217"}, "error_rate": {"$numberDecimal": "0.2791304347826086956521739130434783"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_2"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0"}, "recall": {"$numberDecimal": "0"}, "specificity": {"$numberDecimal": "1"}, "accuracy": {"$numberDecimal": "0.8309859154929577464788732394366197"}, "error_rate": {"$numberDecimal": "0.1690140845070422535211267605633803"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D1Korean_5"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0"}, "recall": {"$numberDecimal": "0"}, "specificity": {"$numberDecimal": "0.9978785468045611243701935826040838"}, "accuracy": {"$numberDecimal": "0.8166232638888888888888888888888889"}, "error_rate": {"$numberDecimal": "0.1833767361111111111111111111111111"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_2"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.4796747967479674796747967479674797"}, "recall": {"$numberDecimal": "0.07063048683160415003990422984836393"}, "specificity": {"$numberDecimal": "0.9808421472759928158052284973059270"}, "accuracy": {"$numberDecimal": "0.7987707535121328224776500638569604"}, "error_rate": {"$numberDecimal": "0.2012292464878671775223499361430396"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2Jan2018_4"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0.5902439024390243902439024390243902"}, "recall": {"$numberDecimal": "0.09660678642714570858283433133732535"}, "specificity": {"$numberDecimal": "0.9832385513319365459443280454953607"}, "accuracy": {"$numberDecimal": "0.8059546615581098339719029374201788"}, "error_rate": {"$numberDecimal": "0.1940453384418901660280970625798212"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_3"
+			},
+			"expected" : [
+				{"prec": {"$numberDecimal": "0"}, "recall": {"$numberDecimal": "0"}, "specificity": {"$numberDecimal": "1"}, "accuracy": {"$numberDecimal": "0.7999826899774969707460619698805608"}, "error_rate": {"$numberDecimal": "0.2000173100225030292539380301194392"}}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q6.json",
+			"parameters" : {
+				"RuleCoverage": "RuleCoverage_D2May2018_5"
+			},
+			"expected" : []
+		}
+	]
+}

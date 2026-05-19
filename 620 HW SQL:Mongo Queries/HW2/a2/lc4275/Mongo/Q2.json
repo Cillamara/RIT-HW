@@ -1,0 +1,43 @@
+{
+	"collection": "Users",
+	"query": [
+		{ "$match": { "friends.250": { "$exists": true } } },
+		{ "$lookup": { "from": "Reviews", "localField": "_id", "foreignField": "user_id", "as": "reviews" } },
+		{ "$lookup": { "from": "Businesses", "localField": "reviews.business_id", "foreignField": "_id", "as": "b_check" } },
+		{ "$addFields": {
+			"has_mexican": {
+				"$anyElementTrue": {
+					"$map": {
+						"input": "$b_check",
+						"as": "bc",
+						"in": { "$regexMatch": { 
+							"input": { "$cond": { "if": { "$eq": [{ "$type": "$$bc.categories" }, "array"] }, "then": { "$reduce": { "input": "$$bc.categories", "initialValue": "", "in": { "$concat": ["$$value", ",", { "$toString": "$$this" }] } } }, "else": { "$ifNull": ["$$bc.categories", ""] } } }, 
+							"regex": "Mexican", "options": "i" 
+						} }
+					}
+				}
+			}
+		}},
+		{ "$match": { "has_mexican": false } },
+		{ "$project": { "_id": 1, "reviews": 1 } },
+		{ "$unwind": "$reviews" },
+		{ "$lookup": { "from": "Businesses", "localField": "reviews.business_id", "foreignField": "_id", "as": "b" } },
+		{ "$unwind": "$b" },
+		{ "$addFields": {
+			"cat_array": {
+				"$cond": {
+					"if": { "$eq": [{ "$type": "$b.categories" }, "array"] },
+					"then": "$b.categories",
+					"else": { "$split": [{ "$ifNull": ["$b.categories", ""] }, ","] }
+				}
+			}
+		}},
+		{ "$unwind": "$cat_array" },
+		{ "$addFields": { "clean_cat": { "$trim": { "input": { "$toString": "$cat_array" } } } } },
+		{ "$match": { "clean_cat": { "$ne": "" } } },
+		{ "$group": { "_id": { "user": "$_id", "cat": "$clean_cat" }, "number_of_reviews": { "$sum": 1 } } },
+		{ "$project": { "_id": 0, "id": "$_id.user", "category": "$_id.cat", "number_of_reviews": 1 } },
+		{ "$sort": { "number_of_reviews": -1, "category": 1, "id": 1 } },
+		{ "$limit": 15 }
+	]
+}

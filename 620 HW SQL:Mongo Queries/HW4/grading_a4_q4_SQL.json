@@ -1,0 +1,113 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "TODOTODO__YOUR_SCHEMA_NAME__TODOTODO", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "TODOTODO__YOUR_USERNAME__TODOTODO", "pwd" : "TODOTODO__YOUR_PASSWORD__TODOTODO"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q4SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q4.C3.sql",
+			"parameters" : {
+				"CRelation": "C3_T1",
+				"LRelation": "L2_T1"
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 4972},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 5865},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 7725},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 22635},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 31369},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 32534},
+				{"iid_1": 374, "iid_2": 4516, "iid_3": 64219},
+				{"iid_1": 374, "iid_2": 4972, "iid_3": 5865},
+				{"iid_1": 374, "iid_2": 4972, "iid_3": 7725},
+				{"iid_1": 374, "iid_2": 4972, "iid_3": 64219},
+				{"iid_1": 374, "iid_2": 5865, "iid_3": 7725},
+				{"iid_1": 374, "iid_2": 5865, "iid_3": 22635},
+				{"iid_1": 374, "iid_2": 5865, "iid_3": 32534},
+				{"iid_1": 374, "iid_2": 5865, "iid_3": 64219},
+				{"iid_1": 374, "iid_2": 7725, "iid_3": 22635}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q4.C3.sql",
+			"parameters" : {
+				"CRelation": "C3_T2",
+				"LRelation": "L2_T2"
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 372, "iid_2": 6776, "iid_3": 20078},
+				{"iid_1": 372, "iid_2": 6776, "iid_3": 64928},
+				{"iid_1": 372, "iid_2": 20078, "iid_3": 64928},
+				{"iid_1": 479, "iid_2": 9062, "iid_3": 101397},
+				{"iid_1": 2988, "iid_2": 9062, "iid_3": 18726},
+				{"iid_1": 2988, "iid_2": 9062, "iid_3": 26382},
+				{"iid_1": 2988, "iid_2": 9062, "iid_3": 40971},
+				{"iid_1": 2988, "iid_2": 9062, "iid_3": 61385},
+				{"iid_1": 2988, "iid_2": 9062, "iid_3": 127209},
+				{"iid_1": 2988, "iid_2": 18726, "iid_3": 26382},
+				{"iid_1": 2988, "iid_2": 18726, "iid_3": 40971},
+				{"iid_1": 2988, "iid_2": 18726, "iid_3": 61385},
+				{"iid_1": 2988, "iid_2": 18726, "iid_3": 127209},
+				{"iid_1": 2988, "iid_2": 18726, "iid_3": 130805},
+				{"iid_1": 2988, "iid_2": 26382, "iid_3": 40971}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q4.C4.sql",
+			"parameters" : {
+				"CRelation": "C4_T1",
+				"LRelation": "L3_T1"
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 1206, "iid_2": 20053, "iid_3": 65375, "iid_4": 214469},
+				{"iid_1": 1242, "iid_2": 7566, "iid_3": 26055, "iid_4": 32339},
+				{"iid_1": 1242, "iid_2": 7566, "iid_3": 26055, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 10262, "iid_3": 11451, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 10262, "iid_3": 26055, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 11451, "iid_3": 26055, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 11451, "iid_3": 27249, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 16165, "iid_3": 27249, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 26055, "iid_3": 27249, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 26055, "iid_3": 38948, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 32339, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 35665, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 38948, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 27249, "iid_3": 54448, "iid_4": 56963},
+				{"iid_1": 1242, "iid_2": 32339, "iid_3": 35665, "iid_4": 56963}
+
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q4.C4.sql",
+			"parameters" : {
+				"CRelation": "C4_T2",
+				"LRelation": "L3_T2"
+			},
+			"limit": 15,
+			"expected" : [
+				{"iid_1": 9062, "iid_2": 18538, "iid_3": 18726, "iid_4": 26382}
+			]
+		}
+	]
+}

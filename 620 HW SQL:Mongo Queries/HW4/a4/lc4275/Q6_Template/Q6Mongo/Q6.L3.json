@@ -1,0 +1,55 @@
+{
+	"collection": "&LKCollection&",
+	"query": [
+		{"$match": {"iid_1": "&Iid_1Filter&"}},
+		{"$project": {"_id": 0, "a_iid_1": "$iid_2", "a_iid_2": "$iid_3", "c_iid": "$iid_1", "lk_count": "$count"}},
+		{"$unionWith": {"coll": "&LKCollection&", "pipeline": [
+			{"$match": {"iid_1": "&Iid_1Filter&"}},
+			{"$project": {"_id": 0, "a_iid_1": "$iid_1", "a_iid_2": "$iid_3", "c_iid": "$iid_2", "lk_count": "$count"}}
+		]}},
+		{"$unionWith": {"coll": "&LKCollection&", "pipeline": [
+			{"$match": {"iid_1": "&Iid_1Filter&"}},
+			{"$project": {"_id": 0, "a_iid_1": "$iid_1", "a_iid_2": "$iid_2", "c_iid": "$iid_3", "lk_count": "$count"}}
+		]}},
+		{"$lookup": {
+			"from": "&LKMinusOneCollection&",
+			"let": {"a1": "$a_iid_1", "a2": "$a_iid_2"},
+			"pipeline": [
+				{"$match": {"$expr": {"$and": [
+					{"$eq": ["$iid_1", "$$a1"]},
+					{"$eq": ["$iid_2", "$$a2"]}
+				]}}}
+			],
+			"as": "lk2"
+		}},
+		{"$unwind": "$lk2"},
+		{"$lookup": {
+			"from": "&LOneCollection&",
+			"let": {"c": "$c_iid"},
+			"pipeline": [
+				{"$match": {"$expr": {"$eq": ["$iid_1", "$$c"]}}}
+			],
+			"as": "l1"
+		}},
+		{"$unwind": "$l1"},
+		{"$lookup": {
+			"from": "&TCollection&",
+			"pipeline": [{"$count": "n"}],
+			"as": "total"
+		}},
+		{"$unwind": "$total"},
+		{"$project": {
+			"_id": 0,
+			"support": {"$divide": [{"$toDecimal": "$lk_count"}, {"$toDecimal": "$total.n"}]},
+			"confidence": {"$divide": [{"$toDecimal": "$lk_count"}, {"$toDecimal": "$lk2.count"}]},
+			"lift": {"$divide": [
+				{"$multiply": [{"$toDecimal": "$lk_count"}, {"$toDecimal": "$total.n"}]},
+				{"$multiply": [{"$toDecimal": "$lk2.count"}, {"$toDecimal": "$l1.count"}]}
+			]},
+			"a_iid_1": "$a_iid_1",
+			"a_iid_2": "$a_iid_2",
+			"c_iid": "$c_iid"
+		}},
+		{"$sort": {"a_iid_1": 1, "a_iid_2": 1, "c_iid": 1}}
+	]
+}

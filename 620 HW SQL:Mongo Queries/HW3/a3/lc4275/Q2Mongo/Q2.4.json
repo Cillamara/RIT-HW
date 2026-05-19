@@ -1,0 +1,40 @@
+{
+    "collection": "Businesses",
+    "query": [
+        {"$unwind": "$categories"},
+        {"$match": {"categories": "&category&"}},
+        {"$addFields": {"lat_d": {"$toDecimal": "$location.latitude"}}},
+        {"$setWindowFields": {
+            "sortBy": {"lat_d": 1},
+            "output": {
+                "rn":    {"$documentNumber": {}},
+                "total": {"$sum": 1, "window": {"documents": ["unbounded", "unbounded"]}}
+            }
+        }},
+        {"$group": {
+            "_id": null,
+            "docs": {"$push": "$$ROOT"},
+            "q1": {"$avg": {"$cond": [{"$or": [
+                {"$eq": ["$rn", {"$floor": {"$multiply": [{"$toDecimal": "0.25"}, "$total"]}}]},
+                {"$eq": ["$rn", {"$add": [{"$floor": {"$multiply": [{"$toDecimal": "0.25"}, "$total"]}}, 1]}]}
+            ]}, "$lat_d", null]}},
+            "median": {"$avg": {"$cond": [{"$or": [
+                {"$eq": ["$rn", {"$floor": {"$multiply": [{"$toDecimal": "0.5"}, "$total"]}}]},
+                {"$eq": ["$rn", {"$add": [{"$floor": {"$multiply": [{"$toDecimal": "0.5"}, "$total"]}}, 1]}]}
+            ]}, "$lat_d", null]}},
+            "q3": {"$avg": {"$cond": [{"$or": [
+                {"$eq": ["$rn", {"$floor": {"$multiply": [{"$toDecimal": "0.75"}, "$total"]}}]},
+                {"$eq": ["$rn", {"$add": [{"$floor": {"$multiply": [{"$toDecimal": "0.75"}, "$total"]}}, 1]}]}
+            ]}, "$lat_d", null]}}
+        }},
+        {"$unwind": "$docs"},
+        {"$project": {
+            "_id": "$docs._id",
+            "scaled_latitude": {"$divide": [
+                {"$subtract": ["$docs.lat_d", "$median"]},
+                {"$subtract": ["$q3", "$q1"]}
+            ]}
+        }},
+        {"$sort": {"scaled_latitude": 1, "_id": 1}}
+    ]
+}

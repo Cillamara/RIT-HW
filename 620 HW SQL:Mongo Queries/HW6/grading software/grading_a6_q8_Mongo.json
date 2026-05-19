@@ -1,0 +1,310 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q8Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P1Mexican_MinMax_Manhattan_Assignment",
+				"AssignmentCollectionJ": "P1Mexican_MinMax_Manhattan_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 45, "cid_i": 1046, "cid_j": 1},
+				{"count": 53, "cid_i": 1046, "cid_j": 2},
+				{"count": 51, "cid_i": 1046, "cid_j": 3},
+				{"count": 50, "cid_i": 1046, "cid_j": 4},
+				{"count": 57, "cid_i": 1046, "cid_j": 5},
+				{"count": 50, "cid_i": 1046, "cid_j": 6},
+				{"count": 36, "cid_i": 1046, "cid_j": 7},
+				{"count": 55, "cid_i": 1046, "cid_j": 8},
+				{"count": 41, "cid_i": 1046, "cid_j": 9},
+				{"count": 62, "cid_i": 1046, "cid_j": 10},
+				{"count": 24, "cid_i": 12282, "cid_j": 1},
+				{"count": 18, "cid_i": 12282, "cid_j": 2},
+				{"count": 25, "cid_i": 12282, "cid_j": 3},
+				{"count": 23, "cid_i": 12282, "cid_j": 4},
+				{"count": 26, "cid_i": 12282, "cid_j": 5},
+				{"count": 21, "cid_i": 12282, "cid_j": 6},
+				{"count": 23, "cid_i": 12282, "cid_j": 7},
+				{"count": 28, "cid_i": 12282, "cid_j": 8},
+				{"count": 32, "cid_i": 12282, "cid_j": 9},
+				{"count": 20, "cid_i": 12282, "cid_j": 10},
+				{"count": 28, "cid_i": 19844, "cid_j": 1},
+				{"count": 21, "cid_i": 19844, "cid_j": 2},
+				{"count": 12, "cid_i": 19844, "cid_j": 3},
+				{"count": 19, "cid_i": 19844, "cid_j": 4},
+				{"count": 30, "cid_i": 19844, "cid_j": 5}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P1Mexican_MinMax_Euclidean_Assignment",
+				"AssignmentCollectionJ": "P1Mexican_MinMax_Euclidean_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 35, "cid_i": 1046, "cid_j": 1},
+				{"count": 41, "cid_i": 1046, "cid_j": 2},
+				{"count": 39, "cid_i": 1046, "cid_j": 3},
+				{"count": 35, "cid_i": 1046, "cid_j": 4},
+				{"count": 34, "cid_i": 1046, "cid_j": 5},
+				{"count": 25, "cid_i": 1046, "cid_j": 6},
+				{"count": 39, "cid_i": 1046, "cid_j": 7},
+				{"count": 41, "cid_i": 1046, "cid_j": 8},
+				{"count": 37, "cid_i": 1046, "cid_j": 9},
+				{"count": 37, "cid_i": 1046, "cid_j": 10},
+				{"count": 32, "cid_i": 1046, "cid_j": 11},
+				{"count": 30, "cid_i": 1046, "cid_j": 12},
+				{"count": 49, "cid_i": 1046, "cid_j": 13},
+				{"count": 41, "cid_i": 1046, "cid_j": 14},
+				{"count": 31, "cid_i": 1046, "cid_j": 15},
+				{"count": 15, "cid_i": 12282, "cid_j": 1},
+				{"count": 11, "cid_i": 12282, "cid_j": 2},
+				{"count": 9, "cid_i": 12282, "cid_j": 3},
+				{"count": 13, "cid_i": 12282, "cid_j": 4},
+				{"count": 13, "cid_i": 12282, "cid_j": 5},
+				{"count": 9, "cid_i": 12282, "cid_j": 6},
+				{"count": 10, "cid_i": 12282, "cid_j": 7},
+				{"count": 8, "cid_i": 12282, "cid_j": 8},
+				{"count": 17, "cid_i": 12282, "cid_j": 9},
+				{"count": 20, "cid_i": 12282, "cid_j": 10}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P1Korean_Mean_Manhattan_Assignment",
+				"AssignmentCollectionJ": "P1Korean_Mean_Manhattan_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 3, "cid_i": 5549, "cid_j": 1},
+				{"count": 5, "cid_i": 5549, "cid_j": 2},
+				{"count": 2, "cid_i": 5549, "cid_j": 3},
+				{"count": 5, "cid_i": 5549, "cid_j": 4},
+				{"count": 1, "cid_i": 5549, "cid_j": 5},
+				{"count": 4, "cid_i": 5549, "cid_j": 6},
+				{"count": 3, "cid_i": 5549, "cid_j": 8},
+				{"count": 4, "cid_i": 5549, "cid_j": 9},
+				{"count": 1, "cid_i": 5549, "cid_j": 12},
+				{"count": 1, "cid_i": 5549, "cid_j": 13},
+				{"count": 6, "cid_i": 5549, "cid_j": 14},
+				{"count": 2, "cid_i": 5549, "cid_j": 15},
+				{"count": 5, "cid_i": 5549, "cid_j": 16},
+				{"count": 3, "cid_i": 5549, "cid_j": 17},
+				{"count": 1, "cid_i": 5549, "cid_j": 18},
+				{"count": 1, "cid_i": 5549, "cid_j": 19},
+				{"count": 2, "cid_i": 5549, "cid_j": 20},
+				{"count": 2, "cid_i": 16704, "cid_j": 3},
+				{"count": 2, "cid_i": 16704, "cid_j": 4},
+				{"count": 3, "cid_i": 16704, "cid_j": 5},
+				{"count": 1, "cid_i": 16704, "cid_j": 6},
+				{"count": 2, "cid_i": 16704, "cid_j": 9},
+				{"count": 1, "cid_i": 16704, "cid_j": 10},
+				{"count": 2, "cid_i": 16704, "cid_j": 11},
+				{"count": 1, "cid_i": 16704, "cid_j": 12}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P1Korean_Mean_Euclidean_Assignment",
+				"AssignmentCollectionJ": "P1Korean_Mean_Euclidean_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 5, "cid_i": 5549, "cid_j": 1},
+				{"count": 5, "cid_i": 5549, "cid_j": 2},
+				{"count": 8, "cid_i": 5549, "cid_j": 3},
+				{"count": 9, "cid_i": 5549, "cid_j": 4},
+				{"count": 6, "cid_i": 5549, "cid_j": 5},
+				{"count": 4, "cid_i": 5549, "cid_j": 6},
+				{"count": 6, "cid_i": 5549, "cid_j": 7},
+				{"count": 4, "cid_i": 5549, "cid_j": 8},
+				{"count": 9, "cid_i": 5549, "cid_j": 9},
+				{"count": 5, "cid_i": 5549, "cid_j": 10},
+				{"count": 3, "cid_i": 16704, "cid_j": 1},
+				{"count": 4, "cid_i": 16704, "cid_j": 2},
+				{"count": 2, "cid_i": 16704, "cid_j": 3},
+				{"count": 4, "cid_i": 16704, "cid_j": 4},
+				{"count": 8, "cid_i": 16704, "cid_j": 5},
+				{"count": 6, "cid_i": 16704, "cid_j": 6},
+				{"count": 3, "cid_i": 16704, "cid_j": 7},
+				{"count": 5, "cid_i": 16704, "cid_j": 8},
+				{"count": 1, "cid_i": 16704, "cid_j": 9},
+				{"count": 1, "cid_i": 16704, "cid_j": 10},
+				{"count": 4, "cid_i": 37881, "cid_j": 1},
+				{"count": 3, "cid_i": 37881, "cid_j": 2},
+				{"count": 5, "cid_i": 37881, "cid_j": 3},
+				{"count": 7, "cid_i": 37881, "cid_j": 4},
+				{"count": 5, "cid_i": 37881, "cid_j": 5}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P2Jan2018_ZScore_Manhattan_Assignment",
+				"AssignmentCollectionJ": "P2Jan2018_ZScore_Manhattan_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 26, "cid_i": 198459, "cid_j": 1},
+				{"count": 41, "cid_i": 198459, "cid_j": 2},
+				{"count": 44, "cid_i": 198459, "cid_j": 3},
+				{"count": 32, "cid_i": 198459, "cid_j": 4},
+				{"count": 33, "cid_i": 198459, "cid_j": 5},
+				{"count": 19, "cid_i": 198459, "cid_j": 6},
+				{"count": 37, "cid_i": 198459, "cid_j": 7},
+				{"count": 29, "cid_i": 198459, "cid_j": 8},
+				{"count": 29, "cid_i": 198459, "cid_j": 9},
+				{"count": 33, "cid_i": 198459, "cid_j": 10},
+				{"count": 30, "cid_i": 198459, "cid_j": 11},
+				{"count": 34, "cid_i": 198459, "cid_j": 12},
+				{"count": 28, "cid_i": 198459, "cid_j": 13},
+				{"count": 32, "cid_i": 198459, "cid_j": 14},
+				{"count": 35, "cid_i": 198459, "cid_j": 15},
+				{"count": 9, "cid_i": 272740, "cid_j": 1},
+				{"count": 3, "cid_i": 272740, "cid_j": 2},
+				{"count": 4, "cid_i": 272740, "cid_j": 3},
+				{"count": 9, "cid_i": 272740, "cid_j": 4},
+				{"count": 9, "cid_i": 272740, "cid_j": 5},
+				{"count": 9, "cid_i": 272740, "cid_j": 6},
+				{"count": 10, "cid_i": 272740, "cid_j": 7},
+				{"count": 9, "cid_i": 272740, "cid_j": 8},
+				{"count": 12, "cid_i": 272740, "cid_j": 9},
+				{"count": 7, "cid_i": 272740, "cid_j": 10}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P2Jan2018_ZScore_Euclidean_Assignment",
+				"AssignmentCollectionJ": "P2Jan2018_ZScore_Euclidean_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 15, "cid_i": 198459, "cid_j": 1},
+				{"count": 14, "cid_i": 198459, "cid_j": 2},
+				{"count": 18, "cid_i": 198459, "cid_j": 3},
+				{"count": 19, "cid_i": 198459, "cid_j": 4},
+				{"count": 12, "cid_i": 198459, "cid_j": 5},
+				{"count": 16, "cid_i": 198459, "cid_j": 6},
+				{"count": 11, "cid_i": 198459, "cid_j": 7},
+				{"count": 19, "cid_i": 198459, "cid_j": 8},
+				{"count": 18, "cid_i": 198459, "cid_j": 9},
+				{"count": 12, "cid_i": 198459, "cid_j": 10},
+				{"count": 24, "cid_i": 198459, "cid_j": 11},
+				{"count": 17, "cid_i": 198459, "cid_j": 12},
+				{"count": 25, "cid_i": 198459, "cid_j": 13},
+				{"count": 20, "cid_i": 198459, "cid_j": 14},
+				{"count": 21, "cid_i": 198459, "cid_j": 15},
+				{"count": 21, "cid_i": 198459, "cid_j": 16},
+				{"count": 20, "cid_i": 198459, "cid_j": 17},
+				{"count": 17, "cid_i": 198459, "cid_j": 18},
+				{"count": 21, "cid_i": 198459, "cid_j": 19},
+				{"count": 21, "cid_i": 198459, "cid_j": 20},
+				{"count": 17, "cid_i": 198459, "cid_j": 21},
+				{"count": 24, "cid_i": 198459, "cid_j": 22},
+				{"count": 17, "cid_i": 198459, "cid_j": 23},
+				{"count": 18, "cid_i": 198459, "cid_j": 24},
+				{"count": 18, "cid_i": 198459, "cid_j": 25}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P2May2018_ZScore_Manhattan_Assignment",
+				"AssignmentCollectionJ": "P2May2018_ZScore_Manhattan_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 107, "cid_i": 161047, "cid_j": 1},
+				{"count": 104, "cid_i": 161047, "cid_j": 2},
+				{"count": 90, "cid_i": 161047, "cid_j": 3},
+				{"count": 99, "cid_i": 161047, "cid_j": 4},
+				{"count": 94, "cid_i": 161047, "cid_j": 5},
+				{"count": 92, "cid_i": 161047, "cid_j": 6},
+				{"count": 108, "cid_i": 161047, "cid_j": 7},
+				{"count": 105, "cid_i": 161047, "cid_j": 8},
+				{"count": 104, "cid_i": 161047, "cid_j": 9},
+				{"count": 81, "cid_i": 161047, "cid_j": 10},
+				{"count": 104, "cid_i": 161047, "cid_j": 11},
+				{"count": 96, "cid_i": 161047, "cid_j": 12},
+				{"count": 97, "cid_i": 161047, "cid_j": 13},
+				{"count": 89, "cid_i": 161047, "cid_j": 14},
+				{"count": 91, "cid_i": 161047, "cid_j": 15},
+				{"count": 61, "cid_i": 242412, "cid_j": 1},
+				{"count": 57, "cid_i": 242412, "cid_j": 2},
+				{"count": 60, "cid_i": 242412, "cid_j": 3},
+				{"count": 69, "cid_i": 242412, "cid_j": 4},
+				{"count": 60, "cid_i": 242412, "cid_j": 5},
+				{"count": 67, "cid_i": 242412, "cid_j": 6},
+				{"count": 66, "cid_i": 242412, "cid_j": 7},
+				{"count": 46, "cid_i": 242412, "cid_j": 8},
+				{"count": 57, "cid_i": 242412, "cid_j": 9},
+				{"count": 63, "cid_i": 242412, "cid_j": 10}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q8.json",
+			"parameters" : {
+				"AssignmentCollectionI": "P2May2018_MinMax_Euclidean_Assignment",
+				"AssignmentCollectionJ": "P2May2018_MinMax_Euclidean_Assignment_Rnd"
+			},
+			"limit": 25,
+			"expected" : [
+				{"count": 28, "cid_i": 519352, "cid_j": 1},
+				{"count": 25, "cid_i": 519352, "cid_j": 2},
+				{"count": 26, "cid_i": 519352, "cid_j": 3},
+				{"count": 21, "cid_i": 519352, "cid_j": 4},
+				{"count": 30, "cid_i": 519352, "cid_j": 5},
+				{"count": 35, "cid_i": 519352, "cid_j": 6},
+				{"count": 28, "cid_i": 519352, "cid_j": 7},
+				{"count": 25, "cid_i": 519352, "cid_j": 8},
+				{"count": 41, "cid_i": 519352, "cid_j": 9},
+				{"count": 36, "cid_i": 519352, "cid_j": 10},
+				{"count": 34, "cid_i": 519352, "cid_j": 11},
+				{"count": 32, "cid_i": 519352, "cid_j": 12},
+				{"count": 29, "cid_i": 519352, "cid_j": 13},
+				{"count": 22, "cid_i": 519352, "cid_j": 14},
+				{"count": 29, "cid_i": 519352, "cid_j": 15},
+				{"count": 52, "cid_i": 550374, "cid_j": 1},
+				{"count": 35, "cid_i": 550374, "cid_j": 2},
+				{"count": 41, "cid_i": 550374, "cid_j": 3},
+				{"count": 32, "cid_i": 550374, "cid_j": 4},
+				{"count": 42, "cid_i": 550374, "cid_j": 5},
+				{"count": 40, "cid_i": 550374, "cid_j": 6},
+				{"count": 36, "cid_i": 550374, "cid_j": 7},
+				{"count": 41, "cid_i": 550374, "cid_j": 8},
+				{"count": 57, "cid_i": 550374, "cid_j": 9},
+				{"count": 30, "cid_i": 550374, "cid_j": 10}
+			]
+		}
+	]
+}

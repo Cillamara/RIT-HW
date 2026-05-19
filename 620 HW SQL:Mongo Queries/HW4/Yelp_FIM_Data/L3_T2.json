@@ -1,0 +1,17 @@
+{"_id":{"$numberInt":"188"},"count":{"$numberInt":"9"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18538"},"iid_3":{"$numberInt":"18726"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"190"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18538"},"iid_3":{"$numberInt":"26382"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"193"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18538"},"iid_3":{"$numberInt":"40971"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"212"},"count":{"$numberInt":"8"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18726"},"iid_3":{"$numberInt":"26382"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"215"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18726"},"iid_3":{"$numberInt":"40971"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"220"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"9062"},"iid_2":{"$numberInt":"18726"},"iid_3":{"$numberInt":"61385"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"490"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"18538"},"iid_2":{"$numberInt":"18726"},"iid_3":{"$numberInt":"26382"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"541"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"18726"},"iid_2":{"$numberInt":"26382"},"iid_3":{"$numberInt":"59321"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"542"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"18726"},"iid_2":{"$numberInt":"26382"},"iid_3":{"$numberInt":"61385"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"652"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"18726"},"iid_2":{"$numberInt":"40971"},"iid_3":{"$numberInt":"61385"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"997"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"19928"},"iid_2":{"$numberInt":"67275"},"iid_3":{"$numberInt":"117127"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1003"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"20078"},"iid_2":{"$numberInt":"28035"},"iid_3":{"$numberInt":"64928"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1156"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"28035"},"iid_2":{"$numberInt":"98379"},"iid_3":{"$numberInt":"119926"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1271"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"32326"},"iid_2":{"$numberInt":"91757"},"iid_3":{"$numberInt":"132465"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1619"},"count":{"$numberInt":"7"},"iid_1":{"$numberInt":"108101"},"iid_2":{"$numberInt":"117127"},"iid_3":{"$numberInt":"121653"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1639"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"108101"},"iid_2":{"$numberInt":"121653"},"iid_3":{"$numberInt":"135481"},"out_of":{"$numberInt":"170649"}}
+{"_id":{"$numberInt":"1641"},"count":{"$numberInt":"6"},"iid_1":{"$numberInt":"108101"},"iid_2":{"$numberInt":"121653"},"iid_3":{"$numberInt":"137449"},"out_of":{"$numberInt":"170649"}}

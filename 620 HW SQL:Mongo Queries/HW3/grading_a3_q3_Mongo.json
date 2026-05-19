@@ -1,0 +1,107 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mongo" : {
+		"db_name": "yelp_A3Q3",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q3Mongo",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.1.json",
+			"parameters" : {
+				"init_date": "2020-01-01 00:00:00",
+				"end_date": "2020-12-31 23:59:59",
+				"k": 5
+			},
+			"limit": 25,
+			"expected" : [
+				{"_id": 684429, "bin_index": 5},
+				{"_id": 296006, "bin_index": 1},
+				{"_id": 170389, "bin_index": 0},
+				{"_id": 287658, "bin_index": 0},
+				{"_id": 287662, "bin_index": 0},
+				{"_id": 287664, "bin_index": 0},
+				{"_id": 287670, "bin_index": 0},
+				{"_id": 287744, "bin_index": 0},
+				{"_id": 287759, "bin_index": 0},
+				{"_id": 287923, "bin_index": 0},
+				{"_id": 287956, "bin_index": 0},
+				{"_id": 287992, "bin_index": 0},
+				{"_id": 288046, "bin_index": 0},
+				{"_id": 288130, "bin_index": 0},
+				{"_id": 288135, "bin_index": 0},
+				{"_id": 288159, "bin_index": 0},
+				{"_id": 288186, "bin_index": 0},
+				{"_id": 288219, "bin_index": 0},
+				{"_id": 288324, "bin_index": 0},
+				{"_id": 288400, "bin_index": 0},
+				{"_id": 288414, "bin_index": 0},
+				{"_id": 288447, "bin_index": 0},
+				{"_id": 288463, "bin_index": 0},
+				{"_id": 288477, "bin_index": 0},
+				{"_id": 288489, "bin_index": 0}
+			]
+		},
+		{
+			"type" : "MongoResultSet",
+			"file" : "Q3.2.json",
+			"parameters" : {
+				"init_date": "2021-03-01 00:00:00",
+				"end_date": "2024-05-31 23:59:59",
+				"k": 10
+			},
+			"limit": 35,
+			"expected" : [
+				{"_id": 294826, "bin_index": 10},
+				{"_id": 294828, "bin_index": 10},
+				{"_id": 295078, "bin_index": 10},
+				{"_id": 295555, "bin_index": 10},
+				{"_id": 295967, "bin_index": 10},
+				{"_id": 296869, "bin_index": 10},
+				{"_id": 296955, "bin_index": 10},
+				{"_id": 297202, "bin_index": 10},
+				{"_id": 297205, "bin_index": 10},
+				{"_id": 297249, "bin_index": 10},
+				{"_id": 297383, "bin_index": 10},
+				{"_id": 297888, "bin_index": 10},
+				{"_id": 298047, "bin_index": 10},
+				{"_id": 298758, "bin_index": 10},
+				{"_id": 298798, "bin_index": 10},
+				{"_id": 298855, "bin_index": 10},
+				{"_id": 300034, "bin_index": 10},
+				{"_id": 300198, "bin_index": 10},
+				{"_id": 300250, "bin_index": 10},
+				{"_id": 300255, "bin_index": 10},
+				{"_id": 300336, "bin_index": 10},
+				{"_id": 300417, "bin_index": 10},
+				{"_id": 300685, "bin_index": 10},
+				{"_id": 300719, "bin_index": 10},
+				{"_id": 300842, "bin_index": 10},
+				{"_id": 301019, "bin_index": 10},
+				{"_id": 301273, "bin_index": 10},
+				{"_id": 301301, "bin_index": 10},
+				{"_id": 301415, "bin_index": 10},
+				{"_id": 301428, "bin_index": 10},
+				{"_id": 301505, "bin_index": 10},
+				{"_id": 301827, "bin_index": 10},
+				{"_id": 301988, "bin_index": 10},
+				{"_id": 302181, "bin_index": 10},
+				{"_id": 302255, "bin_index": 10}
+			]
+		}
+	]
+}

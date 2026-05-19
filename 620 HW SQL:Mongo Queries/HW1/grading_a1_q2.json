@@ -1,0 +1,81 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_DB", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	"yelp_gz_file" : "/Users/liamcui/Library/Mobile Documents/com~apple~CloudDocs/RIT/Spring 2026/CSCI 620/Yelp JSON/yelp_dataset.tar.gz",
+	
+	
+	
+
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "LoadUsers",
+	
+	"maxTimeMin" : 90,
+	"maxMemory" : 396,
+	
+	
+	"__comment__" : "These are SQL queries to execute before a student's solution. They make sure we have a fresh database.",
+	"before_sql_queries" : [
+		"DROP TABLE IF EXISTS UserElite",
+		"DROP TABLE IF EXISTS User"
+	],
+	
+	"__comment__" : "These are the input parameters provided to your program in order.",
+	"input_command_line" : [
+		{"value":"$database_mysql.schema", "special":"MySQLSchema"},
+		{"value":"$database_mysql.user"}, {"value":"$database_mysql.pwd"},
+		{"value":"$yelp_gz_file"}
+	],
+	
+	
+	"__comment__" : "These are the test cases to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM User",
+			"expected" : [{"cnt": 1987897}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM UserElite",
+			"expected" : [{"cnt": 340567}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM User WHERE useful > 10",
+			"expected" : [{"cnt": 555754}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM User WHERE cool > 5",
+			"expected" : [{"cnt": 342401}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM User WHERE compliment_funny > 5",
+			"expected" : [{"cnt": 60563}]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT COUNT(*) AS cnt FROM User WHERE compliment_plain > 5",
+			"expected" : [{"cnt": 62610}]
+		},
+		
+		{
+			"type" : "MySQLResultSet",
+			"query" : "SELECT name, year FROM User JOIN UserElite ON id=uid WHERE id='egDymReIGgB2USiHWVSASw' ORDER BY year",
+			"expected" : [
+				{"name": "Lee", "year": 2011},
+				{"name": "Lee", "year": 2012},
+				{"name": "Lee", "year": 2013},
+				{"name": "Lee", "year": 2014}
+			]
+		}
+	]
+
+}

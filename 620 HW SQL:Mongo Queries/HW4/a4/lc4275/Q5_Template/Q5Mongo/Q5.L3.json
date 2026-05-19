@@ -1,0 +1,20 @@
+{
+	"collection": "&CCollection&",
+	"query": [
+		{"$lookup": {
+			"from": "&TCollection&",
+			"let": {"i1": "$iid_1", "i2": "$iid_2", "i3": "$iid_3"},
+			"pipeline": [
+				{"$match": {"$expr": {"$and": [
+					{"$in": ["$$i1", "$items"]},
+					{"$in": ["$$i2", "$items"]},
+					{"$in": ["$$i3", "$items"]}
+				]}}}
+			],
+			"as": "transactions"
+		}},
+		{"$project": {"_id": 0, "iid_1": 1, "iid_2": 1, "iid_3": 1, "count": {"$size": "$transactions"}}},
+		{"$match": {"count": {"$gte": "&MinSup&"}}},
+		{"$sort": {"iid_1": 1, "iid_2": 1, "iid_3": 1}}
+	]
+}

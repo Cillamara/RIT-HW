@@ -1,0 +1,105 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3",
+		"__comment__": "I know, I know, not very safe...",
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+
+	"database_mongo" : {
+		"db_name": "yelp_DB",
+		"__comment__": "Note that 'None' will connect to your local Mongo DB.",
+		"url" : "mongodb://localhost:27017"
+	},
+
+
+
+
+
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "LoadUsers",
+
+	"maxTimeMin" : 30,
+	"maxMemory" : 64,
+
+
+	"__comment__" : "These are Mongo collections that will be removed... missing SQL so much! They make sure we have a fresh database.",
+	"before_mongo_queries" : ["Users"],
+
+	"__comment__" : "These are the input parameters provided to your program in order.",
+	"input_command_line" : [{"value":"$database_mysql.schema", "special":"MySQLSchema"}, {"value":"$database_mysql.user"}, {"value":"$database_mysql.pwd"},
+		{"value" : "$database_mongo.url"}, {"value" : "$database_mongo.db_name"}],
+
+
+	"__comment__" : "These are the test cases to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [{"$count":"u_count"}],
+			"expected" : [{"u_count": 1987897}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"elite_years":{"$exists":true}}},
+				{"$count":"ey_set"}
+			],
+			"expected" : [{"ey_set": 91198}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"useful":{"$gt":10}}},
+				{"$count":"u_set"}
+			],
+			"expected" : [{"u_set": 555754}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"cool":{"$gt":5}}},
+				{"$count":"c_set"}
+			],
+			"expected" : [{"c_set": 342401}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"compliment_funny":{"$gt":5}}},
+				{"$count":"cf_set"}
+			],
+			"expected" : [{"cf_set": 60563}]
+		},
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"compliment_plain":{"$gt":5}}},
+				{"$count":"cp_set"}
+			],
+			"expected" : [{"cp_set": 62610}]
+		},
+		
+		{
+			"type" : "MongoResultSet",
+			"collection": "Users",
+			"query" : [
+				{"$match":{"_id":3999}},
+				{"$unwind": "$elite_years"},
+				{"$project": {"_id": 0, "uname": 1, "year": "$elite_years"}},
+				{"$sort": {"year": 1}}
+			],
+			"expected" : [
+				{"uname": "Lee", "year": 2011},
+				{"uname": "Lee", "year": 2012},
+				{"uname": "Lee", "year": 2013},
+				{"uname": "Lee", "year": 2014}
+			]
+		}
+    ]
+}

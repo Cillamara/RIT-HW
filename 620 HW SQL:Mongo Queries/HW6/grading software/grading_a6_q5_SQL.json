@@ -1,0 +1,190 @@
+{
+	"__comment__" : "This is the database to connect to. We can have MySQL or MongoDB.",
+	"database_mysql" : {
+		"schema" : "yelp_A3Q3", 
+		"__comment__": "I know, I know, not very safe...", 
+		"user" : "root", "pwd" : "chenzhe1"
+	},
+	
+	
+	
+	
+	
+	"__comment__" : "This is the name of the question, in other words, the folder we will be checking.",
+	"name" : "Q5SQL",
+	
+	"__comment__" : "This indicates it is not a Gradle/Poetry project.",
+	"project_type" : false,
+	
+	"__comment__" : "These are the queries to run in order.",
+	"test_cases" : [
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 1046, "sse": {"$numberDecimal": "289.794133574843867514379194"}, "size": 500},
+				{"cid": 12282, "sse": {"$numberDecimal": "67.765296000081969770144422"}, "size": 240},
+				{"cid": 19844, "sse": {"$numberDecimal": "74.104732375663602166965470"}, "size": 220},
+				{"cid": 43615, "sse": {"$numberDecimal": "165.206974304780210538923162"}, "size": 194},
+				{"cid": 47220, "sse": {"$numberDecimal": "364.171236357421355233431473"}, "size": 454},
+				{"cid": 63584, "sse": {"$numberDecimal": "128.423584595563655313894156"}, "size": 283},
+				{"cid": 106421, "sse": {"$numberDecimal": "626.523622670645109308560096"}, "size": 1002},
+				{"cid": 109740, "sse": {"$numberDecimal": "541.699619623698101100541483"}, "size": 651},
+				{"cid": 125298, "sse": {"$numberDecimal": "321.837357431924977002250801"}, "size": 356},
+				{"cid": 148180, "sse": {"$numberDecimal": "495.938965328148293235621360"}, "size": 700}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Mexican_MinMax_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 1046, "sse": {"$numberDecimal": "38.632701432917015067621248"}, "size": 546},
+				{"cid": 12282, "sse": {"$numberDecimal": "1.724476265949597528261793"}, "size": 185},
+				{"cid": 19844, "sse": {"$numberDecimal": "13.853754791507148314490841"}, "size": 212},
+				{"cid": 43615, "sse": {"$numberDecimal": "5.798961237078067732018244"}, "size": 137},
+				{"cid": 47220, "sse": {"$numberDecimal": "70.062668344965416936162308"}, "size": 524},
+				{"cid": 63584, "sse": {"$numberDecimal": "2.178542097644279730636285"}, "size": 173},
+				{"cid": 106421, "sse": {"$numberDecimal": "79.889492065137204654936899"}, "size": 725},
+				{"cid": 109740, "sse": {"$numberDecimal": "78.799503653970714289703712"}, "size": 888},
+				{"cid": 125298, "sse": {"$numberDecimal": "78.108945886283827907982477"}, "size": 540},
+				{"cid": 148180, "sse": {"$numberDecimal": "20.653759410347322500407072"}, "size": 670}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 5549, "sse": {"$numberDecimal": "32.267486956300159843889348"}, "size": 49},
+				{"cid": 16704, "sse": {"$numberDecimal": "20.925800016134742570996271"}, "size": 26},
+				{"cid": 37881, "sse": {"$numberDecimal": "36.984496070859846815342771"}, "size": 43},
+				{"cid": 41989, "sse": {"$numberDecimal": "83.279091147289571868632356"}, "size": 138},
+				{"cid": 58645, "sse": {"$numberDecimal": "34.752183016036844618305729"}, "size": 28},
+				{"cid": 85584, "sse": {"$numberDecimal": "81.880653942532635800696292"}, "size": 85},
+				{"cid": 111313, "sse": {"$numberDecimal": "33.262028833516846244201198"}, "size": 41},
+				{"cid": 124380, "sse": {"$numberDecimal": "27.809107210481145424107396"}, "size": 27},
+				{"cid": 133352, "sse": {"$numberDecimal": "8.069228742945108128475524"}, "size": 18},
+				{"cid": 145309, "sse": {"$numberDecimal": "37.181317143337855738568705"}, "size": 42}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P1Korean_Mean_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 5549, "sse": {"$numberDecimal": "4.127426113777006808357625"}, "size": 61},
+				{"cid": 16704, "sse": {"$numberDecimal": "2.998098270936266077157783"}, "size": 37},
+				{"cid": 37881, "sse": {"$numberDecimal": "8.760813715570935793787456"}, "size": 44},
+				{"cid": 41989, "sse": {"$numberDecimal": "5.366015224434726981696521"}, "size": 118},
+				{"cid": 58645, "sse": {"$numberDecimal": "1.739084339268693017892813"}, "size": 23},
+				{"cid": 85584, "sse": {"$numberDecimal": "7.361329038809250051601229"}, "size": 81},
+				{"cid": 111313, "sse": {"$numberDecimal": "1.317976276130319871775943"}, "size": 24},
+				{"cid": 124380, "sse": {"$numberDecimal": "6.140780194456953707274397"}, "size": 45},
+				{"cid": 133352, "sse": {"$numberDecimal": "0.343942053818951041001120"}, "size": 13},
+				{"cid": 145309, "sse": {"$numberDecimal": "4.714499504871305291344058"}, "size": 51}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 198459, "sse": {"$numberDecimal": "6534.941255464671075617238648"}, "size": 393},
+				{"cid": 272740, "sse": {"$numberDecimal": "46805898.633899436300451632240969"}, "size": 182},
+				{"cid": 380071, "sse": {"$numberDecimal": "23789.330965651789190620745488"}, "size": 194},
+				{"cid": 430201, "sse": {"$numberDecimal": "133743.737023531514419229894876"}, "size": 621},
+				{"cid": 435625, "sse": {"$numberDecimal": "357631.742863174837461499127372"}, "size": 50},
+				{"cid": 457903, "sse": {"$numberDecimal": "99999999.999999999999999999999999"}, "size": 134},
+				{"cid": 689984, "sse": {"$numberDecimal": "25311.404088954716970254911941"}, "size": 464},
+				{"cid": 708303, "sse": {"$numberDecimal": "696858.182390474191124871306308"}, "size": 205},
+				{"cid": 900939, "sse": {"$numberDecimal": "14211.519350147064680656289128"}, "size": 135},
+				{"cid": 1108172, "sse": {"$numberDecimal": "531.540418569850522728734172"}, "size": 392},
+				{"cid": 1179348, "sse": {"$numberDecimal": "1827.462511723819305259287308"}, "size": 664},
+				{"cid": 1183296, "sse": {"$numberDecimal": "12073.677948793493782482023530"}, "size": 461},
+				{"cid": 1422650, "sse": {"$numberDecimal": "18295.995172415153259018098627"}, "size": 159},
+				{"cid": 1551995, "sse": {"$numberDecimal": "152472.752533486315799996448041"}, "size": 1748},
+				{"cid": 1704618, "sse": {"$numberDecimal": "12038.658900724554490151945839"}, "size": 4588},
+				{"cid": 1881525, "sse": {"$numberDecimal": "65014.080514644818615991865603"}, "size": 2138}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2Jan2018_ZScore_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 198459, "sse": {"$numberDecimal": "92.422458664967925422271459"}, "size": 364},
+				{"cid": 272740, "sse": {"$numberDecimal": "99999999.999999999999999999999999"}, "size": 685},
+				{"cid": 380071, "sse": {"$numberDecimal": "447517.040980749548087404773407"}, "size": 296},
+				{"cid": 430201, "sse": {"$numberDecimal": "441222.169517952271343524519489"}, "size": 232},
+				{"cid": 435625, "sse": {"$numberDecimal": "99999999.999999999999999999999999"}, "size": 242},
+				{"cid": 457903, "sse": {"$numberDecimal": "99999999.999999999999999999999999"}, "size": 126},
+				{"cid": 689984, "sse": {"$numberDecimal": "2771.649887167793128782224510"}, "size": 396},
+				{"cid": 708303, "sse": {"$numberDecimal": "4.145621548992833294980780"}, "size": 168},
+				{"cid": 900939, "sse": {"$numberDecimal": "441199.729727766380969465979097"}, "size": 82},
+				{"cid": 1108172, "sse": {"$numberDecimal": "40.613376634115564659695602"}, "size": 742},
+				{"cid": 1179348, "sse": {"$numberDecimal": "891637.022385370622365489238563"}, "size": 660},
+				{"cid": 1183296, "sse": {"$numberDecimal": "885560.230928395269396358601939"}, "size": 345},
+				{"cid": 1422650, "sse": {"$numberDecimal": "2228812.669085533278751615022366"}, "size": 265},
+				{"cid": 1551995, "sse": {"$numberDecimal": "3726746.245825078944689598103195"}, "size": 1613},
+				{"cid": 1704618, "sse": {"$numberDecimal": "3851985.655101098995936741218471"}, "size": 4572},
+				{"cid": 1881525, "sse": {"$numberDecimal": "3176.483923227772042781669789"}, "size": 1740}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_ZScore_Manhattan_Assignment"
+			},
+			"expected" : [
+				{"cid": 161047, "sse": {"$numberDecimal": "127.000267517994532704603419"}, "size": 1384},
+				{"cid": 242412, "sse": {"$numberDecimal": "22598.856670911856383515171911"}, "size": 553},
+				{"cid": 729741, "sse": {"$numberDecimal": "2087.743092230994302940073669"}, "size": 1273},
+				{"cid": 735733, "sse": {"$numberDecimal": "70467.391270102167909605387453"}, "size": 3459},
+				{"cid": 923058, "sse": {"$numberDecimal": "5651.354166375350329015455059"}, "size": 1114},
+				{"cid": 1062103, "sse": {"$numberDecimal": "200290.003121908969782743549057"}, "size": 191},
+				{"cid": 1282782, "sse": {"$numberDecimal": "99999999.999999999999999999999999"}, "size": 708},
+				{"cid": 1382408, "sse": {"$numberDecimal": "144199.319524330379789387505875"}, "size": 478},
+				{"cid": 1387092, "sse": {"$numberDecimal": "596814.419771212470004305186965"}, "size": 940},
+				{"cid": 1466042, "sse": {"$numberDecimal": "34523.564098839800023099090779"}, "size": 347},
+				{"cid": 1571437, "sse": {"$numberDecimal": "251673.924009486211773011041087"}, "size": 360},
+				{"cid": 1984632, "sse": {"$numberDecimal": "41316.787201950720559366356272"}, "size": 747}
+			]
+		},
+		{
+			"type" : "MySQLResultSet",
+			"file" : "Q5.sql",
+			"parameters" : {
+				"AssignmentRelation": "P2May2018_MinMax_Euclidean_Assignment"
+			},
+			"expected" : [
+				{"cid": 519352, "sse": {"$numberDecimal": "3.881324543379194002490091"}, "size": 441},
+				{"cid": 550374, "sse": {"$numberDecimal": "13.039633365191556719916128"}, "size": 595},
+				{"cid": 576124, "sse": {"$numberDecimal": "30.939685298776159813786041"}, "size": 520},
+				{"cid": 656834, "sse": {"$numberDecimal": "1.215684934345039571181857"}, "size": 899},
+				{"cid": 676587, "sse": {"$numberDecimal": "41.132509828545956356428091"}, "size": 943},
+				{"cid": 708579, "sse": {"$numberDecimal": "0.019469337981958705231416"}, "size": 2513},
+				{"cid": 793986, "sse": {"$numberDecimal": "0.070762584572412418954295"}, "size": 3070},
+				{"cid": 1190861, "sse": {"$numberDecimal": "3.082301639121489687988127"}, "size": 1132},
+				{"cid": 1208257, "sse": {"$numberDecimal": "2.274117364317018137623415"}, "size": 621},
+				{"cid": 1234399, "sse": {"$numberDecimal": "0.396955261534049290877398"}, "size": 200},
+				{"cid": 1507698, "sse": {"$numberDecimal": "0.132700729287768230593445"}, "size": 225},
+				{"cid": 1521595, "sse": {"$numberDecimal": "5.547979736234954108815888"}, "size": 395}
+			]
+		}
+	]
+}
