@@ -1,0 +1,1 @@
+g++ -std=c++11 -O3 -march=native -ffp-contract=off -fopenmp lr.cc -o lr
